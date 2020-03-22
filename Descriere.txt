@@ -159,7 +159,17 @@ La selectarea meciurilor pentru calculul marimilor dorite nu sunt luate in consi
 
 6. Structura site-ului
 
- 1. index.
+ 1. index. Contine modul de lucru anonim. Aceasta pagina are:
+    1. cele 14 date de intrare;
+    2. butonul de conectare, pentru intrarea in modul conectat;
+    3. un buton de pornire a calculelor;
+    4. 5 etichete care sa afiseze rezultatele:
+       1. eticheta pentru procentajul de victorii acasa;
+       2. eticheta pentru procentajul de meciuri egale;
+       3. eticheta pentru procentajul de victorii in deplasare;
+       4. eticheta pentru media de goluri inscrise de echipa de acasa;
+       5. eticheta pentru media de goluri inscrise de echipa din deplasare
+    5. un buton/link (sau altceva) catre fereastra cu panoul de control
 
 7. Optiunile site-ului
 
