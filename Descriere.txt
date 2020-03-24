@@ -160,10 +160,24 @@ La selectarea meciurilor pentru calculul marimilor dorite nu sunt luate in consi
 6. Structura site-ului:
 
  1. index. Contine modul de lucru anonim. Aceasta pagina are:
-    1. cele 14 date de intrare;
-    2. doua etichete, cu textele: "Nume de utilizator" si "Parola", pentru conectarea la contul Hattrick;
-    3. doua edit box-uri, pentru introducerea acestora;
-    3. butonul de conectare la Hattrick, pentru intrarea in modul conectat al utilizarii site-ului;
+    1. 14 etichete descriptive pentru evaluarile propriu-zise
+    2. 14 combobox-uri pentru selectarea evaluarilor
+    3. doua etichete, cu textele: "Nume de utilizator" si "Parola", pentru conectarea la contul Hattrick;
+    4. doua edit box-uri, pentru introducerea acestora;
+    5. butonul de conectare la Hattrick, pentru intrarea in modul conectat al utilizarii site-ului;
+    6. un buton de pornire a calculelor;
+    7. 5 etichete care sa afiseze rezultatele:
+        1. eticheta pentru procentajul de victorii acasa;
+        2. eticheta pentru procentajul de meciuri egale;
+        3. eticheta pentru procentajul de victorii in deplasare;
+        4. eticheta pentru media de goluri inscrise de echipa de acasa;
+        5. eticheta pentru media de goluri inscrise de echipa din deplasare
+    8. un buton/link (sau altceva) catre fereastra cu panoul de control.
+
+ 2. connected. Contine modul de lucru conectat. Aceasta pagina are:
+    1. 14 etichete descriptive pentru evaluarile propriu-zise
+    2. 14 combobox-uri pentru selectarea evaluarilor
+    3. butonul de deconectare
     4. un buton de pornire a calculelor;
     5. 5 etichete care sa afiseze rezultatele:
         1. eticheta pentru procentajul de victorii acasa;
@@ -171,19 +185,7 @@ La selectarea meciurilor pentru calculul marimilor dorite nu sunt luate in consi
         3. eticheta pentru procentajul de victorii in deplasare;
         4. eticheta pentru media de goluri inscrise de echipa de acasa;
         5. eticheta pentru media de goluri inscrise de echipa din deplasare
-    6. un buton/link (sau altceva) catre fereastra cu panoul de control.
-
- 2. connected. Contine modul de lucru conectat. Aceasta pagina are:
-    1. cele 14 date de intrare;
-    2. butonul de deconectare
-    3. un buton de pornire a calculelor;
-    4. 5 etichete care sa afiseze rezultatele:
-        1. eticheta pentru procentajul de victorii acasa;
-        2. eticheta pentru procentajul de meciuri egale;
-        3. eticheta pentru procentajul de victorii in deplasare;
-        4. eticheta pentru media de goluri inscrise de echipa de acasa;
-        5. eticheta pentru media de goluri inscrise de echipa din deplasare
-    5. 11+ etichete care afiseaza urmatoarele detalii:
+    6. 11+ etichete care afiseaza urmatoarele detalii:
         1. numele de utilizator;
         2. numarul de identificare al acestuia;
         3. rangul Supporter;
@@ -195,10 +197,10 @@ La selectarea meciurilor pentru calculul marimilor dorite nu sunt luate in consi
         9. numarul de identificare al tarii in care joaca echipa;
         10. numele seriei in care joaca;
         11. numarul de identificare al seriei in care joaca (6 - 11 sunt pentru fiecare dintre echipele pe care le are);
-    6. o eticheta cu textul: "Alege echipa";
-    7. 1, 2 sau 3 checkbox-uri cu fiecare dintre echipele pe care le are utilizatorul;
-    8. un listbox cu meciurile viitoare. Bifarea unuia dintre checkbox-urile de mai sus va popula acest listbox cu meciurile echipei selectate;
-    9. (daca e nevoie) etichete cu texte explicative.
+    7. o eticheta cu textul: "Alege echipa";
+    8. 1, 2 sau 3 checkbox-uri cu fiecare dintre echipele pe care le are utilizatorul;
+    9. un listbox cu meciurile viitoare. Bifarea unuia dintre checkbox-urile de mai sus va popula acest listbox cu meciurile echipei selectate;
+    10. (daca e nevoie) etichete cu texte explicative.
 
  3. admin. Este pagina prin care se gestioneaza baza de date (4). Mai precis, se adauga meciuri din Hattrick in baza de date. Aceasta pagina are:
     1. un buton de deconectare;

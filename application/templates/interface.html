@@ -1,0 +1,27 @@
+{%extends 'main.html'%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+{%block content%}
+    {%for status in statuses%}
+        <fieldset>
+        <legend>{{status}}:</legend>
+        {%for position in positions%}
+            <p>
+                <label for="{{status}} {{position}}">{{position}} rating:</label>
+                <select id="{{status}} {{position}}">
+                    {%for rating in ratings%}
+                    <option value="{{ratings[rating]}}">{{ratings[rating]}}</option>
+                    {%endfor%}
+                </select>
+            </p>
+        {%endfor%}
+        </fieldset>
+    {%endfor%}
+{%endblock%}
+</body>
+</html>
