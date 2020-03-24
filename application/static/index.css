@@ -2,19 +2,29 @@ body {
         background-color: white;
 }
 
-fieldset {
-        width: 40%;
-}
-
 #Home {
-        margin-left: 10%;
+        padding: 3px;
+        width: 300px;
+        float:left;
+        width: 30%;
 }
 
 #Away {
-        margin-left: 50%;
+        padding: 3px;
+        width: 300px;
+        float:left;
+        width: 40%;
 }
 
 #Estimation {
         position: absolute;
         left: 50%
+}
+
+#HattrickLogin {
+        width: 20%;
+}
+
+#Results {
+        width: 30%;
 }
