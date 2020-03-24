@@ -6,22 +6,34 @@
     <meta charset="UTF-8">
 </head>
 <body>
-{%block content%}
+    {%block content%}
+    <label>Home win percentage: 0%</label><br>
+    <label>Draw percentage: 0%</label><br>
+    <label>Away win percentage: 0%</label><br>
+    <label>Home goals average: 0.0</label><br>
+    <label>Away goals average: 0.0</label><br>
+    <label for="Hattrick Username">Username:</label>
+    <input type="text" id="Hattrick Username"><br>
+    <label for="Hattrick Password">Password:</label>
+    <input type="password" id="Hattrick Password"><br>
+    <input type="submit" value="Login"><br>
     {%for status in statuses%}
-        <fieldset>
+    <fieldset id="{{status}}">
         <legend>{{status}}:</legend>
         {%for position in positions%}
-            <p>
-                <label for="{{status}} {{position}}">{{position}} rating:</label>
-                <select id="{{status}} {{position}}">
-                    {%for rating in ratings%}
-                    <option value="{{ratings[rating]}}">{{ratings[rating]}}</option>
-                    {%endfor%}
-                </select>
-            </p>
+        <p>
+            <label for="{{status}} {{position}}">{{position}} rating:</label>
+            <select id="{{status}} {{position}}">
+                {%for rating in ratings%}
+                <option value="{{ratings[rating]}}">{{ratings[rating]}}</option>
+                {%endfor%}
+            </select>
+        </p>
         {%endfor%}
-        </fieldset>
+    </fieldset>
     {%endfor%}
-{%endblock%}
+    <input type="button" value="Estimate"><br>
+    <a href="admin/admin.html">Admin control panel</a>
+    {%endblock%}
 </body>
 </html>

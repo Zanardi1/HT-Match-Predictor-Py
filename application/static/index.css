@@ -1,3 +1,15 @@
 body {
         background-color: white;
 }
+
+fieldset {
+        width: 30%;
+}
+
+#Home {
+        margin-left: 10%;
+}
+
+#Away {
+        margin-left: 50%
+}
