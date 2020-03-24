@@ -3,7 +3,7 @@ body {
 }
 
 fieldset {
-        width: 30%;
+        width: 40%;
 }
 
 #Home {
@@ -11,5 +11,10 @@ fieldset {
 }
 
 #Away {
-        margin-left: 50%
+        margin-left: 50%;
+}
+
+#Estimation {
+        position: absolute;
+        left: 50%
 }
