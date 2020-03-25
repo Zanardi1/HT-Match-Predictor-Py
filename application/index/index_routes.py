@@ -13,4 +13,4 @@ statuses = global_library.statuses
 @index_bp.route('/')
 def home():
     return render_template('index.html', title="The Best Match Predictor", ratings=ratings, positions=positions,
-                           statuses=statuses)
+                           statuses=statuses, from_index=True)

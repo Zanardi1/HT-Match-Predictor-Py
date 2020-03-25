@@ -6,4 +6,4 @@ admin_bp = Blueprint('admin_bp', __name__, template_folder='templates', static_f
 
 @admin_bp.route('/admin/templates')
 def admin():
-    return render_template('admin.html')
+    return render_template('admin.html', title='Admin Control Panel')

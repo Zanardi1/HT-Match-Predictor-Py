@@ -8,42 +8,38 @@
 
 <body>
     {%block content%}
-        <div id="HattrickConnect">
-            <legend>Connect to Hattrick:</legend>
-            <label for="HattrickUsername" class="ResultsClass">Hattrick Username:</label>
-            <input type="text" id="HattrickUsername"><br>
-            <label for="HattrickPassword" class="ResultsClass">Hattrick Password:</label>
-            <input type="password" id="HattrickPassword"><br>
-            <input type="submit" value="Login"><br>
-        </div>
-        <div>
-        {%for status in statuses%}
-            <div id="{{status}}">
-                <legend>{{status}} team:</legend>
-                {%for position in positions%}
-                <p>
-                    <label for="{{status}} {{position}}" class="ResultsClass">{{position}} rating:</label>
-                    <select id="{{status}} {{position}}" class="RatingsClass">
-                    {%for rating in ratings%}
-                        <option value="{{ratings[rating]}}">{{ratings[rating]}}</option>
-                    {%endfor%}
-                    </select>
-                </p>
+    {{from_index}}
+    {% if from_index is sameas true %}
+        {%block connectedHattrick%}{%endblock%}
+    {%endif%}
+    <div>
+    {%for status in statuses%}
+        <div id="{{status}}">
+            <legend>{{status}} team:</legend>
+            {%for position in positions%}
+            <p>
+                <label for="{{status}} {{position}}" class="ResultsClass">{{position}} rating:</label>
+                <select id="{{status}} {{position}}" class="RatingsClass">
+                {%for rating in ratings%}
+                    <option value="{{ratings[rating]}}">{{ratings[rating]}}</option>
                 {%endfor%}
-            </div>
-        {%endfor%}
+                </select>
+            </p>
+            {%endfor%}
         </div>
-        <br>
-        <div id="Results">
-            <legend>Results:</legend>
-            <label class="ResultsClass"><b>Home win percentage:</b> 0%</label>
-            <label class="ResultsClass"><b>Draw percentage:</b> 0%</label>
-            <label class="ResultsClass"><b>Away win percentage:</b> 0%</label>
-            <label class="ResultsClass"><b>Home goals average:</b> 0.0</label>
-            <label><b>Away goals average:</b> 0.0</label>
-        </div>
-        <input type="button" value="Estimate" id="Estimation"><br>
-        <a href="{{url_for('admin_bp.admin',filename='admin.html')}}" id="AdminCP">Admin control panel</a>
+    {%endfor%}
+    </div>
+    <br>
+    <div id="Results">
+        <legend>Results:</legend>
+        <label class="ResultsClass"><b>Home win percentage:</b> 0%</label>
+        <label class="ResultsClass"><b>Draw percentage:</b> 0%</label>
+        <label class="ResultsClass"><b>Away win percentage:</b> 0%</label>
+        <label class="ResultsClass"><b>Home goals average:</b> 0.0</label>
+        <label><b>Away goals average:</b> 0.0</label>
+    </div>
+    <input type="button" value="Estimate" id="Estimation"><br>
+    <a href="{{url_for('admin_bp.admin',filename='admin.html')}}" id="AdminCP">Admin control panel</a>
     {%endblock%}
 </body>
 </html>

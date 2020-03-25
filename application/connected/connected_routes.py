@@ -6,4 +6,4 @@ connected_bp = Blueprint('connected_bp', __name__, template_folder='templates', 
 
 @connected_bp.route('/')
 def connected():
-    return render_template('connected.html')
+    return render_template('connected.html', title="Connected to Hattrick")
