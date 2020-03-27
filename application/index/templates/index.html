@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
 </head>
 <body>
-    {%block connectedHattrick%}
+    {%block connectInterface%}
         <div id="HattrickConnect">
             <legend>Connect to Hattrick:</legend>
             <label for="HattrickUsername" class="ResultsClass">Hattrick Username:</label>
@@ -15,6 +15,9 @@
             <input type="password" id="HattrickPassword"><br>
             <input type="submit" value="Login" onclick="location.href='{{url_for('connected_bp.connected', filename='connected.html')}}'"><br>
         </div>
+    {%endblock%}
+    {%block AdminCP%}
+        <a href="{{url_for('admin_bp.admin',filename='admin.html')}}" id="AdminCP">Admin control panel</a>
     {%endblock%}
 </body>
 </html>

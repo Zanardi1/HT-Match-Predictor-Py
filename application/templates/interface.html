@@ -1,16 +1,11 @@
 {%extends 'main.html'%}
 
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
-    <meta charset="UTF-8">
-</head>
-
 <body>
     {%block content%}
-    {{from_index}}
     {% if from_index is sameas true %}
-        {%block connectedHattrick%}{%endblock%}
+        {%block connectInterface%}{%endblock%}
+    {%else%}
+        {%block extra%}{%endblock%}
     {%endif%}
     <div>
     {%for status in statuses%}
@@ -39,7 +34,9 @@
         <label><b>Away goals average:</b> 0.0</label>
     </div>
     <input type="button" value="Estimate" id="Estimation"><br>
-    <a href="{{url_for('admin_bp.admin',filename='admin.html')}}" id="AdminCP">Admin control panel</a>
+    {% if from_index is sameas true%}
+        {%block AdminCP%}{%endblock%}
+    {%endif%}
     {%endblock%}
 </body>
 </html>
