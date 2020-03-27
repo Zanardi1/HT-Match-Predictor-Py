@@ -2,47 +2,46 @@
 
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
-    <meta charset="UTF-8">
-</head>
-
+{%block head%}
+{{super()}}
+{%endblock%}
 <body>
-    {%block content%}
-    {% if from_index is sameas true %}
-        {%block connectInterface%}{%endblock%}
-    {%else%}
-        {%block extra%}{%endblock%}
-    {%endif%}
-    <div>
+{%block content%}
+{% if from_index is sameas true %}
+{%block connectInterface%}{%endblock%}
+{%else%}
+{%block extra%}{%endblock%}
+{%endif%}
+<div>
     {%for status in statuses%}
-        <div id="{{status}}">
-            <legend>{{status}} team:</legend>
-            {%for position in positions%}
-            <p>
-                <label for="{{status}} {{position}}" class="ResultsClass">{{position}} rating:</label>
-                <select id="{{status}} {{position}}" class="RatingsClass">
+    <div id="{{status}}">
+        <legend>{{status}} team:</legend>
+        {%for position in positions%}
+        <p>
+            <label for="{{status}} {{position}}" class="ResultsClass">{{position}} rating:</label>
+            <select id="{{status}} {{position}}" class="RatingsClass">
                 {%for rating in ratings%}
-                    <option value="{{ratings[rating]}}">{{ratings[rating]}}</option>
+                <option value="{{ratings[rating]}}">{{ratings[rating]}}</option>
                 {%endfor%}
-                </select>
-            </p>
-            {%endfor%}
-        </div>
+            </select>
+        </p>
+        {%endfor%}
+    </div>
     {%endfor%}
-    </div>
-    <br>
-    <div id="Results">
-        <legend>Results:</legend>
-        <label class="ResultsClass"><b>Home win percentage:</b> 0%</label>
-        <label class="ResultsClass"><b>Draw percentage:</b> 0%</label>
-        <label class="ResultsClass"><b>Away win percentage:</b> 0%</label>
-        <label class="ResultsClass"><b>Home goals average:</b> 0.0</label>
-        <label><b>Away goals average:</b> 0.0</label>
-    </div>
-    <input type="button" value="Estimate" id="Estimation"><br>
-    {% if from_index is sameas true%}
-        {%block AdminCP%}{%endblock%}
-    {%endif%}
-    {%endblock%}
+</div>
+<br>
+<div id="Results">
+    <legend>Results:</legend>
+    <label class="ResultsClass"><b>Home win percentage:</b> 0%</label>
+    <label class="ResultsClass"><b>Draw percentage:</b> 0%</label>
+    <label class="ResultsClass"><b>Away win percentage:</b> 0%</label>
+    <label class="ResultsClass"><b>Home goals average:</b> 0.0</label>
+    <label><b>Away goals average:</b> 0.0</label>
+</div>
+<input type="button" value="Estimate" id="Estimation"><br>
+{% if from_index is sameas true%}
+{%block AdminCP%}{%endblock%}
+{%endif%}
+{%endblock%}
 </body>
 </html>

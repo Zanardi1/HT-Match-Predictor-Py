@@ -1,12 +1,50 @@
 {%extends 'interface.html'%}
 
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-</head>
+{%block head%}
+{{super()}}
+<link href="{{url_for('connected_bp.static',filename='connected.css')}}" rel="stylesheet">
+{%endblock%}
 <body>
-    {%block extra%}
-        <input type="submit" value="Logout">
-    {%endblock%}
+{%block extra%}
+<div id="LogoutButton">
+    <input type="submit" value="Logout">
+</div>
+<div id="UserInformation">
+    <legend>User information:</legend>
+    <label>User name: Zanardi</label>
+    <label>(1248859)</label><br>
+    <label>Supporter: diamond</label><br>
+    <label>Country: Romania</label>
+    <label>(666)</label><br>
+</div>
+<div id="TeamList">
+    <legend>Team list:</legend>
+    <label>Zanardi Redwings</label>
+    <label>(1187457)</label><br>
+    <label>FC Steaua Bucuresti</label>
+    <label>(1629472)</label><br>
+    <label>Pisoiasu Mausica</label>
+    <label>(2056276)</label>
+</div>
+<div id="TeamChoice">
+    <label>Choose team:</label><br>
+    <input type="radio" id="FirstTeam" name="HattrickTeams" value="Team 1" checked>
+    <label for="FirstTeam">Team 1</label><br>
+    <input type="radio" id="SecondTeam" name="HattrickTeams" value="Team 2">
+    <label for="SecondTeam">Team 2</label><br>
+    <input type="radio" id="ThirdTeam" name="HattrickTeams" value="Team 3">
+    <label for="ThirdTeam">Team 3</label>
+</div>
+<div id="NextMatches">
+    <select name="FutureMatches" size="7" id="FutureMatchList">
+        <option value="Match1">First Match</option>
+        <option value="Match2">Second Match</option>
+        <option value="Match3">Third Match</option>
+        <option value="Match4">Fourth Match</option>
+        <option value="Match5">Fifth Match</option>
+    </select>
+</div>
+{%endblock%}
 </body>
 </html>

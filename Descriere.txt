@@ -198,7 +198,7 @@ La selectarea meciurilor pentru calculul marimilor dorite nu sunt luate in consi
         10. numele seriei in care joaca;
         11. numarul de identificare al seriei in care joaca (6 - 11 sunt pentru fiecare dintre echipele pe care le are);
     7. o eticheta cu textul: "Alege echipa";
-    8. 1, 2 sau 3 checkbox-uri cu fiecare dintre echipele pe care le are utilizatorul;
+    8. 1, 2 sau 3 butoane radio cu fiecare dintre echipele pe care le are utilizatorul;
     9. un listbox cu meciurile viitoare. Bifarea unuia dintre checkbox-urile de mai sus va popula acest listbox cu meciurile echipei selectate;
     10. (daca e nevoie) etichete cu texte explicative.
 

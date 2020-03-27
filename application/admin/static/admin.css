@@ -1,0 +1,16 @@
+#LogoutButton {
+        position: fixed;
+        left: 90%;
+}
+
+#DatabaseNumberLimit {
+        position: fixed;
+        top: 10%;
+        left: 10%;
+}
+
+#DatabaseOperations {
+        position: fixed;
+        top: 40%;
+        left: 10%;
+}

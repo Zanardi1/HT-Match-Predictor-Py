@@ -1,3 +1,29 @@
-body {
-        background-color: red;
+#FutureMatchList {
+        position: fixed;
+        width: 10%;
+}
+
+#LogoutButton {
+        position: fixed;
+        left: 90%;
+}
+
+#UserInformation {
+        position: fixed;
+        left: 30%;
+}
+
+#TeamList {
+        position: fixed;
+        left: 50%;
+}
+
+#TeamChoice {
+        position: fixed;
+        top: 20%;
+}
+
+#NextMatches {
+        position: fixed;
+        top: 40%;
 }

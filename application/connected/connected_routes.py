@@ -8,7 +8,7 @@ positions = global_library.positions
 statuses = global_library.statuses
 
 
-@connected_bp.route('/connected/templates')
+@connected_bp.route('/')
 def connected():
     return render_template('connected.html', title="Connected to Hattrick", from_index=False, ratings=ratings,
                            positions=positions, statuses=statuses)
