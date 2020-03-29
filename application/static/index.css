@@ -7,6 +7,13 @@ select {
         align: right;
 }
 
+h1 {
+        position: fixed;
+        align: center;
+        left: 38%;
+        top: 16%;
+}
+
 #Estimation {
         position: fixed;
         left: 48%;

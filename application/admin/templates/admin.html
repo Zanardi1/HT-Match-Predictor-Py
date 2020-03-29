@@ -9,7 +9,7 @@
 <body>
 {%block content%}
 <div id="LogoutButton">
-    <input type="submit" value="Logout">
+    <input type="submit" value="Logout" onclick="location.href='{{url_for('index_bp.home',filename='index.html')}}'">
 </div>
 <div id="DatabaseNumberLimit">
     <legend>Introdu gama de numere de identificare pentru meciurile care vor fi introduse in baza de date</legend>

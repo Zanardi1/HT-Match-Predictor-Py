@@ -8,7 +8,7 @@
 <body>
 {%block extra%}
 <div id="LogoutButton">
-    <input type="submit" value="Logout">
+    <input type="submit" value="Logout" onclick="location.href='{{url_for('index_bp.home', filename='index.html')}}'">
 </div>
 <div id="UserInformation">
     <legend>User information:</legend>
