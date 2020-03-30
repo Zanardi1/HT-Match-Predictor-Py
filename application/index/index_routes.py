@@ -4,7 +4,6 @@ from flask import Blueprint
 from flask import render_template
 import global_library
 # from ..models import db, Matches
-from sqlalchemy_utils import drop_database
 
 index_bp = Blueprint('index_bp', __name__, template_folder='templates', static_folder='static')
 ratings = global_library.ratings
@@ -20,6 +19,5 @@ def home():
     #                 HomeTeamGoals=1, AwayTeamGoals=1)
     # db.session.add(match)
     # db.session.commit()
-    drop_database('sqlite:///db/matches.db')
     return render_template('index.html', title="The Best Match Predictor", ratings=ratings, positions=positions,
                            statuses=statuses, from_index=True)
