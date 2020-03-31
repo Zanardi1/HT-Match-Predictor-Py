@@ -20,3 +20,7 @@ class Matches(db.Model):
     AwayTeamLAttack = db.Column(db.integer)
     HomeTeamGoals = db.Column(db.integer)
     AwayTeamGoals = db.Column(db.integer)
+
+    def __repr__(self):
+        value = '<Match: {}>'.format(self.MatchID)
+        return value
