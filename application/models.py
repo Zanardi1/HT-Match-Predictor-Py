@@ -1,25 +1,27 @@
 from application import db
+from sqlalchemy import PrimaryKeyConstraint
 
 
 class Matches(db.Model):
     __tablename__ = 'Matches'
-    MatchID = db.Column(db.integer, unique=True)
-    HomeTeamMidfield = db.Column(db.integer)
-    HomeTeamRDefense = db.Column(db.integer)
-    HomeTeamCDefense = db.Column(db.integer)
-    HomeTeamLDefense = db.Column(db.integer)
-    HomeTeamRAttack = db.Column(db.integer)
-    HomeTeamCAttack = db.Column(db.integer)
-    HomeTeamLAttack = db.Column(db.integer)
-    AwayTeamMidfield = db.Column(db.integer)
-    AwayTeamRDefense = db.Column(db.integer)
-    AwayTeamCDefense = db.Column(db.integer)
-    AwayTeamLDefense = db.Column(db.integer)
-    AwayTeamRAttack = db.Column(db.integer)
-    AwayTeamCAttack = db.Column(db.integer)
-    AwayTeamLAttack = db.Column(db.integer)
-    HomeTeamGoals = db.Column(db.integer)
-    AwayTeamGoals = db.Column(db.integer)
+    __table_args__ = (PrimaryKeyConstraint('MatchID'),)
+    MatchID = db.Column(db.Integer, unique=True)
+    HomeTeamMidfield = db.Column(db.Integer)
+    HomeTeamRDefense = db.Column(db.Integer)
+    HomeTeamCDefense = db.Column(db.Integer)
+    HomeTeamLDefense = db.Column(db.Integer)
+    HomeTeamRAttack = db.Column(db.Integer)
+    HomeTeamCAttack = db.Column(db.Integer)
+    HomeTeamLAttack = db.Column(db.Integer)
+    AwayTeamMidfield = db.Column(db.Integer)
+    AwayTeamRDefense = db.Column(db.Integer)
+    AwayTeamCDefense = db.Column(db.Integer)
+    AwayTeamLDefense = db.Column(db.Integer)
+    AwayTeamRAttack = db.Column(db.Integer)
+    AwayTeamCAttack = db.Column(db.Integer)
+    AwayTeamLAttack = db.Column(db.Integer)
+    HomeTeamGoals = db.Column(db.Integer)
+    AwayTeamGoals = db.Column(db.Integer)
 
     def __repr__(self):
         return '<Match: {}>'.format(self.MatchID)
