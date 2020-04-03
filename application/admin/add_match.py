@@ -1,10 +1,13 @@
 from application.models import db, Matches
 
 
-def add_a_match():
-    match = Matches(MatchID=2, HomeTeamMidfield=1, HomeTeamRDefense=1, HomeTeamCDefense=1, HomeTeamLDefense=1,
-                    HomeTeamRAttack=1, HomeTeamCAttack=1, HomeTeamLAttack=1, AwayTeamMidfield=1, AwayTeamRDefense=1,
-                    AwayTeamCDefense=1, AwayTeamLDefense=1, AwayTeamRAttack=1, AwayTeamCAttack=1, AwayTeamLAttack=1,
-                    HomeTeamGoals=1, AwayTeamGoals=1)
+def add_a_match(ID, HTM, HTRD, HTCD, HTLD, HTRA, HTCA, HTLA, ATM, ATRD, ATCD, ATLD, ATRA, ATCA, ATLA, HTG, ATG):
+    match = Matches(MatchID=ID, HomeTeamMidfield=HTM, HomeTeamRDefense=HTRD, HomeTeamCDefense=HTCD,
+                    HomeTeamLDefense=HTLD,
+                    HomeTeamRAttack=HTRA, HomeTeamCAttack=HTCA, HomeTeamLAttack=HTLA, AwayTeamMidfield=ATM,
+                    AwayTeamRDefense=ATRD,
+                    AwayTeamCDefense=ATCD, AwayTeamLDefense=ATLD, AwayTeamRAttack=ATRA, AwayTeamCAttack=ATCA,
+                    AwayTeamLAttack=ATLA,
+                    HomeTeamGoals=HTG, AwayTeamGoals=ATG)
     db.session.add(match)
     db.session.commit()
