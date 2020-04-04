@@ -5,3 +5,7 @@ import os
 def delete_database():
     os.chdir('..')
     drop_database('sqlite:///db/matches.db')
+    print('Gata')
+
+
+delete_database()
