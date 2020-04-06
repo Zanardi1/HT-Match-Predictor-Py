@@ -8,15 +8,15 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type=text/javascript>
         $(function() {
+        alert("Stergem BD!")
           $('a#test').bind('click', function() {
-            $.getJSON('/delete',
-                function() {
+            $.getJSON('/background_process_test',
+                function(data) {
               //do nothing
             });
             return false;
           });
         });
-
 </script>
 {%endblock%}
 <body>
@@ -36,10 +36,8 @@
     <legend>Operatii cu baza de date</legend>
     <button type="button">Creare baza de date</button>
     <br>
-    <form>
-        <a href="#" id="test">
-            <button type="button" class="btn btn-default">Stergere baza de date</button>
-        </a>
+    <form action="/delete" method="post">
+        <button type="button">Stergere baza de date</button>
     </form>
 </div>
 {%endblock%}
