@@ -1,14 +1,13 @@
 {%extends 'main.html'%}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 {%block head%}
 {{super()}}
 <link href="{{url_for('admin_bp.static',filename='admin.css')}}" rel="stylesheet">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type=text/javascript>
         $(function() {
-        alert("Stergem BD!")
           $('a#test').bind('click', function() {
             $.getJSON('/background_process_test',
                 function(data) {
@@ -17,7 +16,9 @@
             return false;
           });
         });
+
 </script>
+
 {%endblock%}
 <body>
 {%block content%}
@@ -36,8 +37,8 @@
     <legend>Operatii cu baza de date</legend>
     <button type="button">Creare baza de date</button>
     <br>
-    <form action="/delete" method="post">
-        <button type="button">Stergere baza de date</button>
+    <form action="/admin/delete">
+        <input type="submit" value="Stergere baza de date">
     </form>
 </div>
 {%endblock%}

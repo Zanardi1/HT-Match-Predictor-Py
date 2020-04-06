@@ -9,7 +9,7 @@ def admin():
     return render_template('admin.html', title='Admin Control Panel')
 
 
-@admin_bp.route('/delete', methods=['POST', 'GET'])
+@admin_bp.route('/delete')
 def delete():
     from application.admin import delete_db
     delete_db.delete_database()
