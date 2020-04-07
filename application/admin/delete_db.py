@@ -11,6 +11,3 @@ def delete_database():
     os.chdir(path + '\\db')
     drop_database('sqlite:///db/matches.db')
     easygui.msgbox("Gata")
-
-
-delete_database()

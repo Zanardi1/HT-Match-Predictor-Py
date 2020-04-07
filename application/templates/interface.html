@@ -39,7 +39,9 @@
     <label class="ResultsClass"><b>Home goals average:</b> 0.0</label>
     <label><b>Away goals average:</b> 0.0</label>
 </div>
-<input type="button" value="Estimate" id="Estimation"><br>
+<form action="/EstimationEngine">
+    <input type="submit" value="Estimate" id="Estimation"><br>
+</form>
 {% if from_index is sameas true%}
 {%block AdminCP%}{%endblock%}
 {%endif%}

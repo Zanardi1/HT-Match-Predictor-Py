@@ -17,13 +17,18 @@
           });
         });
 
+
+
+
 </script>
 
 {%endblock%}
 <body>
 {%block content%}
 <div id="LogoutButton">
-    <input type="submit" value="Logout" onclick="location.href='{{url_for('index_bp.home',filename='index.html')}}'">
+    <form action="/LogoutToIndex">
+        <input type="submit" value="Logout">
+    </form>
 </div>
 <div id="DatabaseNumberLimit">
     <legend>Introdu gama de numere de identificare pentru meciurile care vor fi introduse in baza de date</legend>
@@ -31,13 +36,15 @@
     <input type="text" id="InferiorLimit" name="InferiorLimit"><br>
     <label for="SuperiorLimit">Limita superioara</label>
     <input type="text" id="SuperiorLimit" name="SuperiorLimit"><br>
-    <button type="button">Import</button>
+    <form action="/import">
+        <input type="submit" value="Import">
+    </form>
 </div>
 <div id="DatabaseOperations">
     <legend>Operatii cu baza de date</legend>
     <button type="button">Creare baza de date</button>
     <br>
-    <form action="/admin/delete">
+    <form action="/delete">
         <input type="submit" value="Stergere baza de date">
     </form>
 </div>

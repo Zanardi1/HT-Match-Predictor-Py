@@ -13,3 +13,4 @@ def admin():
 def delete():
     from application.admin import delete_db
     delete_db.delete_database()
+    return 0
