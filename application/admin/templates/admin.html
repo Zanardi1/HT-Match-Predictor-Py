@@ -20,6 +20,8 @@
 
 
 
+
+
 </script>
 
 {%endblock%}
@@ -42,8 +44,9 @@
 </div>
 <div id="DatabaseOperations">
     <legend>Operatii cu baza de date</legend>
-    <button type="button">Creare baza de date</button>
-    <br>
+    <form action="/create">
+        <input type="submit" value="Creare baza de date"><br>
+    </form>
     <form action="/delete">
         <input type="submit" value="Stergere baza de date">
     </form>

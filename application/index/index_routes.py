@@ -53,3 +53,10 @@ def logout():
     return render_template('index.html', title="The Best Match Predictor",
                            ratings=ratings, positions=positions,
                            statuses=statuses, from_index=True)
+
+
+@index_bp.route('/create')
+def create():
+    from application.admin import create_db
+    create_db.create_database()
+    return 0
