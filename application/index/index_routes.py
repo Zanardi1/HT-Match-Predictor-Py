@@ -2,7 +2,6 @@
 
 from flask import Blueprint
 from flask import render_template
-from flask import Response
 
 import global_library
 from application.connected import hattrick_connect
