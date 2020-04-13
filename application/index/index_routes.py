@@ -22,7 +22,7 @@ def home():
 
 @index_bp.route('/LoginToHattrick')
 def LoginToHattrick():
-    hattrick_connect.ConnectionEngine()
+    hattrick_connect.connection_engine()
     return render_template('connected.html', title="Connected to Hattrick", from_index=False, ratings=ratings,
                            positions=positions, statuses=statuses)
 
