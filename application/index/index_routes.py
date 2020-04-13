@@ -7,7 +7,6 @@ import global_library
 from application.connected import hattrick_connect
 from application.connected import hattrick_disconnect
 from application.estimation import Estimation_engine
-import easygui
 
 index_bp = Blueprint('index_bp', __name__, template_folder='templates', static_folder='static')
 ratings = global_library.ratings

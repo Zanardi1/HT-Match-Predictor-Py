@@ -1,0 +1,8 @@
+CONSUMER_KEY = 'Cx7jQlJTOwIRA2XVtRWF19'
+CONSUMER_SECRET = 'L1gwHsZZuGneTUwZKUevgBUe3HKIMBDiJv7DHwf1RjI'
+REQUEST_TOKEN_PATH = 'https://chpp.hattrick.org/oauth/request_token.ashx'
+AUTHORIZE_PATH = 'https://chpp.hattrick.org/oauth/authorize.aspx'
+AUTHENTICATE_PATH = 'https://chpp.hattrick.org/oauth/authenticate.aspx'
+ACCESS_TOKEN_PATH = 'https://chpp.hattrick.org/oauth/access_token.ashx'
+OAUTH_TOKEN = 'mVjg97bMy1MIJ8yQ'
+OAUTH_TOKEN_SECRET = 'osm63O3KxTbefnEn'
