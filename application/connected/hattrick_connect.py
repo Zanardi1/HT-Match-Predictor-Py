@@ -27,4 +27,3 @@ def connection_engine():
         access_token, access_token_secret = connection.get_access_token(request_token, request_token_secret,
                                                                         params={'oauth_verifier': code})
         return True
-    return 0
