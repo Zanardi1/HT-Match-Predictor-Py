@@ -4,6 +4,9 @@ from flask import Blueprint
 from flask import render_template
 
 import global_library
+from application.admin import create_db
+from application.admin import delete_db
+from application.admin import import_matches
 from application.connected import hattrick_connect
 from application.connected import hattrick_disconnect
 from application.estimation import Estimation_engine
@@ -46,7 +49,6 @@ def DisconnectFromHattrick():
 
 @index_bp.route('/import')
 def import_matches():
-    from application.admin import import_matches
     import_matches.import_engine()
     return 0
 
@@ -60,6 +62,11 @@ def logout():
 
 @index_bp.route('/create')
 def create():
-    from application.admin import create_db
     create_db.create_database()
+    return 0
+
+
+@index_bp.route('/delete')
+def delete():
+    delete_db.delete_database()
     return 0

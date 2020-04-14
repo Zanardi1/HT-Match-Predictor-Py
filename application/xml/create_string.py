@@ -1,8 +1,10 @@
-import application.connected.session_config as s
+import configparser as c
 
 
 class DownloadStringCreator:
-    BaseUrl = s.PROTECTED_RESOURCE_PATH
+    config = c.ConfigParser()
+    config.read('session.config.ini')
+    BaseUrl = config['DEFAULT']['PROTECTED_RESOURCE_PATH']
     DownloadedFile = ''
     FileParameters = ''
 

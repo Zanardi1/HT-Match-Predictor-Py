@@ -4,10 +4,10 @@ import easygui
 
 
 def delete_database():
-    path = os.getcwd()
-    easygui.msgbox(os.getcwd())
-    easygui.msgbox(os.path.join(os.getcwd(), '\\db'))
-    # os.chdir(os.path.join(os.getcwd(), '\\db'))
-    os.chdir(path + '\\db')
-    drop_database('sqlite:///db/matches.db')
+    # TODO sa repar rutina astfel incat sa-mi stearga fisierul
+    db_path = os.path.join(os.path.dirname(__file__), 'matches.db')
+    db_uri = 'sqlite:///{}'.format(db_path)
+    easygui.msgbox(db_uri)
+    print(db_uri)
+    drop_database(db_uri)
     easygui.msgbox("Gata")
