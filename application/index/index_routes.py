@@ -22,9 +22,12 @@ def home():
 
 @index_bp.route('/LoginToHattrick')
 def LoginToHattrick():
-    hattrick_connect.connection_engine()
-    return render_template('connected.html', title="Connected to Hattrick", from_index=False, ratings=ratings,
-                           positions=positions, statuses=statuses)
+    if hattrick_connect.connection_engine():
+        return render_template('connected.html', title="Connected to Hattrick", from_index=False, ratings=ratings,
+                               positions=positions, statuses=statuses)
+    else:
+        return render_template('index.html', title="The Best Match Predictor", ratings=ratings, positions=positions,
+                               statuses=statuses, from_index=True)
 
 
 @index_bp.route('/EstimationEngine')

@@ -1,7 +1,7 @@
 import application.connected.session_config as s
 
 
-class DownloadStringCreation:
+class DownloadStringCreator:
     BaseUrl = s.PROTECTED_RESOURCE_PATH
     DownloadedFile = ''
     FileParameters = ''

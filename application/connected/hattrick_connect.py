@@ -19,6 +19,12 @@ def connection_engine():
     root = tk.Tk()
     root.withdraw()
     code = sd.askstring(title='PIN Required', prompt='Please insert the PIN specified by Hattrick')
-    access_token, access_token_secret = connection.get_access_token(request_token, request_token_secret,
-                                                                    params={'oauth_verifier': code})
+    root.destroy()
+    #  TODO: sa tratez cazul in care PIN-ul introdus este gresit
+    if code is None:
+        return False
+    else:
+        access_token, access_token_secret = connection.get_access_token(request_token, request_token_secret,
+                                                                        params={'oauth_verifier': code})
+        return True
     return 0
