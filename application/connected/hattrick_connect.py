@@ -1,6 +1,7 @@
+import tkinter as tk
+import tkinter.simpledialog as sd
 import webbrowser
 
-import easygui
 from rauth import OAuth1Service
 from rauth.oauth import HmacSha1Signature
 
@@ -15,10 +16,9 @@ def connection_engine():
     request_token, request_token_secret = connection.get_request_token(params={'oauth_callback': sc.CALLBACK_URL})
     authorization_url = connection.get_authorize_url(request_token)
     webbrowser.open(authorization_url, new=2)
-    code = easygui.enterbox(msg='Introdu PIN-ul afisat de catre fereastra Hattrick', title='Introdu PIN')
-    #TODO: sa gasesc o biblioteca prin care sa pot face fereastra de mai sus fara sa-mi interfereze cu Python
+    root = tk.Tk()
+    root.withdraw()
+    code = sd.askstring(title='PIN Required', prompt='Please insert the PIN specified by Hattrick')
     access_token, access_token_secret = connection.get_access_token(request_token, request_token_secret,
                                                                     params={'oauth_verifier': code})
-    easygui.msgbox(access_token)
-    easygui.msgbox(access_token_secret)
     return 0
