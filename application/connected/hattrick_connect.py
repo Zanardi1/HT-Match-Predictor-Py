@@ -26,7 +26,7 @@ def configuration_file_has_access_tokens(config):
 
 
 def connection_valid():
-    # TODO de scris procedura de verificare
+    # TODO de scris procedura care verifica daca Hattrick acorda permisiune de conectare
     return True
 
 
@@ -74,6 +74,11 @@ def connection_engine():
     #  si luate de acolo, la nevoie. Sau intr-un cookie. Sau altundeva.
 
     #Functia obtine informatiile de baza despre utilizatorul care s-a conectat.
+    #Deoarece procesul este aproape in totalitate automat, singurul punct in care omul poate interveni este la
+    #introducerea PIN-ului. Fie il poate introduce gresit, fie se poate razgandi si nu-l mai introduce.
+    #Din aceste motive, functia intoarce True daca procesul de conectare s-a incheiat (adica s-au obtinut jetoanele
+    #de acces) si False in caz contrar (cel mai probabil atunci cand PIN-ul fie nu este introdus corect, fie
+    #utilizatorul renunta la procedura in acest punct.
     #Algoritmul de functionare:
     # 1. Testeaza daca se poate conecta la Hattrick. Asta inseamna ca urmatoarele 2 conditii sa fie adevarate:
     #   1.1. Sa existe jetoanele de acces;
