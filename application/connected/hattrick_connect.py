@@ -72,6 +72,20 @@ def connection_engine():
     # TODO deoarece, in realitate, mai multi utilizatori se vor conecta la aplicatie cu contul de Hattrick,
     #  consumer key, consumer secret, access token si access token secret trebuie puse intr-o baza de date
     #  si luate de acolo, la nevoie. Sau intr-un cookie. Sau altundeva.
+
+    #Functia obtine informatiile de baza despre utilizatorul care s-a conectat.
+    #Algoritmul de functionare:
+    # 1. Testeaza daca se poate conecta la Hattrick. Asta inseamna ca urmatoarele 2 conditii sa fie adevarate:
+    #   1.1. Sa existe jetoanele de acces;
+    #   1.2. Conexiunea sa fie permisa de catre Hattrick
+    # 2. Daca se poate conecta la Hattrick:
+    #   2.1. Descarca informatiile de baza;
+    #   2.2. Intoarce True
+    # 3. Daca nu se poate conecta la Hattrick:
+    #   3.1. Obtine jetoanele de access (efectueaza intreaga procedura de conectare). Daca nu poate, intoarce False
+    #   3.2. Descarca informatiile de baza
+    #   3.3. Intoarce True.
+
     config = read_configuration_file()
     if configuration_file_has_access_tokens(config) and connection_valid():
         d.download_basic_info()
