@@ -1,3 +1,5 @@
+# Subrutinele necesare conectarii la Hattrick
+
 import configparser as c
 import os
 import tkinter as tk
@@ -18,14 +20,14 @@ def read_configuration_file():
     return config
 
 
-def configuration_file_has_access_tokens(config):
+def check_if_configuration_file_has_access_tokens(config):
     if config.has_option('DEFAULT', 'ACCESS_TOKEN') and config.has_option('DEFAULT', 'ACCESS_TOKEN_SECRET'):
         return True
     else:
         return False
 
 
-def connection_valid():
+def check_if_connection_is_valid():
     # TODO de scris procedura care verifica daca Hattrick acorda permisiune de conectare
     return True
 
@@ -73,26 +75,26 @@ def connection_engine():
     #  consumer key, consumer secret, access token si access token secret trebuie puse intr-o baza de date
     #  si luate de acolo, la nevoie. Sau intr-un cookie. Sau altundeva.
 
-    #Functia obtine informatiile de baza despre utilizatorul care s-a conectat.
-    #Deoarece procesul este aproape in totalitate automat, singurul punct in care omul poate interveni este la
-    #introducerea PIN-ului. Fie il poate introduce gresit, fie se poate razgandi si nu-l mai introduce.
-    #Din aceste motive, functia intoarce True daca procesul de conectare s-a incheiat (adica s-au obtinut jetoanele
-    #de acces) si False in caz contrar (cel mai probabil atunci cand PIN-ul fie nu este introdus corect, fie
-    #utilizatorul renunta la procedura in acest punct.
-    #Algoritmul de functionare:
-    # 1. Testeaza daca se poate conecta la Hattrick. Asta inseamna ca urmatoarele 2 conditii sa fie adevarate:
-    #   1.1. Sa existe jetoanele de acces;
-    #   1.2. Conexiunea sa fie permisa de catre Hattrick
-    # 2. Daca se poate conecta la Hattrick:
-    #   2.1. Descarca informatiile de baza;
-    #   2.2. Intoarce True
-    # 3. Daca nu se poate conecta la Hattrick:
-    #   3.1. Obtine jetoanele de access (efectueaza intreaga procedura de conectare). Daca nu poate, intoarce False
-    #   3.2. Descarca informatiile de baza
-    #   3.3. Intoarce True.
+    """Functia obtine informatiile de baza despre utilizatorul care s-a conectat.
+    Deoarece procesul este aproape in totalitate automat, singurul punct in care omul poate interveni este la
+    introducerea PIN-ului. Fie il poate introduce gresit, fie se poate razgandi si nu-l mai introduce.
+    Din aceste motive, functia intoarce True daca procesul de conectare s-a incheiat (adica s-au obtinut jetoanele
+    de acces) si False in caz contrar (cel mai probabil atunci cand PIN-ul fie nu este introdus corect, fie
+    utilizatorul renunta la procedura in acest punct.
+    Algoritmul de functionare:
+    1. Testeaza daca se poate conecta la Hattrick. Asta inseamna ca urmatoarele 2 conditii sa fie adevarate:
+      1.1. Sa existe jetoanele de acces;
+      1.2. Conexiunea sa fie permisa de catre Hattrick
+    2. Daca se poate conecta la Hattrick:
+      2.1. Descarca informatiile de baza;
+      2.2. Intoarce True
+    3. Daca nu se poate conecta la Hattrick:
+      3.1. Obtine jetoanele de access (efectueaza intreaga procedura de conectare). Daca nu poate, intoarce False
+      3.2. Descarca informatiile de baza
+      3.3. Intoarce True."""
 
     config = read_configuration_file()
-    if configuration_file_has_access_tokens(config) and connection_valid():
+    if check_if_configuration_file_has_access_tokens(config) and check_if_connection_is_valid():
         d.download_basic_info()
         return True
     else:

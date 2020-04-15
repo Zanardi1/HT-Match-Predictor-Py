@@ -1,4 +1,4 @@
-"""Defineste rutele pentru pagina de index"""
+# Defineste rutele pentru pagina de index
 
 from flask import Blueprint
 from flask import render_template
@@ -17,12 +17,14 @@ positions = global_library.positions
 statuses = global_library.statuses
 
 
+# index
 @index_bp.route('/')
 def home():
     return render_template('index.html', title="The Best Match Predictor", ratings=ratings, positions=positions,
                            statuses=statuses, from_index=True)
 
 
+# conectarea la Hattrick
 @index_bp.route('/LoginToHattrick')
 def LoginToHattrick():
     if hattrick_connect.connection_engine():
@@ -33,12 +35,14 @@ def LoginToHattrick():
                                statuses=statuses, from_index=True)
 
 
+# algoritmul de estimare
 @index_bp.route('/EstimationEngine')
 def EstimationEngine():
     Estimation_engine.Estimate()
     return 0
 
 
+# deconectarea de la Hattrick
 @index_bp.route('/DisconnectFromHattrick')
 def DisconnectFromHattrick():
     hattrick_disconnect.DisconnectionEngine()
@@ -47,12 +51,14 @@ def DisconnectFromHattrick():
                            statuses=statuses, from_index=True)
 
 
+# importarea de meciuri in baza de date
 @index_bp.route('/import')
 def import_matches():
     import_matches.import_engine()
     return 0
 
 
+# iesirea din panoul de control catre prima pagina
 @index_bp.route('/LogoutToIndex')
 def logout():
     return render_template('index.html', title="The Best Match Predictor",
@@ -60,12 +66,14 @@ def logout():
                            statuses=statuses, from_index=True)
 
 
+# crearea bazei de date
 @index_bp.route('/create')
 def create():
     create_db.create_database()
     return 0
 
 
+# stergerea bazei de date
 @index_bp.route('/delete')
 def delete():
     delete_db.delete_database()
