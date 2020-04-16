@@ -1,6 +1,7 @@
 import os
+import tkinter as tk
+from tkinter.messagebox import showinfo, showwarning
 
-import easygui
 from sqlalchemy import create_engine, Column, Integer, PrimaryKeyConstraint
 from sqlalchemy.ext.declarative import declarative_base
 
@@ -42,10 +43,14 @@ class Model(Base):
     AwayTeamGoals = Column(Integer)
 
 
+# TODO fereastra de dialog dispare, odata cu root
 def create_database():
+    root = tk.Tk()
+    root.withdraw()
     if os.path.exists(create_url()):
-        easygui.msgbox('Baza de date deja exista')
+        showwarning('Fisier existent', 'Baza de date deja exista!')
     else:
         engine = create_engine(create_uri(create_url()), echo=True)
         Base.metadata.create_all(engine)
-        easygui.msgbox('Am creat baza de date')
+        showinfo('Succes!', 'Baza de date a fost creata')
+    root.destroy()
