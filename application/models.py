@@ -1,5 +1,6 @@
-from . import db
 from sqlalchemy import PrimaryKeyConstraint
+
+from . import db
 
 
 class Matches(db.Model):

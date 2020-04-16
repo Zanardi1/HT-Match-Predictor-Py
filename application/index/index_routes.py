@@ -70,7 +70,7 @@ def logout():
 @index_bp.route('/create')
 def create():
     create_db.create_database()
-    return 0
+    return render_template('admin.html')
 
 
 # stergerea bazei de date
