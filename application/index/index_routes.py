@@ -77,4 +77,4 @@ def create():
 @index_bp.route('/delete')
 def delete():
     delete_db.delete_database()
-    return 0
+    return render_template('admin.html')
