@@ -14,8 +14,7 @@ def download_xml_file(path, destination_file):
                             consumer_secret=config['DEFAULT']['CONSUMER_SECRET'],
                             access_token=config['DEFAULT']['ACCESS_TOKEN'],
                             access_token_secret=config['DEFAULT']['ACCESS_TOKEN_SECRET'])
-    # query = session.get(path)
-    query = session.head(path)
+    query = session.get(path)
     query.encoding = 'UTF-8'
     easygui.msgbox(query.status_code)
     easygui.msgbox(query.url)
