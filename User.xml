@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HattrickData>
+  <FileName>managercompendium.xml</FileName>
+  <Version>1.0</Version>
+  <UserID>1248859</UserID>
+  <FetchedDate>2020-04-17 15:49:01</FetchedDate>
+  <Manager>
+    <UserId>1248859</UserId>
+    <Loginname>Mod-Zanardi</Loginname>
+    <SupporterTier>diamond</SupporterTier>
+    <Language>
+      <LanguageId>23</LanguageId>
+      <LanguageName>Romanian</LanguageName>
+    </Language>
+    <Country>
+      <CountryId>36</CountryId>
+      <CountryName>RomÃ¢nia</CountryName>
+    </Country>
+    <Teams>
+      <Team>
+        <TeamId>1187457</TeamId>
+        <TeamName>Zanardi Redwings</TeamName>
+        <Arena>
+          <ArenaId>1184019</ArenaId>
+          <ArenaName>Evolution</ArenaName>
+        </Arena>
+        <League>
+          <LeagueId>37</LeagueId>
+          <LeagueName>RomÃ¢nia</LeagueName>
+        </League>
+        <LeagueLevelUnit>
+          <LeagueLevelUnitId>3914</LeagueLevelUnitId>
+          <LeagueLevelUnitName>IV.40</LeagueLevelUnitName>
+        </LeagueLevelUnit>
+        <Region>
+          <RegionId>799</RegionId>
+          <RegionName>Prahova</RegionName>
+        </Region>
+        <YouthTeam>
+          <YouthTeamId>2337461</YouthTeamId>
+          <YouthTeamName>Little Redwings</YouthTeamName>
+          <YouthLeague>
+            <YouthLeagueId>436902</YouthLeagueId>
+            <YouthLeagueName>Normandie Ligue des jeunes</YouthLeagueName>
+          </YouthLeague>
+        </YouthTeam>
+      </Team>
+      <Team>
+        <TeamId>1629472</TeamId>
+        <TeamName>FC. Steaua BucureÈti</TeamName>
+        <Arena>
+          <ArenaId>1626034</ArenaId>
+          <ArenaName>Ghencea</ArenaName>
+        </Arena>
+        <League>
+          <LeagueId>107</LeagueId>
+          <LeagueName>Guatemala</LeagueName>
+        </League>
+        <LeagueLevelUnit>
+          <LeagueLevelUnitId>88451</LeagueLevelUnitId>
+          <LeagueLevelUnitName>II.4</LeagueLevelUnitName>
+        </LeagueLevelUnit>
+        <Region>
+          <RegionId>1931</RegionId>
+          <RegionName>Quetzaltenango</RegionName>
+        </Region>
+        <YouthTeam>
+          <YouthTeamId>2395784</YouthTeamId>
+          <YouthTeamName>Steaua Young</YouthTeamName>
+          <YouthLeague>
+            <YouthLeagueId>15606</YouthLeagueId>
+            <YouthLeagueName>Gempions Liig Jbb</YouthLeagueName>
+          </YouthLeague>
+        </YouthTeam>
+      </Team>
+      <Team>
+        <TeamId>2056276</TeamId>
+        <TeamName>PisoiaÈu' MausicÄ</TeamName>
+        <Arena>
+          <ArenaId>2052808</ArenaId>
+          <ArenaName>Ghemul de LÃ¢nÄ</ArenaName>
+        </Arena>
+        <League>
+          <LeagueId>1000</LeagueId>
+          <LeagueName>Hattrick International</LeagueName>
+        </League>
+        <LeagueLevelUnit>
+          <LeagueLevelUnitId>256727</LeagueLevelUnitId>
+          <LeagueLevelUnitName>IV.20</LeagueLevelUnitName>
+        </LeagueLevelUnit>
+        <Region>
+          <RegionId>1852</RegionId>
+          <RegionName>ChiÅinÄu</RegionName>
+        </Region>
+        <YouthTeam>
+          <YouthTeamId>2614150</YouthTeamId>
+          <YouthTeamName>Pisoii</YouthTeamName>
+          <YouthLeague>
+            <YouthLeagueId>296779</YouthLeagueId>
+            <YouthLeagueName>International Youth Leage</YouthLeagueName>
+          </YouthLeague>
+        </YouthTeam>
+      </Team>
+    </Teams>
+    <NationalTeamCoach />
+  </Manager>
+</HattrickData>

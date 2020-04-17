@@ -9,7 +9,6 @@ savepath = os.path.abspath('User.xml')
 
 
 def download_basic_info():
-    c = cs.DownloadStringCreator()
-    path = c.create_manager_compendium_string()
-    dl.download_xml_file(path, savepath)
+    params = cs.create_manager_compendium_string()
+    dl.download_xml_file(params, savepath)
     return 0
