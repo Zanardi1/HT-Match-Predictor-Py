@@ -53,4 +53,4 @@ def create_database():
         engine = create_engine(create_uri(create_url()), echo=True)
         Base.metadata.create_all(engine)
         showinfo('Succes!', 'Baza de date a fost creata')
-    root.destroy()
+        root.destroy()
