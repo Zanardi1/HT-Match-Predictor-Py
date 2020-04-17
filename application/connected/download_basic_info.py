@@ -2,10 +2,12 @@
 
 import os
 
+import easygui
+
 import application.xml.create_string as cs
 import application.xml.dl_xml_file as dl
 
-savepath = os.path.abspath('User.xml')
+savepath = os.path.abspath('xml\\User.xml')
 
 
 def download_basic_info():

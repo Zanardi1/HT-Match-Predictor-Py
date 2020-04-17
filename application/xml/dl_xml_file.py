@@ -2,6 +2,7 @@
 
 import configparser as c
 import os
+import easygui
 
 from rauth import OAuth1Session
 
@@ -16,6 +17,7 @@ def download_xml_file(params, destination_file):
     query = session.get(config['DEFAULT']['PROTECTED_RESOURCE_PATH'], params=params)
     session.close()
 
+    #TODO de introdus o rutina care verifica daca fisierul exista deja sau nu
     f = open(destination_file, 'w', encoding='utf-8')
     f.write(query.text)
     f.close()
