@@ -5,6 +5,8 @@ import easygui
 
 
 def parse_user_file():
+    # TODO sa adaptez rutina astfel incat sa verifice daca utilizatorul are una, doua sau trei echipe si sa
+    #  completeze dictionarul in consecinta
     data = {}
     tree = ET.parse(os.path.abspath('application\\xml\\User.xml'))
     root = tree.getroot()
@@ -20,3 +22,7 @@ def parse_user_file():
     data['team 3 name'] = root[4][5][2][1].text
     data['team 3 id'] = root[4][5][2][0].text
     return data
+
+
+def parse_matches_file():
+    pass
