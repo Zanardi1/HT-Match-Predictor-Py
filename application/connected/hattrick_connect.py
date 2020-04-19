@@ -5,6 +5,8 @@ import os
 import tkinter as tk
 import tkinter.simpledialog as sd
 import webbrowser
+import application.xml.dl_xml_file as dx
+import easygui
 
 from rauth import OAuth1Service
 from rauth.oauth import HmacSha1Signature
@@ -27,8 +29,10 @@ def check_if_configuration_file_has_access_tokens(config):
         return False
 
 
-def check_if_connection_is_valid():
-    # TODO de scris procedura care verifica daca Hattrick acorda permisiune de conectare
+def check_if_connection_is_valid(config):
+    # TODO de citit XML-ul pentru a vedea daca Hattrick acorda aplicatiei permisiune de conectare
+    savepath = os.path.abspath('application\\xml\\Check.xml')
+    dx.download_xml_file(config['DEFAULT']['CHECK_TOKEN_PATH'], {}, savepath)
     return True
 
 
@@ -94,7 +98,7 @@ def connection_engine():
       3.3. Intoarce True."""
 
     config = read_configuration_file()
-    if check_if_configuration_file_has_access_tokens(config) and check_if_connection_is_valid():
+    if check_if_configuration_file_has_access_tokens(config) and check_if_connection_is_valid(config):
         d.download_basic_info()
         return True
     else:
