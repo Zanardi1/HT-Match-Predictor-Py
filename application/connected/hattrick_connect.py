@@ -5,12 +5,11 @@ import os
 import tkinter as tk
 import tkinter.simpledialog as sd
 import webbrowser
-import application.xml.dl_xml_file as dx
-import easygui
 
 from rauth import OAuth1Service
 from rauth.oauth import HmacSha1Signature
 
+import application.xml.dl_xml_file as dx
 from application.connected import download_basic_info as d
 
 configuration_file = os.path.abspath('application\connected\session_config.ini')
@@ -104,6 +103,7 @@ def connection_engine():
     else:
         if get_access_tokens(config):
             d.download_basic_info()
+            # TODO aici vine o fereastra ce confirma conectarea la joc
             return True
         else:
             return False
