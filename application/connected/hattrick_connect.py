@@ -98,12 +98,12 @@ def connection_engine():
 
     config = read_configuration_file()
     if check_if_configuration_file_has_access_tokens(config) and check_if_connection_is_valid(config):
-        d.download_basic_info()
-        return True
+        user_data = d.download_basic_info()
+        return True, user_data
     else:
         if get_access_tokens(config):
-            d.download_basic_info()
+            user_data = d.download_basic_info()
             # TODO aici vine o fereastra ce confirma conectarea la joc
-            return True
+            return True, user_data
         else:
-            return False
+            return False, {}

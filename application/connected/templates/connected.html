@@ -13,30 +13,30 @@
     </form>
 </div>
 <div id="UserInformation">
-    <legend>User information:</legend>
-    <label>User name: </label>
-    <label>()</label><br>
-    <label>Supporter: </label><br>
-    <label>Country: </label>
-    <label>()</label><br>
+    <label>User information:</label><br/>
+    <label>User name: {{user_data['user name']}}</label>
+    <label>({{user_data['user id']}})</label><br>
+    <label>Supporter: {{user_data['supporter']}}</label><br>
+    <label>Country: {{user_data['country']}}</label>
+    <label>({{user_data['country id']}})</label><br>
 </div>
 <div id="TeamList">
-    <legend>Team list:</legend>
-    <label>Team 1</label>
-    <label>()</label><br>
-    <label>Team 2</label>
-    <label>()</label><br>
-    <label>Team 3</label>
-    <label>()</label>
+    <label>Team list:</label><br/>
+    <label>{{user_data['team 1 name']}}</label>
+    <label>({{user_data['team 1 id']}})</label><br>
+    <label>{{user_data['team 2 name']}}</label>
+    <label>({{user_data['team 2 id']}})</label><br>
+    <label>{{user_data['team 3 name']}}</label>
+    <label>({{user_data['team 3 id']}})</label>
 </div>
 <div id="TeamChoice">
     <label>Choose team:</label><br>
     <input type="radio" id="FirstTeam" name="HattrickTeams" value="Team 1" checked>
-    <label for="FirstTeam">Team 1</label><br>
+    <label for="FirstTeam">{{user_data['team 1 name']}}</label><br>
     <input type="radio" id="SecondTeam" name="HattrickTeams" value="Team 2">
-    <label for="SecondTeam">Team 2</label><br>
+    <label for="SecondTeam">{{user_data['team 2 name']}}</label><br>
     <input type="radio" id="ThirdTeam" name="HattrickTeams" value="Team 3">
-    <label for="ThirdTeam">Team 3</label>
+    <label for="ThirdTeam">{{user_data['team 3 name']}}</label>
 </div>
 <div id="NextMatches">
     <select name="FutureMatches" size="7" id="FutureMatchList">
