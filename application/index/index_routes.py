@@ -2,19 +2,24 @@
 
 from flask import Blueprint
 from flask import render_template
+from flask import request
 
 import global_library
+import easygui
 from application.admin import create_db
 from application.admin import delete_db
 from application.admin import import_matches
 from application.connected import hattrick_connect
 from application.connected import hattrick_disconnect
 from application.estimation import Estimation_engine
+from application.connected import download_user_matches
 
 index_bp = Blueprint('index_bp', __name__, template_folder='templates', static_folder='static')
 ratings = global_library.ratings
 positions = global_library.positions
 statuses = global_library.statuses
+
+user_data_global = {}
 
 
 # index
@@ -27,7 +32,9 @@ def home():
 # conectarea la Hattrick
 @index_bp.route('/LoginToHattrick')
 def LoginToHattrick():
+    global user_data_global
     connection_successful, user_data = hattrick_connect.connection_engine()
+    user_data_global = user_data
     if connection_successful:
         return render_template('connected.html', title="Connected to Hattrick", from_index=False, ratings=ratings,
                                positions=positions, statuses=statuses, user_data=user_data)
@@ -79,3 +86,13 @@ def create():
 def delete():
     delete_db.delete_database()
     return render_template('admin.html')
+
+
+# Intoarce numele echipei selectate
+@index_bp.route('/Team', methods=['POST'])
+def get_team_id():
+    team_id = request.form['HattrickTeams']
+    user_matches = download_user_matches.download_user_matches(team_id)
+    return render_template('connected.html', title="Connected to Hattrick", from_index=False, ratings=ratings,
+                           positions=positions, statuses=statuses, user_data=user_data_global,
+                           user_matches=user_matches)

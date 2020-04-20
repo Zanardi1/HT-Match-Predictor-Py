@@ -55,13 +55,7 @@ Fisierele care vor fi descarcate de-a lungul utilizarii programului sunt:
 		1.4. CountryName;
 		1.5. CountryId;
 		1.6. TeamName;
-		1.7. TeamId;
-		1.8. LeagueName;
-		1.9. LeagueId;
-		1.10. CountryName;
-		1.11. CountryId;
-		1.12. LeagueLevelUnitName;
-		1.13. LeagueLevelUnitId (1.6 - 1.13 sunt pentru toate echipele pe care le are);
+		1.7. TeamId. (1.6 - 1.7 sunt pentru toate echipele pe care le are);
 
 	2. matches. Pentru a vedea care sunt meciurile viitoare ale unei echipe.
 		Date de intrare:
@@ -69,9 +63,8 @@ Fisierele care vor fi descarcate de-a lungul utilizarii programului sunt:
 
 		Date de iesire necesare:
 		2.1. MatchID;
-		2.2. MatchType;
-		2.3. HomeTeamName (din motive de interfata);
-		2.4. AwayTeamName (din motive de interfata);
+		2.2. HomeTeamName (din motive de interfata);
+		2.3. AwayTeamName (din motive de interfata);
 
 	3. matchdetails. Pentru a vedea evaluarile celor doua echipe pentru un anumit meci.
 		Date de intrare:
@@ -155,7 +148,7 @@ Sunt doua moduri in care poate fi utilizat acest site:
 
 In afara de aceste doua moduri, site-ul va mai avea si un panou de administrator, la care numai eu voi avea acces. Acest panou are ca scop gestionarea bazei de cate care va contine meciurile. Mai precis, o sa pot adauga in baza de date evaluarile meciurilor care au numerele de identificare intre doua valori, una superioara si una inferioara. Pentru conectare, vor fi necesare un nume de utilizator si o parola.
 
-La selectarea meciurilor pentru calculul marimilor dorite nu sunt luate in considerare tactica, nivelul tactic si stilul de joc, ci numai evaluarile pe sectoare, dupa cum a fost spus mai sus. De fapt, aceste criterii nici nu pot fi selectate de catre utilizator (1). Meciurile luate in considerare vor fi cele din campionat si meciurile amicale care nu sunt de tip cupa (2).
+La selectarea meciurilor pentru calculul marimilor dorite nu sunt luate in considerare tactica, nivelul tactic si stilul de joc, ci numai evaluarile pe sectoare, dupa cum a fost spus mai sus. De fapt, aceste criterii nici nu pot fi selectate de catre utilizator (1). Meciurile luate in considerare vor fi cele din campionat, meciurile internationale care se pot termina la egalitate si meciurile amicale care nu sunt de tip cupa, fie ca sunt normale, fie ca sunt amicale internationale (2).
 
 6. Structura site-ului:
 

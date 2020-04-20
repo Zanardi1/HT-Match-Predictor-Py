@@ -10,7 +10,7 @@ from rauth import OAuth1Service
 from rauth.oauth import HmacSha1Signature
 
 import application.xml.dl_xml_file as dx
-from application.connected import download_basic_info as d
+from application.connected import download_user_info as d
 
 configuration_file = os.path.abspath('application\connected\session_config.ini')
 
@@ -98,12 +98,12 @@ def connection_engine():
 
     config = read_configuration_file()
     if check_if_configuration_file_has_access_tokens(config) and check_if_connection_is_valid(config):
-        user_data = d.download_basic_info()
+        user_data = d.download_user_info()
         return True, user_data
     else:
         if get_access_tokens(config):
-            user_data = d.download_basic_info()
-            # TODO aici vine o fereastra ce confirma conectarea la joc
+            user_data = d.download_user_info()
+            # TODO aici vine o fereastra ce confirma conectarea la contul de Hattrick
             return True, user_data
         else:
             return False, {}
