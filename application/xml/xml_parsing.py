@@ -46,3 +46,7 @@ def parse_matches_file():
             away_team = match[2][1].text
             data.append((match_id, home_team, away_team))
     return data
+
+
+def parse_match_details_file():
+    pass

@@ -96,3 +96,10 @@ def get_team_id():
     return render_template('connected.html', title="Connected to Hattrick", from_index=False, ratings=ratings,
                            positions=positions, statuses=statuses, user_data=user_data_global,
                            user_matches=user_matches)
+
+
+@index_bp.route('/GetMatch', methods=['POST'])
+def get_match_id():
+    match_id = request.form['FutureMatches']
+    easygui.msgbox(match_id)
+    return easygui.msgbox('Meciul')

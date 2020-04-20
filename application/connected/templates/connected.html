@@ -38,15 +38,18 @@
         <label for="SecondTeam">{{user_data['team 2 name']}}</label><br>
         <input type="radio" id="ThirdTeam" name="HattrickTeams" value="{{user_data['team 3 id']}}">
         <label for="ThirdTeam">{{user_data['team 3 name']}}</label><br>
-        <input type="submit" id="SubmitButton" value="OK">
+        <input type="submit" id="SubmitTeamButton" value="OK">
     </form>
 </div>
 <div id="NextMatches">
-    <select name="FutureMatches" size="5" id="FutureMatchList" style="width: 18%">
-        {% for i in range(user_matches|length) %}
-        <option value="{{user_matches[i][0]}}}}">{{user_matches[i][1]}} - {{user_matches[i][2]}}</option>
-        {%endfor%}
-    </select>
+    <form action="/GetMatch" method="post">
+        <select name="FutureMatches" size="5" id="FutureMatchList" style="width: 18%">
+            {% for i in range(user_matches|length) %}
+            <option value="{{user_matches[i][0]}}}}">{{user_matches[i][1]}} - {{user_matches[i][2]}}</option>
+            {%endfor%}
+        </select><br><br><br><br><br>
+        <input type="submit" id="SubmitMatchButton" value="OK"><br>
+    </form>
 </div>
 {%endblock%}
 </body>
