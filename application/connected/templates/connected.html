@@ -45,7 +45,7 @@
     <form action="/GetMatch" method="post">
         <select name="FutureMatches" size="5" id="FutureMatchList" style="width: 18%">
             {% for i in range(user_matches|length) %}
-            <option value="{{user_matches[i][0]}}}}">{{user_matches[i][1]}} - {{user_matches[i][2]}}</option>
+            <option value="{{user_matches[i][0]}}">{{user_matches[i][1]}} - {{user_matches[i][2]}}</option>
             {%endfor%}
         </select><br><br><br><br><br>
         <input type="submit" id="SubmitMatchButton" value="OK"><br>

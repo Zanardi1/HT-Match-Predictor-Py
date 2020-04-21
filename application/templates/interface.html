@@ -19,10 +19,20 @@
         <legend>{{status}} team:</legend>
         {%for position in positions%}
         <p>
-            <label for="{{status}} {{position}}" class="ResultsClass">{{position}} rating:</label>
+            <label for="{{status}} {{position}}" class="ResultsClass">{{position}} rating: {{place}}</label>
             <select id="{{status}} {{position}}" class="RatingsClass">
                 {%for rating in ratings%}
-                <option value="{{ratings[rating]}}">{{ratings[rating]}}</option>
+                {% if (loop.index == match_orders[0]|int and status=='Home' and position=='Midfield') or
+                (loop.index==match_orders[1]|int and status=='Home' and position=='Left defence') or
+                (loop.index==match_orders[2]|int and status=='Home' and position=='Central defence') or
+                (loop.index==match_orders[3]|int and status=='Home' and position=='Right defence') or
+                (loop.index==match_orders[4]|int and status=='Home' and position=='Left attack') or
+                (loop.index==match_orders[5]|int and status=='Home' and position=='Central attack') or
+                (loop.index==match_orders[6]|int and status=='Home' and position=='Right attack')%}
+                <option value="{{loop.index}}" selected>{{ratings[rating]}}</option>
+                {%else%}
+                <option value="{{loop.index}}">{{ratings[rating]}}</option>
+                {%endif%}
                 {%endfor%}
             </select>
         </p>

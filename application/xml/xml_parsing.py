@@ -50,3 +50,13 @@ def parse_matches_file():
 
 def parse_match_details_file():
     pass
+
+
+def parse_future_match_file():
+    ratings = ()
+    tree = ET.parse(os.path.abspath('application\\xml\\Orders.xml'))
+    root = tree.getroot()
+    match_data = root[6]
+    for i in range(2, 9, 1):
+        ratings = ratings + (match_data[i].text,)
+    return ratings
