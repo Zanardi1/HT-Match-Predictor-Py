@@ -7,7 +7,7 @@ savepath = os.path.abspath('application\\xml\\Disconnect.xml')
 configuration_file = os.path.abspath('application\connected\session_config.ini')
 
 
-def DisconnectionEngine():
+def disconnection_engine():
     config = c.ConfigParser()
     config.read(configuration_file)
     d.download_xml_file(config['DEFAULT']['INVALIDATE_TOKEN_PATH'], {}, savepath)

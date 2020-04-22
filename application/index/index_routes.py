@@ -29,7 +29,17 @@ user_team_name_global = ''
 user_matches_global = []
 
 
-# Arata daca echipa test_team joaca acasa sau in deplasare
+# Functia intoarce numele echipei selectate pentru a-i afla viitoarele meciuri
+def get_user_team_name():
+    if team_id_global == user_data_global['team 1 id']:
+        return user_data_global['team 1 name']
+    elif team_id_global == user_data_global['team 2 id']:
+        return user_data_global['team 2 name']
+    else:
+        return user_data_global['team 3 name']
+
+
+# Functia arata daca echipa test_team joaca acasa sau in deplasare
 def home_or_away(match_id, test_team):
     real_home_team = ''
     tree = ET.parse(os.path.abspath('application\\xml\\Matches.xml'))
@@ -78,26 +88,34 @@ def EstimationEngine():
 
 # deconectarea de la Hattrick
 @index_bp.route('/DisconnectFromHattrick')
-def DisconnectFromHattrick():
-    hattrick_disconnect.DisconnectionEngine()
+def disconnect_from_hattrick():
+    hattrick_disconnect.disconnection_engine()
+    match_orders = (-1, -1, -1, -1, -1, -1, -1)
     return render_template('index.html', title="The Best Match Predictor",
                            ratings=ratings, positions=positions,
-                           statuses=statuses, from_index=True)
+                           statuses=statuses, from_index=True, match_orders=match_orders)
 
 
 # importarea de meciuri in baza de date
-@index_bp.route('/import')
-def import_matches():
-    import_matches.import_engine()
-    return 0
+@index_bp.route('/import', methods=['POST'])
+def import_matches_into_database():
+    low_end = request.form['InferiorLimit']
+    high_end = request.form['SuperiorLimit']
+    low_end = int(low_end)
+    high_end = int(high_end)
+    easygui.msgbox(low_end)
+    easygui.msgbox(high_end)
+    import_matches.import_engine(low_end, high_end)
+    return easygui.msgbox('Gata')
 
 
 # iesirea din panoul de control catre prima pagina
 @index_bp.route('/LogoutToIndex')
 def logout():
+    match_orders = (-1, -1, -1, -1, -1, -1, -1)
     return render_template('index.html', title="The Best Match Predictor",
                            ratings=ratings, positions=positions,
-                           statuses=statuses, from_index=True)
+                           statuses=statuses, from_index=True, match_orders=match_orders)
 
 
 # crearea bazei de date
@@ -115,6 +133,8 @@ def delete():
 
 
 # Intoarce numele echipei selectate
+# TODO atunci cand selectez a doua sau a treia echipa, prima optiune redevine marcata dupa apasarea butonului OK.
+#  Sa fac astfel incat sa ramana marcata optiunea selectata dinainte de apasarea butonului OK.
 @index_bp.route('/Team', methods=['POST'])
 def get_team_id():
     global user_matches_global
@@ -122,12 +142,7 @@ def get_team_id():
     global user_team_name_global
     team_id = request.form['HattrickTeams']
     team_id_global = team_id
-    if team_id_global == user_data_global['team 1 id']:
-        user_team_name_global = user_data_global['team 1 name']
-    elif team_id_global == user_data_global['team 2 id']:
-        user_team_name_global = user_data_global['team 2 name']
-    else:
-        user_team_name_global = user_data_global['team 3 name']
+    user_team_name_global = get_user_team_name()
     user_matches = download_user_matches.download_user_matches(team_id)
     user_matches_global = user_matches
     match_orders = (-1, -1, -1, -1, -1, -1, -1)
