@@ -3,11 +3,11 @@
   <FileName>matchdetails.xml</FileName>
   <Version>3.0</Version>
   <UserID>1248859</UserID>
-  <FetchedDate>2020-04-23 09:44:02</FetchedDate>
+  <FetchedDate>2020-04-23 10:26:32</FetchedDate>
   <UserSupporterTier>diamond</UserSupporterTier>
   <SourceSystem>Hattrick</SourceSystem>
   <Match>
-    <MatchID>10</MatchID>
+    <MatchID>100</MatchID>
     <MatchType>3</MatchType>
     <MatchContextId>1</MatchContextId>
     <MatchRuleId>0</MatchRuleId>
@@ -17,190 +17,191 @@
     <FinishedDate>2000-10-18 20:45:00</FinishedDate>
     <AddedMinutes>0</AddedMinutes>
     <HomeTeam>
-      <HomeTeamID>17205</HomeTeamID>
-      <HomeTeamName>FC Halland</HomeTeamName>
+      <HomeTeamID>16365</HomeTeamID>
+      <HomeTeamName>FC HÃ¤rjedalen</HomeTeamName>
       <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
       <Formation>4-4-2</Formation>
       <HomeGoals>0</HomeGoals>
       <TacticType>0</TacticType>
       <TacticSkill>0</TacticSkill>
-      <RatingMidfield>3</RatingMidfield>
-      <RatingRightDef>4</RatingRightDef>
-      <RatingMidDef>5</RatingMidDef>
-      <RatingLeftDef>5</RatingLeftDef>
-      <RatingRightAtt>6</RatingRightAtt>
-      <RatingMidAtt>4</RatingMidAtt>
-      <RatingLeftAtt>3</RatingLeftAtt>
+      <RatingMidfield>2</RatingMidfield>
+      <RatingRightDef>6</RatingRightDef>
+      <RatingMidDef>8</RatingMidDef>
+      <RatingLeftDef>6</RatingLeftDef>
+      <RatingRightAtt>7</RatingRightAtt>
+      <RatingMidAtt>6</RatingMidAtt>
+      <RatingLeftAtt>6</RatingLeftAtt>
     </HomeTeam>
     <AwayTeam>
-      <AwayTeamID>584</AwayTeamID>
-      <AwayTeamName>Smackers United</AwayTeamName>
+      <AwayTeamID>1347</AwayTeamID>
+      <AwayTeamName>ironside fc</AwayTeamName>
       <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
       <Formation>3-5-2</Formation>
       <AwayGoals>9</AwayGoals>
       <TacticType>0</TacticType>
       <TacticSkill>0</TacticSkill>
-      <RatingMidfield>8</RatingMidfield>
-      <RatingRightDef>24</RatingRightDef>
-      <RatingMidDef>25</RatingMidDef>
-      <RatingLeftDef>15</RatingLeftDef>
-      <RatingRightAtt>14</RatingRightAtt>
-      <RatingMidAtt>25</RatingMidAtt>
-      <RatingLeftAtt>12</RatingLeftAtt>
+      <RatingMidfield>12</RatingMidfield>
+      <RatingRightDef>10</RatingRightDef>
+      <RatingMidDef>18</RatingMidDef>
+      <RatingLeftDef>18</RatingLeftDef>
+      <RatingRightAtt>19</RatingRightAtt>
+      <RatingMidAtt>17</RatingMidAtt>
+      <RatingLeftAtt>8</RatingLeftAtt>
     </AwayTeam>
     <Arena>
-      <ArenaID>17205</ArenaID>
-      <ArenaName>Halland Stadion</ArenaName>
-      <WeatherID>1</WeatherID>
+      <ArenaID>16365</ArenaID>
+      <ArenaName>HÃ¤rjedalen Stadium</ArenaName>
+      <WeatherID>2</WeatherID>
       <SoldTotal>7000</SoldTotal>
     </Arena>
     <MatchOfficials>
       <Referee>
+        <RefereeId>58585138</RefereeId>
+        <RefereeName>JesÃºs Villa</RefereeName>
+        <RefereeCountryId>36</RefereeCountryId>
+        <RefereeCountryName>EspaÃ±a</RefereeCountryName>
+        <RefereeTeamId>1289743</RefereeTeamId>
+        <RefereeTeamname>SG Neukirchen-Vluyn</RefereeTeamname>
+      </Referee>
+      <RefereeAssistant1>
+        <RefereeId>242965079</RefereeId>
+        <RefereeName>Claus Knap</RefereeName>
+        <RefereeCountryId>3</RefereeCountryId>
+        <RefereeCountryName>Deutschland</RefereeCountryName>
+        <RefereeTeamId>1162770</RefereeTeamId>
+        <RefereeTeamname>Lapinou's Family</RefereeTeamname>
+      </RefereeAssistant1>
+      <RefereeAssistant2>
         <RefereeId>0</RefereeId>
         <RefereeName> </RefereeName>
         <RefereeCountryId>0</RefereeCountryId>
         <RefereeCountryName />
         <RefereeTeamId>0</RefereeTeamId>
         <RefereeTeamname></RefereeTeamname>
-      </Referee>
-      <RefereeAssistant1>
-        <RefereeId>174435159</RefereeId>
-        <RefereeName>Vladimir Popov</RefereeName>
-        <RefereeCountryId>62</RefereeCountryId>
-        <RefereeCountryName>Bulgaria</RefereeCountryName>
-        <RefereeTeamId>345678</RefereeTeamId>
-        <RefereeTeamname>tavzon97</RefereeTeamname>
-      </RefereeAssistant1>
-      <RefereeAssistant2>
-        <RefereeId>91889956</RefereeId>
-        <RefereeName>AdriÃ¡n Poblet</RefereeName>
-        <RefereeCountryId>36</RefereeCountryId>
-        <RefereeCountryName>EspaÃ±a</RefereeCountryName>
-        <RefereeTeamId>562524</RefereeTeamId>
-        <RefereeTeamname>VSAJLOVE</RefereeTeamname>
       </RefereeAssistant2>
     </MatchOfficials>
     <Scorers>
       <Goal Index="0">
-        <ScorerPlayerID>87932</ScorerPlayerID>
-        <ScorerPlayerName>Pontus Klintsten</ScorerPlayerName>
-        <ScorerTeamID>584</ScorerTeamID>
+        <ScorerPlayerID>54526</ScorerPlayerID>
+        <ScorerPlayerName>Bengt Torsson</ScorerPlayerName>
+        <ScorerTeamID>1347</ScorerTeamID>
         <ScorerHomeGoals>0</ScorerHomeGoals>
         <ScorerAwayGoals>1</ScorerAwayGoals>
-        <ScorerMinute>3</ScorerMinute>
+        <ScorerMinute>13</ScorerMinute>
         <MatchPart>1</MatchPart>
       </Goal>
       <Goal Index="1">
-        <ScorerPlayerID>151864</ScorerPlayerID>
-        <ScorerPlayerName>Jerker Oskarsson</ScorerPlayerName>
-        <ScorerTeamID>584</ScorerTeamID>
+        <ScorerPlayerID>72400</ScorerPlayerID>
+        <ScorerPlayerName>Mats Forsbeck</ScorerPlayerName>
+        <ScorerTeamID>1347</ScorerTeamID>
         <ScorerHomeGoals>0</ScorerHomeGoals>
         <ScorerAwayGoals>2</ScorerAwayGoals>
-        <ScorerMinute>24</ScorerMinute>
+        <ScorerMinute>27</ScorerMinute>
         <MatchPart>1</MatchPart>
       </Goal>
       <Goal Index="2">
-        <ScorerPlayerID>162274</ScorerPlayerID>
-        <ScorerPlayerName>Gustav SÃ¶rensson</ScorerPlayerName>
-        <ScorerTeamID>584</ScorerTeamID>
+        <ScorerPlayerID>5907</ScorerPlayerID>
+        <ScorerPlayerName>Lennart Johansson</ScorerPlayerName>
+        <ScorerTeamID>1347</ScorerTeamID>
         <ScorerHomeGoals>0</ScorerHomeGoals>
         <ScorerAwayGoals>3</ScorerAwayGoals>
-        <ScorerMinute>30</ScorerMinute>
+        <ScorerMinute>33</ScorerMinute>
         <MatchPart>1</MatchPart>
       </Goal>
       <Goal Index="3">
-        <ScorerPlayerID>189177</ScorerPlayerID>
-        <ScorerPlayerName>Jason Odenlius</ScorerPlayerName>
-        <ScorerTeamID>584</ScorerTeamID>
+        <ScorerPlayerID>72400</ScorerPlayerID>
+        <ScorerPlayerName>Mats Forsbeck</ScorerPlayerName>
+        <ScorerTeamID>1347</ScorerTeamID>
         <ScorerHomeGoals>0</ScorerHomeGoals>
         <ScorerAwayGoals>4</ScorerAwayGoals>
-        <ScorerMinute>44</ScorerMinute>
+        <ScorerMinute>45</ScorerMinute>
         <MatchPart>1</MatchPart>
       </Goal>
       <Goal Index="4">
-        <ScorerPlayerID>87932</ScorerPlayerID>
-        <ScorerPlayerName>Pontus Klintsten</ScorerPlayerName>
-        <ScorerTeamID>584</ScorerTeamID>
+        <ScorerPlayerID>5907</ScorerPlayerID>
+        <ScorerPlayerName>Lennart Johansson</ScorerPlayerName>
+        <ScorerTeamID>1347</ScorerTeamID>
         <ScorerHomeGoals>0</ScorerHomeGoals>
         <ScorerAwayGoals>5</ScorerAwayGoals>
-        <ScorerMinute>49</ScorerMinute>
+        <ScorerMinute>48</ScorerMinute>
         <MatchPart>2</MatchPart>
       </Goal>
       <Goal Index="5">
-        <ScorerPlayerID>87932</ScorerPlayerID>
-        <ScorerPlayerName>Pontus Klintsten</ScorerPlayerName>
-        <ScorerTeamID>584</ScorerTeamID>
+        <ScorerPlayerID>22142</ScorerPlayerID>
+        <ScorerPlayerName>Daniel Olsson</ScorerPlayerName>
+        <ScorerTeamID>1347</ScorerTeamID>
         <ScorerHomeGoals>0</ScorerHomeGoals>
         <ScorerAwayGoals>6</ScorerAwayGoals>
         <ScorerMinute>58</ScorerMinute>
         <MatchPart>2</MatchPart>
       </Goal>
       <Goal Index="6">
-        <ScorerPlayerID>71080</ScorerPlayerID>
-        <ScorerPlayerName>Anders Silverwald</ScorerPlayerName>
-        <ScorerTeamID>584</ScorerTeamID>
+        <ScorerPlayerID>72400</ScorerPlayerID>
+        <ScorerPlayerName>Mats Forsbeck</ScorerPlayerName>
+        <ScorerTeamID>1347</ScorerTeamID>
         <ScorerHomeGoals>0</ScorerHomeGoals>
         <ScorerAwayGoals>7</ScorerAwayGoals>
-        <ScorerMinute>72</ScorerMinute>
+        <ScorerMinute>70</ScorerMinute>
         <MatchPart>2</MatchPart>
       </Goal>
       <Goal Index="7">
-        <ScorerPlayerID>188451</ScorerPlayerID>
-        <ScorerPlayerName>Odd 'O' Skogholt</ScorerPlayerName>
-        <ScorerTeamID>584</ScorerTeamID>
+        <ScorerPlayerID>72400</ScorerPlayerID>
+        <ScorerPlayerName>Mats Forsbeck</ScorerPlayerName>
+        <ScorerTeamID>1347</ScorerTeamID>
         <ScorerHomeGoals>0</ScorerHomeGoals>
         <ScorerAwayGoals>8</ScorerAwayGoals>
-        <ScorerMinute>75</ScorerMinute>
+        <ScorerMinute>79</ScorerMinute>
         <MatchPart>2</MatchPart>
       </Goal>
       <Goal Index="8">
-        <ScorerPlayerID>151864</ScorerPlayerID>
-        <ScorerPlayerName>Jerker Oskarsson</ScorerPlayerName>
-        <ScorerTeamID>584</ScorerTeamID>
+        <ScorerPlayerID>64155</ScorerPlayerID>
+        <ScorerPlayerName>Jan MÃ¥nsson</ScorerPlayerName>
+        <ScorerTeamID>1347</ScorerTeamID>
         <ScorerHomeGoals>0</ScorerHomeGoals>
         <ScorerAwayGoals>9</ScorerAwayGoals>
-        <ScorerMinute>85</ScorerMinute>
+        <ScorerMinute>90</ScorerMinute>
         <MatchPart>2</MatchPart>
       </Goal>
     </Scorers>
     <Bookings>
       <Booking Index="0">
-        <BookingPlayerID>188451</BookingPlayerID>
-        <BookingPlayerName>Odd 'O' Skogholt</BookingPlayerName>
-        <BookingTeamID>584</BookingTeamID>
+        <BookingPlayerID>22142</BookingPlayerID>
+        <BookingPlayerName>Daniel Olsson</BookingPlayerName>
+        <BookingTeamID>1347</BookingTeamID>
         <BookingType>1</BookingType>
-        <BookingMinute>4</BookingMinute>
+        <BookingMinute>3</BookingMinute>
         <MatchPart>1</MatchPart>
       </Booking>
       <Booking Index="1">
-        <BookingPlayerID>189177</BookingPlayerID>
-        <BookingPlayerName>Jason Odenlius</BookingPlayerName>
-        <BookingTeamID>584</BookingTeamID>
+        <BookingPlayerID>503281</BookingPlayerID>
+        <BookingPlayerName>Per Jonasson</BookingPlayerName>
+        <BookingTeamID>16365</BookingTeamID>
         <BookingType>1</BookingType>
-        <BookingMinute>14</BookingMinute>
-        <MatchPart>1</MatchPart>
-      </Booking>
-      <Booking Index="2">
-        <BookingPlayerID>151864</BookingPlayerID>
-        <BookingPlayerName>Jerker Oskarsson</BookingPlayerName>
-        <BookingTeamID>584</BookingTeamID>
-        <BookingType>1</BookingType>
-        <BookingMinute>26</BookingMinute>
-        <MatchPart>1</MatchPart>
-      </Booking>
-      <Booking Index="3">
-        <BookingPlayerID>71080</BookingPlayerID>
-        <BookingPlayerName>Anders Silverwald</BookingPlayerName>
-        <BookingTeamID>584</BookingTeamID>
-        <BookingType>1</BookingType>
-        <BookingMinute>80</BookingMinute>
+        <BookingMinute>70</BookingMinute>
         <MatchPart>2</MatchPart>
       </Booking>
     </Bookings>
-    <Injuries />
-    <PossessionFirstHalfHome>27</PossessionFirstHalfHome>
-    <PossessionFirstHalfAway>73</PossessionFirstHalfAway>
-    <PossessionSecondHalfHome>27</PossessionSecondHalfHome>
-    <PossessionSecondHalfAway>73</PossessionSecondHalfAway>
+    <Injuries>
+      <Injury Index="0">
+        <InjuryPlayerID>503280</InjuryPlayerID>
+        <InjuryPlayerName>Lars Carlsson</InjuryPlayerName>
+        <InjuryTeamID>16365</InjuryTeamID>
+        <InjuryType>2</InjuryType>
+        <InjuryMinute>45</InjuryMinute>
+        <MatchPart>1</MatchPart>
+      </Injury>
+      <Injury Index="1">
+        <InjuryPlayerID>503283</InjuryPlayerID>
+        <InjuryPlayerName>Paul Olsson</InjuryPlayerName>
+        <InjuryTeamID>16365</InjuryTeamID>
+        <InjuryType>1</InjuryType>
+        <InjuryMinute>52</InjuryMinute>
+        <MatchPart>2</MatchPart>
+      </Injury>
+    </Injuries>
+    <PossessionFirstHalfHome>9</PossessionFirstHalfHome>
+    <PossessionFirstHalfAway>91</PossessionFirstHalfAway>
+    <PossessionSecondHalfHome>3</PossessionSecondHalfHome>
+    <PossessionSecondHalfAway>97</PossessionSecondHalfAway>
   </Match>
 </HattrickData>

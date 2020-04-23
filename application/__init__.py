@@ -1,12 +1,14 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
+database = SQLAlchemy()
+
 
 def create_app():
     app = Flask(__name__, template_folder="templates", static_folder="static")
     app.config.from_object('config.Config')
 
-    database = SQLAlchemy(app)
+    database.init_app(app)
 
     with app.app_context():
         from .admin import admin_routes
