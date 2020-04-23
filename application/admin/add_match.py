@@ -1,4 +1,4 @@
-from application.models import db, Matches
+from application.models import database, Matches
 
 
 def add_a_match(ID, HTM, HTRD, HTCD, HTLD, HTRA, HTCA, HTLA, ATM, ATRD, ATCD, ATLD, ATRA, ATCA, ATLA, HTG, ATG):
@@ -9,5 +9,5 @@ def add_a_match(ID, HTM, HTRD, HTCD, HTLD, HTRA, HTCA, HTLA, ATM, ATRD, ATCD, AT
                     AwayTeamCDefense=ATCD, AwayTeamLDefense=ATLD, AwayTeamRAttack=ATRA, AwayTeamCAttack=ATCA,
                     AwayTeamLAttack=ATLA,
                     HomeTeamGoals=HTG, AwayTeamGoals=ATG)
-    db.session.add(match)
-    db.session.commit()
+    database.session.add(match)
+    database.session.commit()

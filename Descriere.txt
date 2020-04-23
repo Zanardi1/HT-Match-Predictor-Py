@@ -72,23 +72,22 @@ Fisierele care vor fi descarcate de-a lungul utilizarii programului sunt:
 		3.2. sourceSystem = hattrick;
 
 		Date de iesire necesare:
-		3.1. MatchType (retine tipul meciului. Le iau in considerare pe cele care sunt de liga sau de cupa, reguli normale);
-		3.2. HomeGoals;
-		3.3. HomeTeam.RatingMidfield;
-		3.4. HomeTeam.RatingRightDef;
-		3.5. HomeTeam.RatingMidDef;
-		3.6. HomeTeam.RatingLeftDef;
-		3.7. HomeTeam.RatingRightAtt;
-		3.8. HomeTeam.RatingMidAtt;
-		3.9. HomeTeam.RatingLeftAtt;
-		3.10. AwayGoals;
-		3.11. AwayTeam.RatingMidfield;
-		3.12. AwayTeam.RatingRightDef;
-		3.13. AwayTeam.RatingMidDef;
-		3.14. AwayTeam.RatingLeftDef;
-		3.15. AwayTeam.RatingRightAtt;
-		3.16. AwayTeam.RatingMidAtt;
-		3.17. AwayTeam.RatingLeftAtt;
+		3.1. HomeGoals;
+		3.2. HomeTeam.RatingMidfield;
+		3.3. HomeTeam.RatingRightDef;
+		3.4. HomeTeam.RatingMidDef;
+		3.5. HomeTeam.RatingLeftDef;
+		3.6. HomeTeam.RatingRightAtt;
+		3.7. HomeTeam.RatingMidAtt;
+		3.8. HomeTeam.RatingLeftAtt;
+		3.9. AwayGoals;
+		3.10. AwayTeam.RatingMidfield;
+		3.11. AwayTeam.RatingRightDef;
+		3.12. AwayTeam.RatingMidDef;
+		3.13. AwayTeam.RatingLeftDef;
+		3.14. AwayTeam.RatingRightAtt;
+		3.15. AwayTeam.RatingMidAtt;
+		3.16. AwayTeam.RatingLeftAtt;
 
 	4. matchorders. De acolo iau evaluarile estimate pentru un meci viitor.
 		Date de intrare:

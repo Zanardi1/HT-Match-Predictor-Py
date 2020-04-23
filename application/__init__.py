@@ -6,7 +6,7 @@ def create_app():
     app = Flask(__name__, template_folder="templates", static_folder="static")
     app.config.from_object('config.Config')
 
-    db = SQLAlchemy(app)
+    database = SQLAlchemy(app)
 
     with app.app_context():
         from .admin import admin_routes
@@ -16,6 +16,6 @@ def create_app():
         app.register_blueprint(connected_routes.connected_bp, url_prefix='/connected')
         app.register_blueprint(admin_routes.admin_bp, url_prefix='/admin')
 
-        db.create_all()
+        database.create_all()
 
         return app

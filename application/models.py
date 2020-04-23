@@ -1,28 +1,28 @@
 from sqlalchemy import PrimaryKeyConstraint
 
-from . import db
+from . import database
 
 
-class Matches(db.Model):
+class Matches(database.Model):
     __tablename__ = 'Matches'
     __table_args__ = (PrimaryKeyConstraint('MatchID'),)
-    MatchID = db.Column(db.Integer, unique=True)
-    HomeTeamMidfield = db.Column(db.Integer)
-    HomeTeamRDefense = db.Column(db.Integer)
-    HomeTeamCDefense = db.Column(db.Integer)
-    HomeTeamLDefense = db.Column(db.Integer)
-    HomeTeamRAttack = db.Column(db.Integer)
-    HomeTeamCAttack = db.Column(db.Integer)
-    HomeTeamLAttack = db.Column(db.Integer)
-    AwayTeamMidfield = db.Column(db.Integer)
-    AwayTeamRDefense = db.Column(db.Integer)
-    AwayTeamCDefense = db.Column(db.Integer)
-    AwayTeamLDefense = db.Column(db.Integer)
-    AwayTeamRAttack = db.Column(db.Integer)
-    AwayTeamCAttack = db.Column(db.Integer)
-    AwayTeamLAttack = db.Column(db.Integer)
-    HomeTeamGoals = db.Column(db.Integer)
-    AwayTeamGoals = db.Column(db.Integer)
+    MatchID = database.Column(database.Integer, unique=True)
+    HomeTeamMidfield = database.Column(database.Integer)
+    HomeTeamRDefense = database.Column(database.Integer)
+    HomeTeamCDefense = database.Column(database.Integer)
+    HomeTeamLDefense = database.Column(database.Integer)
+    HomeTeamRAttack = database.Column(database.Integer)
+    HomeTeamCAttack = database.Column(database.Integer)
+    HomeTeamLAttack = database.Column(database.Integer)
+    AwayTeamMidfield = database.Column(database.Integer)
+    AwayTeamRDefense = database.Column(database.Integer)
+    AwayTeamCDefense = database.Column(database.Integer)
+    AwayTeamLDefense = database.Column(database.Integer)
+    AwayTeamRAttack = database.Column(database.Integer)
+    AwayTeamCAttack = database.Column(database.Integer)
+    AwayTeamLAttack = database.Column(database.Integer)
+    HomeTeamGoals = database.Column(database.Integer)
+    AwayTeamGoals = database.Column(database.Integer)
 
     def __repr__(self):
         return '<Match: {}>'.format(self.MatchID)

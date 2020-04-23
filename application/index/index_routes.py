@@ -15,7 +15,7 @@ from application.connected import download_future_match
 from application.connected import download_user_matches
 from application.connected import hattrick_connect
 from application.connected import hattrick_disconnect
-from application.estimation import Estimation_engine
+from application.estimation import estimation_engine
 import easygui
 
 index_bp = Blueprint('index_bp', __name__, template_folder='templates', static_folder='static')
@@ -27,6 +27,7 @@ user_data_global = {}
 team_id_global = 0
 user_team_name_global = ''
 user_matches_global = []
+default_match_orders = (-1, -1, -1, -1, -1, -1, -1)
 
 
 # Functia intoarce numele echipei selectate pentru a-i afla viitoarele meciuri
@@ -59,7 +60,7 @@ def home_or_away(match_id, test_team):
 # index
 @index_bp.route('/')
 def home():
-    match_orders = (-1, -1, -1, -1, -1, -1, -1)
+    match_orders = default_match_orders
     return render_template('index.html', title="The Best Match Predictor", ratings=ratings, positions=positions,
                            statuses=statuses, from_index=True, match_orders=match_orders)
 
@@ -70,7 +71,7 @@ def LoginToHattrick():
     global user_data_global
     connection_successful, user_data = hattrick_connect.connection_engine()
     user_data_global = user_data
-    match_orders = (-1, -1, -1, -1, -1, -1, -1)
+    match_orders = default_match_orders
     if connection_successful:
         return render_template('connected.html', title="Connected to Hattrick", from_index=False, ratings=ratings,
                                positions=positions, statuses=statuses, user_data=user_data, match_orders=match_orders)
@@ -82,7 +83,7 @@ def LoginToHattrick():
 # algoritmul de estimare
 @index_bp.route('/EstimationEngine')
 def EstimationEngine():
-    Estimation_engine.Estimate()
+    estimation_engine.Estimate()
     return 0
 
 
@@ -90,7 +91,7 @@ def EstimationEngine():
 @index_bp.route('/DisconnectFromHattrick')
 def disconnect_from_hattrick():
     hattrick_disconnect.disconnection_engine()
-    match_orders = (-1, -1, -1, -1, -1, -1, -1)
+    match_orders = default_match_orders
     return render_template('index.html', title="The Best Match Predictor",
                            ratings=ratings, positions=positions,
                            statuses=statuses, from_index=True, match_orders=match_orders)
@@ -103,16 +104,15 @@ def import_matches_into_database():
     high_end = request.form['SuperiorLimit']
     low_end = int(low_end)
     high_end = int(high_end)
-    easygui.msgbox(low_end)
-    easygui.msgbox(high_end)
     import_matches.import_engine(low_end, high_end)
-    return easygui.msgbox('Gata')
+    easygui.msgbox('Gata')
+    return render_template('admin.html', title='Admin Control Panel')
 
 
 # iesirea din panoul de control catre prima pagina
 @index_bp.route('/LogoutToIndex')
 def logout():
-    match_orders = (-1, -1, -1, -1, -1, -1, -1)
+    match_orders = default_match_orders
     return render_template('index.html', title="The Best Match Predictor",
                            ratings=ratings, positions=positions,
                            statuses=statuses, from_index=True, match_orders=match_orders)
@@ -145,7 +145,7 @@ def get_team_id():
     user_team_name_global = get_user_team_name()
     user_matches = download_user_matches.download_user_matches(team_id)
     user_matches_global = user_matches
-    match_orders = (-1, -1, -1, -1, -1, -1, -1)
+    match_orders = default_match_orders
     return render_template('connected.html', title="Connected to Hattrick", from_index=False, ratings=ratings,
                            positions=positions, statuses=statuses, user_data=user_data_global,
                            user_matches=user_matches, match_orders=match_orders)
