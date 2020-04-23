@@ -23,11 +23,15 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="735e774e-84e0-4588-be02-f51ca6607f9b">
+        <schema name="main" object-types="table, constraint, column, view, dataset trigger, index" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="735e774e-84e0-4588-be02-f51ca6607f9b">
-      <console name="Connection" type="STANDARD" schema="main" session="Main" />
+      <console name="Connection" type="STANDARD" schema="main" session="Main"><![CDATA[select * from "Matches"]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
@@ -65,10 +69,10 @@
       <connection id="735e774e-84e0-4588-be02-f51ca6607f9b" active="true">
         <database>
           <name value="Connection" />
-          <description value="" />
+          <description value="Database" />
           <database-type value="SQLITE" />
           <config-type value="BASIC" />
-          <database-version value="3.23" />
+          <database-version value="3.3" />
           <driver-source value="BUILTIN" />
           <driver-library value="" />
           <driver value="" />
@@ -279,6 +283,8 @@
           <content-type name="XHTML" enabled="true" />
           <content-type name="SQL" enabled="true" />
           <content-type name="PL/SQL" enabled="true" />
+          <content-type name="JSON" enabled="true" />
+          <content-type name="JSON5" enabled="true" />
           <content-type name="YAML" enabled="true" />
         </content-types>
       </qualified-text-editor>

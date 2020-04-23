@@ -83,7 +83,7 @@ def LoginToHattrick():
 # algoritmul de estimare
 @index_bp.route('/EstimationEngine')
 def EstimationEngine():
-    estimation_engine.Estimate()
+    estimation_engine.estimate()
     return 0
 
 

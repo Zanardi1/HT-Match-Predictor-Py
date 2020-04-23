@@ -3,11 +3,11 @@
   <FileName>matchdetails.xml</FileName>
   <Version>3.0</Version>
   <UserID>1248859</UserID>
-  <FetchedDate>2020-04-23 10:26:32</FetchedDate>
+  <FetchedDate>2020-04-23 11:30:54</FetchedDate>
   <UserSupporterTier>diamond</UserSupporterTier>
   <SourceSystem>Hattrick</SourceSystem>
   <Match>
-    <MatchID>100</MatchID>
+    <MatchID>200</MatchID>
     <MatchType>3</MatchType>
     <MatchContextId>1</MatchContextId>
     <MatchRuleId>0</MatchRuleId>
@@ -17,59 +17,59 @@
     <FinishedDate>2000-10-18 20:45:00</FinishedDate>
     <AddedMinutes>0</AddedMinutes>
     <HomeTeam>
-      <HomeTeamID>16365</HomeTeamID>
-      <HomeTeamName>FC HÃ¤rjedalen</HomeTeamName>
+      <HomeTeamID>15341</HomeTeamID>
+      <HomeTeamName>FC Blekinge</HomeTeamName>
       <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
       <Formation>4-4-2</Formation>
       <HomeGoals>0</HomeGoals>
       <TacticType>0</TacticType>
       <TacticSkill>0</TacticSkill>
-      <RatingMidfield>2</RatingMidfield>
-      <RatingRightDef>6</RatingRightDef>
-      <RatingMidDef>8</RatingMidDef>
-      <RatingLeftDef>6</RatingLeftDef>
-      <RatingRightAtt>7</RatingRightAtt>
+      <RatingMidfield>3</RatingMidfield>
+      <RatingRightDef>11</RatingRightDef>
+      <RatingMidDef>12</RatingMidDef>
+      <RatingLeftDef>10</RatingLeftDef>
+      <RatingRightAtt>5</RatingRightAtt>
       <RatingMidAtt>6</RatingMidAtt>
       <RatingLeftAtt>6</RatingLeftAtt>
     </HomeTeam>
     <AwayTeam>
-      <AwayTeamID>1347</AwayTeamID>
-      <AwayTeamName>ironside fc</AwayTeamName>
+      <AwayTeamID>1134</AwayTeamID>
+      <AwayTeamName>IFK Askhult</AwayTeamName>
       <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
       <Formation>3-5-2</Formation>
       <AwayGoals>9</AwayGoals>
       <TacticType>0</TacticType>
       <TacticSkill>0</TacticSkill>
-      <RatingMidfield>12</RatingMidfield>
-      <RatingRightDef>10</RatingRightDef>
-      <RatingMidDef>18</RatingMidDef>
-      <RatingLeftDef>18</RatingLeftDef>
-      <RatingRightAtt>19</RatingRightAtt>
-      <RatingMidAtt>17</RatingMidAtt>
-      <RatingLeftAtt>8</RatingLeftAtt>
+      <RatingMidfield>6</RatingMidfield>
+      <RatingRightDef>21</RatingRightDef>
+      <RatingMidDef>23</RatingMidDef>
+      <RatingLeftDef>15</RatingLeftDef>
+      <RatingRightAtt>15</RatingRightAtt>
+      <RatingMidAtt>13</RatingMidAtt>
+      <RatingLeftAtt>14</RatingLeftAtt>
     </AwayTeam>
     <Arena>
-      <ArenaID>16365</ArenaID>
-      <ArenaName>HÃ¤rjedalen Stadium</ArenaName>
-      <WeatherID>2</WeatherID>
+      <ArenaID>15341</ArenaID>
+      <ArenaName>Blekinges Idrottsplats</ArenaName>
+      <WeatherID>3</WeatherID>
       <SoldTotal>7000</SoldTotal>
     </Arena>
     <MatchOfficials>
       <Referee>
-        <RefereeId>58585138</RefereeId>
-        <RefereeName>JesÃºs Villa</RefereeName>
-        <RefereeCountryId>36</RefereeCountryId>
-        <RefereeCountryName>EspaÃ±a</RefereeCountryName>
-        <RefereeTeamId>1289743</RefereeTeamId>
-        <RefereeTeamname>SG Neukirchen-Vluyn</RefereeTeamname>
+        <RefereeId>0</RefereeId>
+        <RefereeName> </RefereeName>
+        <RefereeCountryId>0</RefereeCountryId>
+        <RefereeCountryName />
+        <RefereeTeamId>0</RefereeTeamId>
+        <RefereeTeamname></RefereeTeamname>
       </Referee>
       <RefereeAssistant1>
-        <RefereeId>242965079</RefereeId>
-        <RefereeName>Claus Knap</RefereeName>
-        <RefereeCountryId>3</RefereeCountryId>
-        <RefereeCountryName>Deutschland</RefereeCountryName>
-        <RefereeTeamId>1162770</RefereeTeamId>
-        <RefereeTeamname>Lapinou's Family</RefereeTeamname>
+        <RefereeId>0</RefereeId>
+        <RefereeName> </RefereeName>
+        <RefereeCountryId>0</RefereeCountryId>
+        <RefereeCountryName />
+        <RefereeTeamId>0</RefereeTeamId>
+        <RefereeTeamname></RefereeTeamname>
       </RefereeAssistant1>
       <RefereeAssistant2>
         <RefereeId>0</RefereeId>
@@ -82,126 +82,166 @@
     </MatchOfficials>
     <Scorers>
       <Goal Index="0">
-        <ScorerPlayerID>54526</ScorerPlayerID>
-        <ScorerPlayerName>Bengt Torsson</ScorerPlayerName>
-        <ScorerTeamID>1347</ScorerTeamID>
+        <ScorerPlayerID>15303</ScorerPlayerID>
+        <ScorerPlayerName>Lars Falkborn</ScorerPlayerName>
+        <ScorerTeamID>1134</ScorerTeamID>
         <ScorerHomeGoals>0</ScorerHomeGoals>
         <ScorerAwayGoals>1</ScorerAwayGoals>
-        <ScorerMinute>13</ScorerMinute>
+        <ScorerMinute>8</ScorerMinute>
         <MatchPart>1</MatchPart>
       </Goal>
       <Goal Index="1">
-        <ScorerPlayerID>72400</ScorerPlayerID>
-        <ScorerPlayerName>Mats Forsbeck</ScorerPlayerName>
-        <ScorerTeamID>1347</ScorerTeamID>
+        <ScorerPlayerID>172092</ScorerPlayerID>
+        <ScorerPlayerName>Michael Paulsson</ScorerPlayerName>
+        <ScorerTeamID>1134</ScorerTeamID>
         <ScorerHomeGoals>0</ScorerHomeGoals>
         <ScorerAwayGoals>2</ScorerAwayGoals>
-        <ScorerMinute>27</ScorerMinute>
+        <ScorerMinute>15</ScorerMinute>
         <MatchPart>1</MatchPart>
       </Goal>
       <Goal Index="2">
-        <ScorerPlayerID>5907</ScorerPlayerID>
-        <ScorerPlayerName>Lennart Johansson</ScorerPlayerName>
-        <ScorerTeamID>1347</ScorerTeamID>
+        <ScorerPlayerID>172092</ScorerPlayerID>
+        <ScorerPlayerName>Michael Paulsson</ScorerPlayerName>
+        <ScorerTeamID>1134</ScorerTeamID>
         <ScorerHomeGoals>0</ScorerHomeGoals>
         <ScorerAwayGoals>3</ScorerAwayGoals>
-        <ScorerMinute>33</ScorerMinute>
+        <ScorerMinute>25</ScorerMinute>
         <MatchPart>1</MatchPart>
       </Goal>
       <Goal Index="3">
-        <ScorerPlayerID>72400</ScorerPlayerID>
-        <ScorerPlayerName>Mats Forsbeck</ScorerPlayerName>
-        <ScorerTeamID>1347</ScorerTeamID>
+        <ScorerPlayerID>15303</ScorerPlayerID>
+        <ScorerPlayerName>Lars Falkborn</ScorerPlayerName>
+        <ScorerTeamID>1134</ScorerTeamID>
         <ScorerHomeGoals>0</ScorerHomeGoals>
         <ScorerAwayGoals>4</ScorerAwayGoals>
-        <ScorerMinute>45</ScorerMinute>
+        <ScorerMinute>39</ScorerMinute>
         <MatchPart>1</MatchPart>
       </Goal>
       <Goal Index="4">
-        <ScorerPlayerID>5907</ScorerPlayerID>
-        <ScorerPlayerName>Lennart Johansson</ScorerPlayerName>
-        <ScorerTeamID>1347</ScorerTeamID>
+        <ScorerPlayerID>144344</ScorerPlayerID>
+        <ScorerPlayerName>Ralph Thorfeldt</ScorerPlayerName>
+        <ScorerTeamID>1134</ScorerTeamID>
         <ScorerHomeGoals>0</ScorerHomeGoals>
         <ScorerAwayGoals>5</ScorerAwayGoals>
-        <ScorerMinute>48</ScorerMinute>
+        <ScorerMinute>49</ScorerMinute>
         <MatchPart>2</MatchPart>
       </Goal>
       <Goal Index="5">
-        <ScorerPlayerID>22142</ScorerPlayerID>
-        <ScorerPlayerName>Daniel Olsson</ScorerPlayerName>
-        <ScorerTeamID>1347</ScorerTeamID>
+        <ScorerPlayerID>144344</ScorerPlayerID>
+        <ScorerPlayerName>Ralph Thorfeldt</ScorerPlayerName>
+        <ScorerTeamID>1134</ScorerTeamID>
         <ScorerHomeGoals>0</ScorerHomeGoals>
         <ScorerAwayGoals>6</ScorerAwayGoals>
-        <ScorerMinute>58</ScorerMinute>
+        <ScorerMinute>60</ScorerMinute>
         <MatchPart>2</MatchPart>
       </Goal>
       <Goal Index="6">
-        <ScorerPlayerID>72400</ScorerPlayerID>
-        <ScorerPlayerName>Mats Forsbeck</ScorerPlayerName>
-        <ScorerTeamID>1347</ScorerTeamID>
+        <ScorerPlayerID>197903</ScorerPlayerID>
+        <ScorerPlayerName>Ulf Urbansson</ScorerPlayerName>
+        <ScorerTeamID>1134</ScorerTeamID>
         <ScorerHomeGoals>0</ScorerHomeGoals>
         <ScorerAwayGoals>7</ScorerAwayGoals>
-        <ScorerMinute>70</ScorerMinute>
+        <ScorerMinute>68</ScorerMinute>
         <MatchPart>2</MatchPart>
       </Goal>
       <Goal Index="7">
-        <ScorerPlayerID>72400</ScorerPlayerID>
-        <ScorerPlayerName>Mats Forsbeck</ScorerPlayerName>
-        <ScorerTeamID>1347</ScorerTeamID>
+        <ScorerPlayerID>172092</ScorerPlayerID>
+        <ScorerPlayerName>Michael Paulsson</ScorerPlayerName>
+        <ScorerTeamID>1134</ScorerTeamID>
         <ScorerHomeGoals>0</ScorerHomeGoals>
         <ScorerAwayGoals>8</ScorerAwayGoals>
-        <ScorerMinute>79</ScorerMinute>
+        <ScorerMinute>73</ScorerMinute>
         <MatchPart>2</MatchPart>
       </Goal>
       <Goal Index="8">
-        <ScorerPlayerID>64155</ScorerPlayerID>
-        <ScorerPlayerName>Jan MÃ¥nsson</ScorerPlayerName>
-        <ScorerTeamID>1347</ScorerTeamID>
+        <ScorerPlayerID>164477</ScorerPlayerID>
+        <ScorerPlayerName>Inge ForsstrÃ¶m</ScorerPlayerName>
+        <ScorerTeamID>1134</ScorerTeamID>
         <ScorerHomeGoals>0</ScorerHomeGoals>
         <ScorerAwayGoals>9</ScorerAwayGoals>
-        <ScorerMinute>90</ScorerMinute>
+        <ScorerMinute>83</ScorerMinute>
         <MatchPart>2</MatchPart>
       </Goal>
     </Scorers>
     <Bookings>
       <Booking Index="0">
-        <BookingPlayerID>22142</BookingPlayerID>
-        <BookingPlayerName>Daniel Olsson</BookingPlayerName>
-        <BookingTeamID>1347</BookingTeamID>
+        <BookingPlayerID>172092</BookingPlayerID>
+        <BookingPlayerName>Michael Paulsson</BookingPlayerName>
+        <BookingTeamID>1134</BookingTeamID>
         <BookingType>1</BookingType>
-        <BookingMinute>3</BookingMinute>
+        <BookingMinute>8</BookingMinute>
         <MatchPart>1</MatchPart>
       </Booking>
       <Booking Index="1">
-        <BookingPlayerID>503281</BookingPlayerID>
-        <BookingPlayerName>Per Jonasson</BookingPlayerName>
-        <BookingTeamID>16365</BookingTeamID>
+        <BookingPlayerID>485874</BookingPlayerID>
+        <BookingPlayerName>Josef Borgmar</BookingPlayerName>
+        <BookingTeamID>15341</BookingTeamID>
         <BookingType>1</BookingType>
-        <BookingMinute>70</BookingMinute>
+        <BookingMinute>53</BookingMinute>
+        <MatchPart>2</MatchPart>
+      </Booking>
+      <Booking Index="2">
+        <BookingPlayerID>485877</BookingPlayerID>
+        <BookingPlayerName>Richard Granlius</BookingPlayerName>
+        <BookingTeamID>15341</BookingTeamID>
+        <BookingType>1</BookingType>
+        <BookingMinute>61</BookingMinute>
+        <MatchPart>2</MatchPart>
+      </Booking>
+      <Booking Index="3">
+        <BookingPlayerID>485875</BookingPlayerID>
+        <BookingPlayerName>Jonas Ohlin</BookingPlayerName>
+        <BookingTeamID>15341</BookingTeamID>
+        <BookingType>1</BookingType>
+        <BookingMinute>69</BookingMinute>
+        <MatchPart>2</MatchPart>
+      </Booking>
+      <Booking Index="4">
+        <BookingPlayerID>137458</BookingPlayerID>
+        <BookingPlayerName>Johan 'H' Matsson</BookingPlayerName>
+        <BookingTeamID>1134</BookingTeamID>
+        <BookingType>1</BookingType>
+        <BookingMinute>76</BookingMinute>
+        <MatchPart>2</MatchPart>
+      </Booking>
+      <Booking Index="5">
+        <BookingPlayerID>171734</BookingPlayerID>
+        <BookingPlayerName>Jan Hammarlind</BookingPlayerName>
+        <BookingTeamID>1134</BookingTeamID>
+        <BookingType>1</BookingType>
+        <BookingMinute>83</BookingMinute>
         <MatchPart>2</MatchPart>
       </Booking>
     </Bookings>
     <Injuries>
       <Injury Index="0">
-        <InjuryPlayerID>503280</InjuryPlayerID>
-        <InjuryPlayerName>Lars Carlsson</InjuryPlayerName>
-        <InjuryTeamID>16365</InjuryTeamID>
-        <InjuryType>2</InjuryType>
-        <InjuryMinute>45</InjuryMinute>
+        <InjuryPlayerID>485872</InjuryPlayerID>
+        <InjuryPlayerName>Magnus Hagelkvist</InjuryPlayerName>
+        <InjuryTeamID>15341</InjuryTeamID>
+        <InjuryType>1</InjuryType>
+        <InjuryMinute>8</InjuryMinute>
         <MatchPart>1</MatchPart>
       </Injury>
       <Injury Index="1">
-        <InjuryPlayerID>503283</InjuryPlayerID>
-        <InjuryPlayerName>Paul Olsson</InjuryPlayerName>
-        <InjuryTeamID>16365</InjuryTeamID>
-        <InjuryType>1</InjuryType>
-        <InjuryMinute>52</InjuryMinute>
+        <InjuryPlayerID>153627</InjuryPlayerID>
+        <InjuryPlayerName>Lars Jansson</InjuryPlayerName>
+        <InjuryTeamID>1134</InjuryTeamID>
+        <InjuryType>2</InjuryType>
+        <InjuryMinute>25</InjuryMinute>
+        <MatchPart>1</MatchPart>
+      </Injury>
+      <Injury Index="2">
+        <InjuryPlayerID>485872</InjuryPlayerID>
+        <InjuryPlayerName>Magnus Hagelkvist</InjuryPlayerName>
+        <InjuryTeamID>15341</InjuryTeamID>
+        <InjuryType>2</InjuryType>
+        <InjuryMinute>77</InjuryMinute>
         <MatchPart>2</MatchPart>
       </Injury>
     </Injuries>
-    <PossessionFirstHalfHome>9</PossessionFirstHalfHome>
-    <PossessionFirstHalfAway>91</PossessionFirstHalfAway>
-    <PossessionSecondHalfHome>3</PossessionSecondHalfHome>
-    <PossessionSecondHalfAway>97</PossessionSecondHalfAway>
+    <PossessionFirstHalfHome>30</PossessionFirstHalfHome>
+    <PossessionFirstHalfAway>70</PossessionFirstHalfAway>
+    <PossessionSecondHalfHome>23</PossessionSecondHalfHome>
+    <PossessionSecondHalfAway>77</PossessionSecondHalfAway>
   </Match>
 </HattrickData>
