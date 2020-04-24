@@ -21,7 +21,7 @@ def create_uri(db_path):
     return db_uri
 
 
-def estimate(given_ratings):
+def estimate_results(given_ratings):
     wins = 0
     draws = 0
     losses = 0

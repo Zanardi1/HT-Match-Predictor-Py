@@ -81,13 +81,15 @@ def LoginToHattrick():
 
 
 # algoritmul de estimare
-@index_bp.route('/EstimationEngine')
-def EstimationEngine():
-    given_ratings = ()
-    # for i in range(0, 14, 1):
-    #     given_ratings = given_ratings + (1,)
-    # given_ratings = (2, 8, 10, 9, 5, 4, 4, 18, 18, 29, 27, 18, 18, 12)
-    estimation_engine.estimate(given_ratings)
+@index_bp.route('/EstimationEngine', methods=['POST'])
+def estimation():
+    given_ratings = []
+    x = request.form
+    for i in x.values():
+        given_ratings = given_ratings + [i]
+    easygui.msgbox(given_ratings)
+    given_ratings = tuple(given_ratings)
+    estimation_engine.estimate_results(given_ratings)
     return 'OK'
 
 

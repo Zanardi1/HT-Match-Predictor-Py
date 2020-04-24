@@ -1,12 +1,10 @@
 import configparser as c
 import os
 
-import easygui
-
+from application.admin import add_match as a
 from application.xml import create_string as cs
 from application.xml import dl_xml_file as dl
 from application.xml import xml_parsing as xp
-from application.admin import add_match as a
 
 savepath = os.path.abspath('application\\xml\\Details.xml')
 

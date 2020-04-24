@@ -14,44 +14,44 @@
 {%endif%}
 <div>
     <h1>The Best Match Predictor</h1>
-    {%for status in statuses%}
-    <div id="{{status}}">
-        <legend>{{status}} team:</legend>
-        {%for position in positions%}
-        <p>
-            <label for="{{status}} {{position}}" class="ResultsClass">{{position}} rating:</label>
-            <select id="{{status}} {{position}}" class="RatingsClass">
-                {%for rating in ratings%}
-                {% if (loop.index == match_orders[0]|int and status==place and position=='Midfield') or
-                (loop.index==match_orders[1]|int and status==place and position=='Left defence') or
-                (loop.index==match_orders[2]|int and status==place and position=='Central defence') or
-                (loop.index==match_orders[3]|int and status==place and position=='Right defence') or
-                (loop.index==match_orders[4]|int and status==place and position=='Left attack') or
-                (loop.index==match_orders[5]|int and status==place and position=='Central attack') or
-                (loop.index==match_orders[6]|int and status==place and position=='Right attack')%}
-                <option value="{{loop.index}}" selected>{{ratings[rating]}}</option>
-                {%else%}
-                <option value="{{loop.index}}">{{ratings[rating]}}</option>
-                {%endif%}
-                {%endfor%}
-            </select>
-        </p>
+    <form action="/EstimationEngine" method="post">
+        {%for status in statuses%}
+        <div id="{{status}}">
+            <label>{{status}} team:</label><br>
+            {%for position in positions%}
+            <p>
+                <label for="{{status}} {{position}}" class="ResultsClass">{{position}} rating:</label>
+                <select id="{{status}} {{position}}" class="RatingsClass" name="{{status}} {{position}}">
+                    {%for rating in ratings%}
+                    {% if (loop.index == match_orders[0]|int and status==place and position=='Midfield') or
+                    (loop.index==match_orders[1]|int and status==place and position=='Left defence') or
+                    (loop.index==match_orders[2]|int and status==place and position=='Central defence') or
+                    (loop.index==match_orders[3]|int and status==place and position=='Right defence') or
+                    (loop.index==match_orders[4]|int and status==place and position=='Left attack') or
+                    (loop.index==match_orders[5]|int and status==place and position=='Central attack') or
+                    (loop.index==match_orders[6]|int and status==place and position=='Right attack')%}
+                    <option value="{{loop.index}}" selected>{{ratings[rating]}}</option>
+                    {%else%}
+                    <option value="{{loop.index}}">{{ratings[rating]}}</option>
+                    {%endif%}
+                    {%endfor%}
+                </select>
+                <input type="submit" value="Estimate" id="Estimation"><br>
+            </p>
+            {%endfor%}
+        </div>
         {%endfor%}
-    </div>
-    {%endfor%}
+    </form>
 </div>
 <br>
 <div id="Results">
-    <legend>Results:</legend>
+    <label>Results:</label><br>
     <label class="ResultsClass"><b>Home win percentage:</b> 0%</label>
     <label class="ResultsClass"><b>Draw percentage:</b> 0%</label>
     <label class="ResultsClass"><b>Away win percentage:</b> 0%</label>
     <label class="ResultsClass"><b>Home goals average:</b> 0.0</label>
     <label><b>Away goals average:</b> 0.0</label>
 </div>
-<form action="/EstimationEngine">
-    <input type="submit" value="Estimate" id="Estimation"><br>
-</form>
 {% if from_index is sameas true%}
 {%block AdminCP%}{%endblock%}
 {%endif%}
