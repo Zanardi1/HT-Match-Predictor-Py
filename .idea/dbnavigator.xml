@@ -25,13 +25,13 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="735e774e-84e0-4588-be02-f51ca6607f9b">
-        <schema name="main" object-types="table, constraint, column, view, dataset trigger, index" />
+        <schema name="main" object-types="column, view, table" />
       </connection>
     </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="735e774e-84e0-4588-be02-f51ca6607f9b">
-      <console name="Connection" type="STANDARD" schema="main" session="Main"><![CDATA[select * from "Matches"]]></console>
+      <console name="Connection" type="STANDARD" schema="main" session="Main">select * from &quot;Matches&quot;</console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
