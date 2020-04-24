@@ -60,9 +60,15 @@ def home_or_away(match_id, test_team):
 # index
 @index_bp.route('/')
 def home():
+    ans = {}
     match_orders = default_match_orders
+    ans['Home wins'] = 0
+    ans['Draws'] = 0
+    ans['Away wins'] = 0
+    ans['Home goals average'] = 0
+    ans['Away goals average'] = 0
     return render_template('index.html', title="The Best Match Predictor", ratings=ratings, positions=positions,
-                           statuses=statuses, from_index=True, match_orders=match_orders)
+                           statuses=statuses, from_index=True, match_orders=match_orders, answer=ans)
 
 
 # conectarea la Hattrick
@@ -83,14 +89,16 @@ def LoginToHattrick():
 # algoritmul de estimare
 @index_bp.route('/EstimationEngine', methods=['POST'])
 def estimation():
+    match_orders = default_match_orders
     given_ratings = []
     x = request.form
     for i in x.values():
         given_ratings = given_ratings + [i]
-    easygui.msgbox(given_ratings)
     given_ratings = tuple(given_ratings)
-    estimation_engine.estimate_results(given_ratings)
-    return 'OK'
+    ans = estimation_engine.estimate_results(given_ratings)
+    # TODO dupa ce afisez rezultatele in browser, sa pastrez evaluarile pe care le-am introdus, sa nu se mai reseteze
+    return render_template('index.html', title="The Best Match Predictor", ratings=ratings, positions=positions,
+                           statuses=statuses, from_index=True, match_orders=match_orders, answer=ans)
 
 
 # deconectarea de la Hattrick

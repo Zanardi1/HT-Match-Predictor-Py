@@ -46,11 +46,11 @@
 <br>
 <div id="Results">
     <label>Results:</label><br>
-    <label class="ResultsClass"><b>Home win percentage:</b> 0%</label>
-    <label class="ResultsClass"><b>Draw percentage:</b> 0%</label>
-    <label class="ResultsClass"><b>Away win percentage:</b> 0%</label>
-    <label class="ResultsClass"><b>Home goals average:</b> 0.0</label>
-    <label><b>Away goals average:</b> 0.0</label>
+    <label class="ResultsClass"><b>Home win percentage:</b> {{answer['Home wins']}}</label>
+    <label class="ResultsClass"><b>Draw percentage:</b> {{answer['Draws']}}</label>
+    <label class="ResultsClass"><b>Away win percentage:</b> {{answer['Away wins']}}</label>
+    <label class="ResultsClass"><b>Home goals average:</b> {{answer['Home goals average']}}</label>
+    <label><b>Away goals average:</b> {{answer['Away goals average']}}</label>
 </div>
 {% if from_index is sameas true%}
 {%block AdminCP%}{%endblock%}

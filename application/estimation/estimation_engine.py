@@ -22,6 +22,7 @@ def create_uri(db_path):
 
 
 def estimate_results(given_ratings):
+    ans = {}
     wins = 0
     draws = 0
     losses = 0
@@ -50,9 +51,10 @@ def estimate_results(given_ratings):
             losses += 1
     home_goals_average = sum_of_home_goals / number_of_matches
     away_goals_average = sum_of_away_goals / number_of_matches
-    easygui.msgbox(wins)
-    easygui.msgbox(draws)
-    easygui.msgbox(losses)
-    easygui.msgbox(home_goals_average)
-    easygui.msgbox(away_goals_average)
     session.close()
+    ans['Home wins'] = wins
+    ans['Draws'] = draws
+    ans['Away wins'] = losses
+    ans['Home goals average'] = home_goals_average
+    ans['Away goals average'] = away_goals_average
+    return ans

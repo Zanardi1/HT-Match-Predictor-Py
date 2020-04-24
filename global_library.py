@@ -13,6 +13,6 @@ def buildRatingsDictionary():
 
 
 ratings = buildRatingsDictionary()
-positions = ['Midfield', 'Left defence', 'Central defence', 'Right defence', 'Left attack', 'Central attack',
-             'Right attack']
+positions = ['Midfield', 'Right defence', 'Central defence', 'Left defence', 'Right attack', 'Central attack',
+             'Left attack']
 statuses = ['Home', 'Away']
