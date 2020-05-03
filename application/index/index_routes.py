@@ -166,7 +166,7 @@ def get_team_id():
 
 
 # Intoarce numarul de identificare al unui meci selectat
-# TODO De aflat daca echipa mea joaca acasa sau in deplasare si de completat combobox-urile potrivite
+# TODO test
 @index_bp.route('/GetMatch', methods=['POST'])
 def get_match_id():
     match_id = request.form['FutureMatches']
