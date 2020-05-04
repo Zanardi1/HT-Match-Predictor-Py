@@ -60,15 +60,9 @@ def home_or_away(match_id, test_team):
 # index
 @index_bp.route('/')
 def home():
-    ans = {}
     match_orders = default_match_orders
-    ans['Home wins'] = 0
-    ans['Draws'] = 0
-    ans['Away wins'] = 0
-    ans['Home goals average'] = 0
-    ans['Away goals average'] = 0
     return render_template('index.html', title="The Best Match Predictor", ratings=ratings, positions=positions,
-                           statuses=statuses, from_index=True, match_orders=match_orders, answer=ans)
+                           statuses=statuses, from_index=True, match_orders=match_orders, answer=global_library.ans)
 
 
 # conectarea la Hattrick
@@ -80,10 +74,11 @@ def LoginToHattrick():
     match_orders = default_match_orders
     if connection_successful:
         return render_template('connected.html', title="Connected to Hattrick", from_index=False, ratings=ratings,
-                               positions=positions, statuses=statuses, user_data=user_data, match_orders=match_orders)
+                               positions=positions, statuses=statuses, user_data=user_data, match_orders=match_orders,
+                               answer=global_library.ans)
     else:
         return render_template('index.html', title="The Best Match Predictor", ratings=ratings, positions=positions,
-                               statuses=statuses, from_index=True)
+                               statuses=statuses, from_index=True, answer=global_library.ans)
 
 
 # algoritmul de estimare
