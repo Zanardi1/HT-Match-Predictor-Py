@@ -15,4 +15,3 @@ def disconnection_engine():
     config.remove_option('DEFAULT', 'ACCESS_TOKEN_SECRET')
     with open(configuration_file, 'w') as configfile:
         config.write(configfile)
-# TODO aici vine o fereastra de confirmare a deconectarii

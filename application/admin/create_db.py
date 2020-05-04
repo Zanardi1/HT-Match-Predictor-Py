@@ -19,8 +19,6 @@ def create_uri(db_path):
     return db_uri
 
 
-# TODO clasa Model de mai jos este foarte similara cu Model din models.py. Sa mut definitia clasei intr-un singur
-#  fisier, care sa fie apelat de oriunde, la nevoie
 class Model(Base):
     __tablename__ = 'Matches'
     __table_args__ = (PrimaryKeyConstraint('MatchID'),)
@@ -43,7 +41,6 @@ class Model(Base):
     AwayTeamGoals = Column(Integer)
 
 
-# TODO fereastra de dialog dispare, odata cu root
 def create_database():
     root = tk.Tk()
     root.withdraw()

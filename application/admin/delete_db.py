@@ -5,7 +5,6 @@ from tkinter.messagebox import showwarning, showinfo
 from sqlalchemy_utils import drop_database
 
 
-# TODO fereastra de dialog dispare, odata cu root
 def delete_database():
     folder = os.getcwd()
     db_path = ''.join([folder, '\\application\\db\\matches.db'])

@@ -29,7 +29,6 @@ def check_if_configuration_file_has_access_tokens(config):
 
 
 def check_if_connection_is_valid(config):
-    # TODO de citit XML-ul pentru a vedea daca Hattrick acorda aplicatiei permisiune de conectare
     savepath = os.path.abspath('application\\xml\\Check.xml')
     dx.download_xml_file(config['DEFAULT']['CHECK_TOKEN_PATH'], {}, savepath)
     return True
@@ -65,7 +64,6 @@ def get_access_tokens(config):
     authorization_url = connection.get_authorize_url(request_token)
     webbrowser.open(authorization_url, new=2)
     code = show_pin_window()
-    #  TODO: sa tratez cazul in care PIN-ul introdus este gresit
     if code is None:
         return False
     else:
@@ -74,10 +72,6 @@ def get_access_tokens(config):
 
 
 def connection_engine():
-    # TODO deoarece, in realitate, mai multi utilizatori se vor conecta la aplicatie cu contul de Hattrick,
-    #  consumer key, consumer secret, access token si access token secret trebuie puse intr-o baza de date
-    #  si luate de acolo, la nevoie. Sau intr-un cookie. Sau altundeva.
-
     """Functia obtine informatiile de baza despre utilizatorul care s-a conectat.
     Deoarece procesul este aproape in totalitate automat, singurul punct in care omul poate interveni este la
     introducerea PIN-ului. Fie il poate introduce gresit, fie se poate razgandi si nu-l mai introduce.
@@ -103,7 +97,6 @@ def connection_engine():
     else:
         if get_access_tokens(config):
             user_data = d.download_user_info()
-            # TODO aici vine o fereastra ce confirma conectarea la contul de Hattrick
             return True, user_data
         else:
             return False, {}

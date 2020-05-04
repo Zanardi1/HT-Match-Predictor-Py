@@ -91,7 +91,6 @@ def estimation():
         given_ratings = given_ratings + [i]
     given_ratings = tuple(given_ratings)
     ans = estimation_engine.estimate_results(given_ratings)
-    # TODO dupa ce afisez rezultatele in browser, sa pastrez evaluarile pe care le-am introdus, sa nu se mai reseteze
     return render_template('index.html', title="The Best Match Predictor", ratings=ratings, positions=positions,
                            statuses=statuses, from_index=True, match_orders=match_orders, answer=ans)
 
@@ -142,8 +141,6 @@ def delete():
 
 
 # Intoarce numele echipei selectate
-# TODO atunci cand selectez a doua sau a treia echipa, prima optiune redevine marcata dupa apasarea butonului OK.
-#  Sa fac astfel incat sa ramana marcata optiunea selectata dinainte de apasarea butonului OK.
 @index_bp.route('/Team', methods=['POST'])
 def get_team_id():
     global user_matches_global
