@@ -1,9 +1,7 @@
-import os
-
-import easygui
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
+import global_library
 from application.models import Matches
 
 
@@ -11,14 +9,11 @@ from application.models import Matches
 # HomeTeamMidfield=2
 
 def create_url():
-    folder = os.getcwd()
-    db_path = ''.join([folder, '\\application\\db\\matches.db'])
-    return db_path
+    return global_library.database_file_path
 
 
-def create_uri(db_path):
-    db_uri = 'sqlite:///{}'.format(db_path)
-    return db_uri
+def create_uri():
+    return global_library.database_file_uri
 
 
 def estimate_results(given_ratings):
@@ -28,7 +23,7 @@ def estimate_results(given_ratings):
     losses = 0
     sum_of_home_goals = 0
     sum_of_away_goals = 0
-    engine = create_engine(create_uri(create_url()), echo=True)
+    engine = create_engine(create_uri(), echo=True)
     Session = sessionmaker(bind=engine)
     session = Session()
     records = session.query(Matches.HomeTeamGoals, Matches.AwayTeamGoals).filter(

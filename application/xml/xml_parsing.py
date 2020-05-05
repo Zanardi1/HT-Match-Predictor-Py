@@ -1,11 +1,12 @@
 # Biblioteca citeste fisierele XML si intoarce datele necesare, sub forma de dictionar
-import os
 import xml.etree.ElementTree as ET
+
+import global_library
 
 
 def parse_user_file():
     data = {}
-    tree = ET.parse(os.path.abspath('application\\xml\\User.xml'))
+    tree = ET.parse(global_library.user_savepath)
     root = tree.getroot()
     data['user name'] = root[4][1].text
     data['user id'] = root[4][0].text
@@ -35,7 +36,7 @@ def parse_user_file():
 
 def parse_matches_file():
     data = []
-    tree = ET.parse(os.path.abspath('application\\xml\\Matches.xml'))
+    tree = ET.parse(global_library.matches_savepath)
     root = tree.getroot()
     match_list = root[5][5]
     for match in match_list:
@@ -49,7 +50,7 @@ def parse_matches_file():
 
 def parse_match_details_file(match_id):
     match_details = (match_id,)
-    tree = ET.parse(os.path.abspath('application\\xml\Details.xml'))
+    tree = ET.parse(global_library.details_savepath)
     root = tree.getroot()
     for i in range(7, 14, 1):
         match_details = match_details + (root[6][9][i].text,)  # evaluarile echipei de acasa
@@ -62,7 +63,7 @@ def parse_match_details_file(match_id):
 
 def parse_future_match_file():
     ratings = ()
-    tree = ET.parse(os.path.abspath('application\\xml\\Orders.xml'))
+    tree = ET.parse(global_library.orders_savepath)
     root = tree.getroot()
     match_data = root[6]
     for i in range(2, 9, 1):

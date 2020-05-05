@@ -42,7 +42,7 @@ def get_user_team_name():
 # Functia arata daca echipa test_team joaca acasa sau in deplasare
 def home_or_away(match_id, test_team):
     real_home_team = ''
-    tree = ET.parse(os.path.abspath('application\\xml\\Matches.xml'))
+    tree = ET.parse(global_library.matches_savepath)
     root = tree.getroot()
     match_list = root[5][5]
     for match in match_list.findall('Match'):

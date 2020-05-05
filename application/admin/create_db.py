@@ -5,18 +5,17 @@ from tkinter.messagebox import showinfo, showwarning
 from sqlalchemy import create_engine, Column, Integer, PrimaryKeyConstraint
 from sqlalchemy.ext.declarative import declarative_base
 
+import global_library
+
 Base = declarative_base()
 
 
 def create_url():
-    folder = os.getcwd()
-    db_path = ''.join([folder, '\\application\\db\\matches.db'])
-    return db_path
+    return global_library.database_file_path
 
 
-def create_uri(db_path):
-    db_uri = 'sqlite:///{}'.format(db_path)
-    return db_uri
+def create_uri():
+    return global_library.database_file_uri
 
 
 class Model(Base):
@@ -47,7 +46,7 @@ def create_database():
     if os.path.exists(create_url()):
         showwarning('Fisier existent', 'Baza de date deja exista!')
     else:
-        engine = create_engine(create_uri(create_url()), echo=True)
+        engine = create_engine(create_uri(), echo=True)
         Base.metadata.create_all(engine)
         showinfo('Succes!', 'Baza de date a fost creata')
         root.destroy()

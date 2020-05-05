@@ -1,16 +1,15 @@
 # Subrutinele necesare conectarii la Hattrick
 
 import configparser as c
-import os
 import tkinter as tk
 import tkinter.simpledialog as sd
 import webbrowser
-import global_library
 
 from rauth import OAuth1Service
 from rauth.oauth import HmacSha1Signature
 
 import application.xml.dl_xml_file as dx
+import global_library
 from application.connected import download_user_info as d
 
 
@@ -28,8 +27,7 @@ def check_if_configuration_file_has_access_tokens(config):
 
 
 def check_if_connection_is_valid(config):
-    savepath = os.path.abspath('application\\xml\\Check.xml')
-    dx.download_xml_file(config['DEFAULT']['CHECK_TOKEN_PATH'], {}, savepath)
+    dx.download_xml_file(config['DEFAULT']['CHECK_TOKEN_PATH'], {}, global_library.check_connection_savepath)
     return True
 
 
