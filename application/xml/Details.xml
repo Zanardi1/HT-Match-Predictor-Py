@@ -3,11 +3,11 @@
   <FileName>matchdetails.xml</FileName>
   <Version>3.0</Version>
   <UserID>1248859</UserID>
-  <FetchedDate>2020-05-04 15:00:44</FetchedDate>
+  <FetchedDate>2020-05-05 12:09:51</FetchedDate>
   <UserSupporterTier>diamond</UserSupporterTier>
   <SourceSystem>Hattrick</SourceSystem>
   <Match>
-    <MatchID>2000</MatchID>
+    <MatchID>4000</MatchID>
     <MatchType>3</MatchType>
     <MatchContextId>1</MatchContextId>
     <MatchRuleId>0</MatchRuleId>
@@ -17,42 +17,42 @@
     <FinishedDate>2000-10-18 20:45:00</FinishedDate>
     <AddedMinutes>0</AddedMinutes>
     <HomeTeam>
-      <HomeTeamID>12475</HomeTeamID>
-      <HomeTeamName>Uppland United</HomeTeamName>
+      <HomeTeamID>16593</HomeTeamID>
+      <HomeTeamName>VÃ¤stmanland IK</HomeTeamName>
       <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
       <Formation>4-4-2</Formation>
       <HomeGoals>2</HomeGoals>
       <TacticType>0</TacticType>
       <TacticSkill>0</TacticSkill>
-      <RatingMidfield>4</RatingMidfield>
-      <RatingRightDef>12</RatingRightDef>
-      <RatingMidDef>11</RatingMidDef>
+      <RatingMidfield>2</RatingMidfield>
+      <RatingRightDef>8</RatingRightDef>
+      <RatingMidDef>9</RatingMidDef>
       <RatingLeftDef>9</RatingLeftDef>
-      <RatingRightAtt>5</RatingRightAtt>
-      <RatingMidAtt>4</RatingMidAtt>
-      <RatingLeftAtt>3</RatingLeftAtt>
+      <RatingRightAtt>6</RatingRightAtt>
+      <RatingMidAtt>5</RatingMidAtt>
+      <RatingLeftAtt>5</RatingLeftAtt>
     </HomeTeam>
     <AwayTeam>
-      <AwayTeamID>5813</AwayTeamID>
-      <AwayTeamName>FC VEDDIGE</AwayTeamName>
+      <AwayTeamID>16353</AwayTeamID>
+      <AwayTeamName>GÃ¤strikland FF</AwayTeamName>
       <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
       <Formation>4-4-2</Formation>
       <AwayGoals>1</AwayGoals>
       <TacticType>0</TacticType>
       <TacticSkill>0</TacticSkill>
       <RatingMidfield>1</RatingMidfield>
-      <RatingRightDef>5</RatingRightDef>
-      <RatingMidDef>9</RatingMidDef>
-      <RatingLeftDef>10</RatingLeftDef>
-      <RatingRightAtt>7</RatingRightAtt>
+      <RatingRightDef>8</RatingRightDef>
+      <RatingMidDef>8</RatingMidDef>
+      <RatingLeftDef>8</RatingLeftDef>
+      <RatingRightAtt>8</RatingRightAtt>
       <RatingMidAtt>8</RatingMidAtt>
-      <RatingLeftAtt>7</RatingLeftAtt>
+      <RatingLeftAtt>6</RatingLeftAtt>
     </AwayTeam>
     <Arena>
-      <ArenaID>12475</ArenaID>
-      <ArenaName>Uppland Arena</ArenaName>
+      <ArenaID>16593</ArenaID>
+      <ArenaName>VÃ¤stmanland Stadion</ArenaName>
       <WeatherID>1</WeatherID>
-      <SoldTotal>6963</SoldTotal>
+      <SoldTotal>6353</SoldTotal>
     </Arena>
     <MatchOfficials>
       <Referee>
@@ -64,90 +64,106 @@
         <RefereeTeamname></RefereeTeamname>
       </Referee>
       <RefereeAssistant1>
+        <RefereeId>16076632</RefereeId>
+        <RefereeName>JesÃºs Wolff</RefereeName>
+        <RefereeCountryId>18</RefereeCountryId>
+        <RefereeCountryName>Chile</RefereeCountryName>
+        <RefereeTeamId>0</RefereeTeamId>
+        <RefereeTeamname></RefereeTeamname>
+      </RefereeAssistant1>
+      <RefereeAssistant2>
         <RefereeId>0</RefereeId>
         <RefereeName> </RefereeName>
         <RefereeCountryId>0</RefereeCountryId>
         <RefereeCountryName />
         <RefereeTeamId>0</RefereeTeamId>
         <RefereeTeamname></RefereeTeamname>
-      </RefereeAssistant1>
-      <RefereeAssistant2>
-        <RefereeId>93247266</RefereeId>
-        <RefereeName>Danny Dommer-Toft</RefereeName>
-        <RefereeCountryId>11</RefereeCountryId>
-        <RefereeCountryName>Danmark</RefereeCountryName>
-        <RefereeTeamId>19665</RefereeTeamId>
-        <RefereeTeamname>Mudderlogen.dk</RefereeTeamname>
       </RefereeAssistant2>
     </MatchOfficials>
     <Scorers>
       <Goal Index="0">
-        <ScorerPlayerID>437157</ScorerPlayerID>
-        <ScorerPlayerName>Anders VikÃ©n</ScorerPlayerName>
-        <ScorerTeamID>12475</ScorerTeamID>
+        <ScorerPlayerID>507162</ScorerPlayerID>
+        <ScorerPlayerName>Jonny Hasseler</ScorerPlayerName>
+        <ScorerTeamID>16593</ScorerTeamID>
         <ScorerHomeGoals>1</ScorerHomeGoals>
         <ScorerAwayGoals>0</ScorerAwayGoals>
         <ScorerMinute>6</ScorerMinute>
         <MatchPart>1</MatchPart>
       </Goal>
       <Goal Index="1">
-        <ScorerPlayerID>437156</ScorerPlayerID>
-        <ScorerPlayerName>Jan Wikstrand</ScorerPlayerName>
-        <ScorerTeamID>12475</ScorerTeamID>
+        <ScorerPlayerID>507162</ScorerPlayerID>
+        <ScorerPlayerName>Jonny Hasseler</ScorerPlayerName>
+        <ScorerTeamID>16593</ScorerTeamID>
         <ScorerHomeGoals>2</ScorerHomeGoals>
         <ScorerAwayGoals>0</ScorerAwayGoals>
-        <ScorerMinute>35</ScorerMinute>
+        <ScorerMinute>41</ScorerMinute>
         <MatchPart>1</MatchPart>
       </Goal>
       <Goal Index="2">
-        <ScorerPlayerID>313015</ScorerPlayerID>
-        <ScorerPlayerName>Mattias 'Nal' Andersson</ScorerPlayerName>
-        <ScorerTeamID>5813</ScorerTeamID>
+        <ScorerPlayerID>503083</ScorerPlayerID>
+        <ScorerPlayerName>Tobias Pilmar</ScorerPlayerName>
+        <ScorerTeamID>16353</ScorerTeamID>
         <ScorerHomeGoals>2</ScorerHomeGoals>
         <ScorerAwayGoals>1</ScorerAwayGoals>
-        <ScorerMinute>81</ScorerMinute>
+        <ScorerMinute>83</ScorerMinute>
         <MatchPart>2</MatchPart>
       </Goal>
     </Scorers>
     <Bookings>
       <Booking Index="0">
-        <BookingPlayerID>313017</BookingPlayerID>
-        <BookingPlayerName>Thomas Carlsson</BookingPlayerName>
-        <BookingTeamID>5813</BookingTeamID>
+        <BookingPlayerID>507161</BookingPlayerID>
+        <BookingPlayerName>Magnus Pilblom</BookingPlayerName>
+        <BookingTeamID>16593</BookingTeamID>
         <BookingType>1</BookingType>
-        <BookingMinute>6</BookingMinute>
+        <BookingMinute>13</BookingMinute>
         <MatchPart>1</MatchPart>
       </Booking>
       <Booking Index="1">
-        <BookingPlayerID>313017</BookingPlayerID>
-        <BookingPlayerName>Thomas Carlsson</BookingPlayerName>
-        <BookingTeamID>5813</BookingTeamID>
-        <BookingType>2</BookingType>
-        <BookingMinute>86</BookingMinute>
+        <BookingPlayerID>507157</BookingPlayerID>
+        <BookingPlayerName>Peter L. RosenskÃ¶r</BookingPlayerName>
+        <BookingTeamID>16593</BookingTeamID>
+        <BookingType>1</BookingType>
+        <BookingMinute>27</BookingMinute>
+        <MatchPart>1</MatchPart>
+      </Booking>
+      <Booking Index="2">
+        <BookingPlayerID>503076</BookingPlayerID>
+        <BookingPlayerName>Olof Erell</BookingPlayerName>
+        <BookingTeamID>16353</BookingTeamID>
+        <BookingType>1</BookingType>
+        <BookingMinute>61</BookingMinute>
+        <MatchPart>2</MatchPart>
+      </Booking>
+      <Booking Index="3">
+        <BookingPlayerID>503079</BookingPlayerID>
+        <BookingPlayerName>Sigmund Nilsson</BookingPlayerName>
+        <BookingTeamID>16353</BookingTeamID>
+        <BookingType>1</BookingType>
+        <BookingMinute>68</BookingMinute>
         <MatchPart>2</MatchPart>
       </Booking>
     </Bookings>
     <Injuries>
       <Injury Index="0">
-        <InjuryPlayerID>437148</InjuryPlayerID>
-        <InjuryPlayerName>Peter Svensson</InjuryPlayerName>
-        <InjuryTeamID>12475</InjuryTeamID>
-        <InjuryType>2</InjuryType>
-        <InjuryMinute>10</InjuryMinute>
-        <MatchPart>1</MatchPart>
+        <InjuryPlayerID>507157</InjuryPlayerID>
+        <InjuryPlayerName>Peter L. RosenskÃ¶r</InjuryPlayerName>
+        <InjuryTeamID>16593</InjuryTeamID>
+        <InjuryType>1</InjuryType>
+        <InjuryMinute>70</InjuryMinute>
+        <MatchPart>2</MatchPart>
       </Injury>
       <Injury Index="1">
-        <InjuryPlayerID>437147</InjuryPlayerID>
-        <InjuryPlayerName>David SÃ¶vstÃ¥l</InjuryPlayerName>
-        <InjuryTeamID>12475</InjuryTeamID>
+        <InjuryPlayerID>507162</InjuryPlayerID>
+        <InjuryPlayerName>Jonny Hasseler</InjuryPlayerName>
+        <InjuryTeamID>16593</InjuryTeamID>
         <InjuryType>1</InjuryType>
-        <InjuryMinute>44</InjuryMinute>
-        <MatchPart>1</MatchPart>
+        <InjuryMinute>74</InjuryMinute>
+        <MatchPart>2</MatchPart>
       </Injury>
     </Injuries>
-    <PossessionFirstHalfHome>75</PossessionFirstHalfHome>
-    <PossessionFirstHalfAway>25</PossessionFirstHalfAway>
-    <PossessionSecondHalfHome>88</PossessionSecondHalfHome>
-    <PossessionSecondHalfAway>12</PossessionSecondHalfAway>
+    <PossessionFirstHalfHome>45</PossessionFirstHalfHome>
+    <PossessionFirstHalfAway>55</PossessionFirstHalfAway>
+    <PossessionSecondHalfHome>19</PossessionSecondHalfHome>
+    <PossessionSecondHalfAway>81</PossessionSecondHalfAway>
   </Match>
 </HattrickData>

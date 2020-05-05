@@ -1,8 +1,8 @@
 # Defineste rutele pentru pagina de index
 
-import os
 import xml.etree.ElementTree as ET
 
+import easygui
 from flask import Blueprint
 from flask import render_template
 from flask import request
@@ -16,7 +16,6 @@ from application.connected import download_user_matches
 from application.connected import hattrick_connect
 from application.connected import hattrick_disconnect
 from application.estimation import estimation_engine
-import easygui
 
 index_bp = Blueprint('index_bp', __name__, template_folder='templates', static_folder='static')
 ratings = global_library.ratings
