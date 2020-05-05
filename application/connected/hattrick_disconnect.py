@@ -1,17 +1,14 @@
 import configparser as c
-import os
 
+import global_library
 from application.xml import dl_xml_file as d
-
-savepath = os.path.abspath('application\\xml\\Disconnect.xml')
-configuration_file = os.path.abspath('application\connected\session_config.ini')
 
 
 def disconnection_engine():
     config = c.ConfigParser()
-    config.read(configuration_file)
-    d.download_xml_file(config['DEFAULT']['INVALIDATE_TOKEN_PATH'], {}, savepath)
+    config.read(global_library.configuration_file)
+    d.download_xml_file(config['DEFAULT']['INVALIDATE_TOKEN_PATH'], {}, global_library.disconnect_savepath)
     config.remove_option('DEFAULT', 'ACCESS_TOKEN')
     config.remove_option('DEFAULT', 'ACCESS_TOKEN_SECRET')
-    with open(configuration_file, 'w') as configfile:
+    with open(global_library.configuration_file, 'w') as configfile:
         config.write(configfile)

@@ -1,7 +1,6 @@
 # Biblioteca citeste fisierele XML si intoarce datele necesare, sub forma de dictionar
 import os
 import xml.etree.ElementTree as ET
-import easygui
 
 
 def parse_user_file():

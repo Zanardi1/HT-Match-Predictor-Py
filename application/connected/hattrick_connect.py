@@ -5,6 +5,7 @@ import os
 import tkinter as tk
 import tkinter.simpledialog as sd
 import webbrowser
+import global_library
 
 from rauth import OAuth1Service
 from rauth.oauth import HmacSha1Signature
@@ -12,12 +13,10 @@ from rauth.oauth import HmacSha1Signature
 import application.xml.dl_xml_file as dx
 from application.connected import download_user_info as d
 
-configuration_file = os.path.abspath('application\connected\session_config.ini')
-
 
 def read_configuration_file():
     config = c.ConfigParser()
-    config.read(configuration_file)
+    config.read(global_library.configuration_file)
     return config
 
 
@@ -39,7 +38,7 @@ def add_access_tokens_to_config_file(config, connection, request_token, request_
                                                                     params={'oauth_verifier': code})
     config['DEFAULT']['ACCESS_TOKEN'] = access_token
     config['DEFAULT']['ACCESS_TOKEN_SECRET'] = access_token_secret
-    with open(configuration_file, 'w') as configfile:
+    with open(global_library.configuration_file, 'w') as configfile:
         config.write(configfile)
 
 

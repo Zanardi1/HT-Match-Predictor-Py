@@ -27,7 +27,6 @@ user_data_global = {}
 team_id_global = 0
 user_team_name_global = ''
 user_matches_global = []
-default_match_orders = (-1, -1, -1, -1, -1, -1, -1)
 
 
 # Functia intoarce numele echipei selectate pentru a-i afla viitoarele meciuri
@@ -60,7 +59,7 @@ def home_or_away(match_id, test_team):
 # index
 @index_bp.route('/')
 def home():
-    match_orders = default_match_orders
+    match_orders = global_library.default_match_orders
     return render_template('index.html', title="The Best Match Predictor", ratings=ratings, positions=positions,
                            statuses=statuses, from_index=True, match_orders=match_orders, answer=global_library.ans)
 
@@ -71,7 +70,7 @@ def LoginToHattrick():
     global user_data_global
     connection_successful, user_data = hattrick_connect.connection_engine()
     user_data_global = user_data
-    match_orders = default_match_orders
+    match_orders = global_library.default_match_orders
     if connection_successful:
         return render_template('connected.html', title="Connected to Hattrick", from_index=False, ratings=ratings,
                                positions=positions, statuses=statuses, user_data=user_data, match_orders=match_orders,
@@ -84,7 +83,7 @@ def LoginToHattrick():
 # algoritmul de estimare
 @index_bp.route('/EstimationEngine', methods=['POST'])
 def estimation():
-    match_orders = default_match_orders
+    match_orders = global_library.default_match_orders
     given_ratings = []
     x = request.form
     for i in x.values():
@@ -99,10 +98,10 @@ def estimation():
 @index_bp.route('/DisconnectFromHattrick')
 def disconnect_from_hattrick():
     hattrick_disconnect.disconnection_engine()
-    match_orders = default_match_orders
+    match_orders = global_library.default_match_orders
     return render_template('index.html', title="The Best Match Predictor",
                            ratings=ratings, positions=positions,
-                           statuses=statuses, from_index=True, match_orders=match_orders)
+                           statuses=statuses, from_index=True, match_orders=match_orders, answer=global_library.ans)
 
 
 # importarea de meciuri in baza de date
@@ -120,10 +119,10 @@ def import_matches_into_database():
 # iesirea din panoul de control catre prima pagina
 @index_bp.route('/LogoutToIndex')
 def logout():
-    match_orders = default_match_orders
+    match_orders = global_library.default_match_orders
     return render_template('index.html', title="The Best Match Predictor",
                            ratings=ratings, positions=positions,
-                           statuses=statuses, from_index=True, match_orders=match_orders)
+                           statuses=statuses, from_index=True, match_orders=match_orders, answer=global_library.ans)
 
 
 # crearea bazei de date
@@ -151,10 +150,10 @@ def get_team_id():
     user_team_name_global = get_user_team_name()
     user_matches = download_user_matches.download_user_matches(team_id)
     user_matches_global = user_matches
-    match_orders = default_match_orders
+    match_orders = global_library.default_match_orders
     return render_template('connected.html', title="Connected to Hattrick", from_index=False, ratings=ratings,
                            positions=positions, statuses=statuses, user_data=user_data_global,
-                           user_matches=user_matches, match_orders=match_orders)
+                           user_matches=user_matches, match_orders=match_orders, answer=global_library.ans)
 
 
 # Intoarce numarul de identificare al unui meci selectat
@@ -165,4 +164,5 @@ def get_match_id():
     place = home_or_away(match_id, user_team_name_global)
     return render_template('connected.html', title="Connected to Hattrick", from_index=False, ratings=ratings,
                            positions=positions, statuses=statuses, user_data=user_data_global,
-                           user_matches=user_matches_global, match_orders=match_orders, place=place)
+                           user_matches=user_matches_global, match_orders=match_orders, place=place,
+                           answer=global_library.ans)
