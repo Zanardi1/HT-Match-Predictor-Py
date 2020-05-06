@@ -2,6 +2,7 @@
 
 import configparser as c
 import tkinter as tk
+from tkinter.messagebox import showinfo
 import tkinter.simpledialog as sd
 import webbrowser
 
@@ -12,6 +13,7 @@ import application.xml.dl_xml_file as dx
 import global_library
 from application.connected import download_user_info as d
 from multiprocessing import Process, Queue
+import application.xml.xml_parsing as xl
 
 
 def read_configuration_file():
@@ -29,7 +31,7 @@ def check_if_configuration_file_has_access_tokens(config):
 
 def check_if_connection_is_valid(config):
     dx.download_xml_file(config['DEFAULT']['CHECK_TOKEN_PATH'], {}, global_library.check_connection_savepath)
-    return True
+    return xl.parse_connection_verification_file()
 
 
 def add_access_tokens_to_config_file(config, connection, request_token, request_token_secret, code):
@@ -73,6 +75,13 @@ def get_access_tokens(config):
         return True
 
 
+def show_connection_successful_window():
+    root = tk.Tk()
+    root.withdraw()
+    showinfo("Connection complete!", "Successfully conected to Hattrick account!")
+    root.destroy()
+
+
 def connection_engine():
     """Functia obtine informatiile de baza despre utilizatorul care s-a conectat.
     Deoarece procesul este aproape in totalitate automat, singurul punct in care omul poate interveni este la
@@ -98,6 +107,9 @@ def connection_engine():
         return True, user_data
     else:
         if get_access_tokens(config):
+            p = Process(target=show_connection_successful_window)
+            p.start()
+            p.join()
             user_data = d.download_user_info()
             return True, user_data
         else:

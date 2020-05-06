@@ -2,6 +2,7 @@
 import xml.etree.ElementTree as ET
 
 import global_library
+import easygui
 
 
 def parse_user_file():
@@ -69,3 +70,15 @@ def parse_future_match_file():
     for i in range(2, 9, 1):
         ratings = ratings + (match_data[i].text,)
     return ratings
+
+
+def parse_connection_verification_file():
+    tree = ET.parse(global_library.check_connection_savepath)
+    root = tree.getroot()
+    try:
+        root[4].text
+    except IndexError:  # asta inseamna ca fisierul cu extensia xml este, de fapt, un fisier HTML si acel nod nu exista.
+        # Ar da mesajul de eroare: IndexError: child index out of range
+        return False
+    else:
+        return True
