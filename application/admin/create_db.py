@@ -1,5 +1,6 @@
 import os
 import tkinter as tk
+from multiprocessing import Process
 from tkinter.messagebox import showinfo, showwarning
 
 from sqlalchemy import create_engine, Column, Integer, PrimaryKeyConstraint
@@ -40,13 +41,28 @@ class Model(Base):
     AwayTeamGoals = Column(Integer)
 
 
-def create_database():
+def show_warning_window():
     root = tk.Tk()
     root.withdraw()
+    showwarning('Fisier existent', 'Baza de date deja exista!')
+    root.destroy()
+
+
+def show_info_window():
+    root = tk.Tk()
+    root.withdraw()
+    showinfo('Succes!', 'Baza de date a fost creata')
+    root.destroy()
+
+
+def create_database():
     if os.path.exists(create_url()):
-        showwarning('Fisier existent', 'Baza de date deja exista!')
+        p = Process(target=show_warning_window)
+        p.start()
+        p.join()
     else:
         engine = create_engine(create_uri(), echo=True)
         Base.metadata.create_all(engine)
-        showinfo('Succes!', 'Baza de date a fost creata')
-    root.destroy()
+        p = Process(target=show_info_window)
+        p.start()
+        p.join()

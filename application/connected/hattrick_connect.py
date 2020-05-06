@@ -11,6 +11,7 @@ from rauth.oauth import HmacSha1Signature
 import application.xml.dl_xml_file as dx
 import global_library
 from application.connected import download_user_info as d
+from multiprocessing import Process, Queue
 
 
 def read_configuration_file():
@@ -40,12 +41,12 @@ def add_access_tokens_to_config_file(config, connection, request_token, request_
         config.write(configfile)
 
 
-def show_pin_window():
+def show_pin_window(q):
     root = tk.Tk()
     root.withdraw()
     code = sd.askstring(title='PIN Required', prompt='Please insert the PIN specified by Hattrick')
     root.destroy()
-    return code
+    q.put(code)
 
 
 def get_access_tokens(config):
@@ -60,7 +61,11 @@ def get_access_tokens(config):
         params={'oauth_callback': config['DEFAULT']['CALLBACK_URL']})
     authorization_url = connection.get_authorize_url(request_token)
     webbrowser.open(authorization_url, new=2)
-    code = show_pin_window()
+    queue = Queue()
+    p = Process(target=show_pin_window, args=(queue,))
+    p.start()
+    p.join()
+    code = queue.get()
     if code is None:
         return False
     else:

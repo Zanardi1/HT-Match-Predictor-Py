@@ -1,5 +1,6 @@
 import os
 import tkinter as tk
+from multiprocessing import Process
 from tkinter.messagebox import showwarning, showinfo
 
 from sqlalchemy_utils import drop_database
@@ -7,12 +8,27 @@ from sqlalchemy_utils import drop_database
 import global_library
 
 
-def delete_database():
+def show_info_window():
     root = tk.Tk()
     root.withdraw()
+    showinfo('Succes!', 'Baza de date a fost stearsa')
+    root.destroy()
+
+
+def show_warning_window():
+    root = tk.Tk()
+    root.withdraw()
+    showwarning('Esec', 'Baza de date nu exista!')
+    root.destroy()
+
+
+def delete_database():
     if os.path.exists(global_library.database_file_path):
         drop_database(global_library.database_file_uri)
-        showinfo('Succes!', 'Baza de date a fost stearsa')
+        p = Process(target=show_info_window)
+        p.start()
+        p.join()
     else:
-        showwarning('Esec', 'Baza de date nu exista!')
-    root.destroy()
+        p = Process(target=show_warning_window)
+        p.start()
+        p.join()
