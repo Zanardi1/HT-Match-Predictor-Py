@@ -1,7 +1,9 @@
 # Defineste rutele pentru pagina de index
 
+import datetime
 import tkinter as tk
 import xml.etree.ElementTree as ET
+import zipfile as z
 from multiprocessing import Process
 from tkinter.messagebox import showinfo
 
@@ -177,3 +179,12 @@ def get_match_id():
                            user_data=global_library.user_data,
                            user_matches=global_library.user_matches, match_orders=match_orders, place=place,
                            answer=global_library.ans)
+
+
+@index_bp.route('/backup')
+def backup_database():
+    archive_name = 'backup ' + datetime.datetime.now().strftime('%Y-%m-%d %H-%M-%S') + '.zip'
+    with z.ZipFile(file=archive_name, mode='w') as backup:
+        backup.write(global_library.database_file_path,
+                     arcname='matches.db')
+    return render_template('admin.html')
