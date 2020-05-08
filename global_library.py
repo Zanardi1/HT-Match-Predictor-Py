@@ -1,9 +1,9 @@
 import os
 
 
-def buildRatingsDictionary():
+def build_ratings_dictionary():
     dic = {}
-    levels = ['Disastruos', 'Wretched', 'Poor', 'Weak', 'Inadequate', 'Passable', 'Solid', 'Excellent', 'Formidable',
+    levels = ['Disastrous', 'Wretched', 'Poor', 'Weak', 'Inadequate', 'Passable', 'Solid', 'Excellent', 'Formidable',
               'Outstanding', 'Brilliant', 'Magnificent', 'World Class', 'Supernatural', 'Titanic', 'Extraterrestrial',
               'Mythical', 'Magical', 'Utopian', 'Divine']
     sublevels = ['very low', 'low', 'high', 'very high']
@@ -15,7 +15,7 @@ def buildRatingsDictionary():
     return dic
 
 
-ratings = buildRatingsDictionary()
+ratings = build_ratings_dictionary()
 positions = ['Midfield', 'Right defence', 'Central defence', 'Left defence', 'Right attack', 'Central attack',
              'Left attack']
 statuses = ['Home', 'Away']
@@ -31,3 +31,7 @@ check_connection_savepath = os.path.join(main_folder, "application\\xml\\Check.x
 database_file_path = os.path.join(main_folder, "application\\db\\matches.db")
 database_file_uri = 'sqlite:///{}'.format(database_file_path)
 default_match_orders = (-1, -1, -1, -1, -1, -1, -1)
+user_data = {}
+team_id = 0
+user_team_name = ''
+user_matches = []

@@ -2,7 +2,6 @@
 import xml.etree.ElementTree as ET
 
 import global_library
-import easygui
 
 
 def parse_user_file():

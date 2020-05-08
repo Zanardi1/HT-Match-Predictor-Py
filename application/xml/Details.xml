@@ -3,142 +3,143 @@
   <FileName>matchdetails.xml</FileName>
   <Version>3.0</Version>
   <UserID>1248859</UserID>
-  <FetchedDate>2020-05-06 13:52:25</FetchedDate>
+  <FetchedDate>2020-05-08 08:57:34</FetchedDate>
   <UserSupporterTier>diamond</UserSupporterTier>
   <SourceSystem>Hattrick</SourceSystem>
   <Match>
-    <MatchID>4070</MatchID>
+    <MatchID>4110</MatchID>
     <MatchType>3</MatchType>
-    <MatchContextId>1</MatchContextId>
+    <MatchContextId>2</MatchContextId>
     <MatchRuleId>0</MatchRuleId>
     <CupLevel>1</CupLevel>
     <CupLevelIndex>1</CupLevelIndex>
-    <MatchDate>2000-10-18 19:00:00</MatchDate>
-    <FinishedDate>2000-10-18 20:45:00</FinishedDate>
+    <MatchDate>2000-10-18 23:00:00</MatchDate>
+    <FinishedDate>2000-10-19 00:45:00</FinishedDate>
     <AddedMinutes>0</AddedMinutes>
     <HomeTeam>
-      <HomeTeamID>10393</HomeTeamID>
-      <HomeTeamName>FC SmÃ¥land</HomeTeamName>
+      <HomeTeamID>6277</HomeTeamID>
+      <HomeTeamName>San Luis</HomeTeamName>
       <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
       <Formation>4-4-2</Formation>
       <HomeGoals>3</HomeGoals>
       <TacticType>0</TacticType>
       <TacticSkill>0</TacticSkill>
-      <RatingMidfield>2</RatingMidfield>
-      <RatingRightDef>6</RatingRightDef>
-      <RatingMidDef>4</RatingMidDef>
-      <RatingLeftDef>3</RatingLeftDef>
-      <RatingRightAtt>5</RatingRightAtt>
+      <RatingMidfield>3</RatingMidfield>
+      <RatingRightDef>12</RatingRightDef>
+      <RatingMidDef>13</RatingMidDef>
+      <RatingLeftDef>11</RatingLeftDef>
+      <RatingRightAtt>6</RatingRightAtt>
       <RatingMidAtt>6</RatingMidAtt>
       <RatingLeftAtt>5</RatingLeftAtt>
     </HomeTeam>
     <AwayTeam>
-      <AwayTeamID>17065</AwayTeamID>
-      <AwayTeamName>SmÃ¥land BK</AwayTeamName>
+      <AwayTeamID>6041</AwayTeamID>
+      <AwayTeamName>La Rioja</AwayTeamName>
       <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
       <Formation>4-4-2</Formation>
-      <AwayGoals>4</AwayGoals>
+      <AwayGoals>0</AwayGoals>
       <TacticType>0</TacticType>
       <TacticSkill>0</TacticSkill>
       <RatingMidfield>2</RatingMidfield>
-      <RatingRightDef>7</RatingRightDef>
-      <RatingMidDef>8</RatingMidDef>
+      <RatingRightDef>9</RatingRightDef>
+      <RatingMidDef>9</RatingMidDef>
       <RatingLeftDef>7</RatingLeftDef>
-      <RatingRightAtt>3</RatingRightAtt>
-      <RatingMidAtt>3</RatingMidAtt>
-      <RatingLeftAtt>5</RatingLeftAtt>
+      <RatingRightAtt>5</RatingRightAtt>
+      <RatingMidAtt>5</RatingMidAtt>
+      <RatingLeftAtt>6</RatingLeftAtt>
     </AwayTeam>
     <Arena>
-      <ArenaID>10393</ArenaID>
-      <ArenaName>SmÃ¥land Stadion</ArenaName>
+      <ArenaID>6277</ArenaID>
+      <ArenaName>San Luis</ArenaName>
       <WeatherID>0</WeatherID>
-      <SoldTotal>5519</SoldTotal>
+      <SoldTotal>15879</SoldTotal>
     </Arena>
     <MatchOfficials>
       <Referee>
-        <RefereeId>0</RefereeId>
-        <RefereeName> </RefereeName>
-        <RefereeCountryId>0</RefereeCountryId>
-        <RefereeCountryName />
-        <RefereeTeamId>0</RefereeTeamId>
-        <RefereeTeamname></RefereeTeamname>
+        <RefereeId>141588630</RefereeId>
+        <RefereeName>MÃ¡rcio Castanho</RefereeName>
+        <RefereeCountryId>25</RefereeCountryId>
+        <RefereeCountryName>Portugal</RefereeCountryName>
+        <RefereeTeamId>855615</RefereeTeamId>
+        <RefereeTeamname>Dinamo Loska</RefereeTeamname>
       </Referee>
       <RefereeAssistant1>
-        <RefereeId>16116130</RefereeId>
-        <RefereeName>Ricardo Navarro MÃ©ndez</RefereeName>
-        <RefereeCountryId>36</RefereeCountryId>
-        <RefereeCountryName>EspaÃ±a</RefereeCountryName>
-        <RefereeTeamId>1037048</RefereeTeamId>
-        <RefereeTeamname>C.A.L.A.</RefereeTeamname>
+        <RefereeId>184792153</RefereeId>
+        <RefereeName>Othmar Hegler</RefereeName>
+        <RefereeCountryId>46</RefereeCountryId>
+        <RefereeCountryName>Schweiz</RefereeCountryName>
+        <RefereeTeamId>229574</RefereeTeamId>
+        <RefereeTeamname>Kona Warriors FC</RefereeTeamname>
       </RefereeAssistant1>
       <RefereeAssistant2>
-        <RefereeId>0</RefereeId>
-        <RefereeName> </RefereeName>
-        <RefereeCountryId>0</RefereeCountryId>
-        <RefereeCountryName />
-        <RefereeTeamId>0</RefereeTeamId>
-        <RefereeTeamname></RefereeTeamname>
+        <RefereeId>338391043</RefereeId>
+        <RefereeName>Marco Stradi</RefereeName>
+        <RefereeCountryId>4</RefereeCountryId>
+        <RefereeCountryName>Italia</RefereeCountryName>
+        <RefereeTeamId>1725828</RefereeTeamId>
+        <RefereeTeamname>sporting modna</RefereeTeamname>
       </RefereeAssistant2>
     </MatchOfficials>
     <Scorers>
       <Goal Index="0">
-        <ScorerPlayerID>401763</ScorerPlayerID>
-        <ScorerPlayerName>Klas Grundmo</ScorerPlayerName>
-        <ScorerTeamID>10393</ScorerTeamID>
+        <ScorerPlayerID>331782</ScorerPlayerID>
+        <ScorerPlayerName>Miguel MelÃ­a</ScorerPlayerName>
+        <ScorerTeamID>6277</ScorerTeamID>
         <ScorerHomeGoals>1</ScorerHomeGoals>
         <ScorerAwayGoals>0</ScorerAwayGoals>
-        <ScorerMinute>11</ScorerMinute>
+        <ScorerMinute>2</ScorerMinute>
         <MatchPart>1</MatchPart>
       </Goal>
       <Goal Index="1">
-        <ScorerPlayerID>515181</ScorerPlayerID>
-        <ScorerPlayerName>Oskar Selholt</ScorerPlayerName>
-        <ScorerTeamID>17065</ScorerTeamID>
-        <ScorerHomeGoals>1</ScorerHomeGoals>
-        <ScorerAwayGoals>1</ScorerAwayGoals>
-        <ScorerMinute>72</ScorerMinute>
+        <ScorerPlayerID>331790</ScorerPlayerID>
+        <ScorerPlayerName>RamÃ³n Gil Pastor</ScorerPlayerName>
+        <ScorerTeamID>6277</ScorerTeamID>
+        <ScorerHomeGoals>2</ScorerHomeGoals>
+        <ScorerAwayGoals>0</ScorerAwayGoals>
+        <ScorerMinute>53</ScorerMinute>
+        <MatchPart>2</MatchPart>
+      </Goal>
+      <Goal Index="2">
+        <ScorerPlayerID>331790</ScorerPlayerID>
+        <ScorerPlayerName>RamÃ³n Gil Pastor</ScorerPlayerName>
+        <ScorerTeamID>6277</ScorerTeamID>
+        <ScorerHomeGoals>3</ScorerHomeGoals>
+        <ScorerAwayGoals>0</ScorerAwayGoals>
+        <ScorerMinute>84</ScorerMinute>
         <MatchPart>2</MatchPart>
       </Goal>
     </Scorers>
     <Bookings>
       <Booking Index="0">
-        <BookingPlayerID>515183</BookingPlayerID>
-        <BookingPlayerName>Thomas Rolandsson</BookingPlayerName>
-        <BookingTeamID>17065</BookingTeamID>
+        <BookingPlayerID>327776</BookingPlayerID>
+        <BookingPlayerName>Juan-Pedro Masso</BookingPlayerName>
+        <BookingTeamID>6041</BookingTeamID>
         <BookingType>1</BookingType>
-        <BookingMinute>5</BookingMinute>
-        <MatchPart>1</MatchPart>
+        <BookingMinute>59</BookingMinute>
+        <MatchPart>2</MatchPart>
       </Booking>
       <Booking Index="1">
-        <BookingPlayerID>401754</BookingPlayerID>
-        <BookingPlayerName>Morten Jansson</BookingPlayerName>
-        <BookingTeamID>10393</BookingTeamID>
+        <BookingPlayerID>331785</BookingPlayerID>
+        <BookingPlayerName>JosÃ© Antonio GonzÃ¡lez Solares</BookingPlayerName>
+        <BookingTeamID>6277</BookingTeamID>
         <BookingType>1</BookingType>
-        <BookingMinute>54</BookingMinute>
+        <BookingMinute>77</BookingMinute>
         <MatchPart>2</MatchPart>
       </Booking>
     </Bookings>
     <Injuries>
       <Injury Index="0">
-        <InjuryPlayerID>515180</InjuryPlayerID>
-        <InjuryPlayerName>Lars Ehngren</InjuryPlayerName>
-        <InjuryTeamID>17065</InjuryTeamID>
-        <InjuryType>1</InjuryType>
-        <InjuryMinute>72</InjuryMinute>
-        <MatchPart>2</MatchPart>
-      </Injury>
-      <Injury Index="1">
-        <InjuryPlayerID>401758</InjuryPlayerID>
-        <InjuryPlayerName>Mikael Tellbeck</InjuryPlayerName>
-        <InjuryTeamID>10393</InjuryTeamID>
-        <InjuryType>1</InjuryType>
-        <InjuryMinute>81</InjuryMinute>
+        <InjuryPlayerID>331791</InjuryPlayerID>
+        <InjuryPlayerName>Joseba GarcÃ­a Vicente</InjuryPlayerName>
+        <InjuryTeamID>6277</InjuryTeamID>
+        <InjuryType>2</InjuryType>
+        <InjuryMinute>79</InjuryMinute>
         <MatchPart>2</MatchPart>
       </Injury>
     </Injuries>
-    <PossessionFirstHalfHome>52</PossessionFirstHalfHome>
-    <PossessionFirstHalfAway>48</PossessionFirstHalfAway>
-    <PossessionSecondHalfHome>48</PossessionSecondHalfHome>
-    <PossessionSecondHalfAway>52</PossessionSecondHalfAway>
+    <PossessionFirstHalfHome>75</PossessionFirstHalfHome>
+    <PossessionFirstHalfAway>25</PossessionFirstHalfAway>
+    <PossessionSecondHalfHome>87</PossessionSecondHalfHome>
+    <PossessionSecondHalfAway>13</PossessionSecondHalfAway>
   </Match>
 </HattrickData>
