@@ -181,10 +181,21 @@ def get_match_id():
                            answer=global_library.ans)
 
 
+def backup_window_complete():
+    root = tk.Tk()
+    root.withdraw()
+    showinfo('Backup terminat', 'Am terminat backupul bazei de date')
+    root.destroy()
+
+
 @index_bp.route('/backup')
 def backup_database():
-    archive_name = 'backup ' + datetime.datetime.now().strftime('%Y-%m-%d %H-%M-%S') + '.zip'
+    archive_name = global_library.database_backup_path + '\\backup ' + datetime.datetime.now().strftime(
+        '%Y-%m-%d %H-%M-%S') + '.zip'
     with z.ZipFile(file=archive_name, mode='w') as backup:
         backup.write(global_library.database_file_path,
                      arcname='matches.db')
+    p = Process(target=backup_window_complete)
+    p.start()
+    p.join()
     return render_template('admin.html')

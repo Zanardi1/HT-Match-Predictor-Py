@@ -30,6 +30,7 @@ details_savepath = os.path.join(main_folder, "application\\xml\\Details.xml")
 check_connection_savepath = os.path.join(main_folder, "application\\xml\\Check.xml")
 database_file_path = os.path.join(main_folder, "application\\db\\matches.db")
 database_file_uri = 'sqlite:///{}'.format(database_file_path)
+database_backup_path = os.path.join(main_folder, "application\\backup")
 default_match_orders = (-1, -1, -1, -1, -1, -1, -1)
 user_data = {}
 team_id = 0
