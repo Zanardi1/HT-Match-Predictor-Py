@@ -2,10 +2,12 @@
 
 import datetime
 import tkinter as tk
+from tkinter import filedialog as f
 import xml.etree.ElementTree as ET
 import zipfile as z
-from multiprocessing import Process
+from multiprocessing import Process, Queue
 from tkinter.messagebox import showinfo
+import os.path
 
 from flask import Blueprint
 from flask import render_template
@@ -198,4 +200,24 @@ def backup_database():
     p = Process(target=backup_window_complete)
     p.start()
     p.join()
+    return render_template('admin.html')
+
+
+def show_restore_backup_window(q):
+    root = tk.Tk()
+    root.withdraw()
+    file = f.askopenfilename()
+    root.destroy()
+    q.put(file)
+
+
+@index_bp.route('/restore')
+def restore_database():
+    queue = Queue()
+    p = Process(target=show_restore_backup_window, args=(queue,))
+    p.start()
+    p.join()
+    restore_database_file_name = queue.get()
+    with z.ZipFile(restore_database_file_name, 'r') as restore:
+        # restore.extractall(os.path.abspath(global_library.database_file_path))
     return render_template('admin.html')
