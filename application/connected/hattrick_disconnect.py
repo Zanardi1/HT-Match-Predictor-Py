@@ -1,10 +1,10 @@
-import configparser as c
-
-import global_library
-from application.xml import dl_xml_file as d
-from tkinter.messagebox import showinfo
 import tkinter as tk
 from multiprocessing import Process
+from tkinter.messagebox import showinfo
+
+import global_library
+from application import config
+from application.xml import dl_xml_file as d
 
 
 def show_disconnect_window():
@@ -15,8 +15,6 @@ def show_disconnect_window():
 
 
 def disconnection_engine():
-    config = c.ConfigParser()
-    config.read(global_library.configuration_file)
     d.download_xml_file(config['DEFAULT']['INVALIDATE_TOKEN_PATH'], {}, global_library.disconnect_savepath)
     config.remove_option('DEFAULT', 'ACCESS_TOKEN')
     config.remove_option('DEFAULT', 'ACCESS_TOKEN_SECRET')

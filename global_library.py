@@ -1,4 +1,5 @@
 import os
+import configparser as c
 
 
 def build_ratings_dictionary():
@@ -15,7 +16,12 @@ def build_ratings_dictionary():
     return dic
 
 
-ratings = build_ratings_dictionary()
+def read_from_configuration_file():
+    temp_config = c.ConfigParser()
+    temp_config.read(configuration_file)
+    return temp_config
+
+
 positions = ['Midfield', 'Right defence', 'Central defence', 'Left defence', 'Right attack', 'Central attack',
              'Left attack']
 statuses = ['Home', 'Away']
@@ -36,3 +42,5 @@ user_data = {}
 team_id = 0
 user_team_name = ''
 user_matches = []
+
+ratings = build_ratings_dictionary()

@@ -1,46 +1,40 @@
 # Subrutinele necesare conectarii la Hattrick
 
-import configparser as c
 import tkinter as tk
-from tkinter.messagebox import showinfo
 import tkinter.simpledialog as sd
 import webbrowser
+from multiprocessing import Process, Queue
+from tkinter.messagebox import showinfo
 
 from rauth import OAuth1Service
 from rauth.oauth import HmacSha1Signature
 
 import application.xml.dl_xml_file as dx
-import global_library
-from application.connected import download_user_info as d
-from multiprocessing import Process, Queue
 import application.xml.xml_parsing as xl
+import global_library
+from application import config
+from application.connected import download_user_info as d
 
 
-def read_configuration_file():
-    config = c.ConfigParser()
-    config.read(global_library.configuration_file)
-    return config
-
-
-def check_if_configuration_file_has_access_tokens(config):
-    if config.has_option('DEFAULT', 'ACCESS_TOKEN') and config.has_option('DEFAULT', 'ACCESS_TOKEN_SECRET'):
+def check_if_configuration_file_has_access_tokens(test_config):
+    if test_config.has_option('DEFAULT', 'ACCESS_TOKEN') and test_config.has_option('DEFAULT', 'ACCESS_TOKEN_SECRET'):
         return True
     else:
         return False
 
 
-def check_if_connection_is_valid(config):
-    dx.download_xml_file(config['DEFAULT']['CHECK_TOKEN_PATH'], {}, global_library.check_connection_savepath)
+def check_if_connection_is_valid(test_config):
+    dx.download_xml_file(test_config['DEFAULT']['CHECK_TOKEN_PATH'], {}, global_library.check_connection_savepath)
     return xl.parse_connection_verification_file()
 
 
-def add_access_tokens_to_config_file(config, connection, request_token, request_token_secret, code):
+def add_access_tokens_to_config_file(test_config, connection, request_token, request_token_secret, code):
     access_token, access_token_secret = connection.get_access_token(request_token, request_token_secret,
                                                                     params={'oauth_verifier': code})
-    config['DEFAULT']['ACCESS_TOKEN'] = access_token
-    config['DEFAULT']['ACCESS_TOKEN_SECRET'] = access_token_secret
+    test_config['DEFAULT']['ACCESS_TOKEN'] = access_token
+    test_config['DEFAULT']['ACCESS_TOKEN_SECRET'] = access_token_secret
     with open(global_library.configuration_file, 'w') as configfile:
-        config.write(configfile)
+        test_config.write(configfile)
 
 
 def show_pin_window(q):
@@ -51,16 +45,16 @@ def show_pin_window(q):
     q.put(code)
 
 
-def get_access_tokens(config):
-    connection = OAuth1Service(consumer_key=config['DEFAULT']['CONSUMER_KEY'],
-                               consumer_secret=config['DEFAULT']['CONSUMER_SECRET'], name='Hattrick',
-                               request_token_url=config['DEFAULT']['REQUEST_TOKEN_PATH'],
-                               access_token_url=config['DEFAULT']['ACCESS_TOKEN_PATH'],
-                               authorize_url=config['DEFAULT']['AUTHORIZE_PATH'],
-                               base_url=config['DEFAULT']['PROTECTED_RESOURCE_PATH'],
+def get_access_tokens(test_config):
+    connection = OAuth1Service(consumer_key=test_config['DEFAULT']['CONSUMER_KEY'],
+                               consumer_secret=test_config['DEFAULT']['CONSUMER_SECRET'], name='Hattrick',
+                               request_token_url=test_config['DEFAULT']['REQUEST_TOKEN_PATH'],
+                               access_token_url=test_config['DEFAULT']['ACCESS_TOKEN_PATH'],
+                               authorize_url=test_config['DEFAULT']['AUTHORIZE_PATH'],
+                               base_url=test_config['DEFAULT']['PROTECTED_RESOURCE_PATH'],
                                signature_obj=HmacSha1Signature)
     request_token, request_token_secret = connection.get_request_token(
-        params={'oauth_callback': config['DEFAULT']['CALLBACK_URL']})
+        params={'oauth_callback': test_config['DEFAULT']['CALLBACK_URL']})
     authorization_url = connection.get_authorize_url(request_token)
     webbrowser.open(authorization_url, new=2)
     queue = Queue()
@@ -71,7 +65,7 @@ def get_access_tokens(config):
     if code is None:
         return False
     else:
-        add_access_tokens_to_config_file(config, connection, request_token, request_token_secret, code)
+        add_access_tokens_to_config_file(test_config, connection, request_token, request_token_secret, code)
         return True
 
 
@@ -101,7 +95,6 @@ def connection_engine():
       3.2. Descarca informatiile de baza
       3.3. Intoarce True."""
 
-    config = read_configuration_file()
     if check_if_configuration_file_has_access_tokens(config) and check_if_connection_is_valid(config):
         user_data = d.download_user_info()
         return True, user_data

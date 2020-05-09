@@ -1,15 +1,12 @@
-import configparser as c
-
 import global_library
 from application.admin import add_match as a
 from application.xml import create_string as cs
 from application.xml import dl_xml_file as dl
 from application.xml import xml_parsing as xp
+from application import config
 
 
 def import_engine(low_end, high_end):
-    config = c.ConfigParser()
-    config.read(global_library.configuration_file)
     file = config['DEFAULT']['PROTECTED_RESOURCE_PATH']
     for match_id in range(low_end, high_end + 1, 1):
         params = cs.create_match_details_string(match_id)

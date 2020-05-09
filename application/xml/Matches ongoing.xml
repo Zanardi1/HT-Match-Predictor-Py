@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HattrickData>
+  <FileName>matches.xml</FileName>
+  <Version>2.8</Version>
+  <UserID>1248859</UserID>
+  <FetchedDate>2020-05-09 11:32:23</FetchedDate>
+  <IsYouth>False</IsYouth>
+  <Team>
+    <TeamID>1187457</TeamID>
+    <TeamName>Zanardi Redwings</TeamName>
+    <ShortTeamName>ZanR</ShortTeamName>
+    <League>
+      <LeagueID>37</LeagueID>
+      <LeagueName>RomÃ¢nia</LeagueName>
+    </League>
+    <LeagueLevelUnit>
+      <LeagueLevelUnitID>3914</LeagueLevelUnitID>
+      <LeagueLevelUnitName>IV.40</LeagueLevelUnitName>
+      <LeagueLevel>4</LeagueLevel>
+    </LeagueLevelUnit>
+    <MatchList>
+      <Match>
+        <MatchID>17016771</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1629472</AwayTeamID>
+          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-04-13 14:26:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>61</MatchType>
+        <MatchContextId>0</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>1</HomeGoals>
+        <AwayGoals>3</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>657986459</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName>ZanR</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>2012094</AwayTeamID>
+          <AwayTeamName>Mademoiselle Lolita F.C.</AwayTeamName>
+          <AwayTeamNameShortName>Mademoiselle</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-04-15 10:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>8</MatchType>
+        <MatchContextId>0</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>1</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>653771123</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName>ZanR</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>699845</AwayTeamID>
+          <AwayTeamName>Calgary Flames F.C.</AwayTeamName>
+          <AwayTeamNameShortName>Flames</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-04-18 10:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>1</MatchType>
+        <MatchContextId>3914</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>4</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>658053375</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName>ZanR</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>986996</AwayTeamID>
+          <AwayTeamName>POL Yerevan</AwayTeamName>
+          <AwayTeamNameShortName>Yerevan</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-04-22 10:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>8</MatchType>
+        <MatchContextId>0</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>3</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>653771127</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1063518</HomeTeamID>
+          <HomeTeamName>Afc Steaua</HomeTeamName>
+          <HomeTeamNameShortName>Steaua</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1187457</AwayTeamID>
+          <AwayTeamName>Zanardi Redwings</AwayTeamName>
+          <AwayTeamNameShortName>ZanR</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-04-25 10:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>1</MatchType>
+        <MatchContextId>3914</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>8</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>658137955</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName>ZanR</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1602460</AwayTeamID>
+          <AwayTeamName>IRAQI-LIONS</AwayTeamName>
+          <AwayTeamNameShortName>IQ-Lions</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-04-29 10:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>8</MatchType>
+        <MatchContextId>0</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>5</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>653771131</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName>ZanR</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>882707</AwayTeamID>
+          <AwayTeamName>Steaua Speed Turda</AwayTeamName>
+          <AwayTeamNameShortName>Steaua St</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-02 10:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>1</MatchType>
+        <MatchContextId>3914</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>9</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>658256874</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName>ZanR</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>442086</AwayTeamID>
+          <AwayTeamName>Glorioso Newell's</AwayTeamName>
+          <AwayTeamNameShortName>Rojinegro</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-06 10:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>8</MatchType>
+        <MatchContextId>0</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>1</HomeGoals>
+        <AwayGoals>5</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>653771132</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName>ZanR</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>185656</AwayTeamID>
+          <AwayTeamName>Bad Taste Corn</AwayTeamName>
+          <AwayTeamNameShortName>BTC</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-09 10:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>1</MatchType>
+        <MatchContextId>3914</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <Status>ONGOING</Status>
+      </Match>
+      <Match>
+        <MatchID>658300237</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName>ZanR</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>793972</AwayTeamID>
+          <AwayTeamName>FC Tout Lui Faut</AwayTeamName>
+          <AwayTeamNameShortName>Tout</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-13 10:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>8</MatchType>
+        <MatchContextId>0</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <OrdersGiven>False</OrdersGiven>
+        <Status>UPCOMING</Status>
+      </Match>
+      <Match>
+        <MatchID>653771138</MatchID>
+        <HomeTeam>
+          <HomeTeamID>875245</HomeTeamID>
+          <HomeTeamName>Dreamstate</HomeTeamName>
+          <HomeTeamNameShortName>Dreamstate</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1187457</AwayTeamID>
+          <AwayTeamName>Zanardi Redwings</AwayTeamName>
+          <AwayTeamNameShortName>ZanR</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-16 10:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>1</MatchType>
+        <MatchContextId>3914</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <OrdersGiven>False</OrdersGiven>
+        <Status>UPCOMING</Status>
+      </Match>
+    </MatchList>
+  </Team>
+</HattrickData>

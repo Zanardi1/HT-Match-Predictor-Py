@@ -1,7 +1,9 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+import global_library
 
 database = SQLAlchemy()
+config = global_library.read_from_configuration_file()
 
 
 def create_app():
