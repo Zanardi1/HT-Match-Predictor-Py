@@ -22,12 +22,16 @@
   <component name="DBNavigator.Project.DatabaseBrowserManager">
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
-    <show-object-properties value="true" />
-    <loaded-nodes />
+    <show-object-properties value="false" />
+    <loaded-nodes>
+      <connection connection-id="735e774e-84e0-4588-be02-f51ca6607f9b">
+        <schema name="main" object-types="table, column, view" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="735e774e-84e0-4588-be02-f51ca6607f9b">
-      <console name="Connection" type="STANDARD" schema="main" session="Main"><![CDATA[select HomeTeamGoals, AwayTeamGoals from "Matches" where HomeTeamMidfield=3]]></console>
+      <console name="Connection" type="STANDARD" schema="main" session="Main"><![CDATA[select * from "Matches" where "Matches"."MatchID">4230]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">

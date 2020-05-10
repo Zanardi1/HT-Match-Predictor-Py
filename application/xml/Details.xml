@@ -3,11 +3,11 @@
   <FileName>matchdetails.xml</FileName>
   <Version>3.0</Version>
   <UserID>1248859</UserID>
-  <FetchedDate>2020-05-09 10:45:02</FetchedDate>
+  <FetchedDate>2020-05-10 11:10:07</FetchedDate>
   <UserSupporterTier>diamond</UserSupporterTier>
   <SourceSystem>Hattrick</SourceSystem>
   <Match>
-    <MatchID>4130</MatchID>
+    <MatchID>4250</MatchID>
     <MatchType>3</MatchType>
     <MatchContextId>2</MatchContextId>
     <MatchRuleId>0</MatchRuleId>
@@ -17,164 +17,119 @@
     <FinishedDate>2000-10-19 00:45:00</FinishedDate>
     <AddedMinutes>0</AddedMinutes>
     <HomeTeam>
-      <HomeTeamID>6620</HomeTeamID>
-      <HomeTeamName>Chubut</HomeTeamName>
+      <HomeTeamID>6690</HomeTeamID>
+      <HomeTeamName>CÃ³rdoba</HomeTeamName>
       <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
       <Formation>4-4-2</Formation>
-      <HomeGoals>6</HomeGoals>
-      <TacticType>0</TacticType>
-      <TacticSkill>0</TacticSkill>
-      <RatingMidfield>3</RatingMidfield>
-      <RatingRightDef>7</RatingRightDef>
-      <RatingMidDef>8</RatingMidDef>
-      <RatingLeftDef>9</RatingLeftDef>
-      <RatingRightAtt>6</RatingRightAtt>
-      <RatingMidAtt>6</RatingMidAtt>
-      <RatingLeftAtt>5</RatingLeftAtt>
-    </HomeTeam>
-    <AwayTeam>
-      <AwayTeamID>6046</AwayTeamID>
-      <AwayTeamName>Tierra del Fuego</AwayTeamName>
-      <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
-      <Formation>4-4-2</Formation>
-      <AwayGoals>1</AwayGoals>
+      <HomeGoals>2</HomeGoals>
       <TacticType>0</TacticType>
       <TacticSkill>0</TacticSkill>
       <RatingMidfield>2</RatingMidfield>
+      <RatingRightDef>8</RatingRightDef>
+      <RatingMidDef>9</RatingMidDef>
+      <RatingLeftDef>8</RatingLeftDef>
+      <RatingRightAtt>4</RatingRightAtt>
+      <RatingMidAtt>4</RatingMidAtt>
+      <RatingLeftAtt>4</RatingLeftAtt>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>6079</AwayTeamID>
+      <AwayTeamName>Ciudad de Buenos Aires</AwayTeamName>
+      <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
+      <Formation>4-4-2</Formation>
+      <AwayGoals>0</AwayGoals>
+      <TacticType>0</TacticType>
+      <TacticSkill>0</TacticSkill>
+      <RatingMidfield>1</RatingMidfield>
       <RatingRightDef>6</RatingRightDef>
       <RatingMidDef>8</RatingMidDef>
-      <RatingLeftDef>6</RatingLeftDef>
-      <RatingRightAtt>8</RatingRightAtt>
-      <RatingMidAtt>7</RatingMidAtt>
-      <RatingLeftAtt>7</RatingLeftAtt>
+      <RatingLeftDef>9</RatingLeftDef>
+      <RatingRightAtt>5</RatingRightAtt>
+      <RatingMidAtt>6</RatingMidAtt>
+      <RatingLeftAtt>4</RatingLeftAtt>
     </AwayTeam>
     <Arena>
-      <ArenaID>6620</ArenaID>
-      <ArenaName>Chubut</ArenaName>
-      <WeatherID>0</WeatherID>
-      <SoldTotal>15529</SoldTotal>
+      <ArenaID>6690</ArenaID>
+      <ArenaName>CÃ³rdoba</ArenaName>
+      <WeatherID>3</WeatherID>
+      <SoldTotal>18202</SoldTotal>
     </Arena>
     <MatchOfficials>
       <Referee>
-        <RefereeId>285012106</RefereeId>
-        <RefereeName>Uwe Doerfler</RefereeName>
-        <RefereeCountryId>3</RefereeCountryId>
-        <RefereeCountryName>Deutschland</RefereeCountryName>
-        <RefereeTeamId>1901485</RefereeTeamId>
-        <RefereeTeamname>Les Lapins EnragÃ©s</RefereeTeamname>
+        <RefereeId>290777117</RefereeId>
+        <RefereeName>Ulf Lind</RefereeName>
+        <RefereeCountryId>1</RefereeCountryId>
+        <RefereeCountryName>Sverige</RefereeCountryName>
+        <RefereeTeamId>116737</RefereeTeamId>
+        <RefereeTeamname>FK Chiekurkalns</RefereeTeamname>
       </Referee>
       <RefereeAssistant1>
-        <RefereeId>27665439</RefereeId>
-        <RefereeName>Klaudiusz Sterkowiec</RefereeName>
-        <RefereeCountryId>24</RefereeCountryId>
-        <RefereeCountryName>Polska</RefereeCountryName>
-        <RefereeTeamId>1247058</RefereeTeamId>
-        <RefereeTeamname>Dreieich Scorpions</RefereeTeamname>
+        <RefereeId>159099679</RefereeId>
+        <RefereeName>Inozens Adelstein</RefereeName>
+        <RefereeCountryId>46</RefereeCountryId>
+        <RefereeCountryName>Schweiz</RefereeCountryName>
+        <RefereeTeamId>1019642</RefereeTeamId>
+        <RefereeTeamname>FootballAddict SC</RefereeTeamname>
       </RefereeAssistant1>
       <RefereeAssistant2>
-        <RefereeId>94531677</RefereeId>
-        <RefereeName>Kari Sarviluoma</RefereeName>
-        <RefereeCountryId>12</RefereeCountryId>
-        <RefereeCountryName>Suomi</RefereeCountryName>
-        <RefereeTeamId>0</RefereeTeamId>
-        <RefereeTeamname></RefereeTeamname>
+        <RefereeId>194424743</RefereeId>
+        <RefereeName>Valentin Vlassak</RefereeName>
+        <RefereeCountryId>44</RefereeCountryId>
+        <RefereeCountryName>Belgium</RefereeCountryName>
+        <RefereeTeamId>321846</RefereeTeamId>
+        <RefereeTeamname>FC Comines</RefereeTeamname>
       </RefereeAssistant2>
     </MatchOfficials>
     <Scorers>
       <Goal Index="0">
-        <ScorerPlayerID>327860</ScorerPlayerID>
-        <ScorerPlayerName>Jose Maria Raposo</ScorerPlayerName>
-        <ScorerTeamID>6046</ScorerTeamID>
-        <ScorerHomeGoals>0</ScorerHomeGoals>
-        <ScorerAwayGoals>1</ScorerAwayGoals>
-        <ScorerMinute>12</ScorerMinute>
-        <MatchPart>1</MatchPart>
-      </Goal>
-      <Goal Index="1">
-        <ScorerPlayerID>337621</ScorerPlayerID>
-        <ScorerPlayerName>JosÃ© Antonio Arizmendi</ScorerPlayerName>
-        <ScorerTeamID>6620</ScorerTeamID>
+        <ScorerPlayerID>338812</ScorerPlayerID>
+        <ScorerPlayerName>Ignasio Lopez San Segundo</ScorerPlayerName>
+        <ScorerTeamID>6690</ScorerTeamID>
         <ScorerHomeGoals>1</ScorerHomeGoals>
-        <ScorerAwayGoals>1</ScorerAwayGoals>
+        <ScorerAwayGoals>0</ScorerAwayGoals>
         <ScorerMinute>36</ScorerMinute>
         <MatchPart>1</MatchPart>
       </Goal>
-      <Goal Index="2">
-        <ScorerPlayerID>337622</ScorerPlayerID>
-        <ScorerPlayerName>Sergio Edo Peiro</ScorerPlayerName>
-        <ScorerTeamID>6620</ScorerTeamID>
+      <Goal Index="1">
+        <ScorerPlayerID>338812</ScorerPlayerID>
+        <ScorerPlayerName>Ignasio Lopez San Segundo</ScorerPlayerName>
+        <ScorerTeamID>6690</ScorerTeamID>
         <ScorerHomeGoals>2</ScorerHomeGoals>
-        <ScorerAwayGoals>1</ScorerAwayGoals>
-        <ScorerMinute>37</ScorerMinute>
-        <MatchPart>1</MatchPart>
-      </Goal>
-      <Goal Index="3">
-        <ScorerPlayerID>337621</ScorerPlayerID>
-        <ScorerPlayerName>JosÃ© Antonio Arizmendi</ScorerPlayerName>
-        <ScorerTeamID>6620</ScorerTeamID>
-        <ScorerHomeGoals>3</ScorerHomeGoals>
-        <ScorerAwayGoals>1</ScorerAwayGoals>
-        <ScorerMinute>53</ScorerMinute>
-        <MatchPart>2</MatchPart>
-      </Goal>
-      <Goal Index="4">
-        <ScorerPlayerID>337619</ScorerPlayerID>
-        <ScorerPlayerName>Ramon MarÃ­a Cerezo Martin</ScorerPlayerName>
-        <ScorerTeamID>6620</ScorerTeamID>
-        <ScorerHomeGoals>4</ScorerHomeGoals>
-        <ScorerAwayGoals>1</ScorerAwayGoals>
-        <ScorerMinute>60</ScorerMinute>
-        <MatchPart>2</MatchPart>
-      </Goal>
-      <Goal Index="5">
-        <ScorerPlayerID>337621</ScorerPlayerID>
-        <ScorerPlayerName>JosÃ© Antonio Arizmendi</ScorerPlayerName>
-        <ScorerTeamID>6620</ScorerTeamID>
-        <ScorerHomeGoals>5</ScorerHomeGoals>
-        <ScorerAwayGoals>1</ScorerAwayGoals>
-        <ScorerMinute>68</ScorerMinute>
-        <MatchPart>2</MatchPart>
-      </Goal>
-      <Goal Index="6">
-        <ScorerPlayerID>337621</ScorerPlayerID>
-        <ScorerPlayerName>JosÃ© Antonio Arizmendi</ScorerPlayerName>
-        <ScorerTeamID>6620</ScorerTeamID>
-        <ScorerHomeGoals>6</ScorerHomeGoals>
-        <ScorerAwayGoals>1</ScorerAwayGoals>
-        <ScorerMinute>73</ScorerMinute>
+        <ScorerAwayGoals>0</ScorerAwayGoals>
+        <ScorerMinute>78</ScorerMinute>
         <MatchPart>2</MatchPart>
       </Goal>
     </Scorers>
     <Bookings>
       <Booking Index="0">
-        <BookingPlayerID>337615</BookingPlayerID>
-        <BookingPlayerName>Alberto Perez Tremps</BookingPlayerName>
-        <BookingTeamID>6620</BookingTeamID>
+        <BookingPlayerID>338809</BookingPlayerID>
+        <BookingPlayerName>Ãscar Lezaun</BookingPlayerName>
+        <BookingTeamID>6690</BookingTeamID>
         <BookingType>1</BookingType>
-        <BookingMinute>2</BookingMinute>
-        <MatchPart>1</MatchPart>
+        <BookingMinute>46</BookingMinute>
+        <MatchPart>2</MatchPart>
       </Booking>
       <Booking Index="1">
-        <BookingPlayerID>337615</BookingPlayerID>
-        <BookingPlayerName>Alberto Perez Tremps</BookingPlayerName>
-        <BookingTeamID>6620</BookingTeamID>
-        <BookingType>2</BookingType>
-        <BookingMinute>13</BookingMinute>
-        <MatchPart>1</MatchPart>
+        <BookingPlayerID>328424</BookingPlayerID>
+        <BookingPlayerName>Manuel MontolÃ­o</BookingPlayerName>
+        <BookingTeamID>6079</BookingTeamID>
+        <BookingType>1</BookingType>
+        <BookingMinute>71</BookingMinute>
+        <MatchPart>2</MatchPart>
       </Booking>
       <Booking Index="2">
-        <BookingPlayerID>337614</BookingPlayerID>
-        <BookingPlayerName>Daniel Bajo FernÃ¡ndez</BookingPlayerName>
-        <BookingTeamID>6620</BookingTeamID>
+        <BookingPlayerID>338803</BookingPlayerID>
+        <BookingPlayerName>Gonzalo Arrieta MartÃ­nez De</BookingPlayerName>
+        <BookingTeamID>6690</BookingTeamID>
         <BookingType>1</BookingType>
-        <BookingMinute>22</BookingMinute>
-        <MatchPart>1</MatchPart>
+        <BookingMinute>87</BookingMinute>
+        <MatchPart>2</MatchPart>
       </Booking>
     </Bookings>
     <Injuries />
-    <PossessionFirstHalfHome>60</PossessionFirstHalfHome>
-    <PossessionFirstHalfAway>40</PossessionFirstHalfAway>
-    <PossessionSecondHalfHome>78</PossessionSecondHalfHome>
-    <PossessionSecondHalfAway>22</PossessionSecondHalfAway>
+    <PossessionFirstHalfHome>64</PossessionFirstHalfHome>
+    <PossessionFirstHalfAway>36</PossessionFirstHalfAway>
+    <PossessionSecondHalfHome>68</PossessionSecondHalfHome>
+    <PossessionSecondHalfAway>32</PossessionSecondHalfAway>
   </Match>
 </HattrickData>
