@@ -1,19 +1,20 @@
+import tkinter as tk
+from multiprocessing import Process
+from tkinter.ttk import Progressbar, Button
+
 import global_library
+from application import config
 from application.admin import add_match as a
 from application.xml import create_string as cs
 from application.xml import dl_xml_file as dl
 from application.xml import xml_parsing as xp
-from application import config
-import tkinter as tk
-from tkinter.ttk import Progressbar, Button
-from multiprocessing import Process, Queue
 
 
-def show_progress_window(low_end, high_end, match_counter):
+def show_progress_window(low_end, high_end, match_count):
     root = tk.Tk()
     progress_bar = Progressbar(root, mode='determinate', orient='horizontal', length=200)
     progress_bar['maximum'] = high_end - low_end
-    progress_bar['value'] = match_counter
+    progress_bar['value'] = match_count
     progress_bar.pack()
     cancel_button = Button(root, text='Anulare')
     cancel_button.pack()
