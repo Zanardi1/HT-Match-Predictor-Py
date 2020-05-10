@@ -211,6 +211,13 @@ def show_restore_backup_window(q):
     q.put(file)
 
 
+def show_restore_window_complete():
+    root = tk.Tk()
+    root.withdraw()
+    showinfo('Restaurare incheiata', 'S-a incheiat restaurarea backupului ales')
+    root.destroy()
+
+
 @index_bp.route('/restore')
 def restore_database():
     queue = Queue()
@@ -219,5 +226,8 @@ def restore_database():
     p.join()
     restore_database_file_name = queue.get()
     with z.ZipFile(restore_database_file_name, 'r') as restore:
-        # restore.extractall(os.path.abspath(global_library.database_file_path))
+        restore.extractall(os.path.dirname(global_library.database_file_path))
+    p = Process(target=show_restore_window_complete)
+    p.start()
+    p.join()
     return render_template('admin.html')
