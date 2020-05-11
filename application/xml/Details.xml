@@ -3,152 +3,141 @@
   <FileName>matchdetails.xml</FileName>
   <Version>3.0</Version>
   <UserID>1248859</UserID>
-  <FetchedDate>2020-05-10 18:09:42</FetchedDate>
+  <FetchedDate>2020-05-11 14:33:55</FetchedDate>
   <UserSupporterTier>diamond</UserSupporterTier>
   <SourceSystem>Hattrick</SourceSystem>
   <Match>
-    <MatchID>4270</MatchID>
+    <MatchID>4490</MatchID>
     <MatchType>3</MatchType>
-    <MatchContextId>2</MatchContextId>
+    <MatchContextId>3</MatchContextId>
     <MatchRuleId>0</MatchRuleId>
     <CupLevel>1</CupLevel>
     <CupLevelIndex>1</CupLevelIndex>
-    <MatchDate>2000-10-18 23:00:00</MatchDate>
-    <FinishedDate>2000-10-19 00:45:00</FinishedDate>
+    <MatchDate>2000-10-18 22:00:00</MatchDate>
+    <FinishedDate>2000-10-18 23:45:00</FinishedDate>
     <AddedMinutes>0</AddedMinutes>
     <HomeTeam>
-      <HomeTeamID>6530</HomeTeamID>
-      <HomeTeamName>Mendoza</HomeTeamName>
+      <HomeTeamID>7659</HomeTeamID>
+      <HomeTeamName>Luton</HomeTeamName>
       <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
       <Formation>4-4-2</Formation>
-      <HomeGoals>4</HomeGoals>
+      <HomeGoals>2</HomeGoals>
       <TacticType>0</TacticType>
       <TacticSkill>0</TacticSkill>
-      <RatingMidfield>3</RatingMidfield>
+      <RatingMidfield>2</RatingMidfield>
       <RatingRightDef>7</RatingRightDef>
-      <RatingMidDef>10</RatingMidDef>
-      <RatingLeftDef>8</RatingLeftDef>
-      <RatingRightAtt>7</RatingRightAtt>
-      <RatingMidAtt>9</RatingMidAtt>
-      <RatingLeftAtt>8</RatingLeftAtt>
+      <RatingMidDef>11</RatingMidDef>
+      <RatingLeftDef>10</RatingLeftDef>
+      <RatingRightAtt>6</RatingRightAtt>
+      <RatingMidAtt>8</RatingMidAtt>
+      <RatingLeftAtt>7</RatingLeftAtt>
     </HomeTeam>
     <AwayTeam>
-      <AwayTeamID>6232</AwayTeamID>
-      <AwayTeamName>Formosa</AwayTeamName>
+      <AwayTeamID>7430</AwayTeamID>
+      <AwayTeamName>Southhampton</AwayTeamName>
       <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
       <Formation>4-4-2</Formation>
       <AwayGoals>0</AwayGoals>
       <TacticType>0</TacticType>
       <TacticSkill>0</TacticSkill>
       <RatingMidfield>2</RatingMidfield>
-      <RatingRightDef>6</RatingRightDef>
+      <RatingRightDef>7</RatingRightDef>
       <RatingMidDef>9</RatingMidDef>
-      <RatingLeftDef>9</RatingLeftDef>
-      <RatingRightAtt>4</RatingRightAtt>
-      <RatingMidAtt>5</RatingMidAtt>
+      <RatingLeftDef>7</RatingLeftDef>
+      <RatingRightAtt>6</RatingRightAtt>
+      <RatingMidAtt>7</RatingMidAtt>
       <RatingLeftAtt>5</RatingLeftAtt>
     </AwayTeam>
     <Arena>
-      <ArenaID>6530</ArenaID>
-      <ArenaName>Mendoza</ArenaName>
-      <WeatherID>2</WeatherID>
-      <SoldTotal>14780</SoldTotal>
+      <ArenaID>7659</ArenaID>
+      <ArenaName>LutonMemorial</ArenaName>
+      <WeatherID>3</WeatherID>
+      <SoldTotal>18448</SoldTotal>
     </Arena>
     <MatchOfficials>
       <Referee>
-        <RefereeId>93597106</RefereeId>
-        <RefereeName>Lucien Desmedt</RefereeName>
-        <RefereeCountryId>44</RefereeCountryId>
-        <RefereeCountryName>Belgium</RefereeCountryName>
-        <RefereeTeamId>105021</RefereeTeamId>
-        <RefereeTeamname>Lokomotiv Tsjemo</RefereeTeamname>
+        <RefereeId>0</RefereeId>
+        <RefereeName> </RefereeName>
+        <RefereeCountryId>0</RefereeCountryId>
+        <RefereeCountryName />
+        <RefereeTeamId>0</RefereeTeamId>
+        <RefereeTeamname></RefereeTeamname>
       </Referee>
       <RefereeAssistant1>
-        <RefereeId>182877460</RefereeId>
-        <RefereeName>Runar Angelo</RefereeName>
-        <RefereeCountryId>9</RefereeCountryId>
-        <RefereeCountryName>Norge</RefereeCountryName>
-        <RefereeTeamId>1070573</RefereeTeamId>
-        <RefereeTeamname>FK Carmen</RefereeTeamname>
+        <RefereeId>205283434</RefereeId>
+        <RefereeName>Daniel Lequi</RefereeName>
+        <RefereeCountryId>7</RefereeCountryId>
+        <RefereeCountryName>Argentina</RefereeCountryName>
+        <RefereeTeamId>481217</RefereeTeamId>
+        <RefereeTeamname>Justynky klubÃ­k</RefereeTeamname>
       </RefereeAssistant1>
       <RefereeAssistant2>
-        <RefereeId>34214034</RefereeId>
-        <RefereeName>David Tournier</RefereeName>
-        <RefereeCountryId>44</RefereeCountryId>
-        <RefereeCountryName>Belgium</RefereeCountryName>
-        <RefereeTeamId>194731</RefereeTeamId>
-        <RefereeTeamname>tiemXtriem</RefereeTeamname>
+        <RefereeId>0</RefereeId>
+        <RefereeName> </RefereeName>
+        <RefereeCountryId>0</RefereeCountryId>
+        <RefereeCountryName />
+        <RefereeTeamId>0</RefereeTeamId>
+        <RefereeTeamname></RefereeTeamname>
       </RefereeAssistant2>
     </MatchOfficials>
     <Scorers>
       <Goal Index="0">
-        <ScorerPlayerID>336087</ScorerPlayerID>
-        <ScorerPlayerName>JuliÃ¡n Cortes</ScorerPlayerName>
-        <ScorerTeamID>6530</ScorerTeamID>
+        <ScorerPlayerID>355284</ScorerPlayerID>
+        <ScorerPlayerName>Chris Nowak</ScorerPlayerName>
+        <ScorerTeamID>7659</ScorerTeamID>
         <ScorerHomeGoals>1</ScorerHomeGoals>
         <ScorerAwayGoals>0</ScorerAwayGoals>
-        <ScorerMinute>26</ScorerMinute>
-        <MatchPart>1</MatchPart>
-      </Goal>
-      <Goal Index="1">
-        <ScorerPlayerID>336086</ScorerPlayerID>
-        <ScorerPlayerName>Ricardo Bastida Freijedo</ScorerPlayerName>
-        <ScorerTeamID>6530</ScorerTeamID>
-        <ScorerHomeGoals>2</ScorerHomeGoals>
-        <ScorerAwayGoals>0</ScorerAwayGoals>
-        <ScorerMinute>41</ScorerMinute>
-        <MatchPart>1</MatchPart>
-      </Goal>
-      <Goal Index="2">
-        <ScorerPlayerID>336091</ScorerPlayerID>
-        <ScorerPlayerName>Francisco Javie Alba</ScorerPlayerName>
-        <ScorerTeamID>6530</ScorerTeamID>
-        <ScorerHomeGoals>3</ScorerHomeGoals>
-        <ScorerAwayGoals>0</ScorerAwayGoals>
-        <ScorerMinute>53</ScorerMinute>
+        <ScorerMinute>64</ScorerMinute>
         <MatchPart>2</MatchPart>
       </Goal>
-      <Goal Index="3">
-        <ScorerPlayerID>336088</ScorerPlayerID>
-        <ScorerPlayerName>Bernardo Zubeldia Lauzurica</ScorerPlayerName>
-        <ScorerTeamID>6530</ScorerTeamID>
-        <ScorerHomeGoals>4</ScorerHomeGoals>
+      <Goal Index="1">
+        <ScorerPlayerID>355284</ScorerPlayerID>
+        <ScorerPlayerName>Chris Nowak</ScorerPlayerName>
+        <ScorerTeamID>7659</ScorerTeamID>
+        <ScorerHomeGoals>2</ScorerHomeGoals>
         <ScorerAwayGoals>0</ScorerAwayGoals>
-        <ScorerMinute>84</ScorerMinute>
+        <ScorerMinute>88</ScorerMinute>
         <MatchPart>2</MatchPart>
       </Goal>
     </Scorers>
     <Bookings>
       <Booking Index="0">
-        <BookingPlayerID>336087</BookingPlayerID>
-        <BookingPlayerName>JuliÃ¡n Cortes</BookingPlayerName>
-        <BookingTeamID>6530</BookingTeamID>
+        <BookingPlayerID>355279</BookingPlayerID>
+        <BookingPlayerName>Bernard Mackie</BookingPlayerName>
+        <BookingTeamID>7659</BookingTeamID>
         <BookingType>1</BookingType>
         <BookingMinute>8</BookingMinute>
         <MatchPart>1</MatchPart>
       </Booking>
       <Booking Index="1">
-        <BookingPlayerID>336089</BookingPlayerID>
-        <BookingPlayerName>Juan Fernando Checa Rubio</BookingPlayerName>
-        <BookingTeamID>6530</BookingTeamID>
+        <BookingPlayerID>355276</BookingPlayerID>
+        <BookingPlayerName>Lee Wright</BookingPlayerName>
+        <BookingTeamID>7659</BookingTeamID>
         <BookingType>1</BookingType>
-        <BookingMinute>67</BookingMinute>
+        <BookingMinute>8</BookingMinute>
+        <MatchPart>1</MatchPart>
+      </Booking>
+      <Booking Index="2">
+        <BookingPlayerID>351385</BookingPlayerID>
+        <BookingPlayerName>Alex Geoghegan</BookingPlayerName>
+        <BookingTeamID>7430</BookingTeamID>
+        <BookingType>1</BookingType>
+        <BookingMinute>11</BookingMinute>
+        <MatchPart>1</MatchPart>
+      </Booking>
+      <Booking Index="3">
+        <BookingPlayerID>351389</BookingPlayerID>
+        <BookingPlayerName>Derek Gray</BookingPlayerName>
+        <BookingTeamID>7430</BookingTeamID>
+        <BookingType>1</BookingType>
+        <BookingMinute>61</BookingMinute>
         <MatchPart>2</MatchPart>
       </Booking>
     </Bookings>
-    <Injuries>
-      <Injury Index="0">
-        <InjuryPlayerID>336090</InjuryPlayerID>
-        <InjuryPlayerName>JosÃ© Miguel Fraile Ortiz</InjuryPlayerName>
-        <InjuryTeamID>6530</InjuryTeamID>
-        <InjuryType>2</InjuryType>
-        <InjuryMinute>70</InjuryMinute>
-        <MatchPart>2</MatchPart>
-      </Injury>
-    </Injuries>
-    <PossessionFirstHalfHome>63</PossessionFirstHalfHome>
-    <PossessionFirstHalfAway>37</PossessionFirstHalfAway>
-    <PossessionSecondHalfHome>62</PossessionSecondHalfHome>
-    <PossessionSecondHalfAway>38</PossessionSecondHalfAway>
+    <Injuries />
+    <PossessionFirstHalfHome>65</PossessionFirstHalfHome>
+    <PossessionFirstHalfAway>35</PossessionFirstHalfAway>
+    <PossessionSecondHalfHome>68</PossessionSecondHalfHome>
+    <PossessionSecondHalfAway>32</PossessionSecondHalfAway>
   </Match>
 </HattrickData>
