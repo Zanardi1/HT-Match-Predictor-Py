@@ -1,13 +1,13 @@
 # Defineste rutele pentru pagina de index
 
 import datetime
+import os.path
 import tkinter as tk
-from tkinter import filedialog as f
 import xml.etree.ElementTree as ET
 import zipfile as z
 from multiprocessing import Process, Queue
+from tkinter import filedialog as f
 from tkinter.messagebox import showinfo
-import os.path
 
 from flask import Blueprint
 from flask import render_template
