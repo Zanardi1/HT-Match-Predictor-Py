@@ -10,4 +10,7 @@ def add_a_match(ID, HTM, HTRD, HTCD, HTLD, HTRA, HTCA, HTLA, ATM, ATRD, ATCD, AT
                     AwayTeamLAttack=ATLA,
                     HomeTeamGoals=HTG, AwayTeamGoals=ATG)
     database.session.add(match)
+
+
+def commit_to_database():
     database.session.commit()

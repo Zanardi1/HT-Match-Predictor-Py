@@ -3,159 +3,187 @@
   <FileName>matchdetails.xml</FileName>
   <Version>3.0</Version>
   <UserID>1248859</UserID>
-  <FetchedDate>2020-05-12 13:57:56</FetchedDate>
+  <FetchedDate>2020-05-12 17:47:14</FetchedDate>
   <UserSupporterTier>diamond</UserSupporterTier>
   <SourceSystem>Hattrick</SourceSystem>
   <Match>
-    <MatchID>4560</MatchID>
-    <MatchType>3</MatchType>
-    <MatchContextId>3</MatchContextId>
+    <MatchID>10030</MatchID>
+    <MatchType>1</MatchType>
+    <MatchContextId>85</MatchContextId>
     <MatchRuleId>0</MatchRuleId>
-    <CupLevel>1</CupLevel>
-    <CupLevelIndex>1</CupLevelIndex>
-    <MatchDate>2000-10-18 22:00:00</MatchDate>
-    <FinishedDate>2000-10-18 23:45:00</FinishedDate>
+    <CupLevel>0</CupLevel>
+    <CupLevelIndex>0</CupLevelIndex>
+    <MatchDate>2000-11-12 10:00:00</MatchDate>
+    <FinishedDate>2000-11-12 11:45:00</FinishedDate>
     <AddedMinutes>0</AddedMinutes>
     <HomeTeam>
-      <HomeTeamID>7602</HomeTeamID>
-      <HomeTeamName>Nottingham</HomeTeamName>
+      <HomeTeamID>2079</HomeTeamID>
+      <HomeTeamName>Arsenal Boys</HomeTeamName>
       <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
-      <Formation>4-4-2</Formation>
+      <Formation>3-4-3</Formation>
       <HomeGoals>5</HomeGoals>
       <TacticType>0</TacticType>
       <TacticSkill>0</TacticSkill>
-      <RatingMidfield>2</RatingMidfield>
-      <RatingRightDef>10</RatingRightDef>
-      <RatingMidDef>10</RatingMidDef>
-      <RatingLeftDef>6</RatingLeftDef>
-      <RatingRightAtt>5</RatingRightAtt>
-      <RatingMidAtt>7</RatingMidAtt>
-      <RatingLeftAtt>6</RatingLeftAtt>
+      <RatingMidfield>6</RatingMidfield>
+      <RatingRightDef>8</RatingRightDef>
+      <RatingMidDef>7</RatingMidDef>
+      <RatingLeftDef>9</RatingLeftDef>
+      <RatingRightAtt>13</RatingRightAtt>
+      <RatingMidAtt>15</RatingMidAtt>
+      <RatingLeftAtt>17</RatingLeftAtt>
     </HomeTeam>
     <AwayTeam>
-      <AwayTeamID>7864</AwayTeamID>
-      <AwayTeamName>Cambridge</AwayTeamName>
+      <AwayTeamID>1708</AwayTeamID>
+      <AwayTeamName>Team Kane</AwayTeamName>
       <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
-      <Formation>4-4-2</Formation>
-      <AwayGoals>6</AwayGoals>
+      <Formation>3-5-2</Formation>
+      <AwayGoals>2</AwayGoals>
       <TacticType>0</TacticType>
       <TacticSkill>0</TacticSkill>
-      <RatingMidfield>2</RatingMidfield>
-      <RatingRightDef>7</RatingRightDef>
-      <RatingMidDef>6</RatingMidDef>
-      <RatingLeftDef>4</RatingLeftDef>
-      <RatingRightAtt>8</RatingRightAtt>
-      <RatingMidAtt>8</RatingMidAtt>
-      <RatingLeftAtt>6</RatingLeftAtt>
+      <RatingMidfield>5</RatingMidfield>
+      <RatingRightDef>10</RatingRightDef>
+      <RatingMidDef>12</RatingMidDef>
+      <RatingLeftDef>8</RatingLeftDef>
+      <RatingRightAtt>11</RatingRightAtt>
+      <RatingMidAtt>10</RatingMidAtt>
+      <RatingLeftAtt>11</RatingLeftAtt>
     </AwayTeam>
     <Arena>
-      <ArenaID>7602</ArenaID>
-      <ArenaName>NottinghamPark</ArenaName>
-      <WeatherID>3</WeatherID>
-      <SoldTotal>16424</SoldTotal>
+      <ArenaID>2079</ArenaID>
+      <ArenaName>Arsenal Square</ArenaName>
+      <WeatherID>0</WeatherID>
+      <SoldTotal>5792</SoldTotal>
     </Arena>
     <MatchOfficials>
       <Referee>
-        <RefereeId>188958514</RefereeId>
-        <RefereeName>Heiko Schwark</RefereeName>
-        <RefereeCountryId>3</RefereeCountryId>
-        <RefereeCountryName>Deutschland</RefereeCountryName>
-        <RefereeTeamId>1001249</RefereeTeamId>
-        <RefereeTeamname>Roter Stern Schanze</RefereeTeamname>
+        <RefereeId>388564204</RefereeId>
+        <RefereeName>Luciano MartÃ­n Escobedo</RefereeName>
+        <RefereeCountryId>19</RefereeCountryId>
+        <RefereeCountryName>Colombia</RefereeCountryName>
+        <RefereeTeamId>544242</RefereeTeamId>
+        <RefereeTeamname>UniÃ³n Magdalena</RefereeTeamname>
       </Referee>
       <RefereeAssistant1>
-        <RefereeId>74908481</RefereeId>
-        <RefereeName>Ciprian Popescu</RefereeName>
-        <RefereeCountryId>37</RefereeCountryId>
-        <RefereeCountryName>RomÃ¢nia</RefereeCountryName>
-        <RefereeTeamId>344026</RefereeTeamId>
-        <RefereeTeamname>Brotyous</RefereeTeamname>
+        <RefereeId>290030124</RefereeId>
+        <RefereeName>Mikael Magnusson</RefereeName>
+        <RefereeCountryId>1</RefereeCountryId>
+        <RefereeCountryName>Sverige</RefereeCountryName>
+        <RefereeTeamId>99222</RefereeTeamId>
+        <RefereeTeamname>Lallans BK</RefereeTeamname>
       </RefereeAssistant1>
       <RefereeAssistant2>
-        <RefereeId>165538441</RefereeId>
-        <RefereeName>Richard Visnapuu</RefereeName>
-        <RefereeCountryId>56</RefereeCountryId>
-        <RefereeCountryName>Eesti</RefereeCountryName>
-        <RefereeTeamId>271824</RefereeTeamId>
-        <RefereeTeamname>ValparaÃ­so FC</RefereeTeamname>
+        <RefereeId>312905156</RefereeId>
+        <RefereeName>Henri Tiippana</RefereeName>
+        <RefereeCountryId>12</RefereeCountryId>
+        <RefereeCountryName>Suomi</RefereeCountryName>
+        <RefereeTeamId>259255</RefereeTeamId>
+        <RefereeTeamname>EL TZABA</RefereeTeamname>
       </RefereeAssistant2>
     </MatchOfficials>
     <Scorers>
       <Goal Index="0">
-        <ScorerPlayerID>354307</ScorerPlayerID>
-        <ScorerPlayerName>Kevin Greco</ScorerPlayerName>
-        <ScorerTeamID>7602</ScorerTeamID>
+        <ScorerPlayerID>25004</ScorerPlayerID>
+        <ScorerPlayerName>Peter Larsson</ScorerPlayerName>
+        <ScorerTeamID>2079</ScorerTeamID>
         <ScorerHomeGoals>1</ScorerHomeGoals>
         <ScorerAwayGoals>0</ScorerAwayGoals>
-        <ScorerMinute>22</ScorerMinute>
+        <ScorerMinute>1</ScorerMinute>
         <MatchPart>1</MatchPart>
       </Goal>
       <Goal Index="1">
-        <ScorerPlayerID>354313</ScorerPlayerID>
-        <ScorerPlayerName>Leslie Cappuccini</ScorerPlayerName>
-        <ScorerTeamID>7602</ScorerTeamID>
-        <ScorerHomeGoals>2</ScorerHomeGoals>
-        <ScorerAwayGoals>0</ScorerAwayGoals>
-        <ScorerMinute>45</ScorerMinute>
+        <ScorerPlayerID>185205</ScorerPlayerID>
+        <ScorerPlayerName>Anders 'O' MÃ¥nsson</ScorerPlayerName>
+        <ScorerTeamID>1708</ScorerTeamID>
+        <ScorerHomeGoals>1</ScorerHomeGoals>
+        <ScorerAwayGoals>1</ScorerAwayGoals>
+        <ScorerMinute>17</ScorerMinute>
         <MatchPart>1</MatchPart>
       </Goal>
       <Goal Index="2">
-        <ScorerPlayerID>358767</ScorerPlayerID>
-        <ScorerPlayerName>Jason Harvey</ScorerPlayerName>
-        <ScorerTeamID>7864</ScorerTeamID>
+        <ScorerPlayerID>72110</ScorerPlayerID>
+        <ScorerPlayerName>Malcolm Jacobsson</ScorerPlayerName>
+        <ScorerTeamID>2079</ScorerTeamID>
         <ScorerHomeGoals>2</ScorerHomeGoals>
         <ScorerAwayGoals>1</ScorerAwayGoals>
-        <ScorerMinute>49</ScorerMinute>
-        <MatchPart>2</MatchPart>
+        <ScorerMinute>40</ScorerMinute>
+        <MatchPart>1</MatchPart>
       </Goal>
       <Goal Index="3">
-        <ScorerPlayerID>358770</ScorerPlayerID>
-        <ScorerPlayerName>Mark Kelly</ScorerPlayerName>
-        <ScorerTeamID>7864</ScorerTeamID>
+        <ScorerPlayerID>185205</ScorerPlayerID>
+        <ScorerPlayerName>Anders 'O' MÃ¥nsson</ScorerPlayerName>
+        <ScorerTeamID>1708</ScorerTeamID>
         <ScorerHomeGoals>2</ScorerHomeGoals>
         <ScorerAwayGoals>2</ScorerAwayGoals>
-        <ScorerMinute>76</ScorerMinute>
+        <ScorerMinute>52</ScorerMinute>
+        <MatchPart>2</MatchPart>
+      </Goal>
+      <Goal Index="4">
+        <ScorerPlayerID>117639</ScorerPlayerID>
+        <ScorerPlayerName>Rickard 'B' Gustavsson</ScorerPlayerName>
+        <ScorerTeamID>2079</ScorerTeamID>
+        <ScorerHomeGoals>3</ScorerHomeGoals>
+        <ScorerAwayGoals>2</ScorerAwayGoals>
+        <ScorerMinute>61</ScorerMinute>
+        <MatchPart>2</MatchPart>
+      </Goal>
+      <Goal Index="5">
+        <ScorerPlayerID>117639</ScorerPlayerID>
+        <ScorerPlayerName>Rickard 'B' Gustavsson</ScorerPlayerName>
+        <ScorerTeamID>2079</ScorerTeamID>
+        <ScorerHomeGoals>4</ScorerHomeGoals>
+        <ScorerAwayGoals>2</ScorerAwayGoals>
+        <ScorerMinute>70</ScorerMinute>
+        <MatchPart>2</MatchPart>
+      </Goal>
+      <Goal Index="6">
+        <ScorerPlayerID>184827</ScorerPlayerID>
+        <ScorerPlayerName>Fredrik StorstrÃ¶m</ScorerPlayerName>
+        <ScorerTeamID>2079</ScorerTeamID>
+        <ScorerHomeGoals>5</ScorerHomeGoals>
+        <ScorerAwayGoals>2</ScorerAwayGoals>
+        <ScorerMinute>83</ScorerMinute>
         <MatchPart>2</MatchPart>
       </Goal>
     </Scorers>
     <Bookings>
       <Booking Index="0">
-        <BookingPlayerID>354310</BookingPlayerID>
-        <BookingPlayerName>Michael Roger</BookingPlayerName>
-        <BookingTeamID>7602</BookingTeamID>
+        <BookingPlayerID>107750</BookingPlayerID>
+        <BookingPlayerName>Anders 'Nutis' Joelsson</BookingPlayerName>
+        <BookingTeamID>1708</BookingTeamID>
         <BookingType>1</BookingType>
-        <BookingMinute>6</BookingMinute>
+        <BookingMinute>1</BookingMinute>
         <MatchPart>1</MatchPart>
       </Booking>
       <Booking Index="1">
-        <BookingPlayerID>358768</BookingPlayerID>
-        <BookingPlayerName>Spencer Knight</BookingPlayerName>
-        <BookingTeamID>7864</BookingTeamID>
+        <BookingPlayerID>184827</BookingPlayerID>
+        <BookingPlayerName>Fredrik StorstrÃ¶m</BookingPlayerName>
+        <BookingTeamID>2079</BookingTeamID>
         <BookingType>1</BookingType>
-        <BookingMinute>52</BookingMinute>
-        <MatchPart>2</MatchPart>
+        <BookingMinute>21</BookingMinute>
+        <MatchPart>1</MatchPart>
       </Booking>
       <Booking Index="2">
-        <BookingPlayerID>354310</BookingPlayerID>
-        <BookingPlayerName>Michael Roger</BookingPlayerName>
-        <BookingTeamID>7602</BookingTeamID>
-        <BookingType>2</BookingType>
-        <BookingMinute>52</BookingMinute>
-        <MatchPart>2</MatchPart>
-      </Booking>
-      <Booking Index="3">
-        <BookingPlayerID>354315</BookingPlayerID>
-        <BookingPlayerName>Stephen Williamson</BookingPlayerName>
-        <BookingTeamID>7602</BookingTeamID>
+        <BookingPlayerID>185205</BookingPlayerID>
+        <BookingPlayerName>Anders 'O' MÃ¥nsson</BookingPlayerName>
+        <BookingTeamID>1708</BookingTeamID>
         <BookingType>1</BookingType>
-        <BookingMinute>76</BookingMinute>
+        <BookingMinute>79</BookingMinute>
         <MatchPart>2</MatchPart>
       </Booking>
     </Bookings>
-    <Injuries />
-    <PossessionFirstHalfHome>48</PossessionFirstHalfHome>
-    <PossessionFirstHalfAway>52</PossessionFirstHalfAway>
-    <PossessionSecondHalfHome>33</PossessionSecondHalfHome>
-    <PossessionSecondHalfAway>67</PossessionSecondHalfAway>
+    <Injuries>
+      <Injury Index="0">
+        <InjuryPlayerID>185205</InjuryPlayerID>
+        <InjuryPlayerName>Anders 'O' MÃ¥nsson</InjuryPlayerName>
+        <InjuryTeamID>1708</InjuryTeamID>
+        <InjuryType>1</InjuryType>
+        <InjuryMinute>21</InjuryMinute>
+        <MatchPart>1</MatchPart>
+      </Injury>
+    </Injuries>
+    <PossessionFirstHalfHome>55</PossessionFirstHalfHome>
+    <PossessionFirstHalfAway>45</PossessionFirstHalfAway>
+    <PossessionSecondHalfHome>54</PossessionSecondHalfHome>
+    <PossessionSecondHalfAway>46</PossessionSecondHalfAway>
   </Match>
 </HattrickData>
