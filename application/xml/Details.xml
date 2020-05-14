@@ -3,125 +3,142 @@
   <FileName>matchdetails.xml</FileName>
   <Version>3.0</Version>
   <UserID>1248859</UserID>
-  <FetchedDate>2020-05-13 15:00:46</FetchedDate>
+  <FetchedDate>2020-05-14 16:26:27</FetchedDate>
   <UserSupporterTier>diamond</UserSupporterTier>
   <SourceSystem>Hattrick</SourceSystem>
   <Match>
-    <MatchID>10170</MatchID>
+    <MatchID>10540</MatchID>
     <MatchType>1</MatchType>
-    <MatchContextId>87</MatchContextId>
+    <MatchContextId>94</MatchContextId>
     <MatchRuleId>0</MatchRuleId>
     <CupLevel>0</CupLevel>
     <CupLevelIndex>0</CupLevelIndex>
-    <MatchDate>2000-12-31 10:00:00</MatchDate>
-    <FinishedDate>2000-12-31 11:45:00</FinishedDate>
+    <MatchDate>2000-11-19 10:00:00</MatchDate>
+    <FinishedDate>2000-11-19 11:45:00</FinishedDate>
     <AddedMinutes>0</AddedMinutes>
     <HomeTeam>
-      <HomeTeamID>5004</HomeTeamID>
-      <HomeTeamName>Eastenders FC</HomeTeamName>
+      <HomeTeamID>1132</HomeTeamID>
+      <HomeTeamName>FC Traalx</HomeTeamName>
       <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
       <Formation>4-4-2</Formation>
-      <HomeGoals>1</HomeGoals>
+      <HomeGoals>2</HomeGoals>
       <TacticType>0</TacticType>
       <TacticSkill>0</TacticSkill>
-      <RatingMidfield>3</RatingMidfield>
-      <RatingRightDef>12</RatingRightDef>
+      <RatingMidfield>4</RatingMidfield>
+      <RatingRightDef>14</RatingRightDef>
       <RatingMidDef>15</RatingMidDef>
-      <RatingLeftDef>14</RatingLeftDef>
-      <RatingRightAtt>8</RatingRightAtt>
-      <RatingMidAtt>7</RatingMidAtt>
+      <RatingLeftDef>13</RatingLeftDef>
+      <RatingRightAtt>11</RatingRightAtt>
+      <RatingMidAtt>10</RatingMidAtt>
       <RatingLeftAtt>10</RatingLeftAtt>
     </HomeTeam>
     <AwayTeam>
-      <AwayTeamID>2398</AwayTeamID>
-      <AwayTeamName>TrÃ¤benets SK</AwayTeamName>
+      <AwayTeamID>5035</AwayTeamID>
+      <AwayTeamName>Degerfors if</AwayTeamName>
       <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
       <Formation>4-4-2</Formation>
       <AwayGoals>1</AwayGoals>
       <TacticType>0</TacticType>
       <TacticSkill>0</TacticSkill>
-      <RatingMidfield>2</RatingMidfield>
-      <RatingRightDef>11</RatingRightDef>
-      <RatingMidDef>14</RatingMidDef>
-      <RatingLeftDef>10</RatingLeftDef>
-      <RatingRightAtt>8</RatingRightAtt>
-      <RatingMidAtt>10</RatingMidAtt>
-      <RatingLeftAtt>6</RatingLeftAtt>
+      <RatingMidfield>3</RatingMidfield>
+      <RatingRightDef>12</RatingRightDef>
+      <RatingMidDef>15</RatingMidDef>
+      <RatingLeftDef>12</RatingLeftDef>
+      <RatingRightAtt>9</RatingRightAtt>
+      <RatingMidAtt>8</RatingMidAtt>
+      <RatingLeftAtt>9</RatingLeftAtt>
     </AwayTeam>
     <Arena>
-      <ArenaID>5004</ArenaID>
-      <ArenaName>Norrbottenparken</ArenaName>
+      <ArenaID>1132</ArenaID>
+      <ArenaName>Big House</ArenaName>
       <WeatherID>1</WeatherID>
-      <SoldTotal>6000</SoldTotal>
+      <SoldTotal>8641</SoldTotal>
     </Arena>
     <MatchOfficials>
       <Referee>
-        <RefereeId>32056720</RefereeId>
-        <RefereeName>Johannes Dinda</RefereeName>
-        <RefereeCountryId>3</RefereeCountryId>
-        <RefereeCountryName>Deutschland</RefereeCountryName>
-        <RefereeTeamId>0</RefereeTeamId>
-        <RefereeTeamname></RefereeTeamname>
+        <RefereeId>8510825</RefereeId>
+        <RefereeName>Koos Klomp</RefereeName>
+        <RefereeCountryId>14</RefereeCountryId>
+        <RefereeCountryName>Nederland</RefereeCountryName>
+        <RefereeTeamId>361896</RefereeTeamId>
+        <RefereeTeamname>The FastTwitch</RefereeTeamname>
       </Referee>
       <RefereeAssistant1>
-        <RefereeId>147519348</RefereeId>
-        <RefereeName>AurÃ©lien AdÃ©laÃ¯de</RefereeName>
-        <RefereeCountryId>5</RefereeCountryId>
-        <RefereeCountryName>France</RefereeCountryName>
-        <RefereeTeamId>970893</RefereeTeamId>
-        <RefereeTeamname>La Furia FC</RefereeTeamname>
+        <RefereeId>215607093</RefereeId>
+        <RefereeName>Carl Kaller</RefereeName>
+        <RefereeCountryId>3</RefereeCountryId>
+        <RefereeCountryName>Deutschland</RefereeCountryName>
+        <RefereeTeamId>523728</RefereeTeamId>
+        <RefereeTeamname>SV Bovenden</RefereeTeamname>
       </RefereeAssistant1>
       <RefereeAssistant2>
-        <RefereeId>189005623</RefereeId>
-        <RefereeName>Antti 'Litti' Lintonen</RefereeName>
-        <RefereeCountryId>12</RefereeCountryId>
-        <RefereeCountryName>Suomi</RefereeCountryName>
-        <RefereeTeamId>1518950</RefereeTeamId>
-        <RefereeTeamname>FC Pumpo</RefereeTeamname>
+        <RefereeId>278131256</RefereeId>
+        <RefereeName>BenjamÃ­ Rivero Camacho</RefereeName>
+        <RefereeCountryId>36</RefereeCountryId>
+        <RefereeCountryName>EspaÃ±a</RefereeCountryName>
+        <RefereeTeamId>1799065</RefereeTeamId>
+        <RefereeTeamname>Jemenci</RefereeTeamname>
       </RefereeAssistant2>
     </MatchOfficials>
     <Scorers>
       <Goal Index="0">
-        <ScorerPlayerID>523033</ScorerPlayerID>
-        <ScorerPlayerName>BjÃ¶rn L. Tuvlind</ScorerPlayerName>
-        <ScorerTeamID>5004</ScorerTeamID>
+        <ScorerPlayerID>188777</ScorerPlayerID>
+        <ScorerPlayerName>Fredrik 'GÃ¥nnen' Skogwald</ScorerPlayerName>
+        <ScorerTeamID>1132</ScorerTeamID>
         <ScorerHomeGoals>1</ScorerHomeGoals>
         <ScorerAwayGoals>0</ScorerAwayGoals>
-        <ScorerMinute>1</ScorerMinute>
+        <ScorerMinute>20</ScorerMinute>
         <MatchPart>1</MatchPart>
       </Goal>
       <Goal Index="1">
-        <ScorerPlayerID>120539</ScorerPlayerID>
-        <ScorerPlayerName>Anders Karlsson</ScorerPlayerName>
-        <ScorerTeamID>2398</ScorerTeamID>
+        <ScorerPlayerID>523609</ScorerPlayerID>
+        <ScorerPlayerName>JÃ¶rgen Colskog</ScorerPlayerName>
+        <ScorerTeamID>5035</ScorerTeamID>
         <ScorerHomeGoals>1</ScorerHomeGoals>
         <ScorerAwayGoals>1</ScorerAwayGoals>
-        <ScorerMinute>81</ScorerMinute>
+        <ScorerMinute>34</ScorerMinute>
+        <MatchPart>1</MatchPart>
+      </Goal>
+      <Goal Index="2">
+        <ScorerPlayerID>202986</ScorerPlayerID>
+        <ScorerPlayerName>Patrik 'J' Nilsson</ScorerPlayerName>
+        <ScorerTeamID>1132</ScorerTeamID>
+        <ScorerHomeGoals>2</ScorerHomeGoals>
+        <ScorerAwayGoals>1</ScorerAwayGoals>
+        <ScorerMinute>72</ScorerMinute>
         <MatchPart>2</MatchPart>
       </Goal>
     </Scorers>
     <Bookings>
       <Booking Index="0">
-        <BookingPlayerID>523225</BookingPlayerID>
-        <BookingPlayerName>BjÃ¶rn Lennartsson</BookingPlayerName>
-        <BookingTeamID>5004</BookingTeamID>
+        <BookingPlayerID>523604</BookingPlayerID>
+        <BookingPlayerName>Morten Persson</BookingPlayerName>
+        <BookingTeamID>5035</BookingTeamID>
         <BookingType>1</BookingType>
-        <BookingMinute>7</BookingMinute>
+        <BookingMinute>35</BookingMinute>
         <MatchPart>1</MatchPart>
       </Booking>
       <Booking Index="1">
-        <BookingPlayerID>523028</BookingPlayerID>
-        <BookingPlayerName>Patrik Lagererberg</BookingPlayerName>
-        <BookingTeamID>5004</BookingTeamID>
+        <BookingPlayerID>202986</BookingPlayerID>
+        <BookingPlayerName>Patrik 'J' Nilsson</BookingPlayerName>
+        <BookingTeamID>1132</BookingTeamID>
         <BookingType>1</BookingType>
-        <BookingMinute>60</BookingMinute>
+        <BookingMinute>59</BookingMinute>
+        <MatchPart>2</MatchPart>
+      </Booking>
+      <Booking Index="2">
+        <BookingPlayerID>523605</BookingPlayerID>
+        <BookingPlayerName>Marcus Stenerberg</BookingPlayerName>
+        <BookingTeamID>5035</BookingTeamID>
+        <BookingType>1</BookingType>
+        <BookingMinute>75</BookingMinute>
         <MatchPart>2</MatchPart>
       </Booking>
     </Bookings>
     <Injuries />
-    <PossessionFirstHalfHome>71</PossessionFirstHalfHome>
-    <PossessionFirstHalfAway>29</PossessionFirstHalfAway>
-    <PossessionSecondHalfHome>63</PossessionSecondHalfHome>
-    <PossessionSecondHalfAway>37</PossessionSecondHalfAway>
+    <PossessionFirstHalfHome>60</PossessionFirstHalfHome>
+    <PossessionFirstHalfAway>40</PossessionFirstHalfAway>
+    <PossessionSecondHalfHome>69</PossessionSecondHalfHome>
+    <PossessionSecondHalfAway>31</PossessionSecondHalfAway>
   </Match>
 </HattrickData>

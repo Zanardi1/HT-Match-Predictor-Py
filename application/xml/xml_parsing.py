@@ -49,15 +49,15 @@ def parse_matches_file():
 
 
 def parse_match_details_file(match_id):
-    match_details = (match_id,)
+    match_details = [match_id]
     tree = ET.parse(global_library.details_savepath)
     root = tree.getroot()
     for i in range(7, 14, 1):
-        match_details = match_details + (root[6][9][i].text,)  # evaluarile echipei de acasa
+        match_details = match_details + [root[6][9][i].text]  # evaluarile echipei de acasa
     for i in range(7, 14, 1):
-        match_details = match_details + (root[6][10][i].text,)  # evaluarile echipei din deplasare
-    match_details = match_details + (root[6][9][4].text,)  # numarul de goluri ale echipei de acasa
-    match_details = match_details + (root[6][10][4].text,)  # numarul de goluri ale echipei din deplasare
+        match_details = match_details + [root[6][10][i].text]  # evaluarile echipei din deplasare
+    match_details = match_details + [root[6][9][4].text]  # numarul de goluri ale echipei de acasa
+    match_details = match_details + [root[6][10][4].text]  # numarul de goluri ale echipei din deplasare
     return match_details
 
 
