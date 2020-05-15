@@ -14,6 +14,7 @@ import application.xml.xml_parsing as xl
 import global_library
 from application import config
 from application.connected import download_user_info as d
+import easygui
 
 
 def check_if_configuration_file_has_access_tokens(test_config):
@@ -62,9 +63,10 @@ def get_access_tokens(test_config):
     p.start()
     p.join()
     code = queue.get()
-    if code is None or check_if_connection_is_valid(test_config) is False:
+    if code is None:
         return False
     else:
+        # Aici verific daca PIN-ul a fost introdus corect
         add_access_tokens_to_config_file(test_config, connection, request_token, request_token_secret, code)
         return True
 
@@ -95,9 +97,22 @@ def connection_engine():
       3.2. Descarca informatiile de baza
       3.3. Intoarce True."""
 
-    if check_if_configuration_file_has_access_tokens(config) and check_if_connection_is_valid(config):
-        user_data = d.download_user_info()
-        return True, user_data
+    if check_if_configuration_file_has_access_tokens(config):
+        if check_if_connection_is_valid(config):
+            user_data = d.download_user_info()
+            return True, user_data
+        else:
+            dx.download_xml_file(config['DEFAULT']['INVALIDATE_TOKEN_PATH'], {}, global_library.disconnect_savepath)
+            config.remove_option('DEFAULT', 'ACCESS_TOKEN')
+            config.remove_option('DEFAULT', 'ACCESS_TOKEN_SECRET')
+            with open(global_library.configuration_file, 'w') as configfile:
+                config.write(configfile)
+            if get_access_tokens(config):
+                p = Process(target=show_connection_successful_window)
+                p.start()
+                p.join()
+                user_data = d.download_user_info()
+                return True, user_data
     else:
         if get_access_tokens(config):
             p = Process(target=show_connection_successful_window)
