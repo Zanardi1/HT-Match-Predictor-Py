@@ -4,7 +4,7 @@ import tkinter as tk
 import tkinter.simpledialog as sd
 import webbrowser
 from multiprocessing import Process, Queue
-from tkinter.messagebox import showinfo
+from tkinter.messagebox import showinfo, showerror
 
 from rauth import OAuth1Service
 from rauth.oauth import HmacSha1Signature
@@ -14,7 +14,6 @@ import application.xml.xml_parsing as xl
 import global_library
 from application import config
 from application.connected import download_user_info as d
-import easygui
 
 
 def check_if_configuration_file_has_access_tokens(test_config):
@@ -46,6 +45,13 @@ def show_pin_window(q):
     q.put(code)
 
 
+def show_wrong_pin_error_window():
+    root = tk.Tk()
+    root.withdraw()
+    showerror('Wrong PIN', 'Wrong PIN inserted!')
+    root.destroy()
+
+
 def get_access_tokens(test_config):
     connection = OAuth1Service(consumer_key=test_config['DEFAULT']['CONSUMER_KEY'],
                                consumer_secret=test_config['DEFAULT']['CONSUMER_SECRET'], name='Hattrick',
@@ -65,8 +71,12 @@ def get_access_tokens(test_config):
     code = queue.get()
     if code is None:
         return False
+    elif check_if_connection_is_valid(test_config) is False:
+        p = Process(target=show_wrong_pin_error_window)
+        p.start()
+        p.join()
+        return False
     else:
-        # Aici verific daca PIN-ul a fost introdus corect
         add_access_tokens_to_config_file(test_config, connection, request_token, request_token_secret, code)
         return True
 
