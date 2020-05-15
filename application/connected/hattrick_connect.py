@@ -62,7 +62,7 @@ def get_access_tokens(test_config):
     p.start()
     p.join()
     code = queue.get()
-    if code is None:
+    if code is None or check_if_connection_is_valid(test_config) is False:
         return False
     else:
         add_access_tokens_to_config_file(test_config, connection, request_token, request_token_secret, code)
