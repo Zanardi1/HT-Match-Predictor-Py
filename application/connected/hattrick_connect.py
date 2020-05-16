@@ -29,12 +29,20 @@ def check_if_connection_is_valid(test_config):
 
 
 def add_access_tokens_to_config_file(test_config, connection, request_token, request_token_secret, code):
-    access_token, access_token_secret = connection.get_access_token(request_token, request_token_secret,
-                                                                    params={'oauth_verifier': code})
-    test_config['DEFAULT']['ACCESS_TOKEN'] = access_token
-    test_config['DEFAULT']['ACCESS_TOKEN_SECRET'] = access_token_secret
-    with open(global_library.configuration_file, 'w') as configfile:
-        test_config.write(configfile)
+    try:
+        access_token, access_token_secret = connection.get_access_token(request_token, request_token_secret,
+                                                                        params={'oauth_verifier': code})
+    except KeyError:
+        p = Process(target=show_wrong_pin_error_window)
+        p.start()
+        p.join()
+        return False
+    else:
+        test_config['DEFAULT']['ACCESS_TOKEN'] = access_token
+        test_config['DEFAULT']['ACCESS_TOKEN_SECRET'] = access_token_secret
+        with open(global_library.configuration_file, 'w') as configfile:
+            test_config.write(configfile)
+        return True
 
 
 def show_pin_window(q):
@@ -72,8 +80,10 @@ def get_access_tokens(test_config):
     if code is None:
         return False
     else:
-        add_access_tokens_to_config_file(test_config, connection, request_token, request_token_secret, code)
-        return True
+        if add_access_tokens_to_config_file(test_config, connection, request_token, request_token_secret, code):
+            return True
+        else:
+            return False
 
 
 def show_connection_successful_window():
