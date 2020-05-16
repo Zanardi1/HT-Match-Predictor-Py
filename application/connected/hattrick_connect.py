@@ -71,11 +71,6 @@ def get_access_tokens(test_config):
     code = queue.get()
     if code is None:
         return False
-    elif check_if_connection_is_valid(test_config) is False:
-        p = Process(target=show_wrong_pin_error_window)
-        p.start()
-        p.join()
-        return False
     else:
         add_access_tokens_to_config_file(test_config, connection, request_token, request_token_secret, code)
         return True
@@ -131,4 +126,4 @@ def connection_engine():
             user_data = d.download_user_info()
             return True, user_data
         else:
-            return False, {}
+            return False, []
