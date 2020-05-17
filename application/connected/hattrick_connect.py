@@ -1,9 +1,6 @@
 # Subrutinele necesare conectarii la Hattrick
 
-import tkinter as tk
-import tkinter.simpledialog as sd
 import webbrowser
-from multiprocessing import Process, Queue
 
 from rauth import OAuth1Service
 from rauth.oauth import HmacSha1Signature
@@ -43,14 +40,6 @@ def add_access_tokens_to_config_file(test_config, connection, request_token, req
         return True
 
 
-def show_pin_window(q):
-    root = tk.Tk()
-    root.withdraw()
-    code = sd.askstring(title='PIN Required', prompt='Please insert the PIN specified by Hattrick')
-    root.destroy()
-    q.put(code)
-
-
 def get_access_tokens(test_config):
     connection = OAuth1Service(consumer_key=test_config['DEFAULT']['CONSUMER_KEY'],
                                consumer_secret=test_config['DEFAULT']['CONSUMER_SECRET'], name='Hattrick',
@@ -63,11 +52,8 @@ def get_access_tokens(test_config):
         params={'oauth_callback': test_config['DEFAULT']['CALLBACK_URL']})
     authorization_url = connection.get_authorize_url(request_token)
     webbrowser.open(authorization_url, new=2)
-    queue = Queue()
-    p = Process(target=show_pin_window, args=(queue,))
-    p.start()
-    p.join()
-    code = queue.get()
+    code = dw.show_string_input_window_in_thread(title='PIN Required',
+                                                 message='Please insert the PIN specified by Hattrick')
     if code is None:
         return False
     else:
