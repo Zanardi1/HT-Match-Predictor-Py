@@ -10,7 +10,7 @@ def show_error_window(title, message):
     root.destroy()
 
 
-def show_info_window(title, message)
+def show_info_window(title, message):
     root = tk.Tk()
     root.withdraw()
     showinfo(title, message)

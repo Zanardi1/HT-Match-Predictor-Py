@@ -45,4 +45,4 @@ def create_database():
     else:
         engine = create_engine(create_uri(), echo=True)
         Base.metadata.create_all(engine)
-        dw.show_info_window_in_thread(title='Succes!', 'Baza de date a fost creata.')
+        dw.show_info_window_in_thread(title='Succes!', message='Baza de date a fost creata.')
