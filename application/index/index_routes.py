@@ -13,6 +13,7 @@ from flask import Blueprint
 from flask import render_template
 from flask import request
 
+import application.dialog_windows as dw
 import global_library
 from application.admin import create_db
 from application.admin import delete_db
@@ -109,13 +110,6 @@ def disconnect_from_hattrick():
                            answer=global_library.ans)
 
 
-def show_completed_match_import_window():
-    root = tk.Tk()
-    root.withdraw()
-    showinfo("Import terminat", "Am importat toate meciurile alese")
-    root.destroy()
-
-
 # importarea de meciuri in baza de date
 @index_bp.route('/import', methods=['POST'])
 def import_matches_into_database():
@@ -124,9 +118,7 @@ def import_matches_into_database():
     low_end = int(low_end)
     high_end = int(high_end)
     import_matches.import_engine(low_end, high_end)
-    p = Process(target=show_completed_match_import_window)
-    p.start()
-    p.join()
+    dw.show_info_window_in_thread(title='Import terminat', message='Am importat toate meciurile alese')
     return render_template('admin.html', title='Admin Control Panel')
 
 

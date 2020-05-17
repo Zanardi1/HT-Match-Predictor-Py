@@ -4,11 +4,11 @@ import tkinter as tk
 import tkinter.simpledialog as sd
 import webbrowser
 from multiprocessing import Process, Queue
-from tkinter.messagebox import showinfo, showerror
 
 from rauth import OAuth1Service
 from rauth.oauth import HmacSha1Signature
 
+import application.dialog_windows as dw
 import application.xml.dl_xml_file as dx
 import application.xml.xml_parsing as xl
 import global_library
@@ -33,9 +33,7 @@ def add_access_tokens_to_config_file(test_config, connection, request_token, req
         access_token, access_token_secret = connection.get_access_token(request_token, request_token_secret,
                                                                         params={'oauth_verifier': code})
     except KeyError:
-        p = Process(target=show_wrong_pin_error_window)
-        p.start()
-        p.join()
+        dw.show_error_window_in_thread(title='Wrong PIN!', message='Wrong PIN inserted.')
         return False
     else:
         test_config['DEFAULT']['ACCESS_TOKEN'] = access_token
@@ -51,13 +49,6 @@ def show_pin_window(q):
     code = sd.askstring(title='PIN Required', prompt='Please insert the PIN specified by Hattrick')
     root.destroy()
     q.put(code)
-
-
-def show_wrong_pin_error_window():
-    root = tk.Tk()
-    root.withdraw()
-    showerror('Wrong PIN', 'Wrong PIN inserted!')
-    root.destroy()
 
 
 def get_access_tokens(test_config):
@@ -84,13 +75,6 @@ def get_access_tokens(test_config):
             return True
         else:
             return False
-
-
-def show_connection_successful_window():
-    root = tk.Tk()
-    root.withdraw()
-    showinfo("Connection complete!", "Successfully conected to Hattrick account!")
-    root.destroy()
 
 
 def connection_engine():
@@ -123,16 +107,14 @@ def connection_engine():
             with open(global_library.configuration_file, 'w') as configfile:
                 config.write(configfile)
             if get_access_tokens(config):
-                p = Process(target=show_connection_successful_window)
-                p.start()
-                p.join()
+                dw.show_info_window_in_thread(title='Connection complete!',
+                                              message='Successfully connected to Hattrick account')
                 user_data = d.download_user_info()
                 return True, user_data
     else:
         if get_access_tokens(config):
-            p = Process(target=show_connection_successful_window)
-            p.start()
-            p.join()
+            dw.show_info_window_in_thread(title='Connection complete!',
+                                          message='Successfully connected to Hattrick account')
             user_data = d.download_user_info()
             return True, user_data
         else:
