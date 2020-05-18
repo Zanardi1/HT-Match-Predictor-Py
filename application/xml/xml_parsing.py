@@ -40,11 +40,14 @@ def parse_matches_file():
     root = tree.getroot()
     match_list = root[5][5]
     for match in match_list:
-        if match[5].text in ['1', '4', '8', '10', '12'] and match[10].tag == 'Status' and match[10].text == 'UPCOMING':
-            match_id = match[0].text
-            home_team = match[1][1].text
-            away_team = match[2][1].text
-            data.append((match_id, home_team, away_team))
+        for i in range(len(match)):
+            if match[i].tag == 'MatchType' and match[i].text in ['1', '4', '8', '10', '12']:
+                for j in range(i, len(match)):
+                    if match[j].tag == 'Status' and match[j].text == 'UPCOMING':
+                        match_id = match[0].text
+                        home_team = match[1][1].text
+                        away_team = match[2][1].text
+                        data.append((match_id, home_team, away_team))
     return data
 
 
