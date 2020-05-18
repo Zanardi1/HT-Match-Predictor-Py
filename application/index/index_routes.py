@@ -2,12 +2,8 @@
 
 import datetime
 import os.path
-import tkinter as tk
 import xml.etree.ElementTree as ET
 import zipfile as z
-from multiprocessing import Process, Queue
-from tkinter import filedialog as f
-from tkinter.messagebox import showinfo
 
 from flask import Blueprint
 from flask import render_template
@@ -176,13 +172,6 @@ def get_match_id():
                            answer=global_library.ans)
 
 
-def backup_window_complete():
-    root = tk.Tk()
-    root.withdraw()
-    showinfo('Backup terminat', 'Am terminat backupul bazei de date')
-    root.destroy()
-
-
 @index_bp.route('/backup')
 def backup_database():
     archive_name = global_library.database_backup_path + '\\backup ' + datetime.datetime.now().strftime(
@@ -190,37 +179,14 @@ def backup_database():
     with z.ZipFile(file=archive_name, mode='w') as backup:
         backup.write(global_library.database_file_path,
                      arcname='matches.db')
-    p = Process(target=backup_window_complete)
-    p.start()
-    p.join()
+    dw.show_info_window_in_thread(title='Backup terminat', message='Am terminat backupul bazei de date.')
     return render_template('admin.html')
-
-
-def show_restore_backup_window(q):
-    root = tk.Tk()
-    root.withdraw()
-    file = f.askopenfilename()
-    root.destroy()
-    q.put(file)
-
-
-def show_restore_window_complete():
-    root = tk.Tk()
-    root.withdraw()
-    showinfo('Restaurare incheiata', 'S-a incheiat restaurarea backupului ales')
-    root.destroy()
 
 
 @index_bp.route('/restore')
 def restore_database():
-    queue = Queue()
-    p = Process(target=show_restore_backup_window, args=(queue,))
-    p.start()
-    p.join()
-    restore_database_file_name = queue.get()
+    restore_database_file_name = dw.restore_backup_window_in_thread()
     with z.ZipFile(restore_database_file_name, 'r') as restore:
         restore.extractall(os.path.dirname(global_library.database_file_path))
-    p = Process(target=show_restore_window_complete)
-    p.start()
-    p.join()
+    dw.show_info_window_in_thread(title='Restaurare incheiata', message='S-a incheiat restaurarea backupului ales')
     return render_template('admin.html')

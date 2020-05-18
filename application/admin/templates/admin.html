@@ -20,11 +20,13 @@
         <input type="text" id="InferiorLimit" name="InferiorLimit"><br>
         <label for="SuperiorLimit">Limita superioara</label>
         <input type="text" id="SuperiorLimit" name="SuperiorLimit"><br>
-        <input type="submit" value="Import">
+        <input type="submit" value="Import"><br/>
+        <label for="import">Progresul importului:</label>
+        <progress id="import" value="32" max="100">32%</progress>
     </form>
 </div>
 <div id="DatabaseOperations">
-    <legend>Operatii cu baza de date</legend>
+    <label>Operatii cu baza de date</label><br/>
     <form action="/create">
         <input type="submit" value="Creare baza de date"><br>
     </form>
