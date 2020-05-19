@@ -7,8 +7,7 @@ from application import config
 
 
 def download_future_match(match_id, team_id):
-    file = config['DEFAULT']['PROTECTED_RESOURCE_PATH']
-    params = cs.create_match_orders_string(match_id, team_id)
-    dl.download_xml_file(file, params, global_library.orders_savepath)
-    user_orders = xp.parse_future_match_file()
-    return user_orders
+    dl.download_xml_file(file=config['DEFAULT']['PROTECTED_RESOURCE_PATH'],
+                         params=cs.create_match_orders_string(match_id, team_id),
+                         destination_file=global_library.orders_savepath)
+    return xp.parse_future_match_file()

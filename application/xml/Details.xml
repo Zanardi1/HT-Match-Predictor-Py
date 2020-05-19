@@ -1,169 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
-<HattrickData>
-  <FileName>matchdetails.xml</FileName>
-  <Version>3.0</Version>
-  <UserID>1248859</UserID>
-  <FetchedDate>2020-05-19 11:55:23</FetchedDate>
-  <UserSupporterTier>diamond</UserSupporterTier>
-  <SourceSystem>Hattrick</SourceSystem>
-  <Match>
-    <MatchID>10580</MatchID>
-    <MatchType>1</MatchType>
-    <MatchContextId>95</MatchContextId>
-    <MatchRuleId>0</MatchRuleId>
-    <CupLevel>0</CupLevel>
-    <CupLevelIndex>0</CupLevelIndex>
-    <MatchDate>2000-10-22 10:00:00</MatchDate>
-    <FinishedDate>2000-10-22 11:45:00</FinishedDate>
-    <AddedMinutes>0</AddedMinutes>
-    <HomeTeam>
-      <HomeTeamID>5038</HomeTeamID>
-      <HomeTeamName>Damlaget</HomeTeamName>
-      <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
-      <Formation>4-4-2</Formation>
-      <HomeGoals>1</HomeGoals>
-      <TacticType>0</TacticType>
-      <TacticSkill>0</TacticSkill>
-      <RatingMidfield>3</RatingMidfield>
-      <RatingRightDef>16</RatingRightDef>
-      <RatingMidDef>16</RatingMidDef>
-      <RatingLeftDef>11</RatingLeftDef>
-      <RatingRightAtt>8</RatingRightAtt>
-      <RatingMidAtt>7</RatingMidAtt>
-      <RatingLeftAtt>8</RatingLeftAtt>
-    </HomeTeam>
-    <AwayTeam>
-      <AwayTeamID>5039</AwayTeamID>
-      <AwayTeamName>Roberts IF</AwayTeamName>
-      <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
-      <Formation>4-4-2</Formation>
-      <AwayGoals>2</AwayGoals>
-      <TacticType>0</TacticType>
-      <TacticSkill>0</TacticSkill>
-      <RatingMidfield>3</RatingMidfield>
-      <RatingRightDef>13</RatingRightDef>
-      <RatingMidDef>10</RatingMidDef>
-      <RatingLeftDef>7</RatingLeftDef>
-      <RatingRightAtt>7</RatingRightAtt>
-      <RatingMidAtt>6</RatingMidAtt>
-      <RatingLeftAtt>8</RatingLeftAtt>
-    </AwayTeam>
-    <Arena>
-      <ArenaID>5038</ArenaID>
-      <ArenaName>Stockholmparken</ArenaName>
-      <WeatherID>0</WeatherID>
-      <SoldTotal>6000</SoldTotal>
-    </Arena>
-    <MatchOfficials>
-      <Referee>
-        <RefereeId>386055494</RefereeId>
-        <RefereeName>Juliusz Jelonek</RefereeName>
-        <RefereeCountryId>3</RefereeCountryId>
-        <RefereeCountryName>Deutschland</RefereeCountryName>
-        <RefereeTeamId>126588</RefereeTeamId>
-        <RefereeTeamname>BSG Bergmann Borsig Berlin</RefereeTeamname>
-      </Referee>
-      <RefereeAssistant1>
-        <RefereeId>352913634</RefereeId>
-        <RefereeName>Joan Carles Sureda</RefereeName>
-        <RefereeCountryId>36</RefereeCountryId>
-        <RefereeCountryName>EspaÃ±a</RefereeCountryName>
-        <RefereeTeamId>67638</RefereeTeamId>
-        <RefereeTeamname>Beer Belly FC</RefereeTeamname>
-      </RefereeAssistant1>
-      <RefereeAssistant2>
-        <RefereeId>69573390</RefereeId>
-        <RefereeName>Tino Dornauer</RefereeName>
-        <RefereeCountryId>3</RefereeCountryId>
-        <RefereeCountryName>Deutschland</RefereeCountryName>
-        <RefereeTeamId>524056</RefereeTeamId>
-        <RefereeTeamname>1. FC Lalelu</RefereeTeamname>
-      </RefereeAssistant2>
-    </MatchOfficials>
-    <Scorers>
-      <Goal Index="0">
-        <ScorerPlayerID>300619</ScorerPlayerID>
-        <ScorerPlayerName>Inge Persson</ScorerPlayerName>
-        <ScorerTeamID>5038</ScorerTeamID>
-        <ScorerHomeGoals>1</ScorerHomeGoals>
-        <ScorerAwayGoals>0</ScorerAwayGoals>
-        <ScorerMinute>21</ScorerMinute>
-        <MatchPart>1</MatchPart>
-      </Goal>
-      <Goal Index="1">
-        <ScorerPlayerID>300624</ScorerPlayerID>
-        <ScorerPlayerName>Lennart 'O' SjÃ¶sand</ScorerPlayerName>
-        <ScorerTeamID>5039</ScorerTeamID>
-        <ScorerHomeGoals>1</ScorerHomeGoals>
-        <ScorerAwayGoals>1</ScorerAwayGoals>
-        <ScorerMinute>71</ScorerMinute>
-        <MatchPart>2</MatchPart>
-      </Goal>
-      <Goal Index="2">
-        <ScorerPlayerID>300635</ScorerPlayerID>
-        <ScorerPlayerName>Tony Olofsson</ScorerPlayerName>
-        <ScorerTeamID>5039</ScorerTeamID>
-        <ScorerHomeGoals>1</ScorerHomeGoals>
-        <ScorerAwayGoals>2</ScorerAwayGoals>
-        <ScorerMinute>81</ScorerMinute>
-        <MatchPart>2</MatchPart>
-      </Goal>
-    </Scorers>
-    <Bookings>
-      <Booking Index="0">
-        <BookingPlayerID>300631</BookingPlayerID>
-        <BookingPlayerName>Tomas Danielsson</BookingPlayerName>
-        <BookingTeamID>5039</BookingTeamID>
-        <BookingType>1</BookingType>
-        <BookingMinute>8</BookingMinute>
-        <MatchPart>1</MatchPart>
-      </Booking>
-      <Booking Index="1">
-        <BookingPlayerID>300617</BookingPlayerID>
-        <BookingPlayerName>Leif Persson</BookingPlayerName>
-        <BookingTeamID>5038</BookingTeamID>
-        <BookingType>1</BookingType>
-        <BookingMinute>23</BookingMinute>
-        <MatchPart>1</MatchPart>
-      </Booking>
-      <Booking Index="2">
-        <BookingPlayerID>300631</BookingPlayerID>
-        <BookingPlayerName>Tomas Danielsson</BookingPlayerName>
-        <BookingTeamID>5039</BookingTeamID>
-        <BookingType>2</BookingType>
-        <BookingMinute>46</BookingMinute>
-        <MatchPart>2</MatchPart>
-      </Booking>
-      <Booking Index="3">
-        <BookingPlayerID>300610</BookingPlayerID>
-        <BookingPlayerName>Mats Svensson</BookingPlayerName>
-        <BookingTeamID>5038</BookingTeamID>
-        <BookingType>1</BookingType>
-        <BookingMinute>59</BookingMinute>
-        <MatchPart>2</MatchPart>
-      </Booking>
-      <Booking Index="4">
-        <BookingPlayerID>300611</BookingPlayerID>
-        <BookingPlayerName>Anders Persson</BookingPlayerName>
-        <BookingTeamID>5038</BookingTeamID>
-        <BookingType>1</BookingType>
-        <BookingMinute>84</BookingMinute>
-        <MatchPart>2</MatchPart>
-      </Booking>
-    </Bookings>
-    <Injuries>
-      <Injury Index="0">
-        <InjuryPlayerID>300616</InjuryPlayerID>
-        <InjuryPlayerName>Anders Kursand</InjuryPlayerName>
-        <InjuryTeamID>5038</InjuryTeamID>
-        <InjuryType>1</InjuryType>
-        <InjuryMinute>34</InjuryMinute>
-        <MatchPart>1</MatchPart>
-      </Injury>
-    </Injuries>
-    <PossessionFirstHalfHome>45</PossessionFirstHalfHome>
-    <PossessionFirstHalfAway>55</PossessionFirstHalfAway>
-    <PossessionSecondHalfHome>48</PossessionSecondHalfHome>
-    <PossessionSecondHalfAway>52</PossessionSecondHalfAway>
-  </Match>
-</HattrickData>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<title>401 - Unauthorized: Access is denied due to invalid credentials.</title>
+<style type="text/css">
+<!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:"trebuchet MS", Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+-->
+</style>
+</head>
+<body>
+<div id="header"><h1>Server Error</h1></div>
+<div id="content">
+ <div class="content-container"><fieldset>
+  <h2>401 - Unauthorized: Access is denied due to invalid credentials.</h2>
+  <h3>You do not have permission to view this directory or page using the credentials that you supplied.</h3>
+ </fieldset></div>
+</div>
+</body>
+</html>

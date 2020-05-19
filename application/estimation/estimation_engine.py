@@ -5,25 +5,10 @@ import global_library
 from application.models import Matches
 
 
-# select count(1), HomeTeamGoals, AwayTeamGoals, avg ("HomeTeamGoals"), avg ("AwayTeamGoals") from Matches where
-# HomeTeamMidfield=2
-
-def create_url():
-    return global_library.database_file_path
-
-
-def create_uri():
-    return global_library.database_file_uri
-
-
 def estimate_results(given_ratings):
-    ans = {}
-    wins = 0
-    draws = 0
-    losses = 0
-    sum_of_home_goals = 0
-    sum_of_away_goals = 0
-    engine = create_engine(create_uri(), echo=True)
+    ans = {'Home wins': 0, 'Draws': 0, 'Away wins': 0, 'Home goals average': 0, 'Away goals average': 0,
+           'Sum of home goals': 0, 'Sum of away goals': 0}
+    engine = create_engine(global_library.database_file_uri, echo=True)
     Session = sessionmaker(bind=engine)
     session = Session()
     records = session.query(Matches.HomeTeamGoals, Matches.AwayTeamGoals).filter(
@@ -34,22 +19,16 @@ def estimate_results(given_ratings):
         Matches.AwayTeamRDefense == given_ratings[8]).filter(Matches.AwayTeamCDefense == given_ratings[9]).filter(
         Matches.AwayTeamLDefense == given_ratings[10]).filter(Matches.AwayTeamRAttack == given_ratings[11]).filter(
         Matches.AwayTeamCAttack == given_ratings[12]).filter(Matches.AwayTeamLAttack == given_ratings[13])
-    number_of_matches = records.count()
     for record in records:
-        sum_of_home_goals += record.HomeTeamGoals
-        sum_of_away_goals += record.AwayTeamGoals
+        ans['Sum of home goals'] += record.HomeTeamGoals
+        ans['Sum of away goals'] += record.AwayTeamGoals
         if record.HomeTeamGoals > record.AwayTeamGoals:
-            wins += 1
+            ans['Home wins'] += 1
         elif record.HomeTeamGoals == record.AwayTeamGoals:
-            draws += 1
+            ans['Draws'] += 1
         else:
-            losses += 1
-    home_goals_average = sum_of_home_goals / number_of_matches
-    away_goals_average = sum_of_away_goals / number_of_matches
+            ans['Away wins'] += 1
+    ans['Home goals average'] = ans['Sum of home goals'] / records.count()
+    ans['Away goals average'] = ans['Sum of away goals'] / records.count()
     session.close()
-    ans['Home wins'] = wins
-    ans['Draws'] = draws
-    ans['Away wins'] = losses
-    ans['Home goals average'] = home_goals_average
-    ans['Away goals average'] = away_goals_average
     return ans

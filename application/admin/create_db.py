@@ -9,14 +9,6 @@ import global_library
 Base = declarative_base()
 
 
-def create_url():
-    return global_library.database_file_path
-
-
-def create_uri():
-    return global_library.database_file_uri
-
-
 class Model(Base):
     __tablename__ = 'Matches'
     __table_args__ = (PrimaryKeyConstraint('MatchID'),)
@@ -40,9 +32,9 @@ class Model(Base):
 
 
 def create_database():
-    if os.path.exists(create_url()):
+    if os.path.exists(global_library.database_file_path):
         dw.show_error_window_in_thread(title='Fisier existent', message='Baza de date deja exista.')
     else:
-        engine = create_engine(create_uri(), echo=True)
+        engine = create_engine(global_library.database_file_uri, echo=True)
         Base.metadata.create_all(engine)
         dw.show_info_window_in_thread(title='Succes!', message='Baza de date a fost creata.')

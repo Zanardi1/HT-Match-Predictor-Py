@@ -8,7 +8,6 @@ from application.xml import xml_parsing as xp
 
 def import_engine(low_end, high_end):
     file = config['DEFAULT']['PROTECTED_RESOURCE_PATH']
-    # Aici sa vad cum modific bara de progres
     for match_id in range(low_end, high_end + 1, 1):
         params = cs.create_match_details_string(match_id)
         dl.download_xml_file(file, params, global_library.details_savepath)

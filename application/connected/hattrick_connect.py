@@ -14,10 +14,9 @@ from application.connected import download_user_info as d
 
 
 def check_if_configuration_file_has_access_tokens(test_config):
-    if test_config.has_option('DEFAULT', 'ACCESS_TOKEN') and test_config.has_option('DEFAULT', 'ACCESS_TOKEN_SECRET'):
-        return True
-    else:
-        return False
+    return True if test_config.has_option('DEFAULT', 'ACCESS_TOKEN') and test_config.has_option('DEFAULT',
+                                                                                                'ACCESS_TOKEN_SECRET') \
+        else False
 
 
 def check_if_connection_is_valid(test_config):
@@ -50,17 +49,13 @@ def get_access_tokens(test_config):
                                signature_obj=HmacSha1Signature)
     request_token, request_token_secret = connection.get_request_token(
         params={'oauth_callback': test_config['DEFAULT']['CALLBACK_URL']})
-    authorization_url = connection.get_authorize_url(request_token)
-    webbrowser.open(authorization_url, new=2)
-    code = dw.show_string_input_window_in_thread(title='PIN Required',
-                                                 message='Please insert the PIN specified by Hattrick')
-    if code is None:
+    webbrowser.open(connection.get_authorize_url(request_token), new=2)
+    if dw.show_string_input_window_in_thread(title='PIN Required',
+                                             message='Please insert the PIN specified by Hattrick') is None:
         return False
     else:
-        if add_access_tokens_to_config_file(test_config, connection, request_token, request_token_secret, code):
-            return True
-        else:
-            return False
+        return True if add_access_tokens_to_config_file(test_config, connection, request_token, request_token_secret,
+                                                        code) else False
 
 
 def connection_engine():

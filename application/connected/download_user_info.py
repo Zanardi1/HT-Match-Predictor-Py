@@ -8,8 +8,6 @@ from application import config
 
 
 def download_user_info():
-    file = config['DEFAULT']['PROTECTED_RESOURCE_PATH']
-    params = cs.create_manager_compendium_string()
-    dl.download_xml_file(file, params, global_library.user_savepath)
-    user_data = xp.parse_user_file()
-    return user_data
+    dl.download_xml_file(file=config['DEFAULT']['PROTECTED_RESOURCE_PATH'],
+                         params=cs.create_manager_compendium_string(), destination_file=global_library.user_savepath)
+    return xp.parse_user_file()

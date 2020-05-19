@@ -8,8 +8,6 @@ from application import config
 
 
 def download_user_matches(team_id):
-    file = config['DEFAULT']['PROTECTED_RESOURCE_PATH']
-    params = cs.create_matches_string(team_id)
-    dl.download_xml_file(file, params, global_library.matches_savepath)
-    user_matches = xp.parse_matches_file()
-    return user_matches
+    dl.download_xml_file(file=config['DEFAULT']['PROTECTED_RESOURCE_PATH'], params=cs.create_matches_string(team_id),
+                         destination_file=global_library.matches_savepath)
+    return xp.parse_matches_file()
