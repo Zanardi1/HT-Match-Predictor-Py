@@ -1,5 +1,6 @@
 import os
 import configparser as c
+from typing import List
 
 
 def build_ratings_dictionary():
@@ -22,9 +23,9 @@ def read_from_configuration_file():
     return temp_config
 
 
-positions = ['Midfield', 'Right defence', 'Central defence', 'Left defence', 'Right attack', 'Central attack',
+positions: List[str] = ['Midfield', 'Right defence', 'Central defence', 'Left defence', 'Right attack', 'Central attack',
              'Left attack']
-statuses = ['Home', 'Away']
+statuses: List[str] = ['Home', 'Away']
 ans = {'Home wins': 0, 'Draws': 0, 'Away wins': 0, 'Home goals average': 0, 'Away goals average': 0}
 main_folder = os.getcwd()
 configuration_file = os.path.join(main_folder, "application\\connected\\session_config.ini")

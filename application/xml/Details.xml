@@ -1,29 +1,110 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
-<title>401 - Unauthorized: Access is denied due to invalid credentials.</title>
-<style type="text/css">
-<!--
-body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
-fieldset{padding:0 15px 10px 15px;} 
-h1{font-size:2.4em;margin:0;color:#FFF;}
-h2{font-size:1.7em;margin:0;color:#CC0000;} 
-h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
-#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:"trebuchet MS", Verdana, sans-serif;color:#FFF;
-background-color:#555555;}
-#content{margin:0 0 0 2%;position:relative;}
-.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
--->
-</style>
-</head>
-<body>
-<div id="header"><h1>Server Error</h1></div>
-<div id="content">
- <div class="content-container"><fieldset>
-  <h2>401 - Unauthorized: Access is denied due to invalid credentials.</h2>
-  <h3>You do not have permission to view this directory or page using the credentials that you supplied.</h3>
- </fieldset></div>
-</div>
-</body>
-</html>
+<?xml version="1.0" encoding="utf-8"?>
+<HattrickData>
+  <FileName>matchdetails.xml</FileName>
+  <Version>3.0</Version>
+  <UserID>1248859</UserID>
+  <FetchedDate>2020-05-19 16:19:41</FetchedDate>
+  <UserSupporterTier>diamond</UserSupporterTier>
+  <SourceSystem>Hattrick</SourceSystem>
+  <Match>
+    <MatchID>10610</MatchID>
+    <MatchType>1</MatchType>
+    <MatchContextId>95</MatchContextId>
+    <MatchRuleId>0</MatchRuleId>
+    <CupLevel>0</CupLevel>
+    <CupLevelIndex>0</CupLevelIndex>
+    <MatchDate>2000-12-17 10:00:00</MatchDate>
+    <FinishedDate>2000-12-17 11:45:00</FinishedDate>
+    <AddedMinutes>0</AddedMinutes>
+    <HomeTeam>
+      <HomeTeamID>2346</HomeTeamID>
+      <HomeTeamName>Connys Killar</HomeTeamName>
+      <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
+      <Formation>4-4-2</Formation>
+      <HomeGoals>0</HomeGoals>
+      <TacticType>0</TacticType>
+      <TacticSkill>0</TacticSkill>
+      <RatingMidfield>2</RatingMidfield>
+      <RatingRightDef>7</RatingRightDef>
+      <RatingMidDef>7</RatingMidDef>
+      <RatingLeftDef>8</RatingLeftDef>
+      <RatingRightAtt>9</RatingRightAtt>
+      <RatingMidAtt>9</RatingMidAtt>
+      <RatingLeftAtt>10</RatingLeftAtt>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1008</AwayTeamID>
+      <AwayTeamName>Girl Power FC</AwayTeamName>
+      <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
+      <Formation>3-5-2</Formation>
+      <AwayGoals>1</AwayGoals>
+      <TacticType>0</TacticType>
+      <TacticSkill>0</TacticSkill>
+      <RatingMidfield>7</RatingMidfield>
+      <RatingRightDef>13</RatingRightDef>
+      <RatingMidDef>18</RatingMidDef>
+      <RatingLeftDef>10</RatingLeftDef>
+      <RatingRightAtt>5</RatingRightAtt>
+      <RatingMidAtt>6</RatingMidAtt>
+      <RatingLeftAtt>7</RatingLeftAtt>
+    </AwayTeam>
+    <Arena>
+      <ArenaID>2346</ArenaID>
+      <ArenaName>Svenne Stadion</ArenaName>
+      <WeatherID>0</WeatherID>
+      <SoldTotal>9195</SoldTotal>
+    </Arena>
+    <MatchOfficials>
+      <Referee>
+        <RefereeId>241791833</RefereeId>
+        <RefereeName>Stefano Masio</RefereeName>
+        <RefereeCountryId>4</RefereeCountryId>
+        <RefereeCountryName>Italia</RefereeCountryName>
+        <RefereeTeamId>73379</RefereeTeamId>
+        <RefereeTeamname>Admira Patriots</RefereeTeamname>
+      </Referee>
+      <RefereeAssistant1>
+        <RefereeId>206745429</RefereeId>
+        <RefereeName>Nejc Perne</RefereeName>
+        <RefereeCountryId>64</RefereeCountryId>
+        <RefereeCountryName>Slovenija</RefereeCountryName>
+        <RefereeTeamId>1115019</RefereeTeamId>
+        <RefereeTeamname>Usnjar Olimpija</RefereeTeamname>
+      </RefereeAssistant1>
+      <RefereeAssistant2>
+        <RefereeId>260411778</RefereeId>
+        <RefereeName>Roberto Laudando</RefereeName>
+        <RefereeCountryId>4</RefereeCountryId>
+        <RefereeCountryName>Italia</RefereeCountryName>
+        <RefereeTeamId>0</RefereeTeamId>
+        <RefereeTeamname></RefereeTeamname>
+      </RefereeAssistant2>
+    </MatchOfficials>
+    <Scorers>
+      <Goal Index="0">
+        <ScorerPlayerID>120426</ScorerPlayerID>
+        <ScorerPlayerName>Matthias Svensson</ScorerPlayerName>
+        <ScorerTeamID>1008</ScorerTeamID>
+        <ScorerHomeGoals>0</ScorerHomeGoals>
+        <ScorerAwayGoals>1</ScorerAwayGoals>
+        <ScorerMinute>38</ScorerMinute>
+        <MatchPart>1</MatchPart>
+      </Goal>
+    </Scorers>
+    <Bookings>
+      <Booking Index="0">
+        <BookingPlayerID>198463</BookingPlayerID>
+        <BookingPlayerName>Michael ''Kudding'' Knutsson</BookingPlayerName>
+        <BookingTeamID>2346</BookingTeamID>
+        <BookingType>1</BookingType>
+        <BookingMinute>80</BookingMinute>
+        <MatchPart>2</MatchPart>
+      </Booking>
+    </Bookings>
+    <Injuries />
+    <PossessionFirstHalfHome>14</PossessionFirstHalfHome>
+    <PossessionFirstHalfAway>86</PossessionFirstHalfAway>
+    <PossessionSecondHalfHome>5</PossessionSecondHalfHome>
+    <PossessionSecondHalfAway>95</PossessionSecondHalfAway>
+  </Match>
+</HattrickData>

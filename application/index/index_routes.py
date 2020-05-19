@@ -36,84 +36,68 @@ def get_user_team_name():
 # Functia arata daca echipa test_team joaca acasa sau in deplasare
 def home_or_away(match_id, test_team):
     real_home_team = ''
-    tree = ET.parse(global_library.matches_savepath)
-    root = tree.getroot()
-    match_list = root[5][5]
+    match_list = ET.parse(global_library.matches_savepath).getroot()[5][5]
     for match in match_list.findall('Match'):
-        found_match_id = match[0].text
-        if match_id == found_match_id:
+        if match_id == match[0].text:
             real_home_team = match[1][1].text
             break
-    if test_team == real_home_team:
-        return 'Home'
-    else:
-        return 'Away'
+    return 'Home' if test_team == real_home_team else 'Away'
 
 
 # index
 @index_bp.route('/')
 def home():
-    match_orders = global_library.default_match_orders
     return render_template('index.html', title="The Best Match Predictor", ratings=global_library.ratings,
                            positions=global_library.positions,
-                           statuses=global_library.statuses, from_index=True, match_orders=match_orders,
+                           statuses=global_library.statuses, from_index=True,
+                           match_orders=global_library.default_match_orders,
                            answer=global_library.ans)
 
 
 # conectarea la Hattrick
 @index_bp.route('/LoginToHattrick')
 def LoginToHattrick():
-    connection_successful, user_data = hattrick_connect.connection_engine()
-    global_library.user_data = user_data
-    match_orders = global_library.default_match_orders
+    connection_successful, global_library.user_data = hattrick_connect.connection_engine()
     if connection_successful:
         return render_template('connected.html', title="Connected to Hattrick", from_index=False,
                                ratings=global_library.ratings,
                                positions=global_library.positions, statuses=global_library.statuses,
-                               user_data=user_data,
-                               match_orders=match_orders,
+                               user_data=global_library.user_data,
+                               match_orders=global_library.default_match_orders,
                                answer=global_library.ans)
     else:
         return render_template('index.html', title="The Best Match Predictor", ratings=global_library.ratings,
                                positions=global_library.positions,
                                statuses=global_library.statuses, from_index=True, answer=global_library.ans,
-                               match_orders=match_orders)
+                               match_orders=global_library.default_match_orders)
 
 
 # algoritmul de estimare
 @index_bp.route('/EstimationEngine', methods=['POST'])
 def estimation():
-    match_orders = global_library.default_match_orders
-    given_ratings = []
-    x = request.form
-    for i in x.values():
-        given_ratings = given_ratings + [i]
-    given_ratings = tuple(given_ratings)
-    ans = estimation_engine.estimate_results(given_ratings)
     return render_template('index.html', title="The Best Match Predictor", ratings=global_library.ratings,
                            positions=global_library.positions,
-                           statuses=global_library.statuses, from_index=True, match_orders=match_orders, answer=ans)
+                           statuses=global_library.statuses, from_index=True,
+                           match_orders=global_library.default_match_orders,
+                           answer=estimation_engine.estimate_results(given_ratings=[i for i in request.form.values()]))
 
 
 # deconectarea de la Hattrick
 @index_bp.route('/DisconnectFromHattrick')
 def disconnect_from_hattrick():
     hattrick_disconnect.disconnection_engine()
-    match_orders = global_library.default_match_orders
     return render_template('index.html', title="The Best Match Predictor",
                            ratings=global_library.ratings, positions=global_library.positions,
-                           statuses=global_library.statuses, from_index=True, match_orders=match_orders,
+                           statuses=global_library.statuses, from_index=True,
+                           match_orders=global_library.default_match_orders,
                            answer=global_library.ans)
 
 
 # importarea de meciuri in baza de date
 @index_bp.route('/import', methods=['POST'])
 def import_matches_into_database():
-    low_end = request.form['InferiorLimit']
-    high_end = request.form['SuperiorLimit']
-    low_end = int(low_end)
-    high_end = int(high_end)
-    import_matches.import_engine(low_end, high_end)
+    import_matches.import_engine(low_end=int(request.form['InferiorLimit']),
+                                 high_end=int(request.form['SuperiorLimit']))
     dw.show_info_window_in_thread(title='Import terminat', message='Am importat toate meciurile alese')
     return render_template('admin.html', title='Admin Control Panel')
 
