@@ -85,7 +85,7 @@ def estimation():
 # deconectarea de la Hattrick
 @index_bp.route('/DisconnectFromHattrick')
 def disconnect_from_hattrick():
-    hattrick_disconnect.disconnection_engine()
+    hattrick_disconnect.disconnection_engine(show_confirmation_window=True)
     return render_template('index.html', title="The Best Match Predictor",
                            ratings=global_library.ratings, positions=global_library.positions,
                            statuses=global_library.statuses, from_index=True,
@@ -105,10 +105,10 @@ def import_matches_into_database():
 # iesirea din panoul de control catre prima pagina
 @index_bp.route('/LogoutToIndex')
 def logout():
-    match_orders = global_library.default_match_orders
     return render_template('index.html', title="The Best Match Predictor",
                            ratings=global_library.ratings, positions=global_library.positions,
-                           statuses=global_library.statuses, from_index=True, match_orders=match_orders,
+                           statuses=global_library.statuses, from_index=True,
+                           match_orders=global_library.default_match_orders,
                            answer=global_library.ans)
 
 

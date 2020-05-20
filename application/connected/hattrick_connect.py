@@ -11,6 +11,7 @@ import application.xml.xml_parsing as xl
 import global_library
 from application import config
 from application.connected import download_user_info as d
+from application.connected import hattrick_disconnect as hd
 
 
 def check_if_configuration_file_has_access_tokens(test_config):
@@ -51,15 +52,15 @@ def get_access_tokens(test_config):
     request_token, request_token_secret = connection.get_request_token(
         params={'oauth_callback': test_config['DEFAULT']['CALLBACK_URL']})
     webbrowser.open(url=connection.get_authorize_url(request_token), new=2)
-    if dw.show_string_input_window_in_thread(title='PIN Required',
-                                             message='Please insert the PIN specified by Hattrick') is None:
+    code = dw.show_string_input_window_in_thread(title='PIN Required',
+                                                 message='Please insert the PIN specified by Hattrick')
+    if code is None:
         return False
     else:
         return True if add_access_tokens_to_config_file(test_config=test_config, connection=connection,
                                                         request_token=request_token,
                                                         request_token_secret=request_token_secret,
-                                                        code=dw.show_string_input_window_in_thread(title='PIN Required',
-                                                                                                   message='Please insert the PIN specified by Hattrick')) else False
+                                                        code=code) else False
 
 
 def connection_engine():
@@ -81,17 +82,12 @@ def connection_engine():
       3.2. Descarca informatiile de baza
       3.3. Intoarce True."""
 
-    if check_if_configuration_file_has_access_tokens(config):
+    if check_if_configuration_file_has_access_tokens(test_config=config):
         if check_if_connection_is_valid(test_config=config):
             user_data = d.download_user_info()
             return True, user_data
         else:
-            dx.download_xml_file(file=config['DEFAULT']['INVALIDATE_TOKEN_PATH'], params={},
-                                 destination_file=global_library.disconnect_savepath)
-            config.remove_option('DEFAULT', 'ACCESS_TOKEN')
-            config.remove_option('DEFAULT', 'ACCESS_TOKEN_SECRET')
-            with open(file=global_library.configuration_file, mode='w') as configfile:
-                config.write(configfile)
+            hd.disconnection_engine(show_confirmation_window=False)
             if get_access_tokens(test_config=config):
                 dw.show_info_window_in_thread(title='Connection complete!',
                                               message='Successfully connected to Hattrick account')
@@ -104,4 +100,4 @@ def connection_engine():
             user_data = d.download_user_info()
             return True, user_data
         else:
-            return False, []
+            return False, {}
