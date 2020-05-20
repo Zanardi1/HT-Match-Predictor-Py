@@ -35,6 +35,5 @@ def create_database():
     if os.path.exists(global_library.database_file_path):
         dw.show_error_window_in_thread(title='Fisier existent', message='Baza de date deja exista.')
     else:
-        engine = create_engine(global_library.database_file_uri, echo=True)
-        Base.metadata.create_all(engine)
+        Base.metadata.create_all(create_engine(global_library.database_file_uri, echo=True))
         dw.show_info_window_in_thread(title='Succes!', message='Baza de date a fost creata.')

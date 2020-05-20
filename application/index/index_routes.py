@@ -129,38 +129,37 @@ def delete():
 # Intoarce numele echipei selectate
 @index_bp.route('/Team', methods=['POST'])
 def get_team_id():
-    team_id = request.form['HattrickTeams']
-    global_library.team_id = team_id
+    global_library.team_id = request.form['HattrickTeams']
     global_library.user_team_name = get_user_team_name()
-    user_matches = download_user_matches.download_user_matches(team_id)
-    global_library.user_matches = user_matches
-    match_orders = global_library.default_match_orders
+    global_library.user_matches = download_user_matches.download_user_matches(global_library.team_id)
     return render_template('connected.html', title="Connected to Hattrick", from_index=False,
                            ratings=global_library.ratings,
                            positions=global_library.positions, statuses=global_library.statuses,
                            user_data=global_library.user_data,
-                           user_matches=user_matches, match_orders=match_orders, answer=global_library.ans)
+                           user_matches=global_library.user_matches, match_orders=global_library.default_match_orders,
+                           answer=global_library.ans)
 
 
 # Intoarce numarul de identificare al unui meci selectat
 @index_bp.route('/GetMatch', methods=['POST'])
 def get_match_id():
-    match_id = request.form['FutureMatches']
-    match_orders = download_future_match.download_future_match(match_id, global_library.team_id)
-    place = home_or_away(match_id, global_library.user_team_name)
     return render_template('connected.html', title="Connected to Hattrick", from_index=False,
                            ratings=global_library.ratings,
                            positions=global_library.positions, statuses=global_library.statuses,
                            user_data=global_library.user_data,
-                           user_matches=global_library.user_matches, match_orders=match_orders, place=place,
+                           user_matches=global_library.user_matches,
+                           match_orders=download_future_match.download_future_match(
+                               match_id=request.form['FutureMatches'],
+                               team_id=global_library.team_id),
+                           place=home_or_away(match_id=request.form['FutureMatches'],
+                                              test_team=global_library.user_team_name),
                            answer=global_library.ans)
 
 
 @index_bp.route('/backup')
 def backup_database():
-    archive_name = global_library.database_backup_path + '\\backup ' + datetime.datetime.now().strftime(
-        '%Y-%m-%d %H-%M-%S') + '.zip'
-    with z.ZipFile(file=archive_name, mode='w') as backup:
+    with z.ZipFile(file=global_library.database_backup_path + '\\backup ' + datetime.datetime.now().strftime(
+            '%Y-%m-%d %H-%M-%S') + '.zip', mode='w') as backup:
         backup.write(global_library.database_file_path,
                      arcname='matches.db')
     dw.show_info_window_in_thread(title='Backup terminat', message='Am terminat backupul bazei de date.')
@@ -169,8 +168,7 @@ def backup_database():
 
 @index_bp.route('/restore')
 def restore_database():
-    restore_database_file_name = dw.restore_backup_window_in_thread()
-    with z.ZipFile(restore_database_file_name, 'r') as restore:
+    with z.ZipFile(file=dw.restore_backup_window_in_thread(), mode='r') as restore:
         restore.extractall(os.path.dirname(global_library.database_file_path))
     dw.show_info_window_in_thread(title='Restaurare incheiata', message='S-a incheiat restaurarea backupului ales')
     return render_template('admin.html')

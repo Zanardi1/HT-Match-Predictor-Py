@@ -5,16 +5,11 @@ import global_library
 
 
 def parse_user_file():
-    data = {}
+    data = {'user name': root[4][1].text, 'user id': root[4][0].text, 'supporter': root[4][2].text,
+            'country': root[4][4][1].text, 'country id': root[4][4][0].text, 'team 1 name': root[4][5][0][1].text,
+            'team 1 id': root[4][5][0][0].text}
     tree = ET.parse(global_library.user_savepath)
     root = tree.getroot()
-    data['user name'] = root[4][1].text
-    data['user id'] = root[4][0].text
-    data['supporter'] = root[4][2].text
-    data['country'] = root[4][4][1].text
-    data['country id'] = root[4][4][0].text
-    data['team 1 name'] = root[4][5][0][1].text
-    data['team 1 id'] = root[4][5][0][0].text
     number_of_user_teams = len(list(root[4][5]))
     if number_of_user_teams == 1:
         data['team 2 name'] = 'None'
