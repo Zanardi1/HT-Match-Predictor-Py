@@ -7,6 +7,8 @@ from application.xml import xml_parsing as xp
 
 
 def import_engine(low_end, high_end):
+    if low_end > high_end:
+        low_end, high_end = high_end, low_end
     for match_id in range(low_end, high_end + 1, 1):
         dl.download_xml_file(file=config['DEFAULT']['PROTECTED_RESOURCE_PATH'],
                              params=cs.create_match_details_string(match_id),

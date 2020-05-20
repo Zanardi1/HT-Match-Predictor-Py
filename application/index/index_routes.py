@@ -19,6 +19,7 @@ from application.connected import download_user_matches
 from application.connected import hattrick_connect
 from application.connected import hattrick_disconnect
 from application.estimation import estimation_engine
+import sqlalchemy.exc
 
 index_bp = Blueprint('index_bp', __name__, template_folder='templates', static_folder='static')
 
@@ -96,9 +97,21 @@ def disconnect_from_hattrick():
 # importarea de meciuri in baza de date
 @index_bp.route('/import', methods=['POST'])
 def import_matches_into_database():
-    import_matches.import_engine(low_end=int(request.form['InferiorLimit']),
-                                 high_end=int(request.form['SuperiorLimit']))
-    dw.show_info_window_in_thread(title='Import terminat', message='Am importat toate meciurile alese')
+    try:
+        import_matches.import_engine(low_end=int(request.form['InferiorLimit']),
+                                     high_end=int(request.form['SuperiorLimit']))
+    except ValueError:
+        dw.show_error_window_in_thread(title='Date introduse gresit!',
+                                       message='Trebuie sa introduci valori numerice intregi in ambele casute!')
+    except IndexError:
+        dw.show_error_window_in_thread(title='Numar inexistent!',
+                                       message='Numarul de identificare al unei limite (sau a ambelor) nu exista. Cel '
+                                               'mai probabil ai introdus numere negative sau 0.')
+    except sqlalchemy.exc.IntegrityError:
+        dw.show_error_window_in_thread(title='Meciuri existente',
+                                       message='In intervalul introdus este macar un meci care este in baza de date')
+    else:
+        dw.show_info_window_in_thread(title='Import terminat', message='Am importat toate meciurile alese')
     return render_template('admin.html', title='Admin Control Panel')
 
 
