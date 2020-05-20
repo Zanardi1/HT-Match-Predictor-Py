@@ -5,18 +5,16 @@ import global_library
 
 
 def parse_user_file():
+    root = ET.parse(global_library.user_savepath).getroot()
     data = {'user name': root[4][1].text, 'user id': root[4][0].text, 'supporter': root[4][2].text,
             'country': root[4][4][1].text, 'country id': root[4][4][0].text, 'team 1 name': root[4][5][0][1].text,
             'team 1 id': root[4][5][0][0].text}
-    tree = ET.parse(global_library.user_savepath)
-    root = tree.getroot()
-    number_of_user_teams = len(list(root[4][5]))
-    if number_of_user_teams == 1:
+    if len(list(root[4][5])) == 1:  # len(list(root[4][5])) - numarul de echipe pe care le are utilizatorul
         data['team 2 name'] = 'None'
         data['team 2 id'] = '-'
         data['team 3 name'] = 'None'
         data['team 3 id'] = '-'
-    elif number_of_user_teams == 2:
+    elif len(list(root[4][5])) == 2:
         data['team 2 name'] = root[4][5][1][1].text
         data['team 2 id'] = root[4][5][1][0].text
         data['team 3 name'] = 'None'
@@ -31,18 +29,13 @@ def parse_user_file():
 
 def parse_matches_file():
     data = []
-    tree = ET.parse(global_library.matches_savepath)
-    root = tree.getroot()
-    match_list = root[5][5]
+    match_list = ET.parse(global_library.matches_savepath).getroot()[5][5]
     for match in match_list:
         for i in range(len(match)):
             if match[i].tag == 'MatchType' and match[i].text in ['1', '4', '8', '10', '12']:
                 for j in range(i, len(match)):
                     if match[j].tag == 'Status' and match[j].text == 'UPCOMING':
-                        match_id = match[0].text
-                        home_team = match[1][1].text
-                        away_team = match[2][1].text
-                        data.append((match_id, home_team, away_team))
+                        data.append((match[0].text, match[1][1].text, match[2][1].text))
     return data
 
 
