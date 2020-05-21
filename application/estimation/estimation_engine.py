@@ -1,6 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
+import application.dialog_windows as dw
 import global_library
 from application.models import Matches
 
@@ -19,6 +20,11 @@ def estimate_results(given_ratings):
         Matches.AwayTeamRDefense == given_ratings[8]).filter(Matches.AwayTeamCDefense == given_ratings[9]).filter(
         Matches.AwayTeamLDefense == given_ratings[10]).filter(Matches.AwayTeamRAttack == given_ratings[11]).filter(
         Matches.AwayTeamCAttack == given_ratings[12]).filter(Matches.AwayTeamLAttack == given_ratings[13])
+    session.close()
+    if records.count() == 0:
+        dw.show_error_window_in_thread(title='No match',
+                                       message='No matches with those ratings were found in the database')
+        return ans
     for record in records:
         ans['Sum of home goals'] += record.HomeTeamGoals
         ans['Sum of away goals'] += record.AwayTeamGoals
@@ -30,5 +36,4 @@ def estimate_results(given_ratings):
             ans['Away wins'] += 1
     ans['Home goals average'] = ans['Sum of home goals'] / records.count()
     ans['Away goals average'] = ans['Sum of away goals'] / records.count()
-    session.close()
     return ans
