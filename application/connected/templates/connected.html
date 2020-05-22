@@ -29,28 +29,30 @@
     <label>{{user_data['team 3 name']}}</label>
     <label>({{user_data['team 3 id']}})</label>
 </div>
-<div id="TeamChoice">
-    <form action="/Team" method="post">
+<form action="/GetMatch" method="post">
+    <div id="TeamChoice">
         <label>Choose team:</label><br>
-        <input type="radio" id="FirstTeam" name="HattrickTeams" value="{{user_data['team 1 id']}}" checked>
+        <input type="radio" id="FirstTeam" name="HattrickTeams" value="{{user_data['team 1 id']}}" {{checked[0]}}>
         <label for="FirstTeam">{{user_data['team 1 name']}}</label><br>
-        <input type="radio" id="SecondTeam" name="HattrickTeams" value="{{user_data['team 2 id']}}">
+        <input type="radio" id="SecondTeam" name="HattrickTeams" value="{{user_data['team 2 id']}}" {{checked[1]}}>
         <label for="SecondTeam">{{user_data['team 2 name']}}</label><br>
-        <input type="radio" id="ThirdTeam" name="HattrickTeams" value="{{user_data['team 3 id']}}">
+        <input type="radio" id="ThirdTeam" name="HattrickTeams" value="{{user_data['team 3 id']}}" {{checked[2]}}>
         <label for="ThirdTeam">{{user_data['team 3 name']}}</label><br>
-        <input type="submit" id="SubmitTeamButton" value="OK">
-    </form>
-</div>
-<div id="NextMatches">
-    <form action="/GetMatch" method="post">
+    </div>
+    <div id="NextMatches">
+        <label for="FutureMatchList">Choose a match from the future matches:</label><br/>
         <select name="FutureMatches" size="5" id="FutureMatchList" style="width: 18%">
             {% for i in range(user_matches|length) %}
+            {%if i==0%}
+            <option value="{{user_matches[i][0]}}" selected>{{user_matches[i][1]}} - {{user_matches[i][2]}}</option>
+            {%else%}
             <option value="{{user_matches[i][0]}}">{{user_matches[i][1]}} - {{user_matches[i][2]}}</option>
+            {%endif%}
             {%endfor%}
         </select><br><br><br><br><br>
         <input type="submit" id="SubmitMatchButton" value="OK"><br>
-    </form>
-</div>
+    </div>
+</form>
 {%endblock%}
 </body>
 </html>

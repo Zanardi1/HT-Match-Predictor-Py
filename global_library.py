@@ -1,5 +1,5 @@
-import os
 import configparser as c
+import os
 from typing import List, Dict, Tuple, Any
 
 
@@ -44,5 +44,6 @@ user_data: dict = {}
 team_id: int = 0
 user_team_name: str = ''
 user_matches: List[Any] = []
+default_checked_team: Tuple[str, str, str] = ('checked', '', '')
 
 ratings = build_ratings_dictionary()

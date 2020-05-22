@@ -5,6 +5,8 @@ import os.path
 import xml.etree.ElementTree as ET
 import zipfile as z
 
+import sqlalchemy.exc
+import werkzeug.exceptions as we
 from flask import Blueprint
 from flask import render_template
 from flask import request
@@ -19,7 +21,6 @@ from application.connected import download_user_matches
 from application.connected import hattrick_connect
 from application.connected import hattrick_disconnect
 from application.estimation import estimation_engine
-import sqlalchemy.exc
 
 index_bp = Blueprint('index_bp', __name__, template_folder='templates', static_folder='static')
 
@@ -65,7 +66,7 @@ def LoginToHattrick():
                                positions=global_library.positions, statuses=global_library.statuses,
                                user_data=global_library.user_data,
                                match_orders=global_library.default_match_orders,
-                               answer=global_library.ans)
+                               answer=global_library.ans, checked=global_library.default_checked_team)
     else:
         return render_template('index.html', title="The Best Match Predictor", ratings=global_library.ratings,
                                positions=global_library.positions,
@@ -139,34 +140,44 @@ def delete():
     return render_template('admin.html')
 
 
-# Intoarce numele echipei selectate
-@index_bp.route('/Team', methods=['POST'])
-def get_team_id():
-    global_library.team_id = request.form['HattrickTeams']
-    global_library.user_team_name = get_user_team_name()
-    global_library.user_matches = download_user_matches.download_user_matches(global_library.team_id)
-    return render_template('connected.html', title="Connected to Hattrick", from_index=False,
-                           ratings=global_library.ratings,
-                           positions=global_library.positions, statuses=global_library.statuses,
-                           user_data=global_library.user_data,
-                           user_matches=global_library.user_matches, match_orders=global_library.default_match_orders,
-                           answer=global_library.ans)
+def mark_chosen_option():
+    if global_library.team_id == global_library.user_data['team 1 id']:
+        checked = ('checked', '', '')
+    elif global_library.team_id == global_library.user_data['team 2 id']:
+        checked = ('', 'checked', '')
+    else:
+        checked = ('', '', 'checked')
+    return checked
 
 
 # Intoarce numarul de identificare al unui meci selectat
 @index_bp.route('/GetMatch', methods=['POST'])
 def get_match_id():
+    global_library.team_id = request.form['HattrickTeams']
+    global_library.user_team_name = get_user_team_name()
+    global_library.user_matches = download_user_matches.download_user_matches(global_library.team_id)
+    checked = mark_chosen_option()
+    if len(global_library.user_matches) == 0:
+        dw.show_error_window_in_thread(title='No match found',
+                                       message='This team does not have any future matches of the selected types '
+                                               'scheduled')
+        match_orders = global_library.default_match_orders
+        place = 'Home'
+    else:
+        try:
+            match_id = request.form['FutureMatches']
+        except we.BadRequestKeyError:
+            match_id = global_library.user_matches[0][0]
+        match_orders = download_future_match.download_future_match(match_id=match_id, team_id=global_library.team_id)
+        place = home_or_away(match_id=match_id, test_team=global_library.user_team_name)
     return render_template('connected.html', title="Connected to Hattrick", from_index=False,
                            ratings=global_library.ratings,
                            positions=global_library.positions, statuses=global_library.statuses,
                            user_data=global_library.user_data,
                            user_matches=global_library.user_matches,
-                           match_orders=download_future_match.download_future_match(
-                               match_id=request.form['FutureMatches'],
-                               team_id=global_library.team_id),
-                           place=home_or_away(match_id=request.form['FutureMatches'],
-                                              test_team=global_library.user_team_name),
-                           answer=global_library.ans)
+                           match_orders=match_orders,
+                           place=place,
+                           answer=global_library.ans, checked=checked)
 
 
 @index_bp.route('/backup')
