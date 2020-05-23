@@ -46,5 +46,6 @@ user_team_name: str = ''
 user_matches: List[Any] = []
 default_checked_team: Tuple[str, str, str] = ('checked', '', '')
 old_checked: Tuple[str, str, str] = ('', '', '')
+connected_to_hattrick: bool = False
 
 ratings = build_ratings_dictionary()
