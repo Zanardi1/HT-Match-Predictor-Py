@@ -165,11 +165,15 @@ def get_match_id():
         place = 'Home'
     else:
         try:
-            match_id = request.form['FutureMatches']
+            if global_library.old_checked == checked:
+                match_id = request.form['FutureMatches']
+            else:
+                match_id = global_library.user_matches[0][0]
         except we.BadRequestKeyError:
             match_id = global_library.user_matches[0][0]
         match_orders = download_future_match.download_future_match(match_id=match_id, team_id=global_library.team_id)
         place = home_or_away(match_id=match_id, test_team=global_library.user_team_name)
+    global_library.old_checked = checked
     return render_template('connected.html', title="Connected to Hattrick", from_index=False,
                            ratings=global_library.ratings,
                            positions=global_library.positions, statuses=global_library.statuses,
