@@ -92,9 +92,9 @@ def estimation():
                                title="The Best Match Predictor", ratings=global_library.ratings,
                                positions=global_library.positions,
                                statuses=global_library.statuses, from_index=True,
-                               match_orders=global_library.default_match_orders,
+                               match_orders=tuple([i for i in request.form.values()]),
                                answer=estimation_engine.estimate_results(
-                                   given_ratings=[i for i in request.form.values()]))
+                                   given_ratings=tuple([i for i in request.form.values()])), place='Home')
 
 
 # deconectarea de la Hattrick
