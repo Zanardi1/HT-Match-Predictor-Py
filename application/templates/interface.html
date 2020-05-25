@@ -23,6 +23,26 @@
                 <label for="{{status}} {{position}}" class="ResultsClass">{{position}} rating:</label>
                 <select id="{{status}} {{position}}" class="RatingsClass" name="{{status}} {{position}}">
                     {%for rating in ratings%}
+                    {% if from_estimation == True%}
+                    {% if (loop.index==match_orders[0]|int and status=='Home' and position=='Midfield') or
+                    (loop.index==match_orders[1]|int and status=='Home' and position=='Right defence') or
+                    (loop.index==match_orders[2]|int and status=='Home' and position=='Central defence') or
+                    (loop.index==match_orders[3]|int and status=='Home' and position=='Left defence') or
+                    (loop.index==match_orders[4]|int and status=='Home' and position=='Right attack') or
+                    (loop.index==match_orders[5]|int and status=='Home' and position=='Central attack') or
+                    (loop.index==match_orders[6]|int and status=='Home' and position=='Left attack') or
+                    (loop.index==match_orders[7]|int and status=='Away' and position=='Midfield') or
+                    (loop.index==match_orders[8]|int and status=='Away' and position=='Right defence') or
+                    (loop.index==match_orders[9]|int and status=='Away' and position=='Central defence') or
+                    (loop.index==match_orders[10]|int and status=='Away' and position=='Left defence') or
+                    (loop.index==match_orders[11]|int and status=='Away' and position=='Right attack') or
+                    (loop.index==match_orders[12]|int and status=='Away' and position=='Central attack') or
+                    (loop.index==match_orders[13]|int and status=='Away' and position=='Left attack')%}
+                    <option value="{{loop.index}}" selected>{{ratings[rating]}}</option>
+                    {% else %}
+                    <option value="{{loop.index}}">{{ratings[rating]}}</option>
+                    {%endif%}
+                    {% else %}
                     {% if (loop.index == match_orders[0]|int and status==place and position=='Midfield') or
                     (loop.index==match_orders[1]|int and status==place and position=='Right defence') or
                     (loop.index==match_orders[2]|int and status==place and position=='Central defence') or
@@ -34,13 +54,14 @@
                     {%else%}
                     <option value="{{loop.index}}">{{ratings[rating]}}</option>
                     {%endif%}
+                    {%endif%}
                     {%endfor%}
                 </select>
             </p>
             {%endfor%}
-            <input type="submit" value="Estimate" id="Estimation"><br>
         </div>
         {%endfor%}
+        <input type="submit" value="Estimate" id="Estimation"><br>
     </form>
 </div>
 <br>

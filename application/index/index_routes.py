@@ -83,10 +83,10 @@ def estimation():
                                ratings=global_library.ratings,
                                positions=global_library.positions, statuses=global_library.statuses,
                                user_data=global_library.user_data,
-                               match_orders=global_library.default_match_orders,
+                               match_orders=tuple([i for i in request.form.values()]),
                                answer=estimation_engine.estimate_results(
-                                   given_ratings=[i for i in request.form.values()]),
-                               checked=global_library.default_checked_team)
+                                   given_ratings=tuple([i for i in request.form.values()])),
+                               checked=global_library.default_checked_team, from_estimation=True)
     else:
         return render_template('index.html',
                                title="The Best Match Predictor", ratings=global_library.ratings,
@@ -94,7 +94,7 @@ def estimation():
                                statuses=global_library.statuses, from_index=True,
                                match_orders=tuple([i for i in request.form.values()]),
                                answer=estimation_engine.estimate_results(
-                                   given_ratings=tuple([i for i in request.form.values()])), place='Home')
+                                   given_ratings=tuple([i for i in request.form.values()])), from_estimation=True)
 
 
 # deconectarea de la Hattrick
