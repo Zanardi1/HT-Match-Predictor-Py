@@ -10,8 +10,8 @@ def estimate_results(given_ratings):
     ans = {'Home wins': 0, 'Draws': 0, 'Away wins': 0, 'Home goals average': 0, 'Away goals average': 0,
            'Sum of home goals': 0, 'Sum of away goals': 0}
     engine = create_engine(global_library.database_file_uri, echo=True)
-    Session = sessionmaker(bind=engine)
-    session = Session()
+    session_class = sessionmaker(bind=engine)
+    session = session_class()
     records = session.query(Matches.HomeTeamGoals, Matches.AwayTeamGoals).filter(
         Matches.HomeTeamMidfield == given_ratings[0]).filter(Matches.HomeTeamRDefense == given_ratings[1]).filter(
         Matches.HomeTeamCDefense == given_ratings[2]).filter(Matches.HomeTeamLDefense == given_ratings[3]).filter(

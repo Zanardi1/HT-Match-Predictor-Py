@@ -36,14 +36,14 @@ def get_user_team_name():
 
 
 # Functia arata daca echipa test_team joaca acasa sau in deplasare
-def home_or_away(match_id, test_team):
+def team_plays_home_or_away(match_id, team_to_test):
     real_home_team = ''
     match_list = ET.parse(global_library.matches_savepath).getroot()[5][5]
     for match in match_list.findall('Match'):
         if match_id == match[0].text:
             real_home_team = match[1][1].text
             break
-    return 'Home' if test_team == real_home_team else 'Away'
+    return 'Home' if team_to_test == real_home_team else 'Away'
 
 
 # index
@@ -176,7 +176,7 @@ def get_match_id():
                                        message='This team does not have any future matches of the selected types '
                                                'scheduled')
         match_orders = global_library.default_match_orders
-        place = 'Home'
+        place_to_play = 'Home'
     else:
         try:
             if global_library.old_checked == checked:
@@ -187,7 +187,7 @@ def get_match_id():
             match_id = global_library.user_matches[0][0]
         match_orders = download_future_match.download_future_match(match_id=match_id,
                                                                    team_id=global_library.team_id)
-        place = home_or_away(match_id=match_id, test_team=global_library.user_team_name)
+        place_to_play = team_plays_home_or_away(match_id=match_id, team_to_test=global_library.user_team_name)
     global_library.old_checked = checked
     return render_template('connected.html', title="Connected to Hattrick", from_index=False,
                            ratings=global_library.ratings,
@@ -195,7 +195,7 @@ def get_match_id():
                            user_data=global_library.user_data,
                            user_matches=global_library.user_matches,
                            match_orders=match_orders,
-                           place=place,
+                           place=place_to_play,
                            answer=global_library.ans, checked=checked)
 
 
