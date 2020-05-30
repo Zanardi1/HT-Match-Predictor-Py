@@ -4,7 +4,7 @@ from application import config
 from application.xml import dl_xml_file as d
 
 
-def disconnection_engine(show_confirmation_window):
+def disconnection_engine(show_confirmation_window: bool) -> None:
     d.download_xml_file(file=config['DEFAULT']['INVALIDATE_TOKEN_PATH'], params={},
                         destination_file=global_library.disconnect_savepath)
     config.remove_option('DEFAULT', 'ACCESS_TOKEN')

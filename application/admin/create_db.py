@@ -31,7 +31,7 @@ class Model(Base):
     AwayTeamGoals = Column(Integer)
 
 
-def create_database():
+def create_database() -> None:
     if os.path.exists(global_library.database_file_path):
         dw.show_error_window_in_thread(title='Fisier existent', message='Baza de date deja exista.')
     else:

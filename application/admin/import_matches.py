@@ -6,7 +6,7 @@ from application.xml import dl_xml_file as dl
 from application.xml import xml_parsing as xp
 
 
-def import_engine(low_end, high_end):
+def import_engine(low_end: int, high_end: int) -> None:
     if low_end > high_end:
         low_end, high_end = high_end, low_end
     for match_id in range(low_end, high_end + 1, 1):

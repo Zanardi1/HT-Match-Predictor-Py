@@ -3,179 +3,144 @@
   <FileName>matchdetails.xml</FileName>
   <Version>3.0</Version>
   <UserID>1248859</UserID>
-  <FetchedDate>2020-05-20 17:51:05</FetchedDate>
+  <FetchedDate>2020-05-30 15:11:53</FetchedDate>
   <UserSupporterTier>diamond</UserSupporterTier>
   <SourceSystem>Hattrick</SourceSystem>
   <Match>
-    <MatchID>2</MatchID>
-    <MatchType>3</MatchType>
-    <MatchContextId>1</MatchContextId>
+    <MatchID>10700</MatchID>
+    <MatchType>1</MatchType>
+    <MatchContextId>97</MatchContextId>
     <MatchRuleId>0</MatchRuleId>
-    <CupLevel>1</CupLevel>
-    <CupLevelIndex>1</CupLevelIndex>
-    <MatchDate>2000-10-18 19:00:00</MatchDate>
-    <FinishedDate>2000-10-18 20:45:00</FinishedDate>
+    <CupLevel>0</CupLevel>
+    <CupLevelIndex>0</CupLevelIndex>
+    <MatchDate>2000-11-05 10:00:00</MatchDate>
+    <FinishedDate>2000-11-05 11:45:00</FinishedDate>
     <AddedMinutes>0</AddedMinutes>
     <HomeTeam>
-      <HomeTeamID>17277</HomeTeamID>
-      <HomeTeamName>Dalsland IF</HomeTeamName>
+      <HomeTeamID>5046</HomeTeamID>
+      <HomeTeamName>Team Bosman</HomeTeamName>
       <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
       <Formation>4-4-2</Formation>
       <HomeGoals>0</HomeGoals>
       <TacticType>0</TacticType>
       <TacticSkill>0</TacticSkill>
-      <RatingMidfield>2</RatingMidfield>
+      <RatingMidfield>3</RatingMidfield>
       <RatingRightDef>8</RatingRightDef>
       <RatingMidDef>9</RatingMidDef>
-      <RatingLeftDef>8</RatingLeftDef>
-      <RatingRightAtt>6</RatingRightAtt>
-      <RatingMidAtt>5</RatingMidAtt>
-      <RatingLeftAtt>5</RatingLeftAtt>
+      <RatingLeftDef>9</RatingLeftDef>
+      <RatingRightAtt>10</RatingRightAtt>
+      <RatingMidAtt>12</RatingMidAtt>
+      <RatingLeftAtt>11</RatingLeftAtt>
     </HomeTeam>
     <AwayTeam>
-      <AwayTeamID>373</AwayTeamID>
-      <AwayTeamName>IFK LivergÃ¥rden</AwayTeamName>
+      <AwayTeamID>2074</AwayTeamID>
+      <AwayTeamName>JÃ¶rgens Gubbar</AwayTeamName>
       <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
-      <Formation>3-4-3</Formation>
-      <AwayGoals>8</AwayGoals>
+      <Formation>4-4-2</Formation>
+      <AwayGoals>5</AwayGoals>
       <TacticType>0</TacticType>
       <TacticSkill>0</TacticSkill>
-      <RatingMidfield>14</RatingMidfield>
-      <RatingRightDef>18</RatingRightDef>
-      <RatingMidDef>20</RatingMidDef>
-      <RatingLeftDef>14</RatingLeftDef>
-      <RatingRightAtt>22</RatingRightAtt>
-      <RatingMidAtt>23</RatingMidAtt>
-      <RatingLeftAtt>14</RatingLeftAtt>
+      <RatingMidfield>5</RatingMidfield>
+      <RatingRightDef>13</RatingRightDef>
+      <RatingMidDef>17</RatingMidDef>
+      <RatingLeftDef>15</RatingLeftDef>
+      <RatingRightAtt>12</RatingRightAtt>
+      <RatingMidAtt>14</RatingMidAtt>
+      <RatingLeftAtt>10</RatingLeftAtt>
     </AwayTeam>
     <Arena>
-      <ArenaID>17277</ArenaID>
-      <ArenaName>Dalsland Stadion</ArenaName>
+      <ArenaID>5046</ArenaID>
+      <ArenaName>Upplandparken</ArenaName>
       <WeatherID>2</WeatherID>
-      <SoldTotal>7000</SoldTotal>
+      <SoldTotal>9167</SoldTotal>
     </Arena>
     <MatchOfficials>
       <Referee>
-        <RefereeId>0</RefereeId>
-        <RefereeName> </RefereeName>
-        <RefereeCountryId>0</RefereeCountryId>
-        <RefereeCountryName />
-        <RefereeTeamId>0</RefereeTeamId>
-        <RefereeTeamname></RefereeTeamname>
+        <RefereeId>136299246</RefereeId>
+        <RefereeName>Filippo Omicini</RefereeName>
+        <RefereeCountryId>4</RefereeCountryId>
+        <RefereeCountryName>Italia</RefereeCountryName>
+        <RefereeTeamId>1285871</RefereeTeamId>
+        <RefereeTeamname>Borussia DÃ¼mpten 09</RefereeTeamname>
       </Referee>
       <RefereeAssistant1>
-        <RefereeId>0</RefereeId>
-        <RefereeName> </RefereeName>
-        <RefereeCountryId>0</RefereeCountryId>
-        <RefereeCountryName />
+        <RefereeId>301967884</RefereeId>
+        <RefereeName>Marek Faul</RefereeName>
+        <RefereeCountryId>3</RefereeCountryId>
+        <RefereeCountryName>Deutschland</RefereeCountryName>
         <RefereeTeamId>0</RefereeTeamId>
         <RefereeTeamname></RefereeTeamname>
       </RefereeAssistant1>
       <RefereeAssistant2>
-        <RefereeId>112705118</RefereeId>
-        <RefereeName>Giuseppe Di Giorgio</RefereeName>
-        <RefereeCountryId>4</RefereeCountryId>
-        <RefereeCountryName>Italia</RefereeCountryName>
-        <RefereeTeamId>857352</RefereeTeamId>
-        <RefereeTeamname>FASTI VERULANI</RefereeTeamname>
+        <RefereeId>132196955</RefereeId>
+        <RefereeName>Mike Rafferty</RefereeName>
+        <RefereeCountryId>37</RefereeCountryId>
+        <RefereeCountryName>RomÃ¢nia</RefereeCountryName>
+        <RefereeTeamId>240472</RefereeTeamId>
+        <RefereeTeamname>SAGACIA</RefereeTeamname>
       </RefereeAssistant2>
     </MatchOfficials>
     <Scorers>
       <Goal Index="0">
-        <ScorerPlayerID>69157</ScorerPlayerID>
-        <ScorerPlayerName>Mikael Niklasson</ScorerPlayerName>
-        <ScorerTeamID>373</ScorerTeamID>
+        <ScorerPlayerID>60792</ScorerPlayerID>
+        <ScorerPlayerName>Christian Danielsson</ScorerPlayerName>
+        <ScorerTeamID>2074</ScorerTeamID>
         <ScorerHomeGoals>0</ScorerHomeGoals>
         <ScorerAwayGoals>1</ScorerAwayGoals>
-        <ScorerMinute>4</ScorerMinute>
+        <ScorerMinute>7</ScorerMinute>
         <MatchPart>1</MatchPart>
       </Goal>
       <Goal Index="1">
-        <ScorerPlayerID>138931</ScorerPlayerID>
-        <ScorerPlayerName>Peter 'B' Fredriksson</ScorerPlayerName>
-        <ScorerTeamID>373</ScorerTeamID>
+        <ScorerPlayerID>178391</ScorerPlayerID>
+        <ScorerPlayerName>Henrik Davidsson</ScorerPlayerName>
+        <ScorerTeamID>2074</ScorerTeamID>
         <ScorerHomeGoals>0</ScorerHomeGoals>
         <ScorerAwayGoals>2</ScorerAwayGoals>
-        <ScorerMinute>13</ScorerMinute>
+        <ScorerMinute>33</ScorerMinute>
         <MatchPart>1</MatchPart>
       </Goal>
       <Goal Index="2">
-        <ScorerPlayerID>69157</ScorerPlayerID>
-        <ScorerPlayerName>Mikael Niklasson</ScorerPlayerName>
-        <ScorerTeamID>373</ScorerTeamID>
+        <ScorerPlayerID>60792</ScorerPlayerID>
+        <ScorerPlayerName>Christian Danielsson</ScorerPlayerName>
+        <ScorerTeamID>2074</ScorerTeamID>
         <ScorerHomeGoals>0</ScorerHomeGoals>
         <ScorerAwayGoals>3</ScorerAwayGoals>
-        <ScorerMinute>23</ScorerMinute>
+        <ScorerMinute>37</ScorerMinute>
         <MatchPart>1</MatchPart>
       </Goal>
       <Goal Index="3">
-        <ScorerPlayerID>69157</ScorerPlayerID>
-        <ScorerPlayerName>Mikael Niklasson</ScorerPlayerName>
-        <ScorerTeamID>373</ScorerTeamID>
+        <ScorerPlayerID>60792</ScorerPlayerID>
+        <ScorerPlayerName>Christian Danielsson</ScorerPlayerName>
+        <ScorerTeamID>2074</ScorerTeamID>
         <ScorerHomeGoals>0</ScorerHomeGoals>
         <ScorerAwayGoals>4</ScorerAwayGoals>
-        <ScorerMinute>34</ScorerMinute>
-        <MatchPart>1</MatchPart>
+        <ScorerMinute>51</ScorerMinute>
+        <MatchPart>2</MatchPart>
       </Goal>
       <Goal Index="4">
-        <ScorerPlayerID>102432</ScorerPlayerID>
-        <ScorerPlayerName>Carl Henriksson</ScorerPlayerName>
-        <ScorerTeamID>373</ScorerTeamID>
+        <ScorerPlayerID>178391</ScorerPlayerID>
+        <ScorerPlayerName>Henrik Davidsson</ScorerPlayerName>
+        <ScorerTeamID>2074</ScorerTeamID>
         <ScorerHomeGoals>0</ScorerHomeGoals>
         <ScorerAwayGoals>5</ScorerAwayGoals>
-        <ScorerMinute>48</ScorerMinute>
-        <MatchPart>2</MatchPart>
-      </Goal>
-      <Goal Index="5">
-        <ScorerPlayerID>114286</ScorerPlayerID>
-        <ScorerPlayerName>Andreas Yngvesson</ScorerPlayerName>
-        <ScorerTeamID>373</ScorerTeamID>
-        <ScorerHomeGoals>0</ScorerHomeGoals>
-        <ScorerAwayGoals>6</ScorerAwayGoals>
         <ScorerMinute>72</ScorerMinute>
-        <MatchPart>2</MatchPart>
-      </Goal>
-      <Goal Index="6">
-        <ScorerPlayerID>138931</ScorerPlayerID>
-        <ScorerPlayerName>Peter 'B' Fredriksson</ScorerPlayerName>
-        <ScorerTeamID>373</ScorerTeamID>
-        <ScorerHomeGoals>0</ScorerHomeGoals>
-        <ScorerAwayGoals>7</ScorerAwayGoals>
-        <ScorerMinute>76</ScorerMinute>
-        <MatchPart>2</MatchPart>
-      </Goal>
-      <Goal Index="7">
-        <ScorerPlayerID>69157</ScorerPlayerID>
-        <ScorerPlayerName>Mikael Niklasson</ScorerPlayerName>
-        <ScorerTeamID>373</ScorerTeamID>
-        <ScorerHomeGoals>0</ScorerHomeGoals>
-        <ScorerAwayGoals>8</ScorerAwayGoals>
-        <ScorerMinute>86</ScorerMinute>
         <MatchPart>2</MatchPart>
       </Goal>
     </Scorers>
     <Bookings>
       <Booking Index="0">
-        <BookingPlayerID>86864</BookingPlayerID>
-        <BookingPlayerName>Gerhard Henriksson</BookingPlayerName>
-        <BookingTeamID>373</BookingTeamID>
-        <BookingType>2</BookingType>
-        <BookingMinute>35</BookingMinute>
-        <MatchPart>1</MatchPart>
-      </Booking>
-      <Booking Index="1">
-        <BookingPlayerID>518789</BookingPlayerID>
-        <BookingPlayerName>Noel Andersson</BookingPlayerName>
-        <BookingTeamID>17277</BookingTeamID>
+        <BookingPlayerID>523801</BookingPlayerID>
+        <BookingPlayerName>Jim Uttererberg</BookingPlayerName>
+        <BookingTeamID>5046</BookingTeamID>
         <BookingType>1</BookingType>
-        <BookingMinute>49</BookingMinute>
-        <MatchPart>2</MatchPart>
+        <BookingMinute>37</BookingMinute>
+        <MatchPart>1</MatchPart>
       </Booking>
     </Bookings>
     <Injuries />
-    <PossessionFirstHalfHome>7</PossessionFirstHalfHome>
-    <PossessionFirstHalfAway>93</PossessionFirstHalfAway>
-    <PossessionSecondHalfHome>2</PossessionSecondHalfHome>
-    <PossessionSecondHalfAway>98</PossessionSecondHalfAway>
+    <PossessionFirstHalfHome>32</PossessionFirstHalfHome>
+    <PossessionFirstHalfAway>68</PossessionFirstHalfAway>
+    <PossessionSecondHalfHome>18</PossessionSecondHalfHome>
+    <PossessionSecondHalfAway>82</PossessionSecondHalfAway>
   </Match>
 </HattrickData>

@@ -14,19 +14,20 @@ from application.connected import download_user_info as d
 from application.connected import hattrick_disconnect as hd
 
 
-def check_if_configuration_file_has_access_tokens(test_config):
+def check_if_configuration_file_has_access_tokens(test_config: config) -> bool:
     return True if test_config.has_option('DEFAULT', 'ACCESS_TOKEN') and test_config.has_option('DEFAULT',
                                                                                                 'ACCESS_TOKEN_SECRET') \
         else False
 
 
-def check_if_connection_is_valid(test_config):
+def check_if_connection_is_valid(test_config: config) -> None:
     dx.download_xml_file(file=test_config['DEFAULT']['CHECK_TOKEN_PATH'], params={},
                          destination_file=global_library.check_connection_savepath)
     return xl.parse_connection_verification_file()
 
 
-def add_access_tokens_to_config_file(test_config, connection, request_token, request_token_secret, code):
+def add_access_tokens_to_config_file(test_config: config, connection: OAuth1Service, request_token: str,
+                                     request_token_secret: str, code: str) -> bool:
     try:
         access_token, access_token_secret = connection.get_access_token(request_token, request_token_secret,
                                                                         params={'oauth_verifier': code})
@@ -41,7 +42,7 @@ def add_access_tokens_to_config_file(test_config, connection, request_token, req
         return True
 
 
-def get_access_tokens(test_config):
+def get_access_tokens(test_config: config) -> bool:
     connection = OAuth1Service(consumer_key=test_config['DEFAULT']['CONSUMER_KEY'],
                                consumer_secret=test_config['DEFAULT']['CONSUMER_SECRET'], name='Hattrick',
                                request_token_url=test_config['DEFAULT']['REQUEST_TOKEN_PATH'],
@@ -63,7 +64,7 @@ def get_access_tokens(test_config):
                                                         code=code) else False
 
 
-def connection_engine():
+def connection_engine() -> tuple[bool, dict]:
     """Functia obtine informatiile de baza despre utilizatorul care s-a conectat.
     Deoarece procesul este aproape in totalitate automat, singurul punct in care omul poate interveni este la
     introducerea PIN-ului. Fie il poate introduce gresit, fie se poate razgandi si nu-l mai introduce.
