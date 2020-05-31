@@ -7,8 +7,16 @@ from application.xml import xml_parsing as xp
 
 
 def import_engine(low_end: int, high_end: int) -> None:
-    """Algoritmul de importare a meciurilor din Hattrick care au numerele de identificare consecutive, intre doua valori
-    date ca parametri.
+    """Procedura introduce in baza de date meciurile din Hattrick care au numerele de identificare
+    consecutive, intre doua valori date ca parametri.
+
+    Algoritm:
+    ----------
+    Pentru fiecare numar de identificare aflat intre cele doua limite:
+        1. Descarca fisierul XML care contine datele potrivite;
+        2. Citeste datele dorite din fisier
+        3. Adauga aceste date in baza de date.
+    La final, salveaza baza de date cu noile inregistrari
 
     Parametri:
     ----------
@@ -21,7 +29,7 @@ def import_engine(low_end: int, high_end: int) -> None:
     ----------
     Nimic"""
 
-    if low_end > high_end: # Daca valorile sunt transmise inversat, aici ele se inverseaza din nou
+    if low_end > high_end:  # Daca valorile sunt transmise inversat, aici ele se inverseaza din nou
         low_end, high_end = high_end, low_end
     for match_id in range(low_end, high_end + 1, 1):
         dl.download_xml_file(file=config['DEFAULT']['PROTECTED_RESOURCE_PATH'],

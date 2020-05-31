@@ -15,14 +15,35 @@ from application.connected import hattrick_disconnect as hd
 
 
 def check_if_configuration_file_has_access_tokens(test_config: config) -> bool:
+    """Functia verifica daca fisierul de configurari are stocate jetoanele access token si access token secret.
+
+    Algoritm:
+    ----------
+    Cauta in fisierul de configurari cele doua jetoane.
+
+    Parametri:
+    ----------
+    test_config: config
+        instanta a clasei config, definita in ConfigParser. Aceasta retine, printre altele si URL-ul catre fisierul
+        ce urmeaza a fi descarcat
+
+    Intoarce:
+    ----------
+    True, daca fisierul de configurare are cele doua jetoane. Altfel intoarce False"""
+
     return True if test_config.has_option('DEFAULT', 'ACCESS_TOKEN') and test_config.has_option('DEFAULT',
                                                                                                 'ACCESS_TOKEN_SECRET') \
         else False
 
 
 def check_if_connection_is_valid(test_config: config) -> bool:
-    """Algoritmul verifica daca este valida conexiunea la contul Hattrick. Mai precis, daca programul are acces la
-    acest cont. Verificarea se face prin descarcarea unui fisier XML, care spune acest lucru si citirea lui
+    """Functia verifica daca este valida conexiunea la contul Hattrick. Mai precis, daca programul are acces la
+    acest cont. Verificarea se face prin descarcarea unui fisier XML, care spune acest lucru si citirea lui.
+
+    Algoritm:
+    ----------
+    Descarca fisierul Check.xml care contine jetonul de acces, in cazul in care conexiunea e valida si cauta acest
+    jeton in fisierul descarcat.
 
     Parametri:
     ----------

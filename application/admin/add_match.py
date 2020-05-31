@@ -3,8 +3,13 @@ from application.models import database, Matches
 
 def add_a_match(id: int, htm: int, htrd: int, htcd: int, htld: int, htra: int, htca: int, htla: int, atm: int,
                 atrd: int, atcd: int, atld: int, atra: int, atca: int, atla: int, htg: int, atg: int) -> None:
-    """Algoritmul de adaugare in baza de date a informatiilor necesare simularii, transmise prin parametri si
-    preluate dintr-un singur meci de Hattrick
+    """Procedura adauga in baza de date informatiile necesare simularii, transmise prin parametri si
+    preluate dintr-un fisier ce retine un singur meci de Hattrick.
+
+    Algoritm:
+    ----------
+    Se creaza o noua instanta a clasei Matches, care cuprinde ca membri, evaluarile transmise ca parametri.
+    Acea instanta este folosita la adaugarea in baza de date a membrilor acesteia.
 
     Parametri:
     ----------

@@ -5,9 +5,16 @@ from application.xml import dl_xml_file as d
 
 
 def disconnection_engine(show_confirmation_window: bool) -> None:
-    """Algoritmul de deconectare de la contul Hattrick. Procedura sterge jetoanele access token si access token secret,
+    """Procedura deconecteaza aplicatia de la contul Hattrick. Sterge jetoanele access token si access token secret,
      motiv pentru care utilizatorul va trebui sa reia intreg procesul de conectare la contul de Hattrick, daca vrea
-     sa aiba acces la detaliile contului sau
+     sa aiba acces la detaliile contului sau.
+
+     Algoritm:
+     ----------
+     1. Descarca fisierul XML ce este generat ca urmare a deconectarii de la cont
+     2. Elimina cele doua jetoane din fisier
+     3. Salveaza noul fisier de configurare
+     4. Afiseaza un mesaj de confirmare a deconectarii
 
      Parametri:
      ----------

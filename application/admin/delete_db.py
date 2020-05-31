@@ -7,8 +7,12 @@ import global_library
 
 
 def delete_database() -> None:
-    """Algoritmul de stergere a bazei de date in care sunt retinute datele din meciurile importate
-    din Hattrick.
+    """Procedura sterge baza de date in care sunt retinute datele din meciurile importate din Hattrick.
+
+    Algoritm:
+    ----------
+    Daca exista fisierul ce contine baza de date in folerul 'db', atunci il sterge si afiseaza un mesaj de confirmare.
+    Daca nu, atunci nu face nimic si afiseaza un mesaj de eroare.
 
     Parametri:
     ----------

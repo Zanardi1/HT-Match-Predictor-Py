@@ -32,8 +32,13 @@ class Model(Base):
 
 
 def create_database() -> None:
-    """Algoritmul de creare a bazei de date ce va retine informatiile despre meciurile din Hattrick,
+    """Procedura creaza o baza de date noua, goala, ce va retine informatiile necesare despre meciurile din Hattrick,
     necesare simularii.
+
+    Algoritm:
+    ---------
+    Daca fisierul deja exista in folderul 'db', atunci nu se intampla nimic si afiseaza un mesaj de eroare.
+    Altfel, creaza baza de date si afiseaza un mesaj de creare cu succes.
 
     Parametri:
     ---------
