@@ -6,7 +6,7 @@ import global_library
 from application.models import Matches
 
 
-def estimate_results(given_ratings):
+def estimate_results(given_ratings: tuple) -> dict:
     ans = {'Home wins': 0, 'Draws': 0, 'Away wins': 0, 'Home goals average': 0, 'Away goals average': 0,
            'Sum of home goals': 0, 'Sum of away goals': 0}
     engine = create_engine(global_library.database_file_uri, echo=True)

@@ -64,7 +64,7 @@ def get_access_tokens(test_config: config) -> bool:
                                                         code=code) else False
 
 
-def connection_engine() -> tuple[bool, dict]:
+def connection_engine() -> tuple:
     """Functia obtine informatiile de baza despre utilizatorul care s-a conectat.
     Deoarece procesul este aproape in totalitate automat, singurul punct in care omul poate interveni este la
     introducerea PIN-ului. Fie il poate introduce gresit, fie se poate razgandi si nu-l mai introduce.

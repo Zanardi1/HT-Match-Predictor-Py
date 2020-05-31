@@ -26,7 +26,7 @@ index_bp = Blueprint('index_bp', __name__, template_folder='templates', static_f
 
 
 # Functia intoarce numele echipei selectate pentru a-i afla viitoarele meciuri
-def get_user_team_name():
+def get_user_team_name() -> str:
     if global_library.team_id == global_library.user_data['team 1 id']:
         return global_library.user_data['team 1 name']
     elif global_library.team_id == global_library.user_data['team 2 id']:
@@ -36,7 +36,7 @@ def get_user_team_name():
 
 
 # Functia arata daca echipa test_team joaca acasa sau in deplasare
-def team_plays_home_or_away(match_id, team_to_test):
+def team_plays_home_or_away(match_id: int, team_to_test: str) -> str:
     real_home_team = ''
     match_list = ET.parse(global_library.matches_savepath).getroot()[5][5]
     for match in match_list.findall('Match'):
@@ -48,7 +48,7 @@ def team_plays_home_or_away(match_id, team_to_test):
 
 # index
 @index_bp.route('/')
-def home():
+def home() -> None:
     return render_template('index.html', title="The Best Match Predictor", ratings=global_library.ratings,
                            positions=global_library.positions,
                            statuses=global_library.statuses, from_index=True,
@@ -58,7 +58,7 @@ def home():
 
 # conectarea la Hattrick
 @index_bp.route('/LoginToHattrick')
-def LoginToHattrick():
+def LoginToHattrick() -> None:
     connection_successful, global_library.user_data = hattrick_connect.connection_engine()
     if connection_successful:
         global_library.connected_to_hattrick = True
@@ -77,7 +77,7 @@ def LoginToHattrick():
 
 # algoritmul de estimare
 @index_bp.route('/EstimationEngine', methods=['POST'])
-def estimation():
+def estimation() -> None:
     if global_library.connected_to_hattrick:
         return render_template('connected.html', title="Connected to Hattrick", from_index=False,
                                ratings=global_library.ratings,
@@ -99,7 +99,7 @@ def estimation():
 
 # deconectarea de la Hattrick
 @index_bp.route('/DisconnectFromHattrick')
-def disconnect_from_hattrick():
+def disconnect_from_hattrick() -> None:
     hattrick_disconnect.disconnection_engine(show_confirmation_window=True)
     global_library.connected_to_hattrick = False
     return render_template('index.html', title="The Best Match Predictor",
@@ -111,7 +111,7 @@ def disconnect_from_hattrick():
 
 # importarea de meciuri in baza de date
 @index_bp.route('/import', methods=['POST'])
-def import_matches_into_database():
+def import_matches_into_database() -> None:
     try:
         import_matches.import_engine(low_end=int(request.form['InferiorLimit']),
                                      high_end=int(request.form['SuperiorLimit']))
@@ -132,7 +132,7 @@ def import_matches_into_database():
 
 # iesirea din panoul de control catre prima pagina
 @index_bp.route('/LogoutToIndex')
-def logout():
+def logout() -> None:
     return render_template('index.html', title="The Best Match Predictor",
                            ratings=global_library.ratings, positions=global_library.positions,
                            statuses=global_library.statuses, from_index=True,
@@ -142,19 +142,19 @@ def logout():
 
 # crearea bazei de date
 @index_bp.route('/create')
-def create():
+def create() -> None:
     create_db.create_database()
     return render_template('admin.html')
 
 
 # stergerea bazei de date
 @index_bp.route('/delete')
-def delete():
+def delete() -> None:
     delete_db.delete_database()
     return render_template('admin.html')
 
 
-def mark_chosen_option():
+def mark_chosen_option() -> tuple:
     if global_library.team_id == global_library.user_data['team 1 id']:
         checked = ('checked', '', '')
     elif global_library.team_id == global_library.user_data['team 2 id']:
@@ -166,7 +166,7 @@ def mark_chosen_option():
 
 # Intoarce numarul de identificare al unui meci selectat
 @index_bp.route('/GetMatch', methods=['POST'])
-def get_match_id():
+def get_match_id() -> None:
     global_library.team_id = request.form['HattrickTeams']
     global_library.user_team_name = get_user_team_name()
     global_library.user_matches = download_user_matches.download_user_matches(global_library.team_id)
@@ -200,7 +200,7 @@ def get_match_id():
 
 
 @index_bp.route('/backup')
-def backup_database():
+def backup_database() -> None:
     with z.ZipFile(file=global_library.database_backup_path + '\\backup ' + datetime.datetime.now().strftime(
             '%Y-%m-%d %H-%M-%S') + '.zip', mode='w') as backup:
         backup.write(global_library.database_file_path,
@@ -210,7 +210,7 @@ def backup_database():
 
 
 @index_bp.route('/restore')
-def restore_database():
+def restore_database() -> None:
     with z.ZipFile(file=dw.restore_backup_window_in_thread(), mode='r') as restore:
         restore.extractall(os.path.dirname(global_library.database_file_path))
     dw.show_info_window_in_thread(title='Restaurare incheiata', message='S-a incheiat restaurarea backupului ales')

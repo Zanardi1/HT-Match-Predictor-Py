@@ -3,7 +3,7 @@ import os
 from typing import List, Dict, Tuple, Any
 
 
-def build_ratings_dictionary():
+def build_ratings_dictionary() -> dict:
     dic = {}
     levels = ['Disastrous', 'Wretched', 'Poor', 'Weak', 'Inadequate', 'Passable', 'Solid', 'Excellent', 'Formidable',
               'Outstanding', 'Brilliant', 'Magnificent', 'World Class', 'Supernatural', 'Titanic', 'Extraterrestrial',
@@ -48,4 +48,4 @@ default_checked_team: Tuple[str, str, str] = ('checked', '', '')
 old_checked: Tuple[str, str, str] = ('', '', '')
 connected_to_hattrick: bool = False
 
-ratings = build_ratings_dictionary()
+ratings: dict = build_ratings_dictionary()

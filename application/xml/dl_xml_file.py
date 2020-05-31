@@ -5,7 +5,7 @@ from rauth import OAuth1Session
 from application import config
 
 
-def download_xml_file(file, params, destination_file):
+def download_xml_file(file, params, destination_file) -> None:
     session = OAuth1Session(consumer_key=config['DEFAULT']['CONSUMER_KEY'],
                             consumer_secret=config['DEFAULT']['CONSUMER_SECRET'],
                             access_token=config['DEFAULT']['ACCESS_TOKEN'],

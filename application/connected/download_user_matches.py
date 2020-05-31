@@ -7,7 +7,8 @@ import global_library
 from application import config
 
 
-def download_user_matches(team_id):
-    dl.download_xml_file(file=config['DEFAULT']['PROTECTED_RESOURCE_PATH'], params=cs.create_matches_string(team_id),
+def download_user_matches(team_id: int) -> list:
+    dl.download_xml_file(file=config['DEFAULT']['PROTECTED_RESOURCE_PATH'],
+                         params=cs.create_matches_string(team_id=team_id),
                          destination_file=global_library.matches_savepath)
     return xp.parse_matches_file()
