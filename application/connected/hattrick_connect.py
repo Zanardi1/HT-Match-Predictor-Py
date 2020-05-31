@@ -10,7 +10,7 @@ import application.xml.dl_xml_file as dx
 import application.xml.xml_parsing as xl
 import global_library
 from application import config
-from application.connected import download_user_info as d
+from application.connected import download_user_info_file as d
 from application.connected import hattrick_disconnect as hd
 
 
@@ -20,7 +20,19 @@ def check_if_configuration_file_has_access_tokens(test_config: config) -> bool:
         else False
 
 
-def check_if_connection_is_valid(test_config: config) -> None:
+def check_if_connection_is_valid(test_config: config) -> bool:
+    """Algoritmul verifica daca este valida conexiunea la contul Hattrick. Mai precis, daca programul are acces la
+    acest cont. Verificarea se face prin descarcarea unui fisier XML, care spune acest lucru si citirea lui
+
+    Parametri:
+    ----------
+    test_config: config
+        instanta a clasei config, definita in ConfigParser. Aceasta retine, printre altele si URL-ul catre fisierul
+        ce urmeaza a fi descarcat
+
+    Intoarce:
+    ----------
+    True, daca este valida conexiunea, adica programul are acces la datele contului de Hattrick. Altfel intoarce False"""
     dx.download_xml_file(file=test_config['DEFAULT']['CHECK_TOKEN_PATH'], params={},
                          destination_file=global_library.check_connection_savepath)
     return xl.parse_connection_verification_file()
@@ -28,6 +40,34 @@ def check_if_connection_is_valid(test_config: config) -> None:
 
 def add_access_tokens_to_config_file(test_config: config, connection: OAuth1Service, request_token: str,
                                      request_token_secret: str, code: str) -> bool:
+    """Algoritmul adauga jetoanele access token si access token secret fisierului de configurari. Acestea vor fi
+    folosite pentru conectarea site-ului la contul Hattrick, fara a mai fi necesara parcurgerea din nou a intregului
+    proces de autentificare
+
+    Parametri:
+    ----------
+    test_config: config
+        instanta a clasei config, definita in ConfigParser. Aceasta retine, printre altele si URL-ul catre fisierul
+        ce urmeaza a fi descarcat
+    connection: OAuth1Service
+        instanta a clasei Oauth1Service, clasa ce retine detaliile necesare conectarii la Hattrick prin protocolul
+        oauth
+    request_token: str
+        variabila ce retine un sir de caractere, denumit request token, folosit la conectarea la Hattrick si la
+        obtinerea jetoanelor de acces
+    request_token_secret: str
+        variabila ce retine un sir de caractere, denumit request token secret, folosit la conectarea la Hattrick si
+        la obtinerea jetoanelor de acces
+    code: str
+        variabila ce retine un sir de caractere, denumit request token secret, folosit la conectarea la Hattrick si
+        la obtinerea jetoanelor de acces. Acest sir se numeste cod si trebuie introdus de catre utilizator la
+        autentificarea aplicatiei la contul Hattrick
+
+    Intoarce:
+    ---------
+    True, daca procesul a avut loc cu succes. Acest lucru implica introducerea corecta a codului primit de catre
+    utilizator, fapt care are loc in functia get_access_token. Altfel, daca utilizatorul a introdus codul gresit
+    sau a renuntat in a-l introduce, intoarce False"""
     try:
         access_token, access_token_secret = connection.get_access_token(request_token, request_token_secret,
                                                                         params={'oauth_verifier': code})
@@ -43,6 +83,19 @@ def add_access_tokens_to_config_file(test_config: config, connection: OAuth1Serv
 
 
 def get_access_tokens(test_config: config) -> bool:
+    """Algoritmul obtine jetoanele de access la contul Hattrick
+
+    Parametri:
+    ----------
+    test_config: config
+        instanta a clasei config, definita in ConfigParser. Aceasta retine, printre altele si URL-ul catre fisierul
+        ce urmeaza a fi descarcat
+
+    Intoarce:
+    ----------
+    True, daca adaugarea jetoanelor de access s-a incheiat cu succes. Acest proces implica introducerea corecta de catre utilizator a unui cod primit de la Hattrick.
+    Daca acest cod a fost introdus gresit sau daca utilizatorul a renuntat in a-l introduce, functia intoarce False.
+    """
     connection = OAuth1Service(consumer_key=test_config['DEFAULT']['CONSUMER_KEY'],
                                consumer_secret=test_config['DEFAULT']['CONSUMER_SECRET'], name='Hattrick',
                                request_token_url=test_config['DEFAULT']['REQUEST_TOKEN_PATH'],
@@ -65,7 +118,7 @@ def get_access_tokens(test_config: config) -> bool:
 
 
 def connection_engine() -> tuple:
-    """Functia obtine informatiile de baza despre utilizatorul care s-a conectat.
+    """Algoritmul de conectare la Hattrick. Functia obtine informatiile de baza despre utilizatorul care s-a conectat.
     Deoarece procesul este aproape in totalitate automat, singurul punct in care omul poate interveni este la
     introducerea PIN-ului. Fie il poate introduce gresit, fie se poate razgandi si nu-l mai introduce.
     Din aceste motive, functia intoarce True daca procesul de conectare s-a incheiat (adica s-au obtinut jetoanele
@@ -81,24 +134,33 @@ def connection_engine() -> tuple:
     3. Daca nu se poate conecta la Hattrick:
       3.1. Obtine jetoanele de access (efectueaza intreaga procedura de conectare). Daca nu poate, intoarce False
       3.2. Descarca informatiile de baza
-      3.3. Intoarce True."""
+      3.3. Intoarce True.
+
+      Parametri:
+      ----------
+      Niciunul
+
+      Intoarce:
+      ----------
+      Un tuplu format dintr-o valoare booleana si un dictionar ce retine datele de utilizator. Daca valoarea booleana
+      este True, atunci dictionarul retine datele cerute. Altfel, dictionarul este gol"""
 
     if check_if_configuration_file_has_access_tokens(test_config=config):
         if check_if_connection_is_valid(test_config=config):
-            user_data = d.download_user_info()
+            user_data = d.download_user_info_file()
             return True, user_data
         else:
             hd.disconnection_engine(show_confirmation_window=False)
             if get_access_tokens(test_config=config):
                 dw.show_info_window_in_thread(title='Connection complete!',
                                               message='Successfully connected to Hattrick account')
-                user_data = d.download_user_info()
+                user_data = d.download_user_info_file()
                 return True, user_data
     else:
         if get_access_tokens(test_config=config):
             dw.show_info_window_in_thread(title='Connection complete!',
                                           message='Successfully connected to Hattrick account')
-            user_data = d.download_user_info()
+            user_data = d.download_user_info_file()
             return True, user_data
         else:
             return False, {}

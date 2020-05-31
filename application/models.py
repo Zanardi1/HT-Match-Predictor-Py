@@ -4,6 +4,7 @@ from . import database
 
 
 class Matches(database.Model):
+    """O clasa ce contine numele tabelei, argumentele si coloanele acesteia"""
     __tablename__ = 'Matches'
     __table_args__ = (PrimaryKeyConstraint('MatchID'),)
     MatchID = database.Column(database.Integer, unique=True)

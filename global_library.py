@@ -4,6 +4,15 @@ from typing import List, Dict, Tuple, Any
 
 
 def build_ratings_dictionary() -> dict:
+    """Algoritmul construieste cele 80 de denumiri pentru fiecare dintre evaluarile numerice ale jocului
+
+    Parametri:
+    ----------
+    Niciunul
+
+    Intoarce:
+    ----------
+    Un dictionar cu cele 80 de denumiri"""
     dic = {}
     levels = ['Disastrous', 'Wretched', 'Poor', 'Weak', 'Inadequate', 'Passable', 'Solid', 'Excellent', 'Formidable',
               'Outstanding', 'Brilliant', 'Magnificent', 'World Class', 'Supernatural', 'Titanic', 'Extraterrestrial',

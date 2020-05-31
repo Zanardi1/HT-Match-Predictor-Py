@@ -17,7 +17,7 @@ from application.admin import create_db
 from application.admin import delete_db
 from application.admin import import_matches
 from application.connected import download_future_match
-from application.connected import download_user_matches
+from application.connected import download_user_matches_file
 from application.connected import hattrick_connect
 from application.connected import hattrick_disconnect
 from application.estimation import estimation_engine
@@ -27,6 +27,15 @@ index_bp = Blueprint('index_bp', __name__, template_folder='templates', static_f
 
 # Functia intoarce numele echipei selectate pentru a-i afla viitoarele meciuri
 def get_user_team_name() -> str:
+    """Algoritmul intoarce numele echipei selectate de catre utilizator.
+
+    Parametri:
+    ----------
+    Niciunul
+
+    Intoarce:
+    ----------
+    Numele echipei selectate"""
     if global_library.team_id == global_library.user_data['team 1 id']:
         return global_library.user_data['team 1 name']
     elif global_library.team_id == global_library.user_data['team 2 id']:
@@ -35,8 +44,19 @@ def get_user_team_name() -> str:
         return global_library.user_data['team 3 name']
 
 
-# Functia arata daca echipa test_team joaca acasa sau in deplasare
 def team_plays_home_or_away(match_id: int, team_to_test: str) -> str:
+    """Algoritmul care arata daca o echipa joaca acasa sau in deplasare intr-un meci.
+
+    Parametri:
+    ----------
+    match_id: int
+        numarul de identificare al meciului pentru care se verifica unde joaca echipa
+    team_to_test: str
+        numele echipei care se verifica daca joaca acasa sau in deplasare
+
+    Intoarce:
+    ----------
+    'Home', daca echipa testata joaca acasa. Altfel, 'Away'"""
     real_home_team = ''
     match_list = ET.parse(global_library.matches_savepath).getroot()[5][5]
     for match in match_list.findall('Match'):
@@ -49,6 +69,15 @@ def team_plays_home_or_away(match_id: int, team_to_test: str) -> str:
 # index
 @index_bp.route('/')
 def home() -> None:
+    """Procedura ce afiseaza pagina index, cea care apare la pornirea programului
+
+        Parametri:
+        ----------
+        Niciunul
+
+        Intoarce:
+        ----------
+        Nimic"""
     return render_template('index.html', title="The Best Match Predictor", ratings=global_library.ratings,
                            positions=global_library.positions,
                            statuses=global_library.statuses, from_index=True,
@@ -58,7 +87,17 @@ def home() -> None:
 
 # conectarea la Hattrick
 @index_bp.route('/LoginToHattrick')
-def LoginToHattrick() -> None:
+def login_to_hattrick() -> None:
+    """Procedura ce conecteaza utilizatorul programului la contul sau de Hattrick si afiseaza pagina cu datele
+    utilizatorului, dupa conectarea acestuia la cont.
+
+    Parametri:
+    ----------
+    Niciunul
+
+    Intoarce:
+    ----------
+    Nimic"""
     connection_successful, global_library.user_data = hattrick_connect.connection_engine()
     if connection_successful:
         global_library.connected_to_hattrick = True
@@ -78,6 +117,15 @@ def LoginToHattrick() -> None:
 # algoritmul de estimare
 @index_bp.route('/EstimationEngine', methods=['POST'])
 def estimation() -> None:
+    """Procedura ce ruleaza algoritmul de estimare a sanselor de castig, in functie de evaluarile introduse
+
+    Parametri:
+    ----------
+    Niciunul
+
+    Intoarce:
+    ----------
+    Nimic"""
     if global_library.connected_to_hattrick:
         return render_template('connected.html', title="Connected to Hattrick", from_index=False,
                                ratings=global_library.ratings,
@@ -100,6 +148,16 @@ def estimation() -> None:
 # deconectarea de la Hattrick
 @index_bp.route('/DisconnectFromHattrick')
 def disconnect_from_hattrick() -> None:
+    """Procedura ce deconecteaza utilizatorul de la contul Hattrick si afiseaza prima pagina, cea de start.
+    Utilizatorul va trebui sa se reconecteze la cont pentru a avea acces la informatiile din contul sau.
+
+    Parametri:
+    ----------
+    Niciunul
+
+    Intoarce:
+    ----------
+    Nimic"""
     hattrick_disconnect.disconnection_engine(show_confirmation_window=True)
     global_library.connected_to_hattrick = False
     return render_template('index.html', title="The Best Match Predictor",
@@ -112,6 +170,27 @@ def disconnect_from_hattrick() -> None:
 # importarea de meciuri in baza de date
 @index_bp.route('/import', methods=['POST'])
 def import_matches_into_database() -> None:
+    """Procedura ce ruleaza algoritmul de importare a evaluarilor necesare in baza de date, plecand de la
+    fisierele XML necesare, obtinute din Hattrick. Se apeleaza engine-ul de import, transmitandu-i limita
+    inferioara si cea superioara a numerelor de identificare ale meciurilor ce trebuie introduse
+
+    Parametri:
+    ------------
+    Niciunul
+
+    Intoarce:
+    ------------
+    Nimic
+
+    Exceptii:
+    ------------
+    ValueError:
+        In casutele in care se introduc limitele specificate mai sus, nu sunt introduse valori numerice, intregi
+    IndexError:
+        Una sau amandoua dintre limitele specificate mai sus au numere negative, sau 0
+    sqlalchemy.exc.IntegrityError:
+        In intervalul specificat de cele doua limite exista minim un meci al carui numar de identificare exista
+        in baza de date"""
     try:
         import_matches.import_engine(low_end=int(request.form['InferiorLimit']),
                                      high_end=int(request.form['SuperiorLimit']))
@@ -133,6 +212,16 @@ def import_matches_into_database() -> None:
 # iesirea din panoul de control catre prima pagina
 @index_bp.route('/LogoutToIndex')
 def logout() -> None:
+    """Procedura ce deconecteaza utilizatorul de la pagina de administrare a bazei de date cu meciurile ale caror
+     evaluari vor fi folosite pentru simulare.
+
+    Parametri:
+    ----------
+    Niciunul
+
+    Intoarce:
+    ----------
+    Nimic"""
     return render_template('index.html', title="The Best Match Predictor",
                            ratings=global_library.ratings, positions=global_library.positions,
                            statuses=global_library.statuses, from_index=True,
@@ -143,6 +232,15 @@ def logout() -> None:
 # crearea bazei de date
 @index_bp.route('/create')
 def create() -> None:
+    """Procedura ce creaza baza de date ce contine meciurile ale caror evaluari vor fi folosite pentru simulare.
+
+    Parametri:
+    ----------
+    Niciunul
+
+    Intoarce:
+    ----------
+    Nimic"""
     create_db.create_database()
     return render_template('admin.html')
 
@@ -150,11 +248,31 @@ def create() -> None:
 # stergerea bazei de date
 @index_bp.route('/delete')
 def delete() -> None:
+    """Procedura ce sterge baza de date ce contine meciurile ale caror evaluari vor fi folosite pentru simulare.
+
+    Parametri:
+    ----------
+    Niciunul
+
+    Intoarce:
+    ----------
+    Nimic"""
     delete_db.delete_database()
     return render_template('admin.html')
 
 
 def mark_chosen_option() -> tuple:
+    """Procedura stabileste numarul de ordine al echipei ale caror meciuri viitoate vor fi descarcate pentru
+    utilizare ulterioara.
+
+    Parametri:
+    ----------
+    Niciunul
+
+    Intoarce:
+    ----------
+    Un tuplu cu trei elemente de tip str. Doua vor fi siruri goale iar al treilea va contine cuvantul 'checked'.
+    Pozitia din tuplu care contine acest cuvant arata a cata echipa va fi utilizata mai departe"""
     if global_library.team_id == global_library.user_data['team 1 id']:
         checked = ('checked', '', '')
     elif global_library.team_id == global_library.user_data['team 2 id']:
@@ -166,10 +284,20 @@ def mark_chosen_option() -> tuple:
 
 # Intoarce numarul de identificare al unui meci selectat
 @index_bp.route('/GetMatch', methods=['POST'])
-def get_match_id() -> None:
+def get_match_ratings_for_a_future_match() -> None:
+    """Procedura obtine evaluarile echipei utilizatorului pentru un meci ce se va disputa in viitor, stabilit de
+    catre utilizator.
+
+    Parametri:
+    ----------
+    Niciunul
+
+    Intoarce:
+    ----------
+    Nimic"""
     global_library.team_id = request.form['HattrickTeams']
     global_library.user_team_name = get_user_team_name()
-    global_library.user_matches = download_user_matches.download_user_matches(global_library.team_id)
+    global_library.user_matches = download_user_matches_file.download_user_matches_file(global_library.team_id)
     checked = mark_chosen_option()
     if len(global_library.user_matches) == 0:
         dw.show_error_window_in_thread(title='No match found',
@@ -201,6 +329,16 @@ def get_match_id() -> None:
 
 @index_bp.route('/backup')
 def backup_database() -> None:
+    """Procedura face backup la baza de date. Mai precis, o arhiveaza.
+    Numele arhivei are forma: 'backup yyyy-mm-dd hh-mm-ss.zip'.
+
+    Parametri:
+    ----------
+    Niciunul
+
+    Intoarce:
+    ----------
+    Nimic"""
     with z.ZipFile(file=global_library.database_backup_path + '\\backup ' + datetime.datetime.now().strftime(
             '%Y-%m-%d %H-%M-%S') + '.zip', mode='w') as backup:
         backup.write(global_library.database_file_path,
@@ -211,6 +349,16 @@ def backup_database() -> None:
 
 @index_bp.route('/restore')
 def restore_database() -> None:
+    """Procedura reface un backup al bazei de date, ales de catre utilizator. Prin 'refacere' se intelege inlocuirea
+    bazei de date existente cu una obtinuta din dezarhivarea arhivei selectate de catre utilizator.
+
+    Parametri:
+    ----------
+    Niciunul
+
+    Intoarce:
+    ----------
+    Nimic"""
     with z.ZipFile(file=dw.restore_backup_window_in_thread(), mode='r') as restore:
         restore.extractall(os.path.dirname(global_library.database_file_path))
     dw.show_info_window_in_thread(title='Restaurare incheiata', message='S-a incheiat restaurarea backupului ales')

@@ -5,6 +5,15 @@ import global_library
 
 
 def parse_user_file() -> dict:
+    """Algoritmul citeste fisierul user.xml si extrage din el datele necesare.
+
+    Parametri:
+    ----------
+    Niciunul
+
+    Intoarce:
+    ----------
+    Un dictionar cu datele cautate"""
     root = ET.parse(global_library.user_savepath).getroot()
     data = {'user name': root[4][1].text, 'user id': root[4][0].text, 'supporter': root[4][2].text,
             'country': root[4][4][1].text, 'country id': root[4][4][0].text, 'team 1 name': root[4][5][0][1].text,
@@ -28,6 +37,16 @@ def parse_user_file() -> dict:
 
 
 def parse_matches_file() -> list:
+    """Algoritmul citeste fisierul Matches.xml si extrage din el datele necesare.
+
+    Parametri:
+    ----------
+    Niciunul
+
+    Intoarce:
+    ----------
+    O lista de tupluri. Un tuplu contine numarul de identificare al unui meci viitor si cele doua echipe care il
+    vor juca"""
     data = []
     match_list = ET.parse(global_library.matches_savepath).getroot()[5][5]
     for match in match_list:
@@ -39,7 +58,21 @@ def parse_matches_file() -> list:
     return data
 
 
-def parse_match_details_file(match_id) -> list:
+def parse_match_details_file(match_id: int) -> list:
+    """Algoritmul citeste fisierul Details.xml si extrage din el datele necesare.
+
+    Parametri:
+    ----------
+    match_id: int
+        variabila ce retine numarul de identificare al meciului pentru care se obtin detaliile dorite
+
+    Intoarce:
+    ----------
+    O lista ce contine evaluarile sectoriale ale celor doua echipe si numarul de goluri inscrise
+    de catre acestea. In ordine, lista contine evaluarile mijlocului, apararilor pe dreapta, centru si stanga si
+    atacurilor pe dreapta, centru si stanga pentru echipa de acasa, respectiv pentru echipa din deplasare,
+    numarul de goluri inscrise de catre echipa de acasa si numarul de goluri inscrise de catre echipa din deplasare.
+    """
     match_details = [match_id]
     root = ET.parse(global_library.details_savepath).getroot()
     for i in range(7, 14, 1):
@@ -52,11 +85,30 @@ def parse_match_details_file(match_id) -> list:
 
 
 def parse_future_match_file() -> list:
+    """Algoritmul citeste fisierul Orders.xml si extrage din el datele necesare.
+
+    Parametri:
+    ----------
+    Niciunul
+
+    Intoarce:
+    ----------
+    O lista cu evaluarile pe sectoare ale echipei tale din meciul scris in acest fisier."""
     match_data = ET.parse(global_library.orders_savepath).getroot()[6]
     return [match_data[i].text for i in range(2, 9, 1)]
 
 
 def parse_connection_verification_file() -> bool:
+    """Algoritmul citeste fisierul Check.xml si extrage din el datele necesare.
+
+    Parametri:
+    ----------
+    Niciunul
+
+    Intoarce:
+    ----------
+    True, daca fisierul contine jetonul de access. Altfel intoarce False, pentru ca acest fisier nici nu are
+    formatul XML"""
     try:
         ET.parse(global_library.check_connection_savepath).getroot()[4].text
     except IndexError:  # asta inseamna ca fisierul cu extensia xml este, de fapt, un fisier HTML si acel nod nu exista.

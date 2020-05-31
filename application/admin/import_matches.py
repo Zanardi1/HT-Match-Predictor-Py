@@ -7,7 +7,21 @@ from application.xml import xml_parsing as xp
 
 
 def import_engine(low_end: int, high_end: int) -> None:
-    if low_end > high_end:
+    """Algoritmul de importare a meciurilor din Hattrick care au numerele de identificare consecutive, intre doua valori
+    date ca parametri.
+
+    Parametri:
+    ----------
+    low_end: int
+        limita inferioara a numerelor de identificare. Trebuie sa fie un numar intreg, strict pozitiv.
+    high_end: int
+        limita superioara a numerelor de identificare. Trebuie sa fie un numar intreg, strict positiv.
+
+    Intoarce:
+    ----------
+    Nimic"""
+
+    if low_end > high_end: # Daca valorile sunt transmise inversat, aici ele se inverseaza din nou
         low_end, high_end = high_end, low_end
     for match_id in range(low_end, high_end + 1, 1):
         dl.download_xml_file(file=config['DEFAULT']['PROTECTED_RESOURCE_PATH'],
