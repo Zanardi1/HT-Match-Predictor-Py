@@ -3,7 +3,7 @@ from tkinter.messagebox import showerror, showinfo
 from multiprocessing import Process, Queue
 from tkinter.simpledialog import askstring
 from tkinter import filedialog as f
-import typing
+from typing import Any
 
 
 def show_error_window(title: str, message: str) -> None:
@@ -20,7 +20,7 @@ def show_info_window(title: str, message: str) -> None:
     root.destroy()
 
 
-def show_string_input_window(title: str, message: str, q: typing.Any) -> None:
+def show_string_input_window(title: str, message: str, q: Any) -> None:
     root = tk.Tk()
     root.withdraw()
     ans = askstring(title, message)
@@ -28,7 +28,7 @@ def show_string_input_window(title: str, message: str, q: typing.Any) -> None:
     q.put(ans)
 
 
-def restore_backup_window(q: typing.Any) -> None:
+def restore_backup_window(q: Any) -> None:
     root = tk.Tk()
     root.withdraw()
     ans = f.askopenfilename()
@@ -48,7 +48,7 @@ def show_info_window_in_thread(title: str, message: str) -> None:
     p.join()
 
 
-def show_string_input_window_in_thread(title: str, message: str) -> typing.Any:
+def show_string_input_window_in_thread(title: str, message: str) -> str:
     queue = Queue()
     p = Process(target=show_string_input_window, args=(title, message, queue))
     p.start()
@@ -57,7 +57,7 @@ def show_string_input_window_in_thread(title: str, message: str) -> typing.Any:
     return ans
 
 
-def restore_backup_window_in_thread() -> typing.Any:
+def restore_backup_window_in_thread() -> str:
     queue = Queue()
     p = Process(target=restore_backup_window, args=(queue,))
     p.start()

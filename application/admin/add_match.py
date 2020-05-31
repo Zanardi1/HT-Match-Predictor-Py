@@ -1,15 +1,15 @@
 from application.models import database, Matches
 
 
-def add_a_match(ID: int, HTM: int, HTRD: int, HTCD: int, HTLD: int, HTRA: int, HTCA: int, HTLA: int, ATM: int,
-                ATRD: int, ATCD: int, ATLD: int, ATRA: int, ATCA: int, ATLA: int, HTG: int, ATG: int) -> None:
-    match = Matches(MatchID=ID, HomeTeamMidfield=HTM, HomeTeamRDefense=HTRD, HomeTeamCDefense=HTCD,
-                    HomeTeamLDefense=HTLD,
-                    HomeTeamRAttack=HTRA, HomeTeamCAttack=HTCA, HomeTeamLAttack=HTLA, AwayTeamMidfield=ATM,
-                    AwayTeamRDefense=ATRD,
-                    AwayTeamCDefense=ATCD, AwayTeamLDefense=ATLD, AwayTeamRAttack=ATRA, AwayTeamCAttack=ATCA,
-                    AwayTeamLAttack=ATLA,
-                    HomeTeamGoals=HTG, AwayTeamGoals=ATG)
+def add_a_match(id: int, htm: int, htrd: int, htcd: int, htld: int, htra: int, htca: int, htla: int, atm: int,
+                atrd: int, atcd: int, atld: int, atra: int, atca: int, atla: int, htg: int, atg: int) -> None:
+    match = Matches(MatchID=id, HomeTeamMidfield=htm, HomeTeamRDefense=htrd, HomeTeamCDefense=htcd,
+                    HomeTeamLDefense=htld,
+                    HomeTeamRAttack=htra, HomeTeamCAttack=htca, HomeTeamLAttack=htla, AwayTeamMidfield=atm,
+                    AwayTeamRDefense=atrd,
+                    AwayTeamCDefense=atcd, AwayTeamLDefense=atld, AwayTeamRAttack=atra, AwayTeamCAttack=atca,
+                    AwayTeamLAttack=atla,
+                    HomeTeamGoals=htg, AwayTeamGoals=atg)
     database.session.add(match)
 
 
