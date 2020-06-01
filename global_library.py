@@ -4,15 +4,20 @@ from typing import List, Dict, Tuple, Any
 
 
 def build_ratings_dictionary() -> dict:
-    """Algoritmul construieste cele 80 de denumiri pentru fiecare dintre evaluarile numerice ale jocului
+    """Functia construieste cele 80 de denumiri pentru fiecare dintre evaluarile numerice ale jocului.
+
+    Algoritm:
+    ----------
+    Dubla ciclare printre evaluarile nivelelor si subnivelelor existente.
 
     Parametri:
     ----------
-    Niciunul
+    Niciunul.
 
     Intoarce:
     ----------
-    Un dictionar cu cele 80 de denumiri"""
+    Un dictionar cu cele 80 de denumiri."""
+
     dic = {}
     levels = ['Disastrous', 'Wretched', 'Poor', 'Weak', 'Inadequate', 'Passable', 'Solid', 'Excellent', 'Formidable',
               'Outstanding', 'Brilliant', 'Magnificent', 'World Class', 'Supernatural', 'Titanic', 'Extraterrestrial',
@@ -26,7 +31,21 @@ def build_ratings_dictionary() -> dict:
     return dic
 
 
-def read_from_configuration_file():
+def read_from_configuration_file() -> c.ConfigParser:
+    """Functia creaza o instanta a clasei ConfigParser, care citeste continutul fisierului de configurari.
+
+    Algoritm:
+    ---------
+    Se creaza instanta si se arata fisierul din care sa citeasca continutul.
+
+    Parametri:
+    ----------
+    Niciunul.
+
+    Intoarce:
+    ----------
+    Instanta de clasa, care va fi folosita oriunde in program."""
+
     temp_config = c.ConfigParser()
     temp_config.read(configuration_file)
     return temp_config

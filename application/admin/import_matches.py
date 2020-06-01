@@ -14,20 +14,20 @@ def import_engine(low_end: int, high_end: int) -> None:
     ----------
     Pentru fiecare numar de identificare aflat intre cele doua limite:
         1. Descarca fisierul XML care contine datele potrivite;
-        2. Citeste datele dorite din fisier
+        2. Citeste datele dorite din fisier;
         3. Adauga aceste date in baza de date.
-    La final, salveaza baza de date cu noile inregistrari
+    La final, salveaza baza de date cu noile inregistrari.
 
     Parametri:
     ----------
     low_end: int
-        limita inferioara a numerelor de identificare. Trebuie sa fie un numar intreg, strict pozitiv.
+        limita inferioara a numerelor de identificare. Trebuie sa fie un numar intreg, strict pozitiv;
     high_end: int
         limita superioara a numerelor de identificare. Trebuie sa fie un numar intreg, strict positiv.
 
     Intoarce:
     ----------
-    Nimic"""
+    Nimic."""
 
     if low_end > high_end:  # Daca valorile sunt transmise inversat, aici ele se inverseaza din nou
         low_end, high_end = high_end, low_end

@@ -42,11 +42,11 @@ def create_database() -> None:
 
     Parametri:
     ---------
-    Niciunul
+    Niciunul.
 
     Intoarce:
     ---------
-    Nimic"""
+    Nimic."""
 
     if os.path.exists(global_library.database_file_path):
         dw.show_error_window_in_thread(title='Fisier existent', message='Baza de date deja exista.')

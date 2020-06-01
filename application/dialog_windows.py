@@ -7,18 +7,23 @@ from typing import Any
 
 
 def show_error_window(title: str, message: str) -> None:
-    """Algoritmul afiseaza o fereastra ce scrie un mesaj de eroare si un titlu.
+    """Procedura afiseaza o fereastra ce scrie un mesaj de eroare si un titlu.
+
+    Algoritm:
+    -----------
+    Se efectueaza pasii necesari afisarii casutei de dialog, conform documentatiei tkinter.
 
     Parametri:
     -----------
     title: str
-        titlul ferestrei
+        titlul ferestrei;
     message: str
-        mesajul ce este scris in fereastra
+        mesajul ce este scris in fereastra.
 
     Intoarce:
     ----------
-    Nimic"""
+    Nimic."""
+
     root = tk.Tk()
     root.withdraw()
     showerror(title, message)
@@ -26,18 +31,23 @@ def show_error_window(title: str, message: str) -> None:
 
 
 def show_info_window(title: str, message: str) -> None:
-    """Algoritmul afiseaza o fereastra ce scrie un mesaj de informare si un titlu.
+    """Procedura afiseaza o fereastra ce scrie un mesaj de informare si un titlu.
+
+    Algoritm:
+    -----------
+    Se efectueaza pasii necesari afisarii casutei de dialog, conform documentatiei tkinter.
 
     Parametri:
     -----------
     title: str
-        titlul ferestrei
+        titlul ferestrei;
     message: str
-        mesajul ce este scris in fereastra
+        mesajul ce este scris in fereastra.
 
     Intoarce:
     ----------
-    Nimic"""
+    Nimic."""
+
     root = tk.Tk()
     root.withdraw()
     showinfo(title, message)
@@ -45,21 +55,28 @@ def show_info_window(title: str, message: str) -> None:
 
 
 def show_string_input_window(title: str, message: str, q: Any) -> None:
-    """Algoritmul afiseaza o fereastra ce solicita introducerea unui sir de caractere, scrie un mesaj explicativ
+    """Procedura afiseaza o fereastra ce solicita introducerea unui sir de caractere, scrie un mesaj explicativ
     si are un titlu.
+
+    Algoritm:
+    -----------
+    Se efectueaza pasii necesari afisarii casutei de dialog, conform documentatiei tkinter. In plus, textul introdus
+    de catre utilizator se extrage cu ajutorul unei cozi. Aceasta va fi folosita intr-o alta functie,
+    show_string_input_window_in_thread.
 
     Parametri:
     -----------
     title: str
-        titlul ferestrei
+        titlul ferestrei;
     message: str
-        mesajul ce este scris in fereastra
+        mesajul ce este scris in fereastra;
     q: Any
-        o instanta a unei cozi, ce va retine textul introdus de catre utilizator
+        o instanta a unei cozi, ce va retine textul introdus de catre utilizator.
 
     Intoarce:
     ----------
-    Nimic"""
+    Nimic."""
+
     root = tk.Tk()
     root.withdraw()
     ans = askstring(title, message)
@@ -68,17 +85,24 @@ def show_string_input_window(title: str, message: str, q: Any) -> None:
 
 
 def restore_backup_window(q: Any) -> None:
-    """Algoritmul afiseaza o fereastra din care utilizatorul poate selecta un fisier, in acest caz un backup la baza
+    """Procedura afiseaza o fereastra din care utilizatorul poate selecta un fisier, in acest caz un backup la baza
     de date.
+
+    Algoritm:
+    -----------
+    Se efectueaza pasii necesari afisarii casutei de dialog, conform documentatiei tkinter. In plus, fisierul
+    selectat de catre utilizator, inclusiv calea sa absoluta, se extrage cu ajutorul unei cozi. Aceasta va fi
+    folosita intr-o alta functie, restore_backup_window_in_thread.
 
     Parametri:
     -----------
     q: Any
-        o instanta a unei cozi, ce va retine textul introdus de catre utilizator
+        o instanta a unei cozi, ce va retine textul introdus de catre utilizator;
 
     Intoarce:
     ----------
-    Nimic"""
+    Nimic."""
+
     root = tk.Tk()
     root.withdraw()
     ans = f.askopenfilename()
@@ -87,55 +111,70 @@ def restore_backup_window(q: Any) -> None:
 
 
 def show_error_window_in_thread(title: str, message: str) -> None:
-    """Algoritmul afiseaza o fereastra ce scrie un mesaj de eroare si un titlu, intr-un fir separat de executie.
+    """Procedura afiseaza o fereastra ce scrie un mesaj de eroare si un titlu, intr-un fir separat de executie.
+
+    Algoritm:
+    ----------
+    Se apeleaza procedura show_error_window intr-un fir separat.
 
     Parametri:
     -----------
     title: str
-        titlul ferestrei
+        titlul ferestrei;
     message: str
-        mesajul ce este scris in fereastra
+        mesajul ce este scris in fereastra.
 
     Intoarce:
     ----------
-    Nimic"""
+    Nimic."""
+
     p = Process(target=show_error_window, args=(title, message))
     p.start()
     p.join()
 
 
 def show_info_window_in_thread(title: str, message: str) -> None:
-    """Algoritmul afiseaza o fereastra ce scrie un mesaj de informare si un titlu, intr-un fir separat de executie.
+    """Procedura afiseaza o fereastra ce scrie un mesaj de informare si un titlu, intr-un fir separat de executie.
+
+    Algoritm:
+    ----------
+    Se apeleaza procedura show_info_window intr-un fir separat.
 
     Parametri:
     -----------
     title: str
-        titlul ferestrei
+        titlul ferestrei;
     message: str
-        mesajul ce este scris in fereastra
+        mesajul ce este scris in fereastra.
 
     Intoarce:
     ----------
-    Nimic"""
+    Nimic."""
+
     p = Process(target=show_info_window, args=(title, message))
     p.start()
     p.join()
 
 
 def show_string_input_window_in_thread(title: str, message: str) -> str:
-    """Algoritmul afiseaza o fereastra ce solicita introducerea unui sir de caractere, scrie un mesaj explicativ
+    """Functia afiseaza o fereastra ce solicita introducerea unui sir de caractere, scrie un mesaj explicativ
     si are un titlu, intr-un fir separat de executie.
+
+    Algoritm:
+    ----------
+    Se apeleaza procedura show_string_input_window intr-un fir separat.
 
     Parametri:
     -----------
     title: str
-        titlul ferestrei
+        titlul ferestrei;
     message: str
-        mesajul ce este scris in fereastra
+        mesajul ce este scris in fereastra.
 
     Intoarce:
     ----------
-    Nimic"""
+    Nimic."""
+
     queue = Queue()
     p = Process(target=show_string_input_window, args=(title, message, queue))
     p.start()
@@ -145,17 +184,22 @@ def show_string_input_window_in_thread(title: str, message: str) -> str:
 
 
 def restore_backup_window_in_thread() -> str:
-    """Algoritmul afiseaza o fereastra din care utilizatorul poate selecta un fisier, in acest caz un backup la baza
+    """Functia afiseaza o fereastra din care utilizatorul poate selecta un fisier, in acest caz un backup la baza
     de date.
+
+    Algoritm:
+    ----------
+    Se apeleaza procedura restore_backup_window intr-un fir separat.
 
     Parametri:
     -----------
-    Niciunul
+    Niciunul.
 
     Intoarce:
     ----------
     Un sir de caractere ce contine fisierul backup din care se va reface baza de date, inclusiv calea absoluta
-    pana la acesta"""
+    pana la acesta."""
+
     queue = Queue()
     p = Process(target=restore_backup_window, args=(queue,))
     p.start()

@@ -7,19 +7,27 @@ from application.models import Matches
 
 
 def estimate_results(given_ratings: tuple) -> dict:
-    """Algoritmul de estimare a sanselor de castig pentru echipa gazda, pentru echipa oaspete si sansele ca meciul sa
+    """Functia de estimare a sanselor de castig pentru echipa gazda, pentru echipa oaspete si sansele ca meciul sa
     se termine la egalitate, daca cele doua echipe au evaluarile introduse de catre utilizator.
+
+    Algoritm:
+    ----------
+    Se creaza o instanta de clasa de tip engine si, pe baza acesteia, o instanta de tip sessionmaker, care se ocupa
+    de comunicarea cu BD. Apoi se ruleaza interogarea corespunzatoare, care intoarce un numar de randuri. Dupa rularea
+    interogarii, se inchide sesiunea. Daca interogarea intoarce unul sau mai multe randuri, se calculeaza rezultatele
+    dorite. Altfel, se afiseaza un mesaj corespunzator.
 
     Parametri:
     ----------
     given_ratings: tuple
         tuplu ce retine cele 14 evaluari necesare. 7 pentru echipa gazda si 7 pentru echipa oaspete. Pentru fiecare
         echipa sunt retinute, in ordine: mijlocul, apararea pe dreapta, centru si stanga si atacul pe dreapta, centru
-        si stanga
+        si stanga.
 
     Intoarce:
     ----------
     Un dictionar cu raspunsul cautat."""
+
     ans = {'Home wins': 0, 'Draws': 0, 'Away wins': 0, 'Home goals average': 0, 'Away goals average': 0,
            'Sum of home goals': 0, 'Sum of away goals': 0}
     engine = create_engine(global_library.database_file_uri, echo=True)

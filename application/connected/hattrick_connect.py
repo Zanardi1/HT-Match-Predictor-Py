@@ -25,11 +25,11 @@ def check_if_configuration_file_has_access_tokens(test_config: config) -> bool:
     ----------
     test_config: config
         instanta a clasei config, definita in ConfigParser. Aceasta retine, printre altele si URL-ul catre fisierul
-        ce urmeaza a fi descarcat
+        ce urmeaza a fi descarcat.
 
     Intoarce:
     ----------
-    True, daca fisierul de configurare are cele doua jetoane. Altfel intoarce False"""
+    True, daca fisierul de configurare are cele doua jetoane. Altfel intoarce False."""
 
     return True if test_config.has_option('DEFAULT', 'ACCESS_TOKEN') and test_config.has_option('DEFAULT',
                                                                                                 'ACCESS_TOKEN_SECRET') \
@@ -49,11 +49,13 @@ def check_if_connection_is_valid(test_config: config) -> bool:
     ----------
     test_config: config
         instanta a clasei config, definita in ConfigParser. Aceasta retine, printre altele si URL-ul catre fisierul
-        ce urmeaza a fi descarcat
+        ce urmeaza a fi descarcat.
 
     Intoarce:
     ----------
-    True, daca este valida conexiunea, adica programul are acces la datele contului de Hattrick. Altfel intoarce False"""
+    True, daca este valida conexiunea, adica programul are acces la datele contului de Hattrick.
+    Altfel intoarce False."""
+
     dx.download_xml_file(file=test_config['DEFAULT']['CHECK_TOKEN_PATH'], params={},
                          destination_file=global_library.check_connection_savepath)
     return xl.parse_connection_verification_file()
@@ -63,7 +65,7 @@ def add_access_tokens_to_config_file(test_config: config, connection: OAuth1Serv
                                      request_token_secret: str, code: str) -> bool:
     """Functia adauga jetoanele access token si access token secret fisierului de configurari. Acestea vor fi
     folosite pentru conectarea site-ului la contul Hattrick, fara a mai fi necesara parcurgerea din nou a intregului
-    proces de autentificare
+    proces de autentificare.
     
     Algoritm:
     ----------
@@ -75,26 +77,27 @@ def add_access_tokens_to_config_file(test_config: config, connection: OAuth1Serv
     ----------
     test_config: config
         instanta a clasei config, definita in ConfigParser. Aceasta retine, printre altele si URL-ul catre fisierul
-        ce urmeaza a fi descarcat
+        ce urmeaza a fi descarcat;
     connection: OAuth1Service
         instanta a clasei Oauth1Service, clasa ce retine detaliile necesare conectarii la Hattrick prin protocolul
-        oauth
+        oauth;
     request_token: str
         variabila ce retine un sir de caractere, denumit request token, folosit la conectarea la Hattrick si la
-        obtinerea jetoanelor de acces
+        obtinerea jetoanelor de acces;
     request_token_secret: str
         variabila ce retine un sir de caractere, denumit request token secret, folosit la conectarea la Hattrick si
-        la obtinerea jetoanelor de acces
+        la obtinerea jetoanelor de acces;
     code: str
         variabila ce retine un sir de caractere, denumit request token secret, folosit la conectarea la Hattrick si
         la obtinerea jetoanelor de acces. Acest sir se numeste cod si trebuie introdus de catre utilizator la
-        autentificarea aplicatiei la contul Hattrick
+        autentificarea aplicatiei la contul Hattrick.
 
     Intoarce:
     ---------
     True, daca procesul a avut loc cu succes. Acest lucru implica introducerea corecta a codului primit de catre
     utilizator, fapt care are loc in functia get_access_token. Altfel, daca utilizatorul a introdus codul gresit
-    sau a renuntat in a-l introduce, intoarce False"""
+    sau a renuntat in a-l introduce, intoarce False."""
+
     try:
         access_token, access_token_secret = connection.get_access_token(request_token, request_token_secret,
                                                                         params={'oauth_verifier': code})
@@ -118,20 +121,21 @@ def get_access_tokens(test_config: config) -> bool:
     conectarea, se obtin jetoanele request token si request token secret. Dupa executia acestui pas, se deschide un
     tab al browserului implicit, care prezinta pagina din care utilizatorul ia un sir de caractere, numid cod sau PIN
     si-l scrie in fereastra care apare. In cazul in care PIN-ul introdus coincide cu cel din tab, functia primeste
-    jetoanele access token si access token secret si le scrie in fisier. Daca nu, atunci utilizatorul a apasat butonul
-    Cancel (cazul in care a introdus un cod gresit e tratat in add_acces_tokens_to_config_file.
+    jetoanele access token si access token secret si le scrie in fisier. Daca nu, atunci utilizatorul a apasat
+    butonul Cancel (cazul in care a introdus un cod gresit e tratat in add_access_tokens_to_config_file.
 
     Parametri:
     ----------
     test_config: config
         instanta a clasei config, definita in ConfigParser. Aceasta retine, printre altele si URL-ul catre fisierul
-        ce urmeaza a fi descarcat
+        ce urmeaza a fi descarcat.
 
     Intoarce:
     ----------
     True, daca adaugarea jetoanelor de access s-a incheiat cu succes. Acest proces implica introducerea corecta de catre utilizator a unui cod primit de la Hattrick.
     Daca acest cod a fost introdus gresit sau daca utilizatorul a renuntat in a-l introduce, functia intoarce False.
     """
+
     connection = OAuth1Service(consumer_key=test_config['DEFAULT']['CONSUMER_KEY'],
                                consumer_secret=test_config['DEFAULT']['CONSUMER_SECRET'], name='Hattrick',
                                request_token_url=test_config['DEFAULT']['REQUEST_TOKEN_PATH'],
@@ -164,24 +168,24 @@ def connection_engine() -> tuple:
     Algoritm:
     ---------
     1. Testeaza daca se poate conecta la Hattrick. Asta inseamna ca urmatoarele 2 conditii sa fie adevarate:
-      1.1. Sa existe jetoanele de acces;
-      1.2. Conexiunea sa fie permisa de catre Hattrick
+        1.1. Sa existe jetoanele de acces;
+        1.2. Conexiunea sa fie permisa de catre Hattrick.
     2. Daca se poate conecta la Hattrick:
-      2.1. Descarca informatiile de baza;
-      2.2. Intoarce True
+        2.1. Descarca informatiile de baza;
+        2.2. Intoarce True.
     3. Daca nu se poate conecta la Hattrick:
-      3.1. Obtine jetoanele de access (efectueaza intreaga procedura de conectare). Daca nu poate, intoarce False
-      3.2. Descarca informatiile de baza
-      3.3. Intoarce True.
+        3.1. Obtine jetoanele de access (efectueaza intreaga procedura de conectare). Daca nu poate, intoarce False;
+        3.2. Descarca informatiile de baza;
+        3.3. Intoarce True.
 
     Parametri:
     ----------
-    Niciunul
+    Niciunul.
 
     Intoarce:
     ----------
     Un tuplu format dintr-o valoare booleana si un dictionar ce retine datele de utilizator. Daca valoarea booleana
-    este True, atunci dictionarul retine datele cerute. Altfel, dictionarul este gol"""
+    este True, atunci dictionarul retine datele cerute. Altfel, dictionarul este gol."""
 
     if check_if_configuration_file_has_access_tokens(test_config=config):
         if check_if_connection_is_valid(test_config=config):

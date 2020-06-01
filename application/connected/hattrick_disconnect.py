@@ -11,19 +11,20 @@ def disconnection_engine(show_confirmation_window: bool) -> None:
 
      Algoritm:
      ----------
-     1. Descarca fisierul XML ce este generat ca urmare a deconectarii de la cont
-     2. Elimina cele doua jetoane din fisier
-     3. Salveaza noul fisier de configurare
-     4. Afiseaza un mesaj de confirmare a deconectarii
+     1. Descarca fisierul XML ce este generat ca urmare a deconectarii de la cont;
+     2. Elimina cele doua jetoane din fisier;
+     3. Salveaza noul fisier de configurare;
+     4. Afiseaza un mesaj de confirmare a deconectarii.
 
      Parametri:
      ----------
      show_confirmation_window: bool
-        arata daca va fi afisata sau nu fereastra de confirmare
+        arata daca va fi afisata sau nu fereastra de confirmare.
 
      Intoarce:
      ----------
-     Nimic"""
+     Nimic."""
+
     d.download_xml_file(file=config['DEFAULT']['INVALIDATE_TOKEN_PATH'], params={},
                         destination_file=global_library.disconnect_savepath)
     config.remove_option('DEFAULT', 'ACCESS_TOKEN')

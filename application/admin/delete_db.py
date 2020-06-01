@@ -20,7 +20,7 @@ def delete_database() -> None:
 
     Intoarce:
     ----------
-    Nimic"""
+    Nimic."""
 
     if os.path.exists(global_library.database_file_path):
         drop_database(global_library.database_file_uri)
