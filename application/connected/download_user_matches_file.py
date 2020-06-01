@@ -8,7 +8,7 @@ from application import config
 
 
 def download_user_matches_file(team_id: int) -> list:
-    """Algoritmul descarca din Hattrick un fisier XML ce contine meciurile pe care le-a avut si le va avea o echipa
+    """Functia descarca din Hattrick un fisier XML ce contine meciurile pe care le-a avut si le va avea o echipa
     a utilizatorului.
 
     Parametri:

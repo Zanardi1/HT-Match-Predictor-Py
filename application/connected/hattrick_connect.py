@@ -61,9 +61,15 @@ def check_if_connection_is_valid(test_config: config) -> bool:
 
 def add_access_tokens_to_config_file(test_config: config, connection: OAuth1Service, request_token: str,
                                      request_token_secret: str, code: str) -> bool:
-    """Algoritmul adauga jetoanele access token si access token secret fisierului de configurari. Acestea vor fi
+    """Functia adauga jetoanele access token si access token secret fisierului de configurari. Acestea vor fi
     folosite pentru conectarea site-ului la contul Hattrick, fara a mai fi necesara parcurgerea din nou a intregului
     proces de autentificare
+    
+    Algoritm:
+    ----------
+    Incearca sa obtina cele doua jetoane. Daca nu reuseste, atunci cel mai probabil este deoarece PIN-ul este fie
+    introdus gresit, fie utilizatorul a renuntat in a-l introduce (care e cam acelasi lucru). Daca reuseste, atunci
+    le salveaza in fisierul de configurari.
 
     Parametri:
     ----------
@@ -104,7 +110,16 @@ def add_access_tokens_to_config_file(test_config: config, connection: OAuth1Serv
 
 
 def get_access_tokens(test_config: config) -> bool:
-    """Algoritmul obtine jetoanele de access la contul Hattrick
+    """Functia obtine jetoanele de access la contul Hattrick
+
+    Algoritm:
+    ----------
+    Functia creaza o instanta a clasei OAuth1Service, responsabila cu conectarea la joc. Dupa ce a fost realizata
+    conectarea, se obtin jetoanele request token si request token secret. Dupa executia acestui pas, se deschide un
+    tab al browserului implicit, care prezinta pagina din care utilizatorul ia un sir de caractere, numid cod sau PIN
+    si-l scrie in fereastra care apare. In cazul in care PIN-ul introdus coincide cu cel din tab, functia primeste
+    jetoanele access token si access token secret si le scrie in fisier. Daca nu, atunci utilizatorul a apasat butonul
+    Cancel (cazul in care a introdus un cod gresit e tratat in add_acces_tokens_to_config_file.
 
     Parametri:
     ----------
@@ -129,7 +144,7 @@ def get_access_tokens(test_config: config) -> bool:
     webbrowser.open(url=connection.get_authorize_url(request_token), new=2)
     code = dw.show_string_input_window_in_thread(title='PIN Required',
                                                  message='Please insert the PIN specified by Hattrick')
-    if code is None:
+    if code is None: # Utilizatorul a apasat butonul Cancel
         return False
     else:
         return True if add_access_tokens_to_config_file(test_config=test_config, connection=connection,
@@ -139,13 +154,15 @@ def get_access_tokens(test_config: config) -> bool:
 
 
 def connection_engine() -> tuple:
-    """Algoritmul de conectare la Hattrick. Functia obtine informatiile de baza despre utilizatorul care s-a conectat.
-    Deoarece procesul este aproape in totalitate automat, singurul punct in care omul poate interveni este la
-    introducerea PIN-ului. Fie il poate introduce gresit, fie se poate razgandi si nu-l mai introduce.
-    Din aceste motive, functia intoarce True daca procesul de conectare s-a incheiat (adica s-au obtinut jetoanele
-    de acces) si False in caz contrar (cel mai probabil atunci cand PIN-ul fie nu este introdus corect, fie
-    utilizatorul renunta la procedura in acest punct.
-    Algoritmul de functionare:
+    """Functia realizeaza conectarea propriu-zisa la Hattrick. Functia obtine informatiile de baza despre
+    utilizatorul care s-a conectat. Deoarece procesul este aproape in totalitate automat, singurul punct in care
+    omul poate interveni este la introducerea PIN-ului. Fie il poate introduce gresit, fie se poate razgandi si
+    nu-l mai introduce. Din aceste motive, functia intoarce True daca procesul de conectare s-a incheiat
+    (adica s-au obtinut jetoanele de acces) si False in caz contrar (cel mai probabil atunci cand PIN-ul fie nu
+    este introdus corect, fie utilizatorul renunta la procedura in acest punct.
+
+    Algoritm:
+    ---------
     1. Testeaza daca se poate conecta la Hattrick. Asta inseamna ca urmatoarele 2 conditii sa fie adevarate:
       1.1. Sa existe jetoanele de acces;
       1.2. Conexiunea sa fie permisa de catre Hattrick
@@ -157,14 +174,14 @@ def connection_engine() -> tuple:
       3.2. Descarca informatiile de baza
       3.3. Intoarce True.
 
-      Parametri:
-      ----------
-      Niciunul
+    Parametri:
+    ----------
+    Niciunul
 
-      Intoarce:
-      ----------
-      Un tuplu format dintr-o valoare booleana si un dictionar ce retine datele de utilizator. Daca valoarea booleana
-      este True, atunci dictionarul retine datele cerute. Altfel, dictionarul este gol"""
+    Intoarce:
+    ----------
+    Un tuplu format dintr-o valoare booleana si un dictionar ce retine datele de utilizator. Daca valoarea booleana
+    este True, atunci dictionarul retine datele cerute. Altfel, dictionarul este gol"""
 
     if check_if_configuration_file_has_access_tokens(test_config=config):
         if check_if_connection_is_valid(test_config=config):
