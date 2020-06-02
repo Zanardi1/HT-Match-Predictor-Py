@@ -43,7 +43,7 @@
         <label for="FutureMatchList">Choose a match from the future matches:</label><br/>
         <select name="FutureMatches" size="5" id="FutureMatchList" style="width: 18%">
             {% for i in range(user_matches|length) %}
-            {%if i==0%}
+            {%if i==position%}
             <option value="{{user_matches[i][0]}}" selected>{{user_matches[i][1]}} - {{user_matches[i][2]}}</option>
             {%else%}
             <option value="{{user_matches[i][0]}}">{{user_matches[i][1]}} - {{user_matches[i][2]}}</option>

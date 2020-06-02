@@ -384,9 +384,15 @@ def get_match_ratings_for_a_future_match() -> None:
         match_orders = global_library.default_match_orders
         place_to_play = 'Home'
     else:
+        selected_position = 0
         try:
             if global_library.old_checked == checked:
                 match_id = request.form['FutureMatches']
+                for match in global_library.user_matches:
+                    if match_id != match[0]:
+                        selected_position += 1
+                    else:
+                        break
             else:
                 match_id = global_library.user_matches[0][0]
         except we.BadRequestKeyError:
@@ -402,7 +408,7 @@ def get_match_ratings_for_a_future_match() -> None:
                            user_matches=global_library.user_matches,
                            match_orders=match_orders,
                            place=place_to_play,
-                           answer=global_library.ans, checked=checked)
+                           answer=global_library.ans, checked=checked, position=selected_position)
 
 
 @index_bp.route('/backup')
