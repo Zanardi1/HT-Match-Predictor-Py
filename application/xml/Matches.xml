@@ -3,126 +3,170 @@
   <FileName>matches.xml</FileName>
   <Version>2.8</Version>
   <UserID>1248859</UserID>
-  <FetchedDate>2020-06-02 16:49:35</FetchedDate>
+  <FetchedDate>2020-06-02 17:53:12</FetchedDate>
   <IsYouth>False</IsYouth>
   <Team>
-    <TeamID>1629472</TeamID>
-    <TeamName>FC. Steaua BucureÈti</TeamName>
-    <ShortTeamName>FCSB</ShortTeamName>
+    <TeamID>2056276</TeamID>
+    <TeamName>PisoiaÈu' MausicÄ</TeamName>
+    <ShortTeamName>PisM</ShortTeamName>
     <League>
-      <LeagueID>107</LeagueID>
-      <LeagueName>Guatemala</LeagueName>
+      <LeagueID>1000</LeagueID>
+      <LeagueName>Hattrick International</LeagueName>
     </League>
     <LeagueLevelUnit>
-      <LeagueLevelUnitID>88455</LeagueLevelUnitID>
-      <LeagueLevelUnitName>III.4</LeagueLevelUnitName>
-      <LeagueLevel>3</LeagueLevel>
+      <LeagueLevelUnitID>256914</LeagueLevelUnitID>
+      <LeagueLevelUnitName>V.143</LeagueLevelUnitName>
+      <LeagueLevel>5</LeagueLevel>
     </LeagueLevelUnit>
     <MatchList>
       <Match>
-        <MatchID>658202680</MatchID>
+        <MatchID>658202797</MatchID>
         <HomeTeam>
-          <HomeTeamID>1629472</HomeTeamID>
-          <HomeTeamName>FC. Steaua BucureÈti</HomeTeamName>
-          <HomeTeamNameShortName>FCSB</HomeTeamNameShortName>
+          <HomeTeamID>1602535</HomeTeamID>
+          <HomeTeamName>kickerbude</HomeTeamName>
+          <HomeTeamNameShortName>kickerbude</HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>33996</AwayTeamID>
-          <AwayTeamName>PystyPorat</AwayTeamName>
-          <AwayTeamNameShortName>PystyPorat</AwayTeamNameShortName>
+          <AwayTeamID>2056276</AwayTeamID>
+          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
+          <AwayTeamNameShortName>PisM</AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-07 01:10:00</MatchDate>
+        <MatchDate>2020-05-06 16:25:00</MatchDate>
         <SourceSystem>Hattrick</SourceSystem>
         <MatchType>8</MatchType>
         <MatchContextId>0</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>0</HomeGoals>
-        <AwayGoals>1</AwayGoals>
-        <Status>FINISHED</Status>
-      </Match>
-      <Match>
-        <MatchID>656990207</MatchID>
-        <HomeTeam>
-          <HomeTeamID>1629472</HomeTeamID>
-          <HomeTeamName>FC. Steaua BucureÈti</HomeTeamName>
-          <HomeTeamNameShortName>FCSB</HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>1629636</AwayTeamID>
-          <AwayTeamName>FC Venados</AwayTeamName>
-          <AwayTeamNameShortName>Venados</AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-05-11 01:10:00</MatchDate>
-        <SourceSystem>Hattrick</SourceSystem>
-        <MatchType>1</MatchType>
-        <MatchContextId>88451</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>0</HomeGoals>
-        <AwayGoals>6</AwayGoals>
-        <Status>FINISHED</Status>
-      </Match>
-      <Match>
-        <MatchID>658285330</MatchID>
-        <HomeTeam>
-          <HomeTeamID>1629472</HomeTeamID>
-          <HomeTeamName>FC. Steaua BucureÈti</HomeTeamName>
-          <HomeTeamNameShortName>FCSB</HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>2062059</AwayTeamID>
-          <AwayTeamName>superjodu satellite team</AwayTeamName>
-          <AwayTeamNameShortName>superjodu</AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-05-14 01:10:00</MatchDate>
-        <SourceSystem>Hattrick</SourceSystem>
-        <MatchType>8</MatchType>
-        <MatchContextId>0</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>1</HomeGoals>
+        <HomeGoals>3</HomeGoals>
         <AwayGoals>0</AwayGoals>
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>17453668</MatchID>
+        <MatchID>653595673</MatchID>
         <HomeTeam>
-          <HomeTeamID>1187457</HomeTeamID>
-          <HomeTeamName>Zanardi Redwings</HomeTeamName>
-          <HomeTeamNameShortName></HomeTeamNameShortName>
+          <HomeTeamID>2056276</HomeTeamID>
+          <HomeTeamName>PisoiaÈu' MausicÄ</HomeTeamName>
+          <HomeTeamNameShortName>PisM</HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>1629472</AwayTeamID>
-          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
-          <AwayTeamNameShortName></AwayTeamNameShortName>
+          <AwayTeamID>2056068</AwayTeamID>
+          <AwayTeamName>El Pampa Internacional</AwayTeamName>
+          <AwayTeamNameShortName>Internacional</AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-15 09:16:00</MatchDate>
-        <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>61</MatchType>
-        <MatchContextId>0</MatchContextId>
+        <MatchDate>2020-05-08 17:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>1</MatchType>
+        <MatchContextId>256727</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>0</HomeGoals>
-        <AwayGoals>3</AwayGoals>
+        <HomeGoals>1</HomeGoals>
+        <AwayGoals>5</AwayGoals>
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>17475692</MatchID>
+        <MatchID>658291900</MatchID>
         <HomeTeam>
-          <HomeTeamID>1187457</HomeTeamID>
-          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamID>2023525</HomeTeamID>
+          <HomeTeamName>Lapis Lazuli</HomeTeamName>
+          <HomeTeamNameShortName>Lazuli</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>2056276</AwayTeamID>
+          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
+          <AwayTeamNameShortName>PisM</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-13 16:35:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>8</MatchType>
+        <MatchContextId>0</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>5</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>653595678</MatchID>
+        <HomeTeam>
+          <HomeTeamID>2056956</HomeTeamID>
+          <HomeTeamName>Operation Orange</HomeTeamName>
+          <HomeTeamNameShortName>Operation</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>2056276</AwayTeamID>
+          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
+          <AwayTeamNameShortName>PisM</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-15 17:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>1</MatchType>
+        <MatchContextId>256727</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>8</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>17489854</MatchID>
+        <HomeTeam>
+          <HomeTeamID>193120</HomeTeamID>
+          <HomeTeamName>dÃ©dÃ© Vichte</HomeTeamName>
           <HomeTeamNameShortName></HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>1629472</AwayTeamID>
-          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
+          <AwayTeamID>2056276</AwayTeamID>
+          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
           <AwayTeamNameShortName></AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-15 14:37:00</MatchDate>
+        <MatchDate>2020-05-18 07:05:00</MatchDate>
         <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>61</MatchType>
-        <MatchContextId>0</MatchContextId>
+        <MatchType>50</MatchType>
+        <MatchContextId>3116071</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>5</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>17565891</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1539117</HomeTeamID>
+          <HomeTeamName>Yellow Reds Army</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>2056276</AwayTeamID>
+          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-18 19:06:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>50</MatchType>
+        <MatchContextId>3116071</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>5</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>17623363</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1809639</HomeTeamID>
+          <HomeTeamName>London Eagles FC</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>2056276</AwayTeamID>
+          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-19 07:06:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>50</MatchType>
+        <MatchContextId>3116071</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
         <HomeGoals>3</HomeGoals>
@@ -130,282 +174,62 @@
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>656990213</MatchID>
+        <MatchID>17679693</MatchID>
         <HomeTeam>
-          <HomeTeamID>1629460</HomeTeamID>
-          <HomeTeamName>FC Ich hans au gwÃ¼sst das du nÃ¼t chasch!!</HomeTeamName>
-          <HomeTeamNameShortName>chasch!!</HomeTeamNameShortName>
+          <HomeTeamID>2058704</HomeTeamID>
+          <HomeTeamName>Abelzinhos</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>1629472</AwayTeamID>
-          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
-          <AwayTeamNameShortName>FCSB</AwayTeamNameShortName>
+          <AwayTeamID>2056276</AwayTeamID>
+          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-18 01:10:00</MatchDate>
-        <SourceSystem>Hattrick</SourceSystem>
-        <MatchType>1</MatchType>
-        <MatchContextId>88451</MatchContextId>
+        <MatchDate>2020-05-19 19:05:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>50</MatchType>
+        <MatchContextId>3116071</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
         <HomeGoals>6</HomeGoals>
-        <AwayGoals>0</AwayGoals>
-        <Status>FINISHED</Status>
-      </Match>
-      <Match>
-        <MatchID>17479540</MatchID>
-        <HomeTeam>
-          <HomeTeamID>320441</HomeTeamID>
-          <HomeTeamName>Noeky</HomeTeamName>
-          <HomeTeamNameShortName></HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>1629472</AwayTeamID>
-          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
-          <AwayTeamNameShortName></AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-05-18 06:45:00</MatchDate>
-        <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>50</MatchType>
-        <MatchContextId>3116065</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>0</HomeGoals>
-        <AwayGoals>5</AwayGoals>
-        <Status>FINISHED</Status>
-      </Match>
-      <Match>
-        <MatchID>17586074</MatchID>
-        <HomeTeam>
-          <HomeTeamID>1187457</HomeTeamID>
-          <HomeTeamName>Zanardi Redwings</HomeTeamName>
-          <HomeTeamNameShortName></HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>1629472</AwayTeamID>
-          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
-          <AwayTeamNameShortName></AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-05-18 15:09:00</MatchDate>
-        <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>61</MatchType>
-        <MatchContextId>0</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>2</HomeGoals>
         <AwayGoals>1</AwayGoals>
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>17553673</MatchID>
+        <MatchID>17738819</MatchID>
         <HomeTeam>
-          <HomeTeamID>1629472</HomeTeamID>
-          <HomeTeamName>FC. Steaua BucureÈti</HomeTeamName>
+          <HomeTeamID>157419</HomeTeamID>
+          <HomeTeamName>NyÃ­regyhÃ¡za Spartacus</HomeTeamName>
           <HomeTeamNameShortName></HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>1005578</AwayTeamID>
-          <AwayTeamName>Sporting Akkad</AwayTeamName>
+          <AwayTeamID>2056276</AwayTeamID>
+          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
           <AwayTeamNameShortName></AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-18 18:45:00</MatchDate>
+        <MatchDate>2020-05-20 07:05:00</MatchDate>
         <SourceSystem>HTOIntegrated</SourceSystem>
         <MatchType>50</MatchType>
-        <MatchContextId>3116065</MatchContextId>
+        <MatchContextId>3116071</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>0</HomeGoals>
-        <AwayGoals>6</AwayGoals>
-        <Status>FINISHED</Status>
-      </Match>
-      <Match>
-        <MatchID>17612912</MatchID>
-        <HomeTeam>
-          <HomeTeamID>1629472</HomeTeamID>
-          <HomeTeamName>FC. Steaua BucureÈti</HomeTeamName>
-          <HomeTeamNameShortName></HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>754547</AwayTeamID>
-          <AwayTeamName>AC BellaVita</AwayTeamName>
-          <AwayTeamNameShortName></AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-05-19 06:45:00</MatchDate>
-        <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>50</MatchType>
-        <MatchContextId>3116065</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>0</HomeGoals>
-        <AwayGoals>5</AwayGoals>
-        <Status>FINISHED</Status>
-      </Match>
-      <Match>
-        <MatchID>17670527</MatchID>
-        <HomeTeam>
-          <HomeTeamID>1816524</HomeTeamID>
-          <HomeTeamName>NKS Star NamysÅÃ³w</HomeTeamName>
-          <HomeTeamNameShortName></HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>1629472</AwayTeamID>
-          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
-          <AwayTeamNameShortName></AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-05-19 18:45:00</MatchDate>
-        <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>50</MatchType>
-        <MatchContextId>3116065</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>4</HomeGoals>
-        <AwayGoals>1</AwayGoals>
-        <Status>FINISHED</Status>
-      </Match>
-      <Match>
-        <MatchID>17729491</MatchID>
-        <HomeTeam>
-          <HomeTeamID>464392</HomeTeamID>
-          <HomeTeamName>1. FC El Primitivo</HomeTeamName>
-          <HomeTeamNameShortName></HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>1629472</AwayTeamID>
-          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
-          <AwayTeamNameShortName></AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-05-20 06:45:00</MatchDate>
-        <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>50</MatchType>
-        <MatchContextId>3116065</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>4</HomeGoals>
-        <AwayGoals>2</AwayGoals>
-        <Status>FINISHED</Status>
-      </Match>
-      <Match>
-        <MatchID>17786408</MatchID>
-        <HomeTeam>
-          <HomeTeamID>1188870</HomeTeamID>
-          <HomeTeamName>F.C. "U" CRAIOVITA</HomeTeamName>
-          <HomeTeamNameShortName></HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>1629472</AwayTeamID>
-          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
-          <AwayTeamNameShortName></AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-05-20 18:46:00</MatchDate>
-        <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>50</MatchType>
-        <MatchContextId>3116065</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>0</HomeGoals>
+        <HomeGoals>9</HomeGoals>
         <AwayGoals>0</AwayGoals>
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>658379920</MatchID>
+        <MatchID>658376300</MatchID>
         <HomeTeam>
-          <HomeTeamID>1629472</HomeTeamID>
-          <HomeTeamName>FC. Steaua BucureÈti</HomeTeamName>
-          <HomeTeamNameShortName>FCSB</HomeTeamNameShortName>
+          <HomeTeamID>2016823</HomeTeamID>
+          <HomeTeamName>FC Milk Bar</HomeTeamName>
+          <HomeTeamNameShortName>Milk</HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>835474</AwayTeamID>
-          <AwayTeamName>Bartson FC</AwayTeamName>
-          <AwayTeamNameShortName>Bartson</AwayTeamNameShortName>
+          <AwayTeamID>2056276</AwayTeamID>
+          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
+          <AwayTeamNameShortName>PisM</AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-21 01:10:00</MatchDate>
-        <SourceSystem>Hattrick</SourceSystem>
-        <MatchType>8</MatchType>
-        <MatchContextId>0</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>2</HomeGoals>
-        <AwayGoals>3</AwayGoals>
-        <Status>FINISHED</Status>
-      </Match>
-      <Match>
-        <MatchID>17844636</MatchID>
-        <HomeTeam>
-          <HomeTeamID>1762468</HomeTeamID>
-          <HomeTeamName>14 juillet</HomeTeamName>
-          <HomeTeamNameShortName></HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>1629472</AwayTeamID>
-          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
-          <AwayTeamNameShortName></AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-05-21 06:46:00</MatchDate>
-        <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>50</MatchType>
-        <MatchContextId>3116065</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>3</HomeGoals>
-        <AwayGoals>0</AwayGoals>
-        <Status>FINISHED</Status>
-      </Match>
-      <Match>
-        <MatchID>17901469</MatchID>
-        <HomeTeam>
-          <HomeTeamID>1629472</HomeTeamID>
-          <HomeTeamName>FC. Steaua BucureÈti</HomeTeamName>
-          <HomeTeamNameShortName></HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>746201</AwayTeamID>
-          <AwayTeamName>FC Dageraad</AwayTeamName>
-          <AwayTeamNameShortName></AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-05-21 18:46:00</MatchDate>
-        <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>50</MatchType>
-        <MatchContextId>3116065</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>1</HomeGoals>
-        <AwayGoals>1</AwayGoals>
-        <Status>FINISHED</Status>
-      </Match>
-      <Match>
-        <MatchID>17968937</MatchID>
-        <HomeTeam>
-          <HomeTeamID>1187457</HomeTeamID>
-          <HomeTeamName>Zanardi Redwings</HomeTeamName>
-          <HomeTeamNameShortName></HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>1629472</AwayTeamID>
-          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
-          <AwayTeamNameShortName></AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-05-23 12:44:00</MatchDate>
-        <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>61</MatchType>
-        <MatchContextId>0</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>1</HomeGoals>
-        <AwayGoals>2</AwayGoals>
-        <Status>FINISHED</Status>
-      </Match>
-      <Match>
-        <MatchID>658485732</MatchID>
-        <HomeTeam>
-          <HomeTeamID>1629472</HomeTeamID>
-          <HomeTeamName>FC. Steaua BucureÈti</HomeTeamName>
-          <HomeTeamNameShortName>FCSB</HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>1009123</AwayTeamID>
-          <AwayTeamName>Sabbi Bears</AwayTeamName>
-          <AwayTeamNameShortName>Sabbi</AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-05-25 01:10:00</MatchDate>
+        <MatchDate>2020-05-20 16:35:00</MatchDate>
         <SourceSystem>Hattrick</SourceSystem>
         <MatchType>9</MatchType>
         <MatchContextId>0</MatchContextId>
@@ -416,15 +240,103 @@
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>17944893</MatchID>
+        <MatchID>17795896</MatchID>
         <HomeTeam>
-          <HomeTeamID>1629472</HomeTeamID>
-          <HomeTeamName>FC. Steaua BucureÈti</HomeTeamName>
+          <HomeTeamID>1826537</HomeTeamID>
+          <HomeTeamName>pinkipoje</HomeTeamName>
           <HomeTeamNameShortName></HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>987908</AwayTeamID>
-          <AwayTeamName>Globetrotter ZÃ¼lpich</AwayTeamName>
+          <AwayTeamID>2056276</AwayTeamID>
+          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-20 19:06:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>50</MatchType>
+        <MatchContextId>3116071</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>7</HomeGoals>
+        <AwayGoals>2</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>17854577</MatchID>
+        <HomeTeam>
+          <HomeTeamID>2056276</HomeTeamID>
+          <HomeTeamName>PisoiaÈu' MausicÄ</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1299480</AwayTeamID>
+          <AwayTeamName>8.miejsce</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-21 07:06:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>50</MatchType>
+        <MatchContextId>3116071</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>17911260</MatchID>
+        <HomeTeam>
+          <HomeTeamID>2056276</HomeTeamID>
+          <HomeTeamName>PisoiaÈu' MausicÄ</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>43890</AwayTeamID>
+          <AwayTeamName>FC Hammarkullen</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-21 19:06:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>50</MatchType>
+        <MatchContextId>3116071</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>7</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>658477005</MatchID>
+        <HomeTeam>
+          <HomeTeamID>2016769</HomeTeamID>
+          <HomeTeamName>FC Magic Box</HomeTeamName>
+          <HomeTeamNameShortName>Magic</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>2056276</AwayTeamID>
+          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
+          <AwayTeamNameShortName>PisM</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-24 16:35:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>8</MatchType>
+        <MatchContextId>0</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>7</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>17944908</MatchID>
+        <HomeTeam>
+          <HomeTeamID>2056276</HomeTeamID>
+          <HomeTeamName>PisoiaÈu' MausicÄ</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1649834</AwayTeamID>
+          <AwayTeamName>ice 252</AwayTeamName>
           <AwayTeamNameShortName></AwayTeamNameShortName>
         </AwayTeam>
         <MatchDate>2020-05-25 18:02:00</MatchDate>
@@ -433,64 +345,86 @@
         <MatchContextId>2108472</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>1</HomeGoals>
-        <AwayGoals>7</AwayGoals>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>8</AwayGoals>
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>18038337</MatchID>
+        <MatchID>18039556</MatchID>
         <HomeTeam>
-          <HomeTeamID>953505</HomeTeamID>
-          <HomeTeamName>Zog United</HomeTeamName>
+          <HomeTeamID>2056276</HomeTeamID>
+          <HomeTeamName>PisoiaÈu' MausicÄ</HomeTeamName>
           <HomeTeamNameShortName></HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>1629472</AwayTeamID>
-          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
+          <AwayTeamID>563585</AwayTeamID>
+          <AwayTeamName>Desperados2020</AwayTeamName>
           <AwayTeamNameShortName></AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-26 02:05:00</MatchDate>
+        <MatchDate>2020-05-26 02:06:00</MatchDate>
         <SourceSystem>HTOIntegrated</SourceSystem>
         <MatchType>50</MatchType>
         <MatchContextId>2108472</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>1</HomeGoals>
-        <AwayGoals>4</AwayGoals>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>2</AwayGoals>
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>18054212</MatchID>
+        <MatchID>18056066</MatchID>
         <HomeTeam>
-          <HomeTeamID>298544</HomeTeamID>
-          <HomeTeamName>FC Pompes FunÃ¨bres</HomeTeamName>
+          <HomeTeamID>2056276</HomeTeamID>
+          <HomeTeamName>PisoiaÈu' MausicÄ</HomeTeamName>
           <HomeTeamNameShortName></HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>1629472</AwayTeamID>
-          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
+          <AwayTeamID>1227640</AwayTeamID>
+          <AwayTeamName>muzzycan</AwayTeamName>
           <AwayTeamNameShortName></AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-26 10:04:00</MatchDate>
+        <MatchDate>2020-05-26 10:05:00</MatchDate>
         <SourceSystem>HTOIntegrated</SourceSystem>
         <MatchType>50</MatchType>
         <MatchContextId>2108472</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>1</HomeGoals>
+        <HomeGoals>4</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>18076238</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>2056276</AwayTeamID>
+          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-26 12:52:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>61</MatchType>
+        <MatchContextId>0</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>3</HomeGoals>
         <AwayGoals>1</AwayGoals>
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>18069480</MatchID>
+        <MatchID>18069732</MatchID>
         <HomeTeam>
-          <HomeTeamID>413287</HomeTeamID>
-          <HomeTeamName>FC Ziguli</HomeTeamName>
+          <HomeTeamID>2056276</HomeTeamID>
+          <HomeTeamName>PisoiaÈu' MausicÄ</HomeTeamName>
           <HomeTeamNameShortName></HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>1629472</AwayTeamID>
-          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
+          <AwayTeamID>1694632</AwayTeamID>
+          <AwayTeamName>Lokomotiv Casaletto</AwayTeamName>
           <AwayTeamNameShortName></AwayTeamNameShortName>
         </AwayTeam>
         <MatchDate>2020-05-26 18:03:00</MatchDate>
@@ -500,22 +434,132 @@
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
         <HomeGoals>1</HomeGoals>
+        <AwayGoals>2</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>18090134</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1711651</HomeTeamID>
+          <HomeTeamName>GÃZELYALI FC</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>2056276</AwayTeamID>
+          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-27 02:04:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>50</MatchType>
+        <MatchContextId>2108472</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>2</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>658539844</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1679496</HomeTeamID>
+          <HomeTeamName>Scanty United</HomeTeamName>
+          <HomeTeamNameShortName>Scanty</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>2056276</AwayTeamID>
+          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
+          <AwayTeamNameShortName>PisM</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-27 06:30:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>9</MatchType>
+        <MatchContextId>0</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>4</HomeGoals>
         <AwayGoals>0</AwayGoals>
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>18089882</MatchID>
+        <MatchID>18107862</MatchID>
         <HomeTeam>
-          <HomeTeamID>1021094</HomeTeamID>
-          <HomeTeamName>Arsenal__</HomeTeamName>
+          <HomeTeamID>540684</HomeTeamID>
+          <HomeTeamName>AT BUCARAMANGA</HomeTeamName>
           <HomeTeamNameShortName></HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>1629472</AwayTeamID>
-          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
+          <AwayTeamID>2056276</AwayTeamID>
+          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
           <AwayTeamNameShortName></AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-27 02:04:00</MatchDate>
+        <MatchDate>2020-05-27 10:04:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>50</MatchType>
+        <MatchContextId>2108472</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>8</HomeGoals>
+        <AwayGoals>1</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>18124978</MatchID>
+        <HomeTeam>
+          <HomeTeamID>2056276</HomeTeamID>
+          <HomeTeamName>PisoiaÈu' MausicÄ</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1683581</AwayTeamID>
+          <AwayTeamName>FC Vlci Satalice</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-27 18:05:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>50</MatchType>
+        <MatchContextId>2108472</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>4</HomeGoals>
+        <AwayGoals>2</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>18207907</MatchID>
+        <HomeTeam>
+          <HomeTeamID>708447</HomeTeamID>
+          <HomeTeamName>Fafa FC</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>2056276</AwayTeamID>
+          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-28 02:04:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>50</MatchType>
+        <MatchContextId>2108472</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>6</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>18222974</MatchID>
+        <HomeTeam>
+          <HomeTeamID>651477</HomeTeamID>
+          <HomeTeamName>FuD Steingriff 1966 n.e.V.</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>2056276</AwayTeamID>
+          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-28 10:03:00</MatchDate>
         <SourceSystem>HTOIntegrated</SourceSystem>
         <MatchType>50</MatchType>
         <MatchContextId>2108472</MatchContextId>
@@ -526,147 +570,15 @@
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>18108388</MatchID>
+        <MatchID>18295085</MatchID>
         <HomeTeam>
-          <HomeTeamID>857011</HomeTeamID>
-          <HomeTeamName>Polly is back</HomeTeamName>
+          <HomeTeamID>2056276</HomeTeamID>
+          <HomeTeamName>PisoiaÈu' MausicÄ</HomeTeamName>
           <HomeTeamNameShortName></HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>1629472</AwayTeamID>
-          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
-          <AwayTeamNameShortName></AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-05-27 10:05:00</MatchDate>
-        <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>50</MatchType>
-        <MatchContextId>2108472</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>5</HomeGoals>
-        <AwayGoals>0</AwayGoals>
-        <Status>FINISHED</Status>
-      </Match>
-      <Match>
-        <MatchID>18125452</MatchID>
-        <HomeTeam>
-          <HomeTeamID>1629472</HomeTeamID>
-          <HomeTeamName>FC. Steaua BucureÈti</HomeTeamName>
-          <HomeTeamNameShortName></HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>1537087</AwayTeamID>
-          <AwayTeamName>LucasBears</AwayTeamName>
-          <AwayTeamNameShortName></AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-05-27 18:05:00</MatchDate>
-        <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>50</MatchType>
-        <MatchContextId>2108472</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>3</HomeGoals>
-        <AwayGoals>1</AwayGoals>
-        <Status>FINISHED</Status>
-      </Match>
-      <Match>
-        <MatchID>658537261</MatchID>
-        <HomeTeam>
-          <HomeTeamID>1629472</HomeTeamID>
-          <HomeTeamName>FC. Steaua BucureÈti</HomeTeamName>
-          <HomeTeamNameShortName>FCSB</HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>337965</AwayTeamID>
-          <AwayTeamName>FC Freienfels e.V.</AwayTeamName>
-          <AwayTeamNameShortName>Freienfels</AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-05-28 01:10:00</MatchDate>
-        <SourceSystem>Hattrick</SourceSystem>
-        <MatchType>8</MatchType>
-        <MatchContextId>0</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>0</HomeGoals>
-        <AwayGoals>2</AwayGoals>
-        <Status>FINISHED</Status>
-      </Match>
-      <Match>
-        <MatchID>18208573</MatchID>
-        <HomeTeam>
-          <HomeTeamID>49175</HomeTeamID>
-          <HomeTeamName>Los Revulsivos</HomeTeamName>
-          <HomeTeamNameShortName></HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>1629472</AwayTeamID>
-          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
-          <AwayTeamNameShortName></AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-05-28 02:05:00</MatchDate>
-        <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>50</MatchType>
-        <MatchContextId>2108472</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>2</HomeGoals>
-        <AwayGoals>3</AwayGoals>
-        <Status>FINISHED</Status>
-      </Match>
-      <Match>
-        <MatchID>18223936</MatchID>
-        <HomeTeam>
-          <HomeTeamID>1629472</HomeTeamID>
-          <HomeTeamName>FC. Steaua BucureÈti</HomeTeamName>
-          <HomeTeamNameShortName></HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>399571</AwayTeamID>
-          <AwayTeamName>WAKPRO FC</AwayTeamName>
-          <AwayTeamNameShortName></AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-05-28 10:04:00</MatchDate>
-        <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>50</MatchType>
-        <MatchContextId>2108472</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>3</HomeGoals>
-        <AwayGoals>3</AwayGoals>
-        <Status>FINISHED</Status>
-      </Match>
-      <Match>
-        <MatchID>18300854</MatchID>
-        <HomeTeam>
-          <HomeTeamID>942576</HomeTeamID>
-          <HomeTeamName>Moodeung United</HomeTeamName>
-          <HomeTeamNameShortName></HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>1629472</AwayTeamID>
-          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
-          <AwayTeamNameShortName></AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-05-28 13:02:00</MatchDate>
-        <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>61</MatchType>
-        <MatchContextId>0</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>3</HomeGoals>
-        <AwayGoals>0</AwayGoals>
-        <Status>FINISHED</Status>
-      </Match>
-      <Match>
-        <MatchID>18294995</MatchID>
-        <HomeTeam>
-          <HomeTeamID>894229</HomeTeamID>
-          <HomeTeamName>StokorcovÃ½ les</HomeTeamName>
-          <HomeTeamNameShortName></HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>1629472</AwayTeamID>
-          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
+          <AwayTeamID>1368256</AwayTeamID>
+          <AwayTeamName>Borussia DÃ¼rÃ¼m FC</AwayTeamName>
           <AwayTeamNameShortName></AwayTeamNameShortName>
         </AwayTeam>
         <MatchDate>2020-05-28 18:04:00</MatchDate>
@@ -675,174 +587,131 @@
         <MatchContextId>2108472</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>3</HomeGoals>
-        <AwayGoals>1</AwayGoals>
+        <HomeGoals>5</HomeGoals>
+        <AwayGoals>5</AwayGoals>
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>658598796</MatchID>
+        <MatchID>658621533</MatchID>
         <HomeTeam>
-          <HomeTeamID>1629472</HomeTeamID>
-          <HomeTeamName>FC. Steaua BucureÈti</HomeTeamName>
-          <HomeTeamNameShortName>FCSB</HomeTeamNameShortName>
+          <HomeTeamID>986929</HomeTeamID>
+          <HomeTeamName>Qadisha Valley F.C.</HomeTeamName>
+          <HomeTeamNameShortName>Qadisha</HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>241926</AwayTeamID>
-          <AwayTeamName>MacBigia Team</AwayTeamName>
-          <AwayTeamNameShortName>MacBigia</AwayTeamNameShortName>
+          <AwayTeamID>2056276</AwayTeamID>
+          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
+          <AwayTeamNameShortName>PisM</AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-06-01 01:10:00</MatchDate>
+        <MatchDate>2020-05-31 14:40:00</MatchDate>
         <SourceSystem>Hattrick</SourceSystem>
         <MatchType>9</MatchType>
         <MatchContextId>0</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>2</HomeGoals>
-        <AwayGoals>1</AwayGoals>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>2</AwayGoals>
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>18481501</MatchID>
+        <MatchID>658642761</MatchID>
         <HomeTeam>
-          <HomeTeamID>1187457</HomeTeamID>
-          <HomeTeamName>Zanardi Redwings</HomeTeamName>
-          <HomeTeamNameShortName></HomeTeamNameShortName>
+          <HomeTeamID>2050236</HomeTeamID>
+          <HomeTeamName>Sogn og Fjordane Ballklubb</HomeTeamName>
+          <HomeTeamNameShortName>Ballklubb</HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>1629472</AwayTeamID>
-          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
-          <AwayTeamNameShortName></AwayTeamNameShortName>
+          <AwayTeamID>2056276</AwayTeamID>
+          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
+          <AwayTeamNameShortName>PisM</AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-06-02 16:53:00</MatchDate>
-        <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>61</MatchType>
-        <MatchContextId>0</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <OrdersGiven>True</OrdersGiven>
-        <Status>UPCOMING</Status>
-      </Match>
-      <Match>
-        <MatchID>658837778</MatchID>
-        <HomeTeam>
-          <HomeTeamID>710881</HomeTeamID>
-          <HomeTeamName>Masterforce</HomeTeamName>
-          <HomeTeamNameShortName>Masterforce</HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>1629472</AwayTeamID>
-          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
-          <AwayTeamNameShortName>FCSB</AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-06-04 01:10:00</MatchDate>
+        <MatchDate>2020-06-02 16:00:00</MatchDate>
         <SourceSystem>Hattrick</SourceSystem>
         <MatchType>3</MatchType>
-        <MatchContextId>167</MatchContextId>
+        <MatchContextId>1433</MatchContextId>
         <CupLevel>1</CupLevel>
         <CupLevelIndex>1</CupLevelIndex>
-        <OrdersGiven>True</OrdersGiven>
-        <Status>UPCOMING</Status>
+        <Status>ONGOING</Status>
       </Match>
       <Match>
-        <MatchID>662368326</MatchID>
+        <MatchID>658873935</MatchID>
         <HomeTeam>
-          <HomeTeamID>1629472</HomeTeamID>
-          <HomeTeamName>FC. Steaua BucureÈti</HomeTeamName>
-          <HomeTeamNameShortName>FCSB</HomeTeamNameShortName>
+          <HomeTeamID>2056276</HomeTeamID>
+          <HomeTeamName>PisoiaÈu' MausicÄ</HomeTeamName>
+          <HomeTeamNameShortName>PisM</HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>1629846</AwayTeamID>
-          <AwayTeamName>Hutchinson United</AwayTeamName>
-          <AwayTeamNameShortName>Hutchinson</AwayTeamNameShortName>
+          <AwayTeamID>2054159</AwayTeamID>
+          <AwayTeamName>Le volpi del deserto</AwayTeamName>
+          <AwayTeamNameShortName>deserto</AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-06-08 01:10:00</MatchDate>
+        <MatchDate>2020-06-05 17:00:00</MatchDate>
         <SourceSystem>Hattrick</SourceSystem>
         <MatchType>1</MatchType>
-        <MatchContextId>88455</MatchContextId>
+        <MatchContextId>256914</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
         <OrdersGiven>False</OrdersGiven>
         <Status>UPCOMING</Status>
       </Match>
       <Match>
-        <MatchID>662368329</MatchID>
+        <MatchID>658873939</MatchID>
         <HomeTeam>
-          <HomeTeamID>1629515</HomeTeamID>
-          <HomeTeamName>RiverSide FA</HomeTeamName>
-          <HomeTeamNameShortName>RiverSide</HomeTeamNameShortName>
+          <HomeTeamID>2053470</HomeTeamID>
+          <HomeTeamName>Freddie Park Rangers</HomeTeamName>
+          <HomeTeamNameShortName>Freddie</HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>1629472</AwayTeamID>
-          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
-          <AwayTeamNameShortName>FCSB</AwayTeamNameShortName>
+          <AwayTeamID>2056276</AwayTeamID>
+          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
+          <AwayTeamNameShortName>PisM</AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-06-15 01:10:00</MatchDate>
+        <MatchDate>2020-06-12 17:00:00</MatchDate>
         <SourceSystem>Hattrick</SourceSystem>
         <MatchType>1</MatchType>
-        <MatchContextId>88455</MatchContextId>
+        <MatchContextId>256914</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
         <OrdersGiven>False</OrdersGiven>
         <Status>UPCOMING</Status>
       </Match>
       <Match>
-        <MatchID>662368334</MatchID>
+        <MatchID>658873942</MatchID>
         <HomeTeam>
-          <HomeTeamID>1629472</HomeTeamID>
-          <HomeTeamName>FC. Steaua BucureÈti</HomeTeamName>
-          <HomeTeamNameShortName>FCSB</HomeTeamNameShortName>
+          <HomeTeamID>2056276</HomeTeamID>
+          <HomeTeamName>PisoiaÈu' MausicÄ</HomeTeamName>
+          <HomeTeamNameShortName>PisM</HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>1629348</AwayTeamID>
-          <AwayTeamName>Los Radicales del Balon</AwayTeamName>
-          <AwayTeamNameShortName>Radicales</AwayTeamNameShortName>
+          <AwayTeamID>2051617</AwayTeamID>
+          <AwayTeamName>Store E.G</AwayTeamName>
+          <AwayTeamNameShortName>Store</AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-06-22 01:10:00</MatchDate>
+        <MatchDate>2020-06-19 17:00:00</MatchDate>
         <SourceSystem>Hattrick</SourceSystem>
         <MatchType>1</MatchType>
-        <MatchContextId>88455</MatchContextId>
+        <MatchContextId>256914</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
         <OrdersGiven>False</OrdersGiven>
         <Status>UPCOMING</Status>
       </Match>
       <Match>
-        <MatchID>17224486</MatchID>
+        <MatchID>658873947</MatchID>
         <HomeTeam>
-          <HomeTeamID>1627323</HomeTeamID>
-          <HomeTeamName>CandyAngels</HomeTeamName>
-          <HomeTeamNameShortName></HomeTeamNameShortName>
+          <HomeTeamID>2056384</HomeTeamID>
+          <HomeTeamName>Messi's Argentina</HomeTeamName>
+          <HomeTeamNameShortName>Argentina</HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>1629472</AwayTeamID>
-          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
-          <AwayTeamNameShortName></AwayTeamNameShortName>
+          <AwayTeamID>2056276</AwayTeamID>
+          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
+          <AwayTeamNameShortName>PisM</AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-06-27 19:00:00</MatchDate>
-        <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>61</MatchType>
-        <MatchContextId>0</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <OrdersGiven>False</OrdersGiven>
-        <Status>UPCOMING</Status>
-      </Match>
-      <Match>
-        <MatchID>662368338</MatchID>
-        <HomeTeam>
-          <HomeTeamID>710898</HomeTeamID>
-          <HomeTeamName>Pensativo fc</HomeTeamName>
-          <HomeTeamNameShortName>Pensativo</HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>1629472</AwayTeamID>
-          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
-          <AwayTeamNameShortName>FCSB</AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-06-29 01:10:00</MatchDate>
+        <MatchDate>2020-06-26 17:00:00</MatchDate>
         <SourceSystem>Hattrick</SourceSystem>
         <MatchType>1</MatchType>
-        <MatchContextId>88455</MatchContextId>
+        <MatchContextId>256914</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
         <OrdersGiven>False</OrdersGiven>

@@ -13,6 +13,7 @@ from flask import request
 
 import application.dialog_windows as dw
 import global_library
+from application import config
 from application.admin import create_db
 from application.admin import delete_db
 from application.admin import import_matches
@@ -20,6 +21,7 @@ from application.connected import download_future_match
 from application.connected import download_user_matches_file
 from application.connected import hattrick_connect
 from application.connected import hattrick_disconnect
+from application.connected.hattrick_connect import check_if_connection_is_valid
 from application.estimation import estimation_engine
 
 index_bp = Blueprint('index_bp', __name__, template_folder='templates', static_folder='static')
@@ -373,10 +375,20 @@ def get_match_ratings_for_a_future_match() -> None:
     ----------
     Nimic."""
 
+    if check_if_connection_is_valid(test_config=config):
+        dw.show_info_window_in_thread(title='OK', message='Avem conexiune')
+    else:
+        dw.show_error_window_in_thread(title='Nu e OK', message='Nu avem conexiune')
+        return render_template('index.html', title="The Best Match Predictor",
+                               ratings=global_library.ratings, positions=global_library.positions,
+                               statuses=global_library.statuses, from_index=True,
+                               match_orders=global_library.default_match_orders,
+                               answer=global_library.ans)
     global_library.team_id = request.form['HattrickTeams']
     global_library.user_team_name = get_user_team_name()
     global_library.user_matches = download_user_matches_file.download_user_matches_file(global_library.team_id)
     checked = get_chosen_option()
+    selected_position: int = 0
     if len(global_library.user_matches) == 0:
         dw.show_error_window_in_thread(title='No match found',
                                        message='This team does not have any future matches of the selected types '
@@ -384,7 +396,6 @@ def get_match_ratings_for_a_future_match() -> None:
         match_orders = global_library.default_match_orders
         place_to_play = 'Home'
     else:
-        selected_position = 0
         try:
             if global_library.old_checked == checked:
                 match_id = request.form['FutureMatches']
