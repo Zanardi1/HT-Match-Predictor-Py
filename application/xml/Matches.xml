@@ -3,60 +3,38 @@
   <FileName>matches.xml</FileName>
   <Version>2.8</Version>
   <UserID>1248859</UserID>
-  <FetchedDate>2020-06-02 17:53:12</FetchedDate>
+  <FetchedDate>2020-06-02 17:58:56</FetchedDate>
   <IsYouth>False</IsYouth>
   <Team>
-    <TeamID>2056276</TeamID>
-    <TeamName>PisoiaÈu' MausicÄ</TeamName>
-    <ShortTeamName>PisM</ShortTeamName>
+    <TeamID>1187457</TeamID>
+    <TeamName>Zanardi Redwings</TeamName>
+    <ShortTeamName>ZanR</ShortTeamName>
     <League>
-      <LeagueID>1000</LeagueID>
-      <LeagueName>Hattrick International</LeagueName>
+      <LeagueID>37</LeagueID>
+      <LeagueName>RomÃ¢nia</LeagueName>
     </League>
     <LeagueLevelUnit>
-      <LeagueLevelUnitID>256914</LeagueLevelUnitID>
-      <LeagueLevelUnitName>V.143</LeagueLevelUnitName>
+      <LeagueLevelUnitID>3944</LeagueLevelUnitID>
+      <LeagueLevelUnitName>V.6</LeagueLevelUnitName>
       <LeagueLevel>5</LeagueLevel>
     </LeagueLevelUnit>
     <MatchList>
       <Match>
-        <MatchID>658202797</MatchID>
+        <MatchID>658256874</MatchID>
         <HomeTeam>
-          <HomeTeamID>1602535</HomeTeamID>
-          <HomeTeamName>kickerbude</HomeTeamName>
-          <HomeTeamNameShortName>kickerbude</HomeTeamNameShortName>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName>ZanR</HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>2056276</AwayTeamID>
-          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
-          <AwayTeamNameShortName>PisM</AwayTeamNameShortName>
+          <AwayTeamID>442086</AwayTeamID>
+          <AwayTeamName>Glorioso Newell's</AwayTeamName>
+          <AwayTeamNameShortName>Rojinegro</AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-06 16:25:00</MatchDate>
+        <MatchDate>2020-05-06 10:00:00</MatchDate>
         <SourceSystem>Hattrick</SourceSystem>
         <MatchType>8</MatchType>
         <MatchContextId>0</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>3</HomeGoals>
-        <AwayGoals>0</AwayGoals>
-        <Status>FINISHED</Status>
-      </Match>
-      <Match>
-        <MatchID>653595673</MatchID>
-        <HomeTeam>
-          <HomeTeamID>2056276</HomeTeamID>
-          <HomeTeamName>PisoiaÈu' MausicÄ</HomeTeamName>
-          <HomeTeamNameShortName>PisM</HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>2056068</AwayTeamID>
-          <AwayTeamName>El Pampa Internacional</AwayTeamName>
-          <AwayTeamNameShortName>Internacional</AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-05-08 17:00:00</MatchDate>
-        <SourceSystem>Hattrick</SourceSystem>
-        <MatchType>1</MatchType>
-        <MatchContextId>256727</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
         <HomeGoals>1</HomeGoals>
@@ -64,109 +42,87 @@
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>658291900</MatchID>
+        <MatchID>653771132</MatchID>
         <HomeTeam>
-          <HomeTeamID>2023525</HomeTeamID>
-          <HomeTeamName>Lapis Lazuli</HomeTeamName>
-          <HomeTeamNameShortName>Lazuli</HomeTeamNameShortName>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName>ZanR</HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>2056276</AwayTeamID>
-          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
-          <AwayTeamNameShortName>PisM</AwayTeamNameShortName>
+          <AwayTeamID>185656</AwayTeamID>
+          <AwayTeamName>Bad Taste Corn</AwayTeamName>
+          <AwayTeamNameShortName>BTC</AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-13 16:35:00</MatchDate>
+        <MatchDate>2020-05-09 10:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>1</MatchType>
+        <MatchContextId>3914</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>7</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>658300237</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName>ZanR</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>793972</AwayTeamID>
+          <AwayTeamName>FC Tout Lui Faut</AwayTeamName>
+          <AwayTeamNameShortName>Tout</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-13 10:00:00</MatchDate>
         <SourceSystem>Hattrick</SourceSystem>
         <MatchType>8</MatchType>
         <MatchContextId>0</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>5</HomeGoals>
-        <AwayGoals>0</AwayGoals>
+        <HomeGoals>1</HomeGoals>
+        <AwayGoals>1</AwayGoals>
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>653595678</MatchID>
+        <MatchID>17453668</MatchID>
         <HomeTeam>
-          <HomeTeamID>2056956</HomeTeamID>
-          <HomeTeamName>Operation Orange</HomeTeamName>
-          <HomeTeamNameShortName>Operation</HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>2056276</AwayTeamID>
-          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
-          <AwayTeamNameShortName>PisM</AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-05-15 17:00:00</MatchDate>
-        <SourceSystem>Hattrick</SourceSystem>
-        <MatchType>1</MatchType>
-        <MatchContextId>256727</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>8</HomeGoals>
-        <AwayGoals>0</AwayGoals>
-        <Status>FINISHED</Status>
-      </Match>
-      <Match>
-        <MatchID>17489854</MatchID>
-        <HomeTeam>
-          <HomeTeamID>193120</HomeTeamID>
-          <HomeTeamName>dÃ©dÃ© Vichte</HomeTeamName>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
           <HomeTeamNameShortName></HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>2056276</AwayTeamID>
-          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
+          <AwayTeamID>1629472</AwayTeamID>
+          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
           <AwayTeamNameShortName></AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-18 07:05:00</MatchDate>
+        <MatchDate>2020-05-15 09:16:00</MatchDate>
         <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>50</MatchType>
-        <MatchContextId>3116071</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>5</HomeGoals>
-        <AwayGoals>0</AwayGoals>
-        <Status>FINISHED</Status>
-      </Match>
-      <Match>
-        <MatchID>17565891</MatchID>
-        <HomeTeam>
-          <HomeTeamID>1539117</HomeTeamID>
-          <HomeTeamName>Yellow Reds Army</HomeTeamName>
-          <HomeTeamNameShortName></HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>2056276</AwayTeamID>
-          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
-          <AwayTeamNameShortName></AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-05-18 19:06:00</MatchDate>
-        <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>50</MatchType>
-        <MatchContextId>3116071</MatchContextId>
+        <MatchType>61</MatchType>
+        <MatchContextId>0</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
         <HomeGoals>0</HomeGoals>
-        <AwayGoals>5</AwayGoals>
+        <AwayGoals>3</AwayGoals>
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>17623363</MatchID>
+        <MatchID>17475692</MatchID>
         <HomeTeam>
-          <HomeTeamID>1809639</HomeTeamID>
-          <HomeTeamName>London Eagles FC</HomeTeamName>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
           <HomeTeamNameShortName></HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>2056276</AwayTeamID>
-          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
+          <AwayTeamID>1629472</AwayTeamID>
+          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
           <AwayTeamNameShortName></AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-19 07:06:00</MatchDate>
+        <MatchDate>2020-05-15 14:37:00</MatchDate>
         <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>50</MatchType>
-        <MatchContextId>3116071</MatchContextId>
+        <MatchType>61</MatchType>
+        <MatchContextId>0</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
         <HomeGoals>3</HomeGoals>
@@ -174,64 +130,64 @@
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>17679693</MatchID>
+        <MatchID>653771138</MatchID>
         <HomeTeam>
-          <HomeTeamID>2058704</HomeTeamID>
-          <HomeTeamName>Abelzinhos</HomeTeamName>
-          <HomeTeamNameShortName></HomeTeamNameShortName>
+          <HomeTeamID>875245</HomeTeamID>
+          <HomeTeamName>Dreamstate</HomeTeamName>
+          <HomeTeamNameShortName>Dreamstate</HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>2056276</AwayTeamID>
-          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
-          <AwayTeamNameShortName></AwayTeamNameShortName>
+          <AwayTeamID>1187457</AwayTeamID>
+          <AwayTeamName>Zanardi Redwings</AwayTeamName>
+          <AwayTeamNameShortName>ZanR</AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-19 19:05:00</MatchDate>
-        <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>50</MatchType>
-        <MatchContextId>3116071</MatchContextId>
+        <MatchDate>2020-05-16 10:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>1</MatchType>
+        <MatchContextId>3914</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>6</HomeGoals>
-        <AwayGoals>1</AwayGoals>
-        <Status>FINISHED</Status>
-      </Match>
-      <Match>
-        <MatchID>17738819</MatchID>
-        <HomeTeam>
-          <HomeTeamID>157419</HomeTeamID>
-          <HomeTeamName>NyÃ­regyhÃ¡za Spartacus</HomeTeamName>
-          <HomeTeamNameShortName></HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>2056276</AwayTeamID>
-          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
-          <AwayTeamNameShortName></AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-05-20 07:05:00</MatchDate>
-        <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>50</MatchType>
-        <MatchContextId>3116071</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>9</HomeGoals>
+        <HomeGoals>8</HomeGoals>
         <AwayGoals>0</AwayGoals>
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>658376300</MatchID>
+        <MatchID>17479617</MatchID>
         <HomeTeam>
-          <HomeTeamID>2016823</HomeTeamID>
-          <HomeTeamName>FC Milk Bar</HomeTeamName>
-          <HomeTeamNameShortName>Milk</HomeTeamNameShortName>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>2056276</AwayTeamID>
-          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
-          <AwayTeamNameShortName>PisM</AwayTeamNameShortName>
+          <AwayTeamID>338122</AwayTeamID>
+          <AwayTeamName>SV Anti Bayern</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-20 16:35:00</MatchDate>
-        <SourceSystem>Hattrick</SourceSystem>
-        <MatchType>9</MatchType>
+        <MatchDate>2020-05-18 06:45:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>50</MatchType>
+        <MatchContextId>3116065</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>9</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>17586074</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1629472</AwayTeamID>
+          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-18 15:09:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>61</MatchType>
         <MatchContextId>0</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
@@ -240,125 +196,257 @@
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>17795896</MatchID>
+        <MatchID>17555755</MatchID>
         <HomeTeam>
-          <HomeTeamID>1826537</HomeTeamID>
-          <HomeTeamName>pinkipoje</HomeTeamName>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
           <HomeTeamNameShortName></HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>2056276</AwayTeamID>
-          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
+          <AwayTeamID>184708</AwayTeamID>
+          <AwayTeamName>RaduDaniel</AwayTeamName>
           <AwayTeamNameShortName></AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-20 19:06:00</MatchDate>
+        <MatchDate>2020-05-18 18:46:00</MatchDate>
         <SourceSystem>HTOIntegrated</SourceSystem>
         <MatchType>50</MatchType>
-        <MatchContextId>3116071</MatchContextId>
+        <MatchContextId>3116065</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>7</HomeGoals>
-        <AwayGoals>2</AwayGoals>
+        <HomeGoals>3</HomeGoals>
+        <AwayGoals>4</AwayGoals>
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>17854577</MatchID>
+        <MatchID>17614171</MatchID>
         <HomeTeam>
-          <HomeTeamID>2056276</HomeTeamID>
-          <HomeTeamName>PisoiaÈu' MausicÄ</HomeTeamName>
+          <HomeTeamID>1844281</HomeTeamID>
+          <HomeTeamName>Real-Madrid-Nazareth</HomeTeamName>
           <HomeTeamNameShortName></HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>1299480</AwayTeamID>
-          <AwayTeamName>8.miejsce</AwayTeamName>
+          <AwayTeamID>1187457</AwayTeamID>
+          <AwayTeamName>Zanardi Redwings</AwayTeamName>
           <AwayTeamNameShortName></AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-21 07:06:00</MatchDate>
+        <MatchDate>2020-05-19 06:46:00</MatchDate>
         <SourceSystem>HTOIntegrated</SourceSystem>
         <MatchType>50</MatchType>
-        <MatchContextId>3116071</MatchContextId>
+        <MatchContextId>3116065</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>1</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>17671360</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>205158</AwayTeamID>
+          <AwayTeamName>F.C. Kamikaze</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-19 18:46:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>50</MatchType>
+        <MatchContextId>3116065</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
         <HomeGoals>0</HomeGoals>
+        <AwayGoals>6</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>17730070</MatchID>
+        <HomeTeam>
+          <HomeTeamID>649028</HomeTeamID>
+          <HomeTeamName>Fc The Wild`s</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1187457</AwayTeamID>
+          <AwayTeamName>Zanardi Redwings</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-20 06:46:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>50</MatchType>
+        <MatchContextId>3116065</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>4</HomeGoals>
         <AwayGoals>0</AwayGoals>
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>17911260</MatchID>
+        <MatchID>658391399</MatchID>
         <HomeTeam>
-          <HomeTeamID>2056276</HomeTeamID>
-          <HomeTeamName>PisoiaÈu' MausicÄ</HomeTeamName>
-          <HomeTeamNameShortName></HomeTeamNameShortName>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName>ZanR</HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>43890</AwayTeamID>
-          <AwayTeamName>FC Hammarkullen</AwayTeamName>
-          <AwayTeamNameShortName></AwayTeamNameShortName>
+          <AwayTeamID>2016477</AwayTeamID>
+          <AwayTeamName>Royal International</AwayTeamName>
+          <AwayTeamNameShortName>International</AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-21 19:06:00</MatchDate>
-        <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>50</MatchType>
-        <MatchContextId>3116071</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>0</HomeGoals>
-        <AwayGoals>7</AwayGoals>
-        <Status>FINISHED</Status>
-      </Match>
-      <Match>
-        <MatchID>658477005</MatchID>
-        <HomeTeam>
-          <HomeTeamID>2016769</HomeTeamID>
-          <HomeTeamName>FC Magic Box</HomeTeamName>
-          <HomeTeamNameShortName>Magic</HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>2056276</AwayTeamID>
-          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
-          <AwayTeamNameShortName>PisM</AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-05-24 16:35:00</MatchDate>
+        <MatchDate>2020-05-20 10:00:00</MatchDate>
         <SourceSystem>Hattrick</SourceSystem>
         <MatchType>8</MatchType>
         <MatchContextId>0</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>7</HomeGoals>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>5</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>17786748</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1001778</AwayTeamID>
+          <AwayTeamName>StarCastle</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-20 18:46:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>50</MatchType>
+        <MatchContextId>3116065</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>5</HomeGoals>
         <AwayGoals>0</AwayGoals>
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>17944908</MatchID>
+        <MatchID>17844906</MatchID>
         <HomeTeam>
-          <HomeTeamID>2056276</HomeTeamID>
-          <HomeTeamName>PisoiaÈu' MausicÄ</HomeTeamName>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
           <HomeTeamNameShortName></HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>1649834</AwayTeamID>
-          <AwayTeamName>ice 252</AwayTeamName>
+          <AwayTeamID>180021</AwayTeamID>
+          <AwayTeamName>CS Calan</AwayTeamName>
           <AwayTeamNameShortName></AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-25 18:02:00</MatchDate>
+        <MatchDate>2020-05-21 06:46:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>50</MatchType>
+        <MatchContextId>3116065</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>3</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>17901615</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>613976</AwayTeamID>
+          <AwayTeamName>Mad Madre</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-21 18:46:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>50</MatchType>
+        <MatchContextId>3116065</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>5</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>658483523</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName>ZanR</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1903619</AwayTeamID>
+          <AwayTeamName>Desert VIKINGS</AwayTeamName>
+          <AwayTeamNameShortName>VIKINGS</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-23 10:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>8</MatchType>
+        <MatchContextId>0</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>1</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>17968937</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1629472</AwayTeamID>
+          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-23 12:44:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>61</MatchType>
+        <MatchContextId>0</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>1</HomeGoals>
+        <AwayGoals>2</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>17952618</MatchID>
+        <HomeTeam>
+          <HomeTeamID>859644</HomeTeamID>
+          <HomeTeamName>maldeÃ§oados</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1187457</AwayTeamID>
+          <AwayTeamName>Zanardi Redwings</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-25 18:06:00</MatchDate>
         <SourceSystem>HTOIntegrated</SourceSystem>
         <MatchType>50</MatchType>
         <MatchContextId>2108472</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>0</HomeGoals>
-        <AwayGoals>8</AwayGoals>
+        <HomeGoals>8</HomeGoals>
+        <AwayGoals>0</AwayGoals>
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>18039556</MatchID>
+        <MatchID>18039689</MatchID>
         <HomeTeam>
-          <HomeTeamID>2056276</HomeTeamID>
-          <HomeTeamName>PisoiaÈu' MausicÄ</HomeTeamName>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
           <HomeTeamNameShortName></HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>563585</AwayTeamID>
-          <AwayTeamName>Desperados2020</AwayTeamName>
+          <AwayTeamID>1990628</AwayTeamID>
+          <AwayTeamName>Bulltown Lions</AwayTeamName>
           <AwayTeamNameShortName></AwayTeamNameShortName>
         </AwayTeam>
         <MatchDate>2020-05-26 02:06:00</MatchDate>
@@ -367,29 +455,29 @@
         <MatchContextId>2108472</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>2</HomeGoals>
-        <AwayGoals>2</AwayGoals>
+        <HomeGoals>1</HomeGoals>
+        <AwayGoals>0</AwayGoals>
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>18056066</MatchID>
+        <MatchID>18054899</MatchID>
         <HomeTeam>
-          <HomeTeamID>2056276</HomeTeamID>
-          <HomeTeamName>PisoiaÈu' MausicÄ</HomeTeamName>
+          <HomeTeamID>562381</HomeTeamID>
+          <HomeTeamName>PXO' Stars</HomeTeamName>
           <HomeTeamNameShortName></HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>1227640</AwayTeamID>
-          <AwayTeamName>muzzycan</AwayTeamName>
+          <AwayTeamID>1187457</AwayTeamID>
+          <AwayTeamName>Zanardi Redwings</AwayTeamName>
           <AwayTeamNameShortName></AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-26 10:05:00</MatchDate>
+        <MatchDate>2020-05-26 10:04:00</MatchDate>
         <SourceSystem>HTOIntegrated</SourceSystem>
         <MatchType>50</MatchType>
         <MatchContextId>2108472</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>4</HomeGoals>
+        <HomeGoals>2</HomeGoals>
         <AwayGoals>0</AwayGoals>
         <Status>FINISHED</Status>
       </Match>
@@ -416,81 +504,81 @@
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>18069732</MatchID>
+        <MatchID>18072209</MatchID>
         <HomeTeam>
-          <HomeTeamID>2056276</HomeTeamID>
-          <HomeTeamName>PisoiaÈu' MausicÄ</HomeTeamName>
+          <HomeTeamID>748092</HomeTeamID>
+          <HomeTeamName>gelterfingen</HomeTeamName>
           <HomeTeamNameShortName></HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>1694632</AwayTeamID>
-          <AwayTeamName>Lokomotiv Casaletto</AwayTeamName>
+          <AwayTeamID>1187457</AwayTeamID>
+          <AwayTeamName>Zanardi Redwings</AwayTeamName>
           <AwayTeamNameShortName></AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-26 18:03:00</MatchDate>
+        <MatchDate>2020-05-26 18:04:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>50</MatchType>
+        <MatchContextId>2108472</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>5</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>18088224</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>229235</AwayTeamID>
+          <AwayTeamName>U.E. Raincoats</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-27 02:03:00</MatchDate>
         <SourceSystem>HTOIntegrated</SourceSystem>
         <MatchType>50</MatchType>
         <MatchContextId>2108472</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
         <HomeGoals>1</HomeGoals>
-        <AwayGoals>2</AwayGoals>
+        <AwayGoals>3</AwayGoals>
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>18090134</MatchID>
+        <MatchID>658520461</MatchID>
         <HomeTeam>
-          <HomeTeamID>1711651</HomeTeamID>
-          <HomeTeamName>GÃZELYALI FC</HomeTeamName>
-          <HomeTeamNameShortName></HomeTeamNameShortName>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName>ZanR</HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>2056276</AwayTeamID>
-          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
-          <AwayTeamNameShortName></AwayTeamNameShortName>
+          <AwayTeamID>2017042</AwayTeamID>
+          <AwayTeamName>Spvgg KAW SEK</AwayTeamName>
+          <AwayTeamNameShortName>Spvgg</AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-27 02:04:00</MatchDate>
-        <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>50</MatchType>
-        <MatchContextId>2108472</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>2</HomeGoals>
-        <AwayGoals>2</AwayGoals>
-        <Status>FINISHED</Status>
-      </Match>
-      <Match>
-        <MatchID>658539844</MatchID>
-        <HomeTeam>
-          <HomeTeamID>1679496</HomeTeamID>
-          <HomeTeamName>Scanty United</HomeTeamName>
-          <HomeTeamNameShortName>Scanty</HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>2056276</AwayTeamID>
-          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
-          <AwayTeamNameShortName>PisM</AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-05-27 06:30:00</MatchDate>
+        <MatchDate>2020-05-27 10:00:00</MatchDate>
         <SourceSystem>Hattrick</SourceSystem>
-        <MatchType>9</MatchType>
+        <MatchType>8</MatchType>
         <MatchContextId>0</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>4</HomeGoals>
-        <AwayGoals>0</AwayGoals>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>5</AwayGoals>
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>18107862</MatchID>
+        <MatchID>18106590</MatchID>
         <HomeTeam>
-          <HomeTeamID>540684</HomeTeamID>
-          <HomeTeamName>AT BUCARAMANGA</HomeTeamName>
+          <HomeTeamID>706319</HomeTeamID>
+          <HomeTeamName>Osorno Forever</HomeTeamName>
           <HomeTeamNameShortName></HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>2056276</AwayTeamID>
-          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
+          <AwayTeamID>1187457</AwayTeamID>
+          <AwayTeamName>Zanardi Redwings</AwayTeamName>
           <AwayTeamNameShortName></AwayTeamNameShortName>
         </AwayTeam>
         <MatchDate>2020-05-27 10:04:00</MatchDate>
@@ -499,67 +587,111 @@
         <MatchContextId>2108472</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>8</HomeGoals>
-        <AwayGoals>1</AwayGoals>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>0</AwayGoals>
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>18124978</MatchID>
+        <MatchID>18122540</MatchID>
         <HomeTeam>
-          <HomeTeamID>2056276</HomeTeamID>
-          <HomeTeamName>PisoiaÈu' MausicÄ</HomeTeamName>
+          <HomeTeamID>1063617</HomeTeamID>
+          <HomeTeamName>Sepsi'08</HomeTeamName>
           <HomeTeamNameShortName></HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>1683581</AwayTeamID>
-          <AwayTeamName>FC Vlci Satalice</AwayTeamName>
+          <AwayTeamID>1187457</AwayTeamID>
+          <AwayTeamName>Zanardi Redwings</AwayTeamName>
           <AwayTeamNameShortName></AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-27 18:05:00</MatchDate>
-        <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>50</MatchType>
-        <MatchContextId>2108472</MatchContextId>
-        <CupLevel>0</CupLevel>
-        <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>4</HomeGoals>
-        <AwayGoals>2</AwayGoals>
-        <Status>FINISHED</Status>
-      </Match>
-      <Match>
-        <MatchID>18207907</MatchID>
-        <HomeTeam>
-          <HomeTeamID>708447</HomeTeamID>
-          <HomeTeamName>Fafa FC</HomeTeamName>
-          <HomeTeamNameShortName></HomeTeamNameShortName>
-        </HomeTeam>
-        <AwayTeam>
-          <AwayTeamID>2056276</AwayTeamID>
-          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
-          <AwayTeamNameShortName></AwayTeamNameShortName>
-        </AwayTeam>
-        <MatchDate>2020-05-28 02:04:00</MatchDate>
+        <MatchDate>2020-05-27 18:04:00</MatchDate>
         <SourceSystem>HTOIntegrated</SourceSystem>
         <MatchType>50</MatchType>
         <MatchContextId>2108472</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
         <HomeGoals>2</HomeGoals>
-        <AwayGoals>6</AwayGoals>
+        <AwayGoals>0</AwayGoals>
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>18222974</MatchID>
+        <MatchID>18208599</MatchID>
         <HomeTeam>
-          <HomeTeamID>651477</HomeTeamID>
-          <HomeTeamName>FuD Steingriff 1966 n.e.V.</HomeTeamName>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
           <HomeTeamNameShortName></HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>2056276</AwayTeamID>
-          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
+          <AwayTeamID>986981</AwayTeamID>
+          <AwayTeamName>__UrartU__</AwayTeamName>
           <AwayTeamNameShortName></AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-28 10:03:00</MatchDate>
+        <MatchDate>2020-05-28 02:05:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>50</MatchType>
+        <MatchContextId>2108472</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>3</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>18226653</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1670004</HomeTeamID>
+          <HomeTeamName>_Tottenham_Hotspur_</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1187457</AwayTeamID>
+          <AwayTeamName>Zanardi Redwings</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-28 10:05:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>50</MatchType>
+        <MatchContextId>2108472</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>1</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>18310481</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>481614</AwayTeamID>
+          <AwayTeamName>FC Hooligangs</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-28 13:30:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>61</MatchType>
+        <MatchContextId>0</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>3</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>18298023</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1458631</AwayTeamID>
+          <AwayTeamName>FricandÃ³</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-05-28 18:05:00</MatchDate>
         <SourceSystem>HTOIntegrated</SourceSystem>
         <MatchType>50</MatchType>
         <MatchContextId>2108472</MatchContextId>
@@ -570,148 +702,212 @@
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>18295085</MatchID>
+        <MatchID>18438339</MatchID>
         <HomeTeam>
-          <HomeTeamID>2056276</HomeTeamID>
-          <HomeTeamName>PisoiaÈu' MausicÄ</HomeTeamName>
+          <HomeTeamID>179868</HomeTeamID>
+          <HomeTeamName>Villa Bucuresti</HomeTeamName>
           <HomeTeamNameShortName></HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>1368256</AwayTeamID>
-          <AwayTeamName>Borussia DÃ¼rÃ¼m FC</AwayTeamName>
+          <AwayTeamID>1187457</AwayTeamID>
+          <AwayTeamName>Zanardi Redwings</AwayTeamName>
           <AwayTeamNameShortName></AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-28 18:04:00</MatchDate>
+        <MatchDate>2020-05-29 15:12:00</MatchDate>
         <SourceSystem>HTOIntegrated</SourceSystem>
-        <MatchType>50</MatchType>
-        <MatchContextId>2108472</MatchContextId>
+        <MatchType>61</MatchType>
+        <MatchContextId>0</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>5</HomeGoals>
-        <AwayGoals>5</AwayGoals>
+        <HomeGoals>6</HomeGoals>
+        <AwayGoals>2</AwayGoals>
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>658621533</MatchID>
+        <MatchID>658611870</MatchID>
         <HomeTeam>
-          <HomeTeamID>986929</HomeTeamID>
-          <HomeTeamName>Qadisha Valley F.C.</HomeTeamName>
-          <HomeTeamNameShortName>Qadisha</HomeTeamNameShortName>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName>ZanR</HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>2056276</AwayTeamID>
-          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
-          <AwayTeamNameShortName>PisM</AwayTeamNameShortName>
+          <AwayTeamID>1961122</AwayTeamID>
+          <AwayTeamName>Brokerii</AwayTeamName>
+          <AwayTeamNameShortName>BRK</AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-05-31 14:40:00</MatchDate>
+        <MatchDate>2020-05-30 10:00:00</MatchDate>
         <SourceSystem>Hattrick</SourceSystem>
         <MatchType>9</MatchType>
         <MatchContextId>0</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
-        <HomeGoals>0</HomeGoals>
-        <AwayGoals>2</AwayGoals>
+        <HomeGoals>1</HomeGoals>
+        <AwayGoals>3</AwayGoals>
         <Status>FINISHED</Status>
       </Match>
       <Match>
-        <MatchID>658642761</MatchID>
+        <MatchID>18440162</MatchID>
         <HomeTeam>
-          <HomeTeamID>2050236</HomeTeamID>
-          <HomeTeamName>Sogn og Fjordane Ballklubb</HomeTeamName>
-          <HomeTeamNameShortName>Ballklubb</HomeTeamNameShortName>
+          <HomeTeamID>1190308</HomeTeamID>
+          <HomeTeamName>Univers Star</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>2056276</AwayTeamID>
-          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
-          <AwayTeamNameShortName>PisM</AwayTeamNameShortName>
+          <AwayTeamID>1187457</AwayTeamID>
+          <AwayTeamName>Zanardi Redwings</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-06-02 16:00:00</MatchDate>
-        <SourceSystem>Hattrick</SourceSystem>
-        <MatchType>3</MatchType>
-        <MatchContextId>1433</MatchContextId>
-        <CupLevel>1</CupLevel>
-        <CupLevelIndex>1</CupLevelIndex>
+        <MatchDate>2020-05-30 17:14:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>62</MatchType>
+        <MatchContextId>1256029</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>6</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>18481501</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1629472</AwayTeamID>
+          <AwayTeamName>FC. Steaua BucureÈti</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-06-02 16:53:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>61</MatchType>
+        <MatchContextId>0</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
         <Status>ONGOING</Status>
       </Match>
       <Match>
-        <MatchID>658873935</MatchID>
+        <MatchID>658716526</MatchID>
         <HomeTeam>
-          <HomeTeamID>2056276</HomeTeamID>
-          <HomeTeamName>PisoiaÈu' MausicÄ</HomeTeamName>
-          <HomeTeamNameShortName>PisM</HomeTeamNameShortName>
+          <HomeTeamID>-50398463</HomeTeamID>
+          <HomeTeamName>Echipa strÄzii</HomeTeamName>
+          <HomeTeamNameShortName>Echipa strÄzii</HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>2054159</AwayTeamID>
-          <AwayTeamName>Le volpi del deserto</AwayTeamName>
-          <AwayTeamNameShortName>deserto</AwayTeamNameShortName>
+          <AwayTeamID>1187457</AwayTeamID>
+          <AwayTeamName>Zanardi Redwings</AwayTeamName>
+          <AwayTeamNameShortName>ZanR</AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-06-05 17:00:00</MatchDate>
+        <MatchDate>2020-06-03 10:00:00</MatchDate>
         <SourceSystem>Hattrick</SourceSystem>
-        <MatchType>1</MatchType>
-        <MatchContextId>256914</MatchContextId>
+        <MatchType>3</MatchType>
+        <MatchContextId>35</MatchContextId>
+        <CupLevel>1</CupLevel>
+        <CupLevelIndex>1</CupLevelIndex>
+        <OrdersGiven>True</OrdersGiven>
+        <Status>UPCOMING</Status>
+      </Match>
+      <Match>
+        <MatchID>18481745</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1063736</HomeTeamID>
+          <HomeTeamName>FC Prahova LipÄneÅti</HomeTeamName>
+          <HomeTeamNameShortName></HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1187457</AwayTeamID>
+          <AwayTeamName>Zanardi Redwings</AwayTeamName>
+          <AwayTeamNameShortName></AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-06-03 17:52:00</MatchDate>
+        <SourceSystem>HTOIntegrated</SourceSystem>
+        <MatchType>62</MatchType>
+        <MatchContextId>1256029</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
         <OrdersGiven>False</OrdersGiven>
         <Status>UPCOMING</Status>
       </Match>
       <Match>
-        <MatchID>658873939</MatchID>
+        <MatchID>659040634</MatchID>
         <HomeTeam>
-          <HomeTeamID>2053470</HomeTeamID>
-          <HomeTeamName>Freddie Park Rangers</HomeTeamName>
-          <HomeTeamNameShortName>Freddie</HomeTeamNameShortName>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName>ZanR</HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>2056276</AwayTeamID>
-          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
-          <AwayTeamNameShortName>PisM</AwayTeamNameShortName>
+          <AwayTeamID>693487</AwayTeamID>
+          <AwayTeamName>Made By Ro</AwayTeamName>
+          <AwayTeamNameShortName>Made By Ro</AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-06-12 17:00:00</MatchDate>
+        <MatchDate>2020-06-06 10:00:00</MatchDate>
         <SourceSystem>Hattrick</SourceSystem>
         <MatchType>1</MatchType>
-        <MatchContextId>256914</MatchContextId>
+        <MatchContextId>3944</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
         <OrdersGiven>False</OrdersGiven>
         <Status>UPCOMING</Status>
       </Match>
       <Match>
-        <MatchID>658873942</MatchID>
+        <MatchID>659040639</MatchID>
         <HomeTeam>
-          <HomeTeamID>2056276</HomeTeamID>
-          <HomeTeamName>PisoiaÈu' MausicÄ</HomeTeamName>
-          <HomeTeamNameShortName>PisM</HomeTeamNameShortName>
+          <HomeTeamID>1184943</HomeTeamID>
+          <HomeTeamName>Villareal Cugir</HomeTeamName>
+          <HomeTeamNameShortName>Villareal</HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>2051617</AwayTeamID>
-          <AwayTeamName>Store E.G</AwayTeamName>
-          <AwayTeamNameShortName>Store</AwayTeamNameShortName>
+          <AwayTeamID>1187457</AwayTeamID>
+          <AwayTeamName>Zanardi Redwings</AwayTeamName>
+          <AwayTeamNameShortName>ZanR</AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-06-19 17:00:00</MatchDate>
+        <MatchDate>2020-06-13 10:00:00</MatchDate>
         <SourceSystem>Hattrick</SourceSystem>
         <MatchType>1</MatchType>
-        <MatchContextId>256914</MatchContextId>
+        <MatchContextId>3944</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
         <OrdersGiven>False</OrdersGiven>
         <Status>UPCOMING</Status>
       </Match>
       <Match>
-        <MatchID>658873947</MatchID>
+        <MatchID>659040644</MatchID>
         <HomeTeam>
-          <HomeTeamID>2056384</HomeTeamID>
-          <HomeTeamName>Messi's Argentina</HomeTeamName>
-          <HomeTeamNameShortName>Argentina</HomeTeamNameShortName>
+          <HomeTeamID>1187457</HomeTeamID>
+          <HomeTeamName>Zanardi Redwings</HomeTeamName>
+          <HomeTeamNameShortName>ZanR</HomeTeamNameShortName>
         </HomeTeam>
         <AwayTeam>
-          <AwayTeamID>2056276</AwayTeamID>
-          <AwayTeamName>PisoiaÈu' MausicÄ</AwayTeamName>
-          <AwayTeamNameShortName>PisM</AwayTeamNameShortName>
+          <AwayTeamID>185211</AwayTeamID>
+          <AwayTeamName>ACS.COMANESTI</AwayTeamName>
+          <AwayTeamNameShortName>COMANESTI</AwayTeamNameShortName>
         </AwayTeam>
-        <MatchDate>2020-06-26 17:00:00</MatchDate>
+        <MatchDate>2020-06-20 10:00:00</MatchDate>
         <SourceSystem>Hattrick</SourceSystem>
         <MatchType>1</MatchType>
-        <MatchContextId>256914</MatchContextId>
+        <MatchContextId>3944</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <OrdersGiven>False</OrdersGiven>
+        <Status>UPCOMING</Status>
+      </Match>
+      <Match>
+        <MatchID>659040645</MatchID>
+        <HomeTeam>
+          <HomeTeamID>700790</HomeTeamID>
+          <HomeTeamName>Dentists</HomeTeamName>
+          <HomeTeamNameShortName>Dentists</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1187457</AwayTeamID>
+          <AwayTeamName>Zanardi Redwings</AwayTeamName>
+          <AwayTeamNameShortName>ZanR</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2020-06-27 10:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>1</MatchType>
+        <MatchContextId>3944</MatchContextId>
         <CupLevel>0</CupLevel>
         <CupLevelIndex>0</CupLevelIndex>
         <OrdersGiven>False</OrdersGiven>

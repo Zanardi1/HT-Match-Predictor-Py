@@ -375,10 +375,9 @@ def get_match_ratings_for_a_future_match() -> None:
     ----------
     Nimic."""
 
-    if check_if_connection_is_valid(test_config=config):
-        dw.show_info_window_in_thread(title='OK', message='Avem conexiune')
-    else:
-        dw.show_error_window_in_thread(title='Nu e OK', message='Nu avem conexiune')
+    if not check_if_connection_is_valid(test_config=config):
+        dw.show_error_window_in_thread(title='Connection lost',
+                                       message='We cannot access anymore your Hattrick account. This is probably because you revoked the application''s access from the Hattrick account, or there is a problem with the Hattrick server!')
         return render_template('index.html', title="The Best Match Predictor",
                                ratings=global_library.ratings, positions=global_library.positions,
                                statuses=global_library.statuses, from_index=True,
