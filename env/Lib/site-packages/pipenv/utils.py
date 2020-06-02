@@ -1191,7 +1191,7 @@ def get_locked_dep(dep, pipfile_section, prefer_pipfile=True):
     lockfile_name, lockfile_dict = lockfile_entry.copy().popitem()
     lockfile_version = lockfile_dict.get("version", "")
     # Keep pins from the lockfile
-    if prefer_pipfile and lockfile_version != version and version.startswith("=="):
+    if prefer_pipfile and lockfile_version != version and version.startswith("==") and "*" not in version:
         lockfile_dict["version"] = version
     lockfile_entry[lockfile_name] = lockfile_dict
     return lockfile_entry
@@ -1877,7 +1877,6 @@ def get_vcs_deps(
                     # sys.path = [repo.checkout_directory, "", ".", get_python_lib(plat_specific=0)]
                     commit_hash = repo.get_commit_hash()
                     name = requirement.normalized_name
-                    version = requirement._specifiers = "=={0}".format(requirement.req.setup_info.version)
                     lockfile[name] = requirement.pipfile_entry[1]
                     lockfile[name]['ref'] = commit_hash
                     result.append(requirement)
