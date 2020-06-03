@@ -3,144 +3,176 @@
   <FileName>matchdetails.xml</FileName>
   <Version>3.0</Version>
   <UserID>1248859</UserID>
-  <FetchedDate>2020-05-30 15:11:53</FetchedDate>
+  <FetchedDate>2020-06-03 12:27:11</FetchedDate>
   <UserSupporterTier>diamond</UserSupporterTier>
   <SourceSystem>Hattrick</SourceSystem>
   <Match>
-    <MatchID>10700</MatchID>
+    <MatchID>11000</MatchID>
     <MatchType>1</MatchType>
-    <MatchContextId>97</MatchContextId>
+    <MatchContextId>102</MatchContextId>
     <MatchRuleId>0</MatchRuleId>
     <CupLevel>0</CupLevel>
     <CupLevelIndex>0</CupLevelIndex>
-    <MatchDate>2000-11-05 10:00:00</MatchDate>
-    <FinishedDate>2000-11-05 11:45:00</FinishedDate>
+    <MatchDate>2000-12-10 10:00:00</MatchDate>
+    <FinishedDate>2000-12-10 11:45:00</FinishedDate>
     <AddedMinutes>0</AddedMinutes>
     <HomeTeam>
-      <HomeTeamID>5046</HomeTeamID>
-      <HomeTeamName>Team Bosman</HomeTeamName>
+      <HomeTeamID>1626</HomeTeamID>
+      <HomeTeamName>IFK GÃ¶teborg United</HomeTeamName>
       <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
-      <Formation>4-4-2</Formation>
-      <HomeGoals>0</HomeGoals>
+      <Formation>3-4-3</Formation>
+      <HomeGoals>3</HomeGoals>
       <TacticType>0</TacticType>
       <TacticSkill>0</TacticSkill>
       <RatingMidfield>3</RatingMidfield>
-      <RatingRightDef>8</RatingRightDef>
-      <RatingMidDef>9</RatingMidDef>
-      <RatingLeftDef>9</RatingLeftDef>
-      <RatingRightAtt>10</RatingRightAtt>
-      <RatingMidAtt>12</RatingMidAtt>
+      <RatingRightDef>9</RatingRightDef>
+      <RatingMidDef>10</RatingMidDef>
+      <RatingLeftDef>8</RatingLeftDef>
+      <RatingRightAtt>12</RatingRightAtt>
+      <RatingMidAtt>17</RatingMidAtt>
       <RatingLeftAtt>11</RatingLeftAtt>
     </HomeTeam>
     <AwayTeam>
-      <AwayTeamID>2074</AwayTeamID>
-      <AwayTeamName>JÃ¶rgens Gubbar</AwayTeamName>
+      <AwayTeamID>5064</AwayTeamID>
+      <AwayTeamName>Evolution FC</AwayTeamName>
       <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
       <Formation>4-4-2</Formation>
-      <AwayGoals>5</AwayGoals>
+      <AwayGoals>1</AwayGoals>
       <TacticType>0</TacticType>
       <TacticSkill>0</TacticSkill>
-      <RatingMidfield>5</RatingMidfield>
-      <RatingRightDef>13</RatingRightDef>
-      <RatingMidDef>17</RatingMidDef>
-      <RatingLeftDef>15</RatingLeftDef>
-      <RatingRightAtt>12</RatingRightAtt>
-      <RatingMidAtt>14</RatingMidAtt>
-      <RatingLeftAtt>10</RatingLeftAtt>
+      <RatingMidfield>4</RatingMidfield>
+      <RatingRightDef>12</RatingRightDef>
+      <RatingMidDef>13</RatingMidDef>
+      <RatingLeftDef>10</RatingLeftDef>
+      <RatingRightAtt>7</RatingRightAtt>
+      <RatingMidAtt>6</RatingMidAtt>
+      <RatingLeftAtt>5</RatingLeftAtt>
     </AwayTeam>
     <Arena>
-      <ArenaID>5046</ArenaID>
-      <ArenaName>Upplandparken</ArenaName>
-      <WeatherID>2</WeatherID>
-      <SoldTotal>9167</SoldTotal>
+      <ArenaID>1626</ArenaID>
+      <ArenaName>Ullevi</ArenaName>
+      <WeatherID>3</WeatherID>
+      <SoldTotal>19444</SoldTotal>
     </Arena>
     <MatchOfficials>
       <Referee>
-        <RefereeId>136299246</RefereeId>
-        <RefereeName>Filippo Omicini</RefereeName>
-        <RefereeCountryId>4</RefereeCountryId>
-        <RefereeCountryName>Italia</RefereeCountryName>
-        <RefereeTeamId>1285871</RefereeTeamId>
-        <RefereeTeamname>Borussia DÃ¼mpten 09</RefereeTeamname>
+        <RefereeId>401629654</RefereeId>
+        <RefereeName>MoÃ¯se Normand</RefereeName>
+        <RefereeCountryId>5</RefereeCountryId>
+        <RefereeCountryName>France</RefereeCountryName>
+        <RefereeTeamId>586192</RefereeTeamId>
+        <RefereeTeamname>Olympique MÃ©nilmontant</RefereeTeamname>
       </Referee>
       <RefereeAssistant1>
-        <RefereeId>301967884</RefereeId>
-        <RefereeName>Marek Faul</RefereeName>
-        <RefereeCountryId>3</RefereeCountryId>
-        <RefereeCountryName>Deutschland</RefereeCountryName>
-        <RefereeTeamId>0</RefereeTeamId>
-        <RefereeTeamname></RefereeTeamname>
+        <RefereeId>220664913</RefereeId>
+        <RefereeName>Jonathan Bonamusa</RefereeName>
+        <RefereeCountryId>36</RefereeCountryId>
+        <RefereeCountryName>EspaÃ±a</RefereeCountryName>
+        <RefereeTeamId>1630417</RefereeTeamId>
+        <RefereeTeamname>canarias</RefereeTeamname>
       </RefereeAssistant1>
       <RefereeAssistant2>
-        <RefereeId>132196955</RefereeId>
-        <RefereeName>Mike Rafferty</RefereeName>
-        <RefereeCountryId>37</RefereeCountryId>
-        <RefereeCountryName>RomÃ¢nia</RefereeCountryName>
-        <RefereeTeamId>240472</RefereeTeamId>
-        <RefereeTeamname>SAGACIA</RefereeTeamname>
+        <RefereeId>334570418</RefereeId>
+        <RefereeName>Harold Bordewijk</RefereeName>
+        <RefereeCountryId>14</RefereeCountryId>
+        <RefereeCountryName>Nederland</RefereeCountryName>
+        <RefereeTeamId>769517</RefereeTeamId>
+        <RefereeTeamname>RodajcKerkrade</RefereeTeamname>
       </RefereeAssistant2>
     </MatchOfficials>
     <Scorers>
       <Goal Index="0">
-        <ScorerPlayerID>60792</ScorerPlayerID>
-        <ScorerPlayerName>Christian Danielsson</ScorerPlayerName>
-        <ScorerTeamID>2074</ScorerTeamID>
-        <ScorerHomeGoals>0</ScorerHomeGoals>
-        <ScorerAwayGoals>1</ScorerAwayGoals>
-        <ScorerMinute>7</ScorerMinute>
-        <MatchPart>1</MatchPart>
-      </Goal>
-      <Goal Index="1">
-        <ScorerPlayerID>178391</ScorerPlayerID>
-        <ScorerPlayerName>Henrik Davidsson</ScorerPlayerName>
-        <ScorerTeamID>2074</ScorerTeamID>
-        <ScorerHomeGoals>0</ScorerHomeGoals>
-        <ScorerAwayGoals>2</ScorerAwayGoals>
-        <ScorerMinute>33</ScorerMinute>
-        <MatchPart>1</MatchPart>
-      </Goal>
-      <Goal Index="2">
-        <ScorerPlayerID>60792</ScorerPlayerID>
-        <ScorerPlayerName>Christian Danielsson</ScorerPlayerName>
-        <ScorerTeamID>2074</ScorerTeamID>
-        <ScorerHomeGoals>0</ScorerHomeGoals>
-        <ScorerAwayGoals>3</ScorerAwayGoals>
-        <ScorerMinute>37</ScorerMinute>
-        <MatchPart>1</MatchPart>
-      </Goal>
-      <Goal Index="3">
-        <ScorerPlayerID>60792</ScorerPlayerID>
-        <ScorerPlayerName>Christian Danielsson</ScorerPlayerName>
-        <ScorerTeamID>2074</ScorerTeamID>
-        <ScorerHomeGoals>0</ScorerHomeGoals>
-        <ScorerAwayGoals>4</ScorerAwayGoals>
-        <ScorerMinute>51</ScorerMinute>
+        <ScorerPlayerID>189243</ScorerPlayerID>
+        <ScorerPlayerName>Lars 'Sanna' KurstrÃ¶m</ScorerPlayerName>
+        <ScorerTeamID>1626</ScorerTeamID>
+        <ScorerHomeGoals>1</ScorerHomeGoals>
+        <ScorerAwayGoals>0</ScorerAwayGoals>
+        <ScorerMinute>57</ScorerMinute>
         <MatchPart>2</MatchPart>
       </Goal>
-      <Goal Index="4">
-        <ScorerPlayerID>178391</ScorerPlayerID>
-        <ScorerPlayerName>Henrik Davidsson</ScorerPlayerName>
-        <ScorerTeamID>2074</ScorerTeamID>
-        <ScorerHomeGoals>0</ScorerHomeGoals>
-        <ScorerAwayGoals>5</ScorerAwayGoals>
-        <ScorerMinute>72</ScorerMinute>
+      <Goal Index="1">
+        <ScorerPlayerID>524116</ScorerPlayerID>
+        <ScorerPlayerName>Tobias Engerberg</ScorerPlayerName>
+        <ScorerTeamID>5064</ScorerTeamID>
+        <ScorerHomeGoals>1</ScorerHomeGoals>
+        <ScorerAwayGoals>1</ScorerAwayGoals>
+        <ScorerMinute>69</ScorerMinute>
+        <MatchPart>2</MatchPart>
+      </Goal>
+      <Goal Index="2">
+        <ScorerPlayerID>189243</ScorerPlayerID>
+        <ScorerPlayerName>Lars 'Sanna' KurstrÃ¶m</ScorerPlayerName>
+        <ScorerTeamID>1626</ScorerTeamID>
+        <ScorerHomeGoals>2</ScorerHomeGoals>
+        <ScorerAwayGoals>1</ScorerAwayGoals>
+        <ScorerMinute>80</ScorerMinute>
+        <MatchPart>2</MatchPart>
+      </Goal>
+      <Goal Index="3">
+        <ScorerPlayerID>199266</ScorerPlayerID>
+        <ScorerPlayerName>Thomas 'J' Davidsson</ScorerPlayerName>
+        <ScorerTeamID>1626</ScorerTeamID>
+        <ScorerHomeGoals>3</ScorerHomeGoals>
+        <ScorerAwayGoals>1</ScorerAwayGoals>
+        <ScorerMinute>86</ScorerMinute>
         <MatchPart>2</MatchPart>
       </Goal>
     </Scorers>
     <Bookings>
       <Booking Index="0">
-        <BookingPlayerID>523801</BookingPlayerID>
-        <BookingPlayerName>Jim Uttererberg</BookingPlayerName>
-        <BookingTeamID>5046</BookingTeamID>
+        <BookingPlayerID>524111</BookingPlayerID>
+        <BookingPlayerName>Conny Ãhrbratt</BookingPlayerName>
+        <BookingTeamID>5064</BookingTeamID>
         <BookingType>1</BookingType>
-        <BookingMinute>37</BookingMinute>
+        <BookingMinute>11</BookingMinute>
         <MatchPart>1</MatchPart>
       </Booking>
+      <Booking Index="1">
+        <BookingPlayerID>524113</BookingPlayerID>
+        <BookingPlayerName>Roger Thorlund</BookingPlayerName>
+        <BookingTeamID>5064</BookingTeamID>
+        <BookingType>1</BookingType>
+        <BookingMinute>71</BookingMinute>
+        <MatchPart>2</MatchPart>
+      </Booking>
+      <Booking Index="2">
+        <BookingPlayerID>135237</BookingPlayerID>
+        <BookingPlayerName>Jonas HÃ¥kansson</BookingPlayerName>
+        <BookingTeamID>1626</BookingTeamID>
+        <BookingType>1</BookingType>
+        <BookingMinute>80</BookingMinute>
+        <MatchPart>2</MatchPart>
+      </Booking>
     </Bookings>
-    <Injuries />
-    <PossessionFirstHalfHome>32</PossessionFirstHalfHome>
-    <PossessionFirstHalfAway>68</PossessionFirstHalfAway>
-    <PossessionSecondHalfHome>18</PossessionSecondHalfHome>
-    <PossessionSecondHalfAway>82</PossessionSecondHalfAway>
+    <Injuries>
+      <Injury Index="0">
+        <InjuryPlayerID>195027</InjuryPlayerID>
+        <InjuryPlayerName>Jonas Hansson</InjuryPlayerName>
+        <InjuryTeamID>1626</InjuryTeamID>
+        <InjuryType>1</InjuryType>
+        <InjuryMinute>20</InjuryMinute>
+        <MatchPart>1</MatchPart>
+      </Injury>
+      <Injury Index="1">
+        <InjuryPlayerID>524107</InjuryPlayerID>
+        <InjuryPlayerName>Henrik Ljungman</InjuryPlayerName>
+        <InjuryTeamID>5064</InjuryTeamID>
+        <InjuryType>2</InjuryType>
+        <InjuryMinute>62</InjuryMinute>
+        <MatchPart>2</MatchPart>
+      </Injury>
+      <Injury Index="2">
+        <InjuryPlayerID>525725</InjuryPlayerID>
+        <InjuryPlayerName>Janne Hansson</InjuryPlayerName>
+        <InjuryTeamID>5064</InjuryTeamID>
+        <InjuryType>2</InjuryType>
+        <InjuryMinute>86</InjuryMinute>
+        <MatchPart>2</MatchPart>
+      </Injury>
+    </Injuries>
+    <PossessionFirstHalfHome>45</PossessionFirstHalfHome>
+    <PossessionFirstHalfAway>55</PossessionFirstHalfAway>
+    <PossessionSecondHalfHome>48</PossessionSecondHalfHome>
+    <PossessionSecondHalfAway>52</PossessionSecondHalfAway>
   </Match>
 </HattrickData>

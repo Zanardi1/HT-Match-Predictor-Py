@@ -245,7 +245,8 @@ def import_matches_into_database() -> None:
     except IndexError:
         dw.show_error_window_in_thread(title='Numar inexistent!',
                                        message='Numarul de identificare al unei limite (sau a ambelor) nu exista. Cel '
-                                               'mai probabil ai introdus numere negative sau 0.')
+                                               'mai probabil ai introdus numere mai mici sau egale cu 0, sau accesul '
+                                               'programului la Hattrick a fost oprit din contul utilizatorului.')
     except sqlalchemy.exc.IntegrityError:
         dw.show_error_window_in_thread(title='Meciuri existente',
                                        message='In intervalul introdus este macar un meci care este in baza de date')
@@ -377,7 +378,9 @@ def get_match_ratings_for_a_future_match() -> None:
 
     if not check_if_connection_is_valid(test_config=config):
         dw.show_error_window_in_thread(title='Connection lost',
-                                       message='We cannot access anymore your Hattrick account. This is probably because you revoked the application''s access from the Hattrick account, or there is a problem with the Hattrick server!')
+                                       message='We cannot access anymore your Hattrick account. This is probably '
+                                               'because you revoked the application''s access from the Hattrick '
+                                               'account, or there is a problem with the Hattrick server!')
         return render_template('index.html', title="The Best Match Predictor",
                                ratings=global_library.ratings, positions=global_library.positions,
                                statuses=global_library.statuses, from_index=True,

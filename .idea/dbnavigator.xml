@@ -23,11 +23,15 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="false" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="735e774e-84e0-4588-be02-f51ca6607f9b">
+        <schema name="main" object-types="index, column, constraint, view, table, dataset trigger" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="735e774e-84e0-4588-be02-f51ca6607f9b">
-      <console name="Connection" type="STANDARD" schema="main" session="Main"><![CDATA[select count(1) from "Matches"]]></console>
+      <console name="Connection" type="STANDARD" schema="main" session="Main">select count(1) from &quot;Matches&quot;</console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
