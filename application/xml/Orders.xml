@@ -3,18 +3,18 @@
   <FileName>matchorders.xml</FileName>
   <Version>3.0</Version>
   <UserID>1248859</UserID>
-  <FetchedDate>2020-06-02 17:58:56</FetchedDate>
-  <MatchID>659040634</MatchID>
+  <FetchedDate>2020-06-11 07:46:48</FetchedDate>
+  <MatchID>662368342</MatchID>
   <IsYouth>False</IsYouth>
   <MatchData>
-    <TacticType>8</TacticType>
-    <TacticSkill>8</TacticSkill>
-    <RatingMidfield>13</RatingMidfield>
-    <RatingRightDef>23</RatingRightDef>
-    <RatingMidDef>27</RatingMidDef>
+    <TacticType>0</TacticType>
+    <TacticSkill>0</TacticSkill>
+    <RatingMidfield>29</RatingMidfield>
+    <RatingRightDef>24</RatingRightDef>
+    <RatingMidDef>24</RatingMidDef>
     <RatingLeftDef>24</RatingLeftDef>
-    <RatingRightAtt>7</RatingRightAtt>
-    <RatingMidAtt>6</RatingMidAtt>
-    <RatingLeftAtt>7</RatingLeftAtt>
+    <RatingRightAtt>16</RatingRightAtt>
+    <RatingMidAtt>14</RatingMidAtt>
+    <RatingLeftAtt>15</RatingLeftAtt>
   </MatchData>
 </HattrickData>
